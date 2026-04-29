@@ -1,0 +1,40 @@
+# ============================================================
+# GED-PT SLM Benchmarking Configuration
+# Grammar Error Detection for Brazilian Portuguese
+# ============================================================
+
+# --- Model settings ---
+model:
+  name: "gemma3:12b"          # Ollama model tag (e.g. gemma3:12b, qwen2.5:14b, llama3.1:8b)
+  temperature: 0.0             # 0.0 for deterministic output (recommended for classification)
+  top_p: 1.0
+  max_tokens: 2048             # max tokens for model response
+  num_ctx: 4096                # Ollama context window (num_ctx)
+  ollama_host: "http://localhost:11434"
+
+# --- Data settings ---
+data:
+  test_file: "data/test_bio.tsv"
+  val_file: "data/val_bio.tsv"
+  train_file: "data/train_bio.tsv"        # not used for inference, listed for reference
+  sentence_delimiter_prefix: "Sentença"   # line prefix that marks sentence boundaries
+
+# --- Prompting settings ---
+prompting:
+  strategy: "zero_shot"          # zero_shot | few_shot
+  num_few_shot_examples: 3       # number of examples to include when strategy=few_shot
+  few_shot_source: "data/train_bio.tsv"
+  batch_size: 1                  # sentences per Ollama call (keep at 1 for reliability)
+
+# --- Output settings ---
+output:
+  predictions_dir: "predictions"
+  predictions_file: "predictions/{model_tag}_{split}_{strategy}.json"
+  metrics_file: "metrics/{model_tag}_{split}_{strategy}_metrics.json"
+
+# --- Labels ---
+labels:
+  outside: "O"
+  begin_error: "B-WRONG"
+  inside_error: "I-WRONG"
+  valid_set: ["O", "B-WRONG", "I-WRONG"]
