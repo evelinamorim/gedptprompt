@@ -141,6 +141,19 @@ def query_ollama(
             {"role": "user", "content": user_prompt},
         ],
         "stream": False,
+        "format": {                          # <-- add this block
+        "type": "object",
+        "properties": {
+            "labels": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "enum": ["O", "B-WRONG", "I-WRONG"]
+                }
+            }
+          },
+          "required": ["labels"]
+        },
         "options": {
             "temperature": temperature,
             "top_p": top_p,
