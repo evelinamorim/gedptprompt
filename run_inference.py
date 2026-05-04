@@ -16,6 +16,7 @@ import json
 import re
 import time
 from pathlib import Path
+import os
 
 import requests
 import yaml
@@ -282,9 +283,19 @@ def run_inference(cfg: dict, split: str, strategy: str) -> None:
             "pred_labels": pred_labels,
             "raw_response": raw_response,
         })
+        if i % 100 == 0:
+            with open(pred_path + ".partial", "w", encoding="utf-8") as fh:
+                json.dump({
+                    "model": model_name,
+                    "split": split,
+                    "strategy": strategy,
+                    "num_sentences": len(results),
+                    "predictions": results,
+                }, fh, ensure_ascii=False, indent=2)
+            print(f"  [checkpoint] {len(results)} sentences saved.")
 
-    # Save predictions
-    with open(pred_path, "w", encoding="utf-8") as fh:
+    partial_path = pred_path + ".partial"
+    with open(partial_path, "w", encoding="utf-8") as fh:
         json.dump(
             {
                 "model": model_name,
@@ -297,8 +308,8 @@ def run_inference(cfg: dict, split: str, strategy: str) -> None:
             ensure_ascii=False,
             indent=2,
         )
+    os.rename(partial_path, pred_path)
     print(f"\nPredictions saved to: {pred_path}")
-
 
 # ------------------------------------------------------------------ #
 
