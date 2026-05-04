@@ -8,19 +8,20 @@
 #   sbatch slurm_eval.sh --model qwen2.5:14b --strategy few_shot --split val
 # ============================================================
 
-#SBATCH --job-name=ged_slm
-#SBATCH --output=logs/%x_%j.out
-#SBATCH --error=logs/%x_%j.err
-#SBATCH --time=04:00:00          # wall time: adjust per model size
+#SBATCH --job-name=ged_slm_gemma4_e4b
+#SBATCH --account=f202500017aivlabdeucaliong
+#SBATCH --gpus=1
+#SBATCH --partition normal-a100-40
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
+#SBATCH --time=08:00:00          # wall time: adjust per model size
 #SBATCH --cpus-per-task=8
-#SBATCH --mem=32G
-#SBATCH --partition=gpu          # change to your partition name on Deucalion
-#SBATCH --gres=gpu:1             # 1 GPU for Ollama to serve the model
+#SBATCH --mem=40G
+#SBATCH --output=logs/%x_%j_gemma4_e4b.out
+#SBATCH --error=logs/%x_%j_gemma4_e4b.err
 
 # ---- parse optional overrides from sbatch extra args ----
-MODEL="gemma3:12b"
+MODEL="gemma4:e4b"
 STRATEGY="zero_shot"
 SPLIT="test"
 CONFIG="config.yaml"
@@ -60,7 +61,7 @@ module load python/3.11   # or whichever Python module is available
 # ---- start Ollama server in the background ----
 # Deucalion may require pointing OLLAMA_MODELS to a shared storage path
 export OLLAMA_MODELS="${SCRATCH:-$HOME}/.ollama/models"
-export OLLAMA_HOST="0.0.0.0:11434"
+export OLLAMA_HOST="http://127.0.0.1:11434"
 
 ollama serve &
 OLLAMA_PID=$!
@@ -70,8 +71,8 @@ echo "Ollama server started (PID=$OLLAMA_PID)"
 sleep 10
 
 # Pull model if not already cached (no-op if present)
-echo "Ensuring model is available: $MODEL"
-ollama pull "$MODEL"
+#echo "Ensuring model is available: $MODEL"
+#ollama pull "$MODEL"
 
 # ---- update config with the requested model ----
 # We write a temporary config to avoid mutating the shared one

@@ -5,12 +5,12 @@
 
 # --- Model settings ---
 model:
-  name: "gemma3:12b"          # Ollama model tag (e.g. gemma3:12b, qwen2.5:14b, llama3.1:8b)
+  name: "gemma4:4eb"          # Ollama model tag (e.g. gemma3:12b, qwen2.5:14b, llama3.1:8b)
   temperature: 0.0             # 0.0 for deterministic output (recommended for classification)
   top_p: 1.0
   max_tokens: 2048             # max tokens for model response
   num_ctx: 4096                # Ollama context window (num_ctx)
-  ollama_host: "http://localhost:11434"
+  ollama_host: "http://127.0.0.1:11434"
 
 # --- Data settings ---
 data:
