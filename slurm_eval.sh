@@ -9,13 +9,13 @@
 #   sbatch slurm_eval.sh --model gemma3:12b --strategy zero_shot  (use --time=08:00:00)
 # ============================================================
 
-#SBATCH --job-name=ged_slm
+#SBATCH --job-name=ged_slm_gemma4_e4b
 #SBATCH --account=f202500017aivlabdeucaliong
 #SBATCH --gpus=1
 #SBATCH --partition=normal-a100-40
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --time=04:00:00
+#SBATCH --time=08:00:00
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=40G
 #SBATCH --output=logs/%x_%j.out
@@ -66,16 +66,20 @@ PYTHON=$(which python3)
 echo "Python binary: $PYTHON"
 $PYTHON --version
 
-# ---- start Ollama server in the background ----
-ollama serve &
-OLLAMA_PID=$!
-
-# Wait until server is ready (up to 60s)
-echo "Waiting for Ollama..."
-for i in $(seq 1 30); do
-    curl -s http://127.0.0.1:11434/api/tags > /dev/null 2>&1 && echo "Ollama ready." && break
-    sleep 2
-done
+# Try to connect to existing Ollama instance first
+if curl -s http://127.0.0.1:11434/api/tags > /dev/null 2>&1; then
+    echo "Ollama already running, reusing existing instance."
+    OLLAMA_PID=""
+else
+    echo "Starting new Ollama instance..."
+    ollama serve &
+    OLLAMA_PID=$!
+    # Wait until ready
+    for i in $(seq 1 30); do
+        curl -s http://127.0.0.1:11434/api/tags > /dev/null 2>&1 && echo "Ollama ready." && break
+        sleep 2
+    done
+fi
 
 # Pre-warm: force model weights into GPU VRAM before inference starts
 echo "Pre-warming model: $MODEL"
@@ -133,7 +137,10 @@ $PYTHON evaluate.py \
 EVAL_EXIT=$?
 
 # ---- cleanup ----
-kill $OLLAMA_PID 2>/dev/null
+# Only kill Ollama if this job started it
+if [ -n "$OLLAMA_PID" ]; then
+    kill $OLLAMA_PID 2>/dev/null
+fi
 rm -f "$TMP_CONFIG"
 
 echo ""
