@@ -4,21 +4,22 @@
 # Runs inference + evaluation for a single model/strategy combo.
 #
 # Submit:
-#   sbatch slurm_eval.sh --model gemma3:12b --strategy zero_shot
-#   sbatch slurm_eval.sh --model qwen2.5:14b --strategy few_shot --split val
+#   sbatch slurm_eval.sh --model gemma4:e4b --strategy zero_shot
+#   sbatch slurm_eval.sh --model qwen3:8b --strategy zero_shot --split test
+#   sbatch slurm_eval.sh --model gemma3:12b --strategy zero_shot  (use --time=08:00:00)
 # ============================================================
 
-#SBATCH --job-name=ged_slm_gemma4_e4b
+#SBATCH --job-name=ged_slm
 #SBATCH --account=f202500017aivlabdeucaliong
 #SBATCH --gpus=1
-#SBATCH --partition normal-a100-40
+#SBATCH --partition=normal-a100-40
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --time=08:00:00          # wall time: adjust per model size
+#SBATCH --time=04:00:00
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=40G
-#SBATCH --output=logs/%x_%j_gemma4_e4b.out
-#SBATCH --error=logs/%x_%j_gemma4_e4b.err
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
 
 # ---- parse optional overrides from sbatch extra args ----
 MODEL="gemma4:e4b"
@@ -51,33 +52,43 @@ echo "=========================================="
 mkdir -p logs predictions metrics
 
 module purge
-module load ollama        # Deucalion: load the Ollama module
-module load python/3.11   # or whichever Python module is available
+module load Python/3.11.3-GCCcore-12.3.0
+module load ollama/0.20.3-GCCcore-14.2.0-CUDA-12.8.0
 
-# Activate your virtualenv / conda env if needed:
-# source /path/to/venv/bin/activate
-# conda activate ged_slm
+source /projects/F202600026AIVLABDEUCALION/evelinamorim/venv/bin/activate
+
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+export HF_HOME="$(pwd)/hf_cache"
+export OLLAMA_MODELS=/projects/F202600026AIVLABDEUCALION/evelinamorim/ollama_models/
+
+# Capture the correct python binary after module load
+PYTHON=$(which python3)
+echo "Python binary: $PYTHON"
+$PYTHON --version
 
 # ---- start Ollama server in the background ----
-# Deucalion may require pointing OLLAMA_MODELS to a shared storage path
-export OLLAMA_MODELS="${SCRATCH:-$HOME}/.ollama/models"
-export OLLAMA_HOST="http://127.0.0.1:11434"
-
 ollama serve &
 OLLAMA_PID=$!
-echo "Ollama server started (PID=$OLLAMA_PID)"
 
-# Give the server a few seconds to initialise
-sleep 10
+# Wait until server is ready (up to 60s)
+echo "Waiting for Ollama..."
+for i in $(seq 1 30); do
+    curl -s http://127.0.0.1:11434/api/tags > /dev/null 2>&1 && echo "Ollama ready." && break
+    sleep 2
+done
 
-# Pull model if not already cached (no-op if present)
-#echo "Ensuring model is available: $MODEL"
-#ollama pull "$MODEL"
+# Pre-warm: force model weights into GPU VRAM before inference starts
+echo "Pre-warming model: $MODEL"
+curl -s -X POST http://127.0.0.1:11434/api/chat \
+    -H "Content-Type: application/json" \
+    -d "{\"model\": \"$MODEL\", \"messages\": [{\"role\": \"user\", \"content\": \"Olá\"}], \"stream\": false}" \
+    > /dev/null 2>&1
+echo "Model warmed up."
 
 # ---- update config with the requested model ----
-# We write a temporary config to avoid mutating the shared one
+# Write a temporary config per job to avoid conflicts between parallel jobs
 TMP_CONFIG="config_${SLURM_JOB_ID}.yaml"
-python3 - <<PYEOF
+$PYTHON - <<PYEOF
 import yaml, sys
 
 with open("$CONFIG") as f:
@@ -85,6 +96,7 @@ with open("$CONFIG") as f:
 
 cfg["model"]["name"] = "$MODEL"
 cfg["prompting"]["strategy"] = "$STRATEGY"
+cfg["model"]["ollama_host"] = "http://127.0.0.1:11434"
 
 with open("$TMP_CONFIG", "w") as f:
     yaml.dump(cfg, f, allow_unicode=True)
@@ -95,7 +107,7 @@ PYEOF
 # ---- inference ----
 echo ""
 echo "[$(date +%T)] Starting inference ..."
-python3 run_inference.py \
+$PYTHON run_inference.py \
     --config "$TMP_CONFIG" \
     --split "$SPLIT" \
     --strategy "$STRATEGY"
@@ -114,7 +126,7 @@ PRED_FILE="predictions/${MODEL_TAG}_${SPLIT}_${STRATEGY}.json"
 
 echo ""
 echo "[$(date +%T)] Running evaluation on: $PRED_FILE"
-python3 evaluate.py \
+$PYTHON evaluate.py \
     --predictions "$PRED_FILE" \
     --verbose
 
