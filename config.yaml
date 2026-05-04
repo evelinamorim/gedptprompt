@@ -5,7 +5,7 @@
 
 # --- Model settings ---
 model:
-  name: "gemma4:4eb"          # Ollama model tag (e.g. gemma3:12b, qwen2.5:14b, llama3.1:8b)
+  name: "qwen3:8b"          # Ollama model tag (e.g. gemma3:12b, qwen2.5:14b, llama3.1:8b)
   temperature: 0.0             # 0.0 for deterministic output (recommended for classification)
   top_p: 1.0
   max_tokens: 2048             # max tokens for model response
