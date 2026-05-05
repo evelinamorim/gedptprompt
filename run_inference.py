@@ -248,9 +248,24 @@ def run_inference(cfg: dict, split: str, strategy: str) -> None:
         model_tag=model_tag, split=split, strategy=strategy
     )
     Path(pred_path).parent.mkdir(parents=True, exist_ok=True)
-
+    
+    # Resume from partial if it exists
+    partial_path = pred_path + ".partial"
     results: list[dict] = []
+    completed_ids: set[int] = set()
+
+    if Path(partial_path).exists():
+        print(f"Found partial predictions at: {partial_path}")
+        with open(partial_path, encoding="utf-8") as fh:
+            partial_data = json.load(fh)
+        results = partial_data["predictions"]
+        completed_ids = {r["sentence_id"] for r in results}
+        print(f"  Resuming from sentence {max(completed_ids) + 1} ({len(completed_ids)} already done)")
+
+    # Filter out already completed sentences
+    sentences = [s for s in sentences if s.id not in completed_ids]
     n = len(sentences)
+    print(f"  {n} sentences remaining.")
 
     for i, sent in enumerate(sentences, 1):
         if i % 50 == 0 or i == 1:
