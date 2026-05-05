@@ -9,21 +9,21 @@
 #   sbatch slurm_eval.sh --model gemma3:12b --strategy zero_shot  (use --time=08:00:00)
 # ============================================================
 
-#SBATCH --job-name=ged_slm_qwen3_8b
+#SBATCH --job-name=ged_slm_gemma4_e2b
 #SBATCH --account=f202500017aivlabdeucaliong
 #SBATCH --exclusive
 #SBATCH --gpus=1
 #SBATCH --partition=normal-a100-80
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --time=12:00:00
+#SBATCH --time=24:00:00
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=40G
-#SBATCH --output=logs/%x_%j_qwen3_8b.out
-#SBATCH --error=logs/%x_%j_qwen3_8b.err
+#SBATCH --output=logs/%x_%j_gemma4_e2b.out
+#SBATCH --error=logs/%x_%j_qwen3_e2b.err
 
 # ---- parse optional overrides from sbatch extra args ----
-MODEL="qwen3:8b"
+MODEL="gemma4:e2b"
 STRATEGY="zero_shot"
 SPLIT="test"
 CONFIG="config.yaml"
