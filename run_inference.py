@@ -101,18 +101,19 @@ def select_few_shot_examples(
     n: int,
     *,
     prefer_errors: bool = True,
+    max_span_length: int = 5,       # exclude pathologically long spans
+    max_sentence_length: int = 30,  # keep examples short and clear
 ) -> list[Sentence]:
-    """
-    Select n few-shot examples from training data.
-    By default tries to pick examples that contain at least one error span,
-    to help the model understand the error labeling task.
-    """
     if prefer_errors:
-        with_errors = [s for s in train_sentences if any(l != "O" for l in s.labels)]
+        with_errors = [
+            s for s in train_sentences
+            if any(l != "O" for l in s.labels)
+            and all(end - start <= max_span_length for start, end in s.error_spans())
+            and len(s) <= max_sentence_length
+        ]
         pool = with_errors if len(with_errors) >= n else train_sentences
     else:
         pool = train_sentences
-    # deterministic: pick every k-th sentence to spread across the file
     step = max(1, len(pool) // n)
     return [pool[i * step] for i in range(n)]
 
