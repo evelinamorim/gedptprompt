@@ -100,20 +100,38 @@ def select_few_shot_examples(
     train_sentences: list[Sentence],
     n: int,
     *,
-    prefer_errors: bool = True,
-    max_span_length: int = 5,       # exclude pathologically long spans
-    max_sentence_length: int = 30,  # keep examples short and clear
+    max_span_length: int = 5,
+    max_sentence_length: int = 30,
+    contrastive: bool = False,
 ) -> list[Sentence]:
-    if prefer_errors:
+    
+    if contrastive:
+        # One correct sentence, rest with errors
+        correct = [
+            s for s in train_sentences
+            if all(l == "O" for l in s.labels)
+            and len(s) <= max_sentence_length
+        ]
         with_errors = [
             s for s in train_sentences
             if any(l != "O" for l in s.labels)
             and all(end - start <= max_span_length for start, end in s.error_spans())
             and len(s) <= max_sentence_length
         ]
-        pool = with_errors if len(with_errors) >= n else train_sentences
-    else:
-        pool = train_sentences
+        # 1 correct + (n-1) with errors
+        correct_pick = [correct[len(correct) // 2]] if correct else []
+        step = max(1, len(with_errors) // (n - 1))
+        error_picks = [with_errors[i * step] for i in range(n - 1)]
+        return correct_pick + error_picks
+    
+    # original behavior
+    with_errors = [
+        s for s in train_sentences
+        if any(l != "O" for l in s.labels)
+        and all(end - start <= max_span_length for start, end in s.error_spans())
+        and len(s) <= max_sentence_length
+    ]
+    pool = with_errors if len(with_errors) >= n else train_sentences
     step = max(1, len(pool) // n)
     return [pool[i * step] for i in range(n)]
 

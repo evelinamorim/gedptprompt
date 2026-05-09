@@ -23,6 +23,7 @@ data:
 prompting:
   strategy: "zero_shot"          # zero_shot | few_shot
   num_few_shot_examples: 3       # number of examples to include when strategy=few_shot
+  contrastive: true
   few_shot_source: "data/train_bio.tsv"
   batch_size: 1                  # sentences per Ollama call (keep at 1 for reliability)
 
