@@ -229,7 +229,7 @@ VALID_LABELS = {"O", "B-WRONG", "I-WRONG"}
 def parse_has_error(response: str) -> bool:
     """Parse stage 1 response. Defaults to True on parse failure (conservative)."""
     response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
-    match = _LABELS_RE.search(response)
+    match = _HAS_ERROR_RE.search(response)
     if match:
         try:
             obj = json.loads(match.group())
