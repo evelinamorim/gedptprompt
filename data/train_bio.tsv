@@ -4656,11 +4656,11 @@ mulher	O
 foi	O
 a	O
 que	O
-condenou	O
+"condenou	O
 o	O
 mundo	O
 ao	O
-pecado	O
+pecado"	O
 comendo	O
 do	O
 fruto	O
@@ -6845,7 +6845,7 @@ iguais	O
 lutaram	O
 para	O
 ter	O
-voz	O
+"voz"	O
 ,	O
 para	O
 ter	O
@@ -11918,7 +11918,7 @@ estudos	O
 e	O
 encontraram	O
 a	O
-felicidade	O
+"felicidade"	O
 e	O
 tem	B-WRONG
 têm	O
@@ -12191,7 +12191,7 @@ acontecimento	O
 ,	O
 alguns	O
 animais	O
-resgatados	O
+"resgatados"	O
 foram	O
 encontrados	O
 abandonados	O
@@ -12594,7 +12594,7 @@ vota	O
 e	O
 elege	O
 um	O
-líder	O
+"líder"	O
 e	O
 este	O
 irá	O
@@ -12692,7 +12692,7 @@ resultados	O
 mas	O
 ameniza	O
 o	O
-peso	O
+"peso"	O
 na	O
 conciência	O
 de	O
@@ -18050,8 +18050,8 @@ Brasil	O
 apenas	O
 levantou	O
 do	O
-Berço	O
-esplendido	O
+"Berço	O
+esplendido"	O
 e	O
 foi	O
 para	O
@@ -18932,7 +18932,7 @@ nosso	O
 mestre	B-WRONG
 mestre	O
 :	O
-Pois	O
+"Pois	O
 todo	O
 aquele	O
 que	O
@@ -18956,7 +18956,7 @@ minha	O
 irmã	O
 e	O
 minha	O
-mãe	O
+mãe"	O
 ,	O
 ou	O
 seja	O
@@ -18978,14 +18978,14 @@ Seixas	O
 dizia	B-WRONG
 dizia	O
 ,	O
-ainda	O
+"ainda	O
 temos	O
 a	O
 velocidade	O
 da	O
 luz	O
 pra	O
-alcançar	B-WRONG
+alcançar"	B-WRONG
 ,	I-WRONG
 a	I-WRONG
 alcançar	O
@@ -21401,9 +21401,9 @@ fere	O
 o	O
 direito	O
 de	O
-ir	O
+"ir	O
 e	O
-vir	O
+vir"	O
 das	O
 mulheres	O
 ,	O
@@ -21831,7 +21831,7 @@ as	B-WRONG
 leis	O
 brasileiras	O
 os	O
-pequenos	O
+"pequenos"	O
 ,	O
 se	O
 sentem	O
@@ -25884,7 +25884,7 @@ querem	O
 acabar	O
 com	O
 a	O
-bagunça	O
+"bagunça"	O
 que	O
 eles	O
 proporcionam	O
@@ -26514,10 +26514,10 @@ uma	O
 jornalista	O
 iniciou	O
 no	O
-tumblr	O
+"tumblr"	O
 a	O
 campanha	O
-#eunãomereçoserestuprada	O
+"#eunãomereçoserestuprada"	O
 para	O
 mostrar	O
 o	O
@@ -28878,8 +28878,8 @@ uma	O
 adaptação	O
 da	O
 obra	O
-O	O
-Alienista	O
+"O	O
+Alienista"	O
 de	O
 Machado	O
 de	O
@@ -30488,8 +30488,8 @@ terrorismo	O
 ,	O
 conhecido	O
 como	O
-terrorismo	O
-individual	O
+"terrorismo	O
+individual"	O
 ,	O
 como	O
 o	O
@@ -30584,7 +30584,7 @@ caso	O
 se	O
 chamam	O
 :	O
-Indústrias	O
+"Indústrias"	O
 .	O
 
 Sentença Original N°985
@@ -31906,7 +31906,7 @@ quando	O
 desejamos	O
 que	O
 aquela	O
-agonia	O
+"agonia"	O
 acabe	O
 .	O
 
@@ -38067,7 +38067,7 @@ nesse	O
 evento	O
 mundial	O
 para	O
-impulsionar	B-WRONG
+"impulsionar"	B-WRONG
 impulsionar	O
 a	O
 economia	O
@@ -40475,9 +40475,9 @@ que	O
 foram	O
 popularizados	O
 como	O
-Coquetel	O
+"Coquetel	O
 da	O
-AIDS	O
+AIDS"	O
 .	O
 
 Sentença Original N°1319
@@ -41101,7 +41101,7 @@ são	O
 alguns	O
 dos	O
 grandes	O
-amigos	O
+"amigos"	O
 das	O
 crianças	O
 ,	O
@@ -43245,7 +43245,7 @@ foi	O
 as	O
 questões	O
 do	O
-Enem	O
+"Enem"	O
 Vazarão	O
 ,	O
 trazendo	O
@@ -43267,15 +43267,15 @@ pró	I-WRONG
 de	I-WRONG
 fazer	I-WRONG
 seria	O
-em	O
+"em	O
 prol	O
-de	O
+de"	O
 ,	O
 mas	O
 é	O
 melhor	O
-para	O
-fazer	O
+"para	O
+fazer"	O
 uma	O
 manifestação	O
 ,	O
@@ -45603,9 +45603,9 @@ meio	O
 das	O
 leis	O
 ,	O
-pôr	O
+"pôr	O
 na	O
-balança	O
+balança"	O
 e	O
 decidir	O
 até	O
@@ -46020,7 +46020,7 @@ situação	O
 Sentença Original N°1489
 Com	O
 o	O
-fim	O
+"fim"	O
 da	O
 escravidão	O
 ,	O
@@ -47395,7 +47395,7 @@ uma	O
 nova	O
 e	O
 hipotética	O
-oportunidade	O
+"oportunidade"	O
 para	O
 o	O
 nosso	O
@@ -48644,7 +48644,7 @@ Sentença Original N°1569
 A	O
 ausência	O
 de	O
-limites	O
+"limites"	O
 ,	O
 ou	O
 medidas	O
@@ -48839,10 +48839,10 @@ jus	O
 ao	O
 jordão	B-WRONG
 bordão	O
-	O
+"	O
 Futuros	O
 da	O
-Nação	O
+Nação"	O
 ,	O
 onde	O
 acontecem	O
@@ -59108,9 +59108,9 @@ mais	O
 o	O
 ser	O
 inferior	O
-do	O
+"do	O
 sexo	O
-frágil	O
+frágil"	O
 .	O
 
 Sentença Original N°1904
@@ -63325,7 +63325,7 @@ Sentença Original N°2039
 Segundo	O
 Lavoisier	O
 ,	O
-na	O
+"na	O
 natureza	O
 nada	O
 se	O
@@ -63337,7 +63337,7 @@ perde	O
 ,	O
 tudo	O
 se	O
-transforma	B-WRONG
+transforma"	B-WRONG
 ,	I-WRONG
 na	I-WRONG
 teoria	I-WRONG
@@ -65074,10 +65074,10 @@ o	O
 mais	O
 importante	O
 é	O
-ter	O
+"ter"	O
 do	O
 que	O
-ser	O
+"ser"	O
 .	O
 
 Sentença Original N°2098
@@ -66523,7 +66523,7 @@ eleições	O
 não	O
 virem	O
 um	O
-tabu	O
+"tabu"	O
 ,	O
 deveriam	O
 ser	O
@@ -67425,9 +67425,9 @@ perfeitos	O
 ,	O
 aos	O
 famosos	O
-sonhos	O
+"sonhos	O
 de	O
-consumo	O
+consumo"	O
 ,	O
 mostrando	O
 algo	O
@@ -68961,7 +68961,7 @@ realidade	O
 dele	B-WRONG
 deles	O
 ?	O
-	O
+"	O
 Posso	O
 garantir	O
 que	O
@@ -69324,7 +69324,7 @@ década	O
 de	O
 1980	O
 a	O
-AIDS	O
+"AIDS"	O
 espantou	O
 o	O
 mundo	O
@@ -71412,7 +71412,7 @@ Os	O
 black	O
 blocks	B-WRONG
 "	I-WRONG
-blocs	O
+blocs"	O
 -	O
 os	O
 penetras	O
@@ -79144,7 +79144,7 @@ ocorrido	O
 logo	O
 após	O
 o	O
-salvamento	O
+"salvamento"	O
 dos	O
 cãezinhos	O
 .	O
@@ -85457,9 +85457,9 @@ com	O
 o	O
 ideal	O
 de	O
-liberdade	O
+"liberdade	O
 de	O
-pensamento	O
+pensamento"	O
 adotado	O
 pelas	O
 Nações	O
@@ -87606,8 +87606,8 @@ próprio	O
 para	O
 priorizar	O
 o	O
-bem	O
-comum	O
+"bem	O
+comum"	O
 das	O
 máximas	O
 aristotélicas	O
@@ -90088,11 +90088,11 @@ alunos	O
 aderem-se	B-WRONG
 aderem	O
 a	O
-gangues	O
+"gangues"	O
 para	O
-tocar	O
+"tocar	O
 o	O
-terror	O
+terror"	O
 ,	O
 usam	O
 isso	O
@@ -94397,7 +94397,7 @@ e	O
 não	O
 ausência	O
 do	O
-medo	O
+medo"	O
 ,	O
 essa	O
 frase	O
@@ -100719,7 +100719,7 @@ Em	O
 um	O
 passeio	O
 pelo	O
-Youtube	O
+"Youtube"	O
 podemos	O
 encontrar	O
 vídeos	O
@@ -103181,11 +103181,11 @@ seguinte	O
 legenda	B-WRONG
 legenda	O
 :	O
-parcelamos	O
+"parcelamos	O
 em	O
 até	O
 dez	O
-vezes	O
+vezes"	O
 ?	O
 
 Sentença Original N°3333
@@ -106081,7 +106081,7 @@ de	O
 pessoas	O
 tem	O
 o	O
-poder	O
+"poder"	O
 para	O
 lutar	O
 e	O
@@ -106444,9 +106444,9 @@ já	O
 preferiram	O
 enfrentar	O
 esse	O
-fim	O
+"fim	O
 do	O
-mundo	O
+mundo"	O
 como	O
 uma	O
 mensagem	O
@@ -107619,12 +107619,12 @@ que	O
 ainda	O
 acreditam	O
 que	O
-lugar	O
+"lugar	O
 de	O
 mulher	O
 é	O
 no	O
-fogão	O
+fogão"	O
 e	O
 por	O
 isso	O
@@ -109550,8 +109550,8 @@ mínimo	O
 ,	O
 a	O
 sociedade	O
-um	O
-pouco	O
+"um	O
+pouco"	O
 machista	O
 .	O
 
@@ -112296,8 +112296,8 @@ clássico	O
 O	I-WRONG
 Alienista	I-WRONG
 "	I-WRONG
-O	O
-Alienista	O
+"O	O
+Alienista"	O
 ,	O
 em	O
 uma	O
@@ -115874,7 +115874,7 @@ auxílio	O
 Sentença Original N°3743
 A	O
 questão	O
-saúde	O
+"saúde"	O
 no	O
 Brasil	O
 ainda	O
@@ -117465,7 +117465,7 @@ e	O
 Circo	B-WRONG
 "	I-WRONG
 onde	I-WRONG
-Circo	O
+Circo"	O
 ,	O
 por	O
 meio	O
@@ -124856,7 +124856,7 @@ ter	O
 Sentença Original N°4037
 Portanto	O
 é	O
-bonito	O
+"bonito"	O
 manifestar	O
 ,	O
 mas	O
@@ -129877,8 +129877,8 @@ de	O
 Chico	O
 Buarque	O
 ,	O
-Meu	O
-guri	O
+"Meu	O
+guri"	O
 a	O
 visão	O
 familiar	O
@@ -136637,7 +136637,7 @@ claro	O
 quando	O
 afirma	O
 :	O
-Não	O
+"Não	O
 se	O
 decide	O
 sobre	O
@@ -136649,7 +136649,7 @@ fundamentais	O
 consultando	O
 a	O
 opinião	O
-pública	O
+pública"	O
 .	O
 
 Sentença Original N°4433
@@ -137462,7 +137462,7 @@ sociedade	O
 se	O
 diferencia	O
 pelo	O
-status	O
+"status"	O
 social	O
 .	O
 
@@ -137662,10 +137662,10 @@ do	O
 tempo	O
 o	O
 chamado	O
-	O
+"	O
 Sexo	B-WRONG
 sexo	O
-frágil	O
+frágil"	O
 entrou	O
 em	O
 universidades	O
@@ -140322,7 +140322,7 @@ isso	O
 vem	O
 agregando	O
 vários	O
-danos	O
+"danos"	O
 à	O
 família	O
 tradicional	O
@@ -142726,12 +142726,12 @@ o	O
 ex-jogador	O
 Ronaldo	O
 :	O
-Não	O
+"Não	O
 se	O
 faz	O
 Copa	O
 sem	O
-estádios	O
+estádios"	O
 .	O
 
 Sentença Original N°4626
@@ -146056,21 +146056,21 @@ são	O
 as	O
 seguintes	O
 :	O
-O	O
+"O	O
 livro	O
 perde	O
 a	O
 identidade	O
 ao	O
 ser	O
-simplificado	O
+simplificado"	O
 e	O
-A	O
+"A	O
 estória	O
 tornou-se	O
 acessível	O
 aos	O
-jovens	O
+jovens"	O
 .	O
 
 Sentença Original N°4740
@@ -146985,9 +146985,9 @@ o	O
 estado	O
 criasse	O
 uma	O
-clínica	O
+"clínica	O
 de	O
-reabilitação	O
+reabilitação"	O
 na	O
 qual	O
 os	O
@@ -147480,7 +147480,7 @@ recorrentes	O
 mesmo	O
 num	O
 mundo	O
-civilizado	O
+"civilizado"	O
 ?	O
 
 Sentença Original N°4791
@@ -150028,7 +150028,7 @@ ato	O
 da	O
 violência	O
 ,	O
-o	O
+"o	O
 comportamento	O
 da	O
 vítima	O
@@ -150039,7 +150039,7 @@ apontado	O
 como	O
 motivo	O
 da	O
-violência	O
+violência"	O
 .	O
 
 Sentença Original N°4870
@@ -154125,8 +154125,8 @@ fazem	O
 Sentença Original N°5001
 O	O
 chamado	O
-MMA	O
-moderno	O
+"MMA	O
+moderno"	O
 possui	O
 um	O
 índice	O
@@ -157179,7 +157179,7 @@ diálogos	O
 foi	O
 algo	O
 que	O
-borrou	O
+"borrou"	O
 o	O
 movimento	O
 .	O
@@ -160914,14 +160914,14 @@ incondicional	O
 .	O
 
 Sentença Original N°5220
-Quem	O
+"Quem	O
 nunca	O
 errou	O
 ,	O
 nunca	O
 experimentou	O
 algo	O
-novo	O
+novo"	O
 ,	O
 Albert	O
 Einstein	O
@@ -162983,8 +162983,8 @@ a	O
 ser	O
 encaradas	O
 como	O
-verdades	O
-absolutas	O
+"verdades	O
+absolutas"	O
 por	O
 fãs	O
 e	O
@@ -165747,8 +165747,8 @@ atribuindo	B-WRONG
 atribuído	O
 a	O
 uma	O
-sociedade	O
-alternativa	O
+"sociedade	O
+alternativa"	O
 ,	O
 instável	O
 ,	O
@@ -169840,7 +169840,7 @@ que	O
 foi	O
 abandonada	O
 pelos	O
-tradicionais	O
+"tradicionais"	O
 e	O
 nada	O
 justifica	O
@@ -176428,7 +176428,7 @@ se	O
 adequam	O
 ao	O
 novo	O
-layout	O
+"layout"	O
 que	O
 o	O
 mundo	O
@@ -177555,7 +177555,7 @@ serve	O
 .	O
 
 Sentença Original N°5781
-O	O
+"O	O
 que	O
 me	O
 preocupa	O
@@ -177572,7 +177572,7 @@ silêncio	O
 dos	O
 bons	O
 .	O
-	O
+"	O
 ,	O
 Martin	O
 Luther	O
@@ -180316,9 +180316,9 @@ sim	O
 acabar	O
 com	O
 essa	O
-cultura	O
+"cultura	O
 do	O
-estupro	O
+estupro"	O
 ,	O
 por	O
 causa	O
@@ -181191,7 +181191,7 @@ exceções	O
 ,	O
 pois	O
 a	O
-sorte	O
+"sorte"	O
 não	O
 está	O
 com	O
@@ -182204,7 +182204,7 @@ geral	O
 Sentença Original N°5936
 O	O
 termo	O
-Estado	O
+"Estado"	O
 se	O
 refere	O
 superficialmente	O
@@ -182446,7 +182446,7 @@ heróis	O
 sem	O
 caráter	B-WRONG
 "	I-WRONG
-caráter	O
+caráter"	O
 ,	O
 segundo	O
 Mário	O
@@ -184237,7 +184237,7 @@ invadir	O
 vidas	O
 de	O
 pessoas	O
-poderosas	O
+"poderosas"	O
 .	O
 
 Sentença Original N°6003
@@ -185825,7 +185825,7 @@ quer	O
 tratar	O
 mais	O
 como	O
-crianças	O
+"crianças"	O
 esses	O
 menores	O
 infratores	O
@@ -187490,7 +187490,7 @@ para	O
 não	O
 ouvirem	O
 as	O
-baboseiras	O
+"baboseiras"	O
 dos	O
 candidatos	O
 .	O
@@ -187708,7 +187708,7 @@ Crime	O
 algum	O
 deve	O
 ser	O
-exceção	O
+"exceção"	O
 em	O
 nossa	O
 sociedade	O
@@ -191271,7 +191271,7 @@ fatal	O
 .	O
 
 Sentença Original N°6235
-Ironicamente	O
+"Ironicamente"	O
 eles	O
 não	O
 tiveram	O
@@ -195563,7 +195563,7 @@ escritor	O
 Graça	O
 Aranha	O
 :	O
-a	O
+"a	O
 marcha	O
 da	O
 ciência	O
@@ -195578,7 +195578,7 @@ deserto	O
 o	O
 horizonte	O
 sempre	O
-foge	O
+foge"	O
 .	O
 
 Sentença Original N°6379
@@ -197807,7 +197807,7 @@ ignorância	O
 
 Sentença Original N°6456
 Virou	O
-clichê	O
+"clichê"	O
 culpar	O
 os	O
 governantes	O
@@ -198335,7 +198335,7 @@ vezes	O
 ,	O
 bancam	O
 os	O
-espertos	O
+"espertos"	O
 para	O
 comprar	O
 bebida	O
@@ -199619,13 +199619,13 @@ mudanças	O
 de	O
 hábito	O
 como	O
-vá	O
+"vá	O
 de	O
 bicicleta	O
 ao	O
 invés	O
 de	O
-carro	O
+carro"	O
 .	O
 
 Sentença Original N°6517
@@ -202060,7 +202060,7 @@ tem	B-WRONG
 têm-	O
 se	O
 visto	O
-predestinadas	O
+"predestinadas"	O
 a	O
 serem	O
 reprimidas	O
@@ -203881,8 +203881,8 @@ constante	O
 
 Sentença Original N°6656
 Os	O
-não	O
-tradicionais	O
+"não	O
+tradicionais"	O
 são	O
 vistos	O
 na	B-WRONG
@@ -205615,10 +205615,10 @@ ameaçados	O
 .	O
 
 Sentença Original N°6708
-Macumbeiro	O
+"Macumbeiro	O
 vai	O
 pro	O
-inferno	O
+inferno"	O
 .	O
 
 Sentença Original N°6709
@@ -207662,9 +207662,9 @@ medieval	O
 que	O
 envolve	O
 a	O
-cultura	O
+"cultura	O
 do	O
-estupro	O
+estupro"	O
 ,	O
 educação	O
 sexual	O
@@ -209662,8 +209662,8 @@ até	O
 o	O
 jovem	O
 de	O
-boa	O
-classe	O
+"boa	O
+classe"	O
 que	O
 usa	O
 este	B-WRONG
@@ -211178,7 +211178,7 @@ tradicional	B-WRONG
 "	I-WRONG
 ,	I-WRONG
 se	I-WRONG
-tradicional	O
+tradicional"	O
 se	O
 baseia	O
 em	O
@@ -211857,9 +211857,9 @@ ao	O
 homem	O
 e	O
 o	O
-sexo	O
+"sexo	O
 mais	O
-frágil	O
+frágil"	O
 .	O
 
 Sentença Original N°6915
@@ -213752,7 +213752,7 @@ a	O
 seguinte	O
 pergunta	O
 :	O
-O	O
+"O	O
 que	O
 você	O
 quer	O
@@ -213760,7 +213760,7 @@ ser	O
 quando	O
 crescer	O
 ?	O
-	O
+"	O
 e	O
 consequentemente	O
 ganhará	B-WRONG
@@ -213769,19 +213769,19 @@ uma	O
 resposta	O
 como	O
 :	O
-	O
+"	O
 Ainda	O
 não	O
 sei	O
 !	O
-	O
+"	O
 ou	O
 ainda	O
-Estou	O
+"Estou	O
 em	O
 dúvidas	O
 !	O
-	O
+"	O
 .	O
 
 Sentença Original N°6978
@@ -215740,7 +215740,7 @@ de	O
 convivência	O
 ,	O
 tendo	O
-supervisores	O
+"supervisores"	O
 ,	O
 nomeados	O
 policiais	O
@@ -220087,7 +220087,7 @@ está	O
 a	O
 dos	O
 chamados	O
-ecocapitalistas	O
+"ecocapitalistas"	O
 ,	O
 que	O
 ponderam	O
@@ -224721,8 +224721,8 @@ razão	O
 de	O
 se	O
 chegar	O
-aos	O
-finalmentes	O
+"aos	O
+finalmentes"	O
 sem	O
 passar	O
 por	O
@@ -225712,12 +225712,12 @@ obra	O
 de	O
 Nelson	O
 Rodrigues	O
-	O
+"	O
 Bonitinha	B-WRONG
 Bonitinha	O
 ,	O
 mas	O
-ordinária	O
+ordinária"	O
 ,	O
 e	O
 não	O
@@ -229125,12 +229125,12 @@ velha	O
 idéia	O
 de	O
 que	O
-lugar	O
+"lugar	O
 de	O
 mulher	O
 é	O
 no	O
-fogão	O
+fogão"	O
 .	O
 
 Sentença Original N°7486
@@ -229885,9 +229885,9 @@ polêmica	O
 um	O
 aplicativo	O
 chamado	O
-LULU	B-WRONG
+"LULU"	B-WRONG
 onde	I-WRONG
-Lulu	O
+"Lulu"	O
 ,	O
 no	O
 qual	O
@@ -230745,11 +230745,11 @@ dizia	O
 Nicolau	O
 Maquiavel	O
 ,	O
-Os	O
+"Os	O
 fins	O
 justificam	O
 os	O
-meios	O
+meios"	O
 ,	O
 e	O
 nesse	O
@@ -232133,7 +232133,7 @@ e	O
 os	O
 empurrões	O
 ;	O
-brincadeiras	O
+"brincadeiras"	O
 de	O
 mal	B-WRONG
 mau	O
@@ -233595,9 +233595,9 @@ sem	O
 dúvida	O
 ,	O
 uma	O
-pedra	O
+"pedra	O
 no	O
-sapato	O
+sapato"	O
 de	O
 diversas	O
 personalidades	O
@@ -239656,8 +239656,8 @@ prática	O
 de	O
 escolher	O
 o	O
-menos	O
-pior	O
+"menos	O
+pior"	O
 .	O
 
 Sentença Original N°7844
@@ -240788,7 +240788,7 @@ simplificadores	I-WRONG
 "	I-WRONG
 ,	I-WRONG
 é	I-WRONG
-simplificadores	O
+"simplificadores"	O
 é	O
 justamente	O
 fazer	O
@@ -241393,9 +241393,9 @@ também	O
 um	O
 ato	O
 de	O
-amor	B-WRONG
+"amor	B-WRONG
 ao	I-WRONG
-próximo	I-WRONG
+próximo"	I-WRONG
 ,	I-WRONG
 surgiria	I-WRONG
 amor	O
@@ -244582,7 +244582,7 @@ Isso	O
 pois	O
 o	O
 bem-estar	O
-aparente	O
+"aparente"	O
 é	O
 mais	O
 priorizado	O
@@ -244912,8 +244912,8 @@ melhores	O
 evitando	O
 partir	O
 para	O
-os	O
-finalmentes	O
+"os	O
+finalmentes"	O
 e	O
 tendo	O
 atitudes	O
@@ -246854,8 +246854,8 @@ mais	O
 ,	O
 com	O
 os	O
-eventos	O
-testes	O
+"eventos	O
+testes"	O
 desse	O
 ano	O
 (	O
@@ -248475,7 +248475,7 @@ Sentença Original N°8142
 Os	O
 comentários	O
 na	O
-fanpage	O
+"fanpage"	O
 da	O
 campanha	O
 chegam	O
@@ -249693,7 +249693,7 @@ a	O
 tênue	O
 da	O
 política	O
-meia-entrada	O
+"meia-entrada"	O
 nos	O
 leva	O
 crer	O
@@ -251622,9 +251622,9 @@ o	O
 eleitor	O
 ,	O
 a	O
-festa	O
+"festa	O
 da	O
-democracia	O
+democracia"	O
 exige	O
 propaganda	O
 ,	O
@@ -254573,8 +254573,8 @@ Pois	O
 apesar	O
 de	O
 serem	O
-pessoas	O
-públicas	O
+"pessoas	O
+públicas"	O
 (	O
 como	O
 são	O
@@ -255155,7 +255155,7 @@ o	O
 Brasil	O
 está	O
 perdendo	O
-clientes	O
+"clientes"	O
 .	O
 
 Sentença Original N°8374
@@ -255944,8 +255944,8 @@ a	O
 automedicação	O
 é	O
 considerada	O
-automedicação	O
-responsável	O
+"automedicação	O
+responsável"	O
 ;	O
 e	O
 automedicação	O
@@ -258994,7 +258994,7 @@ lhes	O
 aplicarão	O
 o	O
 conhecido	O
-trote	B-WRONG
+"trote"	B-WRONG
 trote	O
 ,	O
 considerado	O
@@ -263342,7 +263342,7 @@ não	O
 aguentam	O
 mais	O
 ,	O
-explodem	O
+"explodem"	O
 .	O
 
 Sentença Original N°8646
@@ -265220,7 +265220,7 @@ eficientes	O
 no	O
 combate	O
 a	O
-pequenos	O
+"pequenos"	O
 traficantes	O
 e	O
 dependentes	O
@@ -267765,7 +267765,7 @@ posto	O
 como	O
 uma	O
 mera	O
-barata	O
+"barata"	O
 diante	O
 da	O
 massacrante	O
@@ -267790,16 +267790,16 @@ leva	O
 os	O
 detentores	O
 do	O
-poder	O
+"poder"	O
 a	O
 subestimar	O
 e	O
-esmagar	O
+"esmagar"	O
 as	O
-baratas	O
+"baratas"	O
 aos	O
 seus	O
-padrões	O
+"padrões"	O
 .	O
 
 Sentença Original N°8787
@@ -268335,8 +268335,8 @@ ou	O
 mesmo	O
 um	O
 celular	O
-da	O
-hora	O
+"da	O
+hora"	O
 .	O
 
 Sentença Original N°8805
@@ -268538,9 +268538,9 @@ pessoas	O
 .	O
 
 Sentença Original N°8812
-Afastados	O
+"Afastados	O
 entre	O
-si	O
+si"	O
 nossos	O
 adolescentes	O
 não	O
@@ -269074,11 +269074,11 @@ deixaram	O
 de	O
 ser	O
 apenas	O
-rainha	B-WRONG
+"rainha	B-WRONG
 as	O
-rainhas	O
+"rainhas"	O
 do	O
-lar	O
+lar"	O
 e	O
 hoje	B-WRONG
 ocupam	O
@@ -275112,10 +275112,10 @@ qualificação	O
 já	O
 diz	O
 tudo	O
-personagens	O
+"personagens	O
 da	O
 vida	O
-pública	O
+pública"	O
 ;	O
 estas	O
 personalidades	O
@@ -279626,8 +279626,8 @@ só	O
 aprenderam	B-WRONG
 aprenderão	O
 tocando	O
-no	O
-bolso	O
+"no	O
+bolso"	O
 .	O
 
 Sentença Original N°9162
@@ -284657,13 +284657,13 @@ visto	O
 que	O
 na	O
 legislação	O
-o	O
+"o	O
 que	O
 não	O
 é	O
 permitido	O
 é	O
-proibido	O
+proibido"	O
 .	O
 
 Sentença Original N°9341
@@ -284985,7 +284985,7 @@ anos	O
 ,	O
 ao	O
 escolher	O
-Iracema	O
+"Iracema"	O
 para	O
 lê-lo	B-WRONG
 lê-lo	O
@@ -285753,8 +285753,8 @@ um	O
 jornal	O
 satírico	O
 chamado	O
-Charlie	O
-Hebdo	O
+"Charlie	O
+Hebdo"	O
 foi	O
 atacada	O
 por	O
@@ -286186,8 +286186,8 @@ de	O
 ter	O
 escolhido	O
 um	O
-defensor	O
-popular	O
+"defensor	O
+popular"	O
 ,	O
 que	O
 mais	O
@@ -286502,7 +286502,7 @@ sociedade	O
 e	O
 sim	O
 para	O
-vender-se	O
+"vender-se"	O
 para	O
 os	O
 traficantes	B-WRONG
@@ -290136,7 +290136,7 @@ aética	O
 de	O
 dizer	O
 :	O
-sua	O
+"sua	O
 história	O
 é	O
 boa	O
@@ -290145,7 +290145,7 @@ mas	O
 você	O
 não	O
 soube	O
-escrevê-la	O
+escrevê-la"	O
 .	O
 
 Sentença Original N°9511
@@ -296440,7 +296440,7 @@ atrasada	O
 ,	O
 a	O
 sociedade	O
-acordou	O
+"acordou"	O
 .	O
 
 Sentença Original N°9721
@@ -299087,8 +299087,8 @@ com	O
 as	O
 informações	O
 dessas	O
-bombas	O
-calóricas	O
+"bombas	O
+calóricas"	O
 .	O
 
 Sentença Original N°9808
@@ -305660,7 +305660,7 @@ resta	O
 um	O
 dito	O
 popular	O
-o	O
+"o	O
 pior	O
 cego	O
 é	O
@@ -305670,7 +305670,7 @@ enxerga	O
 e	O
 não	O
 quer	O
-ver	O
+ver"	O
 .	O
 
 Sentença Original N°10008
@@ -306066,7 +306066,7 @@ se	O
 misturar	O
 com	O
 pessoas	O
-inferiores	O
+"inferiores"	O
 ,	O
 dessa	O
 forma	B-WRONG
@@ -306870,7 +306870,7 @@ usadas	O
 como	O
 sinônimos	O
 de	O
-status	O
+"status"	O
 e	O
 ,	O
 até	O
@@ -309264,7 +309264,7 @@ o	O
 que	O
 é	O
 realmente	O
-certo	O
+"certo"	O
 .	O
 
 Sentença Original N°10124
@@ -311193,7 +311193,7 @@ vida	O
 como	O
 se	O
 viver	O
-plenamente	O
+"plenamente"	O
 em	O
 sociedade	O
 )	O
@@ -311686,8 +311686,8 @@ as	O
 ideias	O
 para	O
 um	O
-bom	O
-candidato	O
+"bom	O
+candidato"	O
 ,	O
 é	O
 preciso	O
@@ -312907,8 +312907,8 @@ livro	O
 ,	O
 O	B-WRONG
 Sertão	I-WRONG
-Os	O
-sertões	O
+"Os	O
+sertões"	O
 ,	O
 Euclides	O
 da	O
@@ -314867,9 +314867,9 @@ que	O
 presenciamos	O
 ,	O
 a	O
-educação	O
+"educação	O
 de	O
-cotas	O
+cotas"	O
 ,	O
 pois	O
 a	O
@@ -317503,8 +317503,8 @@ em	O
 2014	O
 a	O
 obra	O
-O	O
-Alienista	O
+"O	O
+Alienista"	O
 ,	O
 de	O
 Machado	O
@@ -322087,7 +322087,7 @@ outros	O
 jovens	O
 seduzidos	O
 pelas	O
-facilidades	O
+"facilidades"	O
 em	O
 ganhar	O
 dinheiro	O
@@ -323699,8 +323699,8 @@ comunicação	O
 
 Sentença Original N°10622
 Queremos	O
-FOME	O
-ZERO	O
+"FOME	O
+ZERO"	O
 !	O
 
 Sentença Original N°10623
@@ -325660,10 +325660,10 @@ fechados	O
 
 Sentença Original N°10701
 A	O
-permissão	O
+"permissão"	O
 ou	O
 o	O
-convite	O
+"convite"	O
 para	O
 o	O
 homem	O
@@ -326037,9 +326037,9 @@ assim	O
 o	O
 sinal	O
 de	O
-basta	O
+"basta	O
 de	O
-corrupção	O
+corrupção"	O
 será	O
 lançado	O
 .	O
@@ -329075,7 +329075,7 @@ partido	O
 do	O
 grupo	O
 do	O
-sim	O
+"sim"	O
 ,	O
 estamos	O
 simplesmente	O
@@ -334045,7 +334045,7 @@ político	O
 é	O
 igual	O
 !	O
-	O
+"	O
 ,	O
 "	O
 Interromperam	O
@@ -334951,7 +334951,7 @@ ideia	O
 errada	O
 sobre	O
 o	O
-uso	O
+"uso"	O
 dos	O
 animais	O
 de	O
@@ -336000,9 +336000,9 @@ pessoas	O
 ,	O
 afinal	O
 ,	O
-Gentileza	O
+"Gentileza	O
 Gera	O
-Gentileza	O
+Gentileza"	O
 como	O
 dizia	O
 o	O
@@ -336381,7 +336381,7 @@ Poucos	O
 são	O
 os	O
 países	O
-independentes	O
+"independentes"	O
 economicamente	O
 ,	O
 com	O
@@ -336424,7 +336424,7 @@ dizia	O
 Edmund	O
 Burke	O
 ,	O
-a	O
+"a	O
 sociedade	O
 é	O
 ,	O
@@ -336432,7 +336432,7 @@ de	O
 fato	O
 ,	O
 um	O
-contrato	O
+contrato"	O
 .	O
 
 Sentença Original N°11054
@@ -337064,9 +337064,9 @@ a	O
 implementação	O
 da	O
 disciplina	O
-Cidadania	O
+"Cidadania	O
 no	O
-trânsito	O
+trânsito"	O
 	O
 para	O
 gerar	O
@@ -337634,7 +337634,7 @@ para	O
 de	O
 certa	O
 forma	O
-acabarmos	O
+"acabarmos"	O
 com	O
 ele	O
 .	O
@@ -338592,7 +338592,7 @@ eletrônicos	O
 e	O
 em	O
 seus	O
-status	O
+"status"	O
 nas	O
 redes	O
 sociais	O
@@ -346369,7 +346369,7 @@ artigo	O
 ,	O
 diz	O
 que	O
-a	O
+"a	O
 divulgação	O
 de	O
 escritos	O
@@ -346397,7 +346397,7 @@ poderão	O
 ser	O
 proibida	B-WRONG
 proibidas	O
-	O
+"	O
 .	O
 
 Sentença Original N°11370
@@ -348776,7 +348776,7 @@ comum	O
 ocorrer	O
 formações	B-WRONG
 de	I-WRONG
-gangues	I-WRONG
+"gangues"	I-WRONG
 formação	O
 de	O
 gangues	O
@@ -351219,9 +351219,9 @@ reflexões	O
 a	O
 respeito	O
 do	O
-legado	B-WRONG
+"legado	B-WRONG
 da	I-WRONG
-copa	I-WRONG
+copa"	I-WRONG
 do	O
 legado	O
 que	O
@@ -352339,7 +352339,7 @@ Quando	O
 se	O
 pergunta	O
 :	O
-Deve-se	O
+"Deve-se	O
 reduzir	O
 a	O
 maioridade	O
@@ -352347,7 +352347,7 @@ penal	O
 no	O
 Brasil	O
 ?	O
-	O
+"	O
 ,	O
 muitos	O
 são	O
@@ -352384,7 +352384,7 @@ as	O
 autoras	O
 do	O
 dito	O
-sim	O
+"sim"	O
 .	O
 
 Sentença Original N°11564
@@ -354027,7 +354027,7 @@ por	O
 muitas	O
 vezes	O
 viram	O
-leoas	O
+"leoas"	O
 para	O
 defender	O
 a	O
@@ -357699,7 +357699,7 @@ Vento	B-WRONG
 "	I-WRONG
 de	I-WRONG
 Veríssimo	I-WRONG
-Vento	O
+Vento"	O
 ,	O
 de	O
 Érico	O
@@ -362184,13 +362184,13 @@ fatalidades	O
 .	O
 
 Sentença Original N°11880
-A	O
+"A	O
 tolerância	O
 é	O
 a	O
 melhor	O
 das	O
-religiões	O
+religiões"	O
 .	O
 
 Sentença Original N°11881
@@ -363265,7 +363265,7 @@ profissional	O
 necessário	O
 ter	O
 uma	O
-bagagem	O
+"bagagem"	O
 de	O
 estudos	O
 ,	O
@@ -365338,10 +365338,10 @@ tecnológicos	O
 .	O
 
 Sentença Original N°11993
-O	O
+"O	O
 culto	O
 ao	O
-belo	O
+belo"	O
 não	O
 é	O
 uma	O
@@ -367628,10 +367628,10 @@ os	O
 seguintes	O
 dizeres	O
 :	O
-caloura	O
+"caloura	O
 Chica	O
 da	O
-Silva	O
+Silva"	O
 ;	O
 um	O
 gesto	O
@@ -368707,9 +368707,9 @@ vem	O
 sendo	O
 ameaçada	O
 pela	O
-ditadura	O
+"ditadura	O
 da	O
-beleza	O
+beleza"	O
 ,	O
 onde	B-WRONG
 em	O
@@ -371013,7 +371013,7 @@ se	O
 achar	O
 que	O
 uma	O
-raça	O
+"raça"	O
 é	O
 superior	O
 à	O
@@ -373208,8 +373208,8 @@ que	O
 o	O
 marido	O
 é	O
-a	O
-dona-do-lar	O
+"a	O
+dona-do-lar"	O
 e	O
 a	O
 esposa	O
@@ -374167,8 +374167,8 @@ além	O
 de	O
 proporcionarem	O
 o	O
-padrão	O
-FIFA	O
+"padrão	O
+FIFA"	O
 para	O
 a	O
 copa	B-WRONG
@@ -378712,9 +378712,9 @@ proposta	O
 de	O
 lei	O
 intitulada	O
-Estatuto	O
+"Estatuto	O
 da	O
-Família	O
+Família"	O
 ,	O
 segundo	O
 a	O
@@ -379209,7 +379209,7 @@ que	O
 o	O
 salário	O
 mínimo	O
-determina	O
+"determina"	O
 que	O
 exista	O
 um	O
@@ -383562,12 +383562,12 @@ objetiva	O
 Sentença Original N°12577
 Termos	O
 como	O
-desenvolvimento	O
-sustentável	O
+"desenvolvimento	O
+sustentável"	O
 ou	O
-ser	O
+"ser	O
 ecologicamente	O
-correto	O
+correto"	O
 tem	B-WRONG
 sido	I-WRONG
 usado	I-WRONG
@@ -387983,9 +387983,9 @@ em	O
 uma	O
 ação	O
 conjunta	O
-Sociedade	O
+"Sociedade	O
 e	O
-Governantes	O
+Governantes"	O
 unidos	O
 pelo	O
 mesmo	O
@@ -388790,7 +388790,7 @@ disso	O
 ,	O
 é	O
 o	O
-rolezinho	O
+"rolezinho"	O
 ,	O
 movimento	O
 em	O
@@ -390836,7 +390836,7 @@ exagero	O
 
 Sentença Original N°12810
 E	O
-especial	O
+"especial"	O
 é	O
 uma	O
 característica	O
@@ -391603,9 +391603,9 @@ maiores	O
 armas	O
 contra	O
 a	O
-ditadura	O
+"ditadura	O
 da	O
-beleza	O
+beleza"	O
 ,	O
 que	O
 domina	O
@@ -397780,9 +397780,9 @@ criou	O
 um	B-WRONG
 o	O
 personagem	O
-Zé	O
+"Zé	O
 do	O
-muro	O
+muro"	O
 ,	O
 e	B-WRONG
 conseguindo	I-WRONG
@@ -403386,7 +403386,7 @@ pacientes	O
 ganham	O
 o	O
 adjetivo	O
-terminais	O
+"terminais"	O
 em	O
 seus	O
 laudos	O
@@ -404927,11 +404927,11 @@ escolha	O
 ,	O
 mas	O
 lembre-se	O
-cada	O
+"cada	O
 ação	O
 gera	O
 um	O
-reação	O
+reação"	O
 ,	O
 pode	O
 ser	O
@@ -406908,7 +406908,7 @@ Sentença Original N°13358
 Segundo	O
 o	O
 site	O
-Terra	O
+"Terra"	O
 ,	O
 em	O
 2011	O
@@ -407519,8 +407519,8 @@ Retomando	O
 o	O
 caso	O
 do	O
-rolezinho	B-WRONG
-rolezinho	O
+"rolezinho"	B-WRONG
+"rolezinho"	O
 ,	O
 pessoas	B-WRONG
 assim	I-WRONG
@@ -409643,7 +409643,7 @@ em	B-WRONG
 quanto	I-WRONG
 equanto	O
 a	O
-burguesia	O
+"burguesia"	O
 ,	O
 por	O
 assim	O
@@ -413569,7 +413569,7 @@ só	O
 nos	O
 fortalece	O
 os	O
-negrinhos	O
+"negrinhos"	O
 ,	O
 como	O
 vocês	O
@@ -414196,7 +414196,7 @@ dinheiro	B-WRONG
 ,	I-WRONG
 dinheiro	O
 :	O
-Imagine	O
+"Imagine	O
 se	O
 seus	O
 pais	O
@@ -414221,10 +414221,10 @@ por	O
 tempo	O
 indeterminado	B-WRONG
 ,	I-WRONG
-	I-WRONG
+"	I-WRONG
 indeterminado	O
 ?	O
-	O
+"	O
 Ha	B-WRONG
 Há	O
 quem	O
@@ -416465,10 +416465,10 @@ Way	I-WRONG
 of	I-WRONG
 Life	I-WRONG
 do	O
-American	O
+"American	O
 Way	O
 of	O
-Life	O
+Life"	O
 ou	O
 estilo	O
 de	O
@@ -418336,9 +418336,9 @@ de	O
 fato	O
 ,	O
 uma	O
-cultura	O
+"cultura	O
 do	O
-estupro	O
+estupro"	O
 no	O
 Brasil	O
 ?	O
@@ -419131,10 +419131,10 @@ sabem	O
 se	O
 seguem	O
 a	O
-razão	B-WRONG
+"razão	B-WRONG
 ou	I-WRONG
 o	I-WRONG
-coração	I-WRONG
+coração"	I-WRONG
 ,	I-WRONG
 razão	O
 ou	O
@@ -420578,7 +420578,7 @@ e	O
 se	O
 perguntar	O
 :	O
-Eu	O
+"Eu	O
 quero	O
 isso	O
 ,	O
@@ -420591,7 +420591,7 @@ preciso	O
 desse	O
 produto	O
 ?	O
-	O
+"	O
 .	O
 
 Sentença Original N°13792
@@ -421275,14 +421275,14 @@ consideração	O
 o	O
 que	O
 é	O
-novo	O
+"novo	O
 conceito	O
 social	O
 ,	O
 moral	O
 e	O
 base	O
-social	O
+social"	O
 .	O
 
 Sentença Original N°13818
