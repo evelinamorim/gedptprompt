@@ -39,3 +39,12 @@ labels:
   begin_error: "B-WRONG"
   inside_error: "I-WRONG"
   valid_set: ["O", "B-WRONG", "I-WRONG"]
+
+# ---- Two-stage HuggingFace inference settings ----
+two_stage:
+  model: "Qwen/Qwen3-8B-Instruct"
+  hf_cache: "/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
+  temperature: 0.0
+  max_new_tokens_stage1: 32
+  max_new_tokens_stage2: 512
+  batch_size: 0              # 0 = auto-detect from VRAM
