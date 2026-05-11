@@ -247,6 +247,11 @@ def parse_labels(response: str, expected_len: int) -> list[str]:
     """Parse stage 2 response. Falls back to all-O on failure."""
     response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
     match = _LABELS_RE.search(response)
+
+    if not match:
+        # DEBUG: print first 500 chars of raw response to understand failure
+        print(f"  [DEBUG] Raw response (first 500 chars): {repr(response[:500])}")
+
     if match:
         try:
             obj = json.loads(match.group())
