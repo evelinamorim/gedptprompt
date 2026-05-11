@@ -244,14 +244,10 @@ def parse_has_error(response: str) -> bool:
 
 
 def parse_labels(response: str, expected_len: int) -> list[str]:
-    """Parse stage 2 response. Falls back to all-O on failure."""
     response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
+    
+    # Try full JSON parse first
     match = _LABELS_RE.search(response)
-
-    if not match:
-        # DEBUG: print first 500 chars of raw response to understand failure
-        print(f"  [DEBUG] Raw response (first 500 chars): {repr(response[:500])}")
-
     if match:
         try:
             obj = json.loads(match.group())
@@ -266,6 +262,16 @@ def parse_labels(response: str, expected_len: int) -> list[str]:
             return labels
         except json.JSONDecodeError:
             pass
+
+    # Fallback: extract partial labels from truncated JSON
+    partial = re.findall(r'"(O|B-WRONG|I-WRONG)"', response)
+    if partial:
+        if len(partial) < expected_len:
+            partial += ["O"] * (expected_len - len(partial))
+        else:
+            partial = partial[:expected_len]
+        return partial
+
     print(f"  [WARNING] Could not parse labels from response. Defaulting to all-O.")
     return ["O"] * expected_len
 

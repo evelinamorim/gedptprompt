@@ -46,5 +46,5 @@ two_stage:
   hf_cache: "/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
   temperature: 0.0
   max_new_tokens_stage1: 32
-  max_new_tokens_stage2: 512
+  max_new_tokens_stage2: 2048
   batch_size: 0              
