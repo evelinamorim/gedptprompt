@@ -483,7 +483,7 @@ e	O
 sedentos	O
 por	O
 informações	O
-bombásticas	O
+"bombásticas"	O
 acabam	O
 consultando	O
 fontes	O
@@ -503,9 +503,9 @@ não	O
 aprovar	O
 o	O
 atual	O
-Estatuto	O
+"Estatuto	O
 da	O
-Família	O
+Família"	O
 e	O
 modificar	O
 seu	O
@@ -1511,7 +1511,7 @@ a	O
 aplicação	O
 da	O
 verdadeira	O
-democracia	O
+"democracia"	O
 que	O
 a	O
 nação	O
@@ -2322,9 +2322,9 @@ também	O
 chama-la	B-WRONG
 chamar	O
 de	O
-coração	O
+"coração	O
 de	O
-mãe	O
+mãe"	O
 ,	O
 ou	B-WRONG
 seja	I-WRONG
@@ -2504,7 +2504,7 @@ ele	O
 atropelou	O
 a	O
 garota	O
-acidentalmente	O
+"acidentalmente"	O
 .	O
 
 Sentença Original N°93
@@ -2540,7 +2540,7 @@ o	O
 problema	O
 é	O
 a	O
-rebeldia	O
+"rebeldia"	O
 dos	O
 alunos	O
 .	O
@@ -3071,13 +3071,13 @@ justificar	O
 o	O
 atentado	O
 com	O
-Os	O
+"Os	O
 autores	O
 das	O
 charges	O
 provocaram	O
 os	O
-terroristas	O
+terroristas"	O
 .	O
 
 Sentença Original N°115
@@ -6047,10 +6047,10 @@ dúvidas	O
 pensar	O
 com	O
 a	O
-razão	O
+"razão	O
 e	O
 o	O
-coração	O
+coração"	O
 é	O
 a	O
 maneira	O
@@ -7044,7 +7044,7 @@ pai	O
 homem	O
 e	O
 a	O
-mãe	O
+"mãe"	O
 também	O
 .	O
 
@@ -10539,7 +10539,7 @@ vida	O
 revirada	O
 e	O
 seus	O
-podres	O
+"podres"	O
 revelados	O
 ,	O
 o	O
@@ -25590,7 +25590,7 @@ Sentença Original N°841
 Por	O
 exemplo	O
 :	O
-Iracema	O
+"Iracema"	O
 ,	O
 livro	O
 escrito	O
@@ -27593,9 +27593,9 @@ meio	O
 os	O
 conceitos	O
 de	O
-certo	O
+"certo"	O
 e	O
-errado	O
+"errado"	O
 normalmente	O
 prevalecem	O
 sobre	O
@@ -27878,7 +27878,7 @@ Johns	O
 Hopkins	O
 University	O
 ,	O
-a	O
+"a	O
 taxa	O
 de	O
 acidentes	O
@@ -27897,7 +27897,7 @@ de	O
 combate	O
 ,	O
 incluindo	O
-boxe	O
+boxe"	O
 .	O
 
 Sentença Original N°917
@@ -30281,7 +30281,7 @@ exemplo	O
 é	O
 a	O
 novela	O
-Babilônia	O
+"Babilônia"	O
 que	O
 expressa	O
 sentimentos	O
@@ -31362,7 +31362,7 @@ Ha	O
 quem	O
 diga	O
 :	O
-e	O
+"e	O
 nós	O
 cidadãos	O
 temos	O
@@ -32704,7 +32704,7 @@ país	O
 das	O
 redes	O
 de	O
-fast-food	O
+"fast-food"	O
 ,	O
 cujo	O
 carro	O
@@ -41952,7 +41952,7 @@ uma	O
 prática	O
 milenar	O
 denominada	O
-trote	O
+"trote"	O
 ,	O
 caracterizada	O
 como	O
@@ -43063,10 +43063,10 @@ Todavia	O
 ,	O
 existe	O
 uma	O
-história	B-WRONG
+"história"	B-WRONG
 ,	I-WRONG
 com	I-WRONG
-história	O
+"história"	O
 com	O
 apenas	O
 uma	O
@@ -44957,8 +44957,8 @@ os	O
 tripulantes	O
 instalarem-se	O
 no	O
-planeta	O
-vermelho	O
+"planeta	O
+vermelho"	O
 ,	O
 poderão	O
 ser	O
