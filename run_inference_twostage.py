@@ -147,26 +147,26 @@ def estimate_batch_size(model: AutoModelForCausalLM, tokenizer: AutoTokenizer) -
 # ------------------------------------------------------------------ #
 # Chat prompt formatting
 # ------------------------------------------------------------------ #
-
 def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_id: str) -> str:
-    """
-    Format a system+user prompt using the model's chat template if available,
-    falling back to a generic format for models without one (e.g. Tucano base).
-    """
     messages = [
         {"role": "system", "content": system},
         {"role": "user", "content": user},
     ]
     try:
-        # Most instruct models have a chat template
         prompt = tokenizer.apply_chat_template(
             messages,
             tokenize=False,
             add_generation_prompt=True,
-            enable_thinking=False
+            enable_thinking=False,    # disable chain-of-thought for Qwen3
+        )
+    except TypeError:
+        # Fallback for models that don't support enable_thinking
+        prompt = tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
         )
     except Exception:
-        # Fallback for models without chat template (e.g. Tucano base variants)
         prompt = f"<|system|>\n{system}\n<|user|>\n{user}\n<|assistant|>\n"
     return prompt
 
@@ -228,7 +228,8 @@ VALID_LABELS = {"O", "B-WRONG", "I-WRONG"}
 
 def parse_has_error(response: str) -> bool:
     """Parse stage 1 response. Defaults to True on parse failure (conservative)."""
-    match = _HAS_ERROR_RE.search(response)
+    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
+    match = _LABELS_RE.search(response)
     if match:
         try:
             obj = json.loads(match.group())
@@ -244,6 +245,7 @@ def parse_has_error(response: str) -> bool:
 
 def parse_labels(response: str, expected_len: int) -> list[str]:
     """Parse stage 2 response. Falls back to all-O on failure."""
+    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
     match = _LABELS_RE.search(response)
     if match:
         try:
