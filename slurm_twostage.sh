@@ -4,7 +4,7 @@
 # Uses HuggingFace Transformers (no Ollama)
 #
 # Submit:
-#   sbatch slurm_2stage.sh --model Qwen/Qwen3-8B-Instruct
+#   sbatch slurm_2stage.sh --model Qwen/Qwen3-8B
 #   sbatch slurm_2stage.sh --model TucanoBR/Tucano-2b4-Instruct
 #   sbatch slurm_2stage.sh --model google/gemma-3-12b-it
 #   sbatch slurm_2stage.sh --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
@@ -24,7 +24,7 @@
 #SBATCH --exclusive
 
 # ---- parse args ----
-MODEL="Qwen/Qwen3-8B-Instruct"
+MODEL="Qwen/Qwen3-8B"
 SPLIT="test"
 CONFIG="config.yaml"
 BATCH_SIZE=0   # 0 = auto-detect from VRAM

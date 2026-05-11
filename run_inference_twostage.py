@@ -12,13 +12,13 @@ Uses HuggingFace Transformers with dynamic batching for significantly faster inf
 than Ollama's sequential HTTP calls.
 
 Supported models (HuggingFace IDs):
-    Qwen/Qwen3-8B-Instruct
+    Qwen/Qwen3-8B
     google/gemma-3-12b-it
     TucanoBR/Tucano-2b4-Instruct
     deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 
 Usage:
-    python run_inference_2stage.py --model Qwen/Qwen3-8B-Instruct --split test
+    python run_inference_2stage.py --model Qwen/Qwen3-8B --split test
     python run_inference_2stage.py --model TucanoBR/Tucano-2b4-Instruct --split test
     python run_inference_2stage.py --model google/gemma-3-12b-it --split test --batch_size 8
 """
@@ -160,6 +160,7 @@ def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_i
             messages,
             tokenize=False,
             add_generation_prompt=True,
+            enable_thinking=False
         )
     except Exception:
         # Fallback for models without chat template (e.g. Tucano base variants)
@@ -442,7 +443,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="GED-PT two-stage inference via HuggingFace")
     parser.add_argument(
         "--model",
-        default="Qwen/Qwen3-8B-Instruct",
+        default="Qwen/Qwen3-8B",
         help="HuggingFace model ID",
     )
     parser.add_argument(
@@ -472,7 +473,7 @@ if __name__ == "__main__":
 
     # Two-stage config section with CLI overrides
     ts_cfg = cfg.get("two_stage", {})
-    model_id = args.model or ts_cfg.get("model", "Qwen/Qwen3-8B-Instruct")
+    model_id = args.model or ts_cfg.get("model", "Qwen/Qwen3-8B")
     hf_cache = args.hf_cache or ts_cfg.get("hf_cache", "hf_cache")
     batch_size = args.batch_size if args.batch_size > 0 else ts_cfg.get("batch_size", 0)
     max_new_tokens_s1 = ts_cfg.get("max_new_tokens_stage1", 32)

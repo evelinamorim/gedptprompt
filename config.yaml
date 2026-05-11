@@ -42,7 +42,7 @@ labels:
 
 # ---- Two-stage HuggingFace inference settings ----
 two_stage:
-  model: "Qwen/Qwen3-8B-Instruct"
+  model: "Qwen/Qwen3-8B"
   hf_cache: "/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
   temperature: 0.0
   max_new_tokens_stage1: 32
