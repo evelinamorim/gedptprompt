@@ -98,6 +98,7 @@ def load_model(model_id: str, hf_cache: str) -> tuple:
         cache_dir=hf_cache,
         trust_remote_code=True,
         padding_side="left",   # left padding for decoder-only batch inference
+        local_files_only=True
     )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -108,7 +109,8 @@ def load_model(model_id: str, hf_cache: str) -> tuple:
         torch_dtype=torch.bfloat16,   # bf16 on A100 — fastest + numerically stable
         device_map="cuda:0",             # automatic GPU/CPU placement
         trust_remote_code=True,
-        low_cpu_mem_usage=True
+        low_cpu_mem_usage=True,
+        local_files_only=True
     )
     model.eval()
     print(f"  Model loaded. Parameters: {sum(p.numel() for p in model.parameters()) / 1e9:.2f}B")
