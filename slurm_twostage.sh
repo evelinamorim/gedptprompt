@@ -54,8 +54,7 @@ mkdir -p logs predictions metrics hf_cache
 # ---- environment ----
 module purge
 module load Python/3.11.3-GCCcore-12.3.0
-module load PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
-module load CUDA/12.1.1   # may be needed explicitly
+module load CUDA/12.1.1  # may be needed explicitly
 
 source /projects/F202600026AIVLABDEUCALION/evelinamorim/venv/bin/activate
 
