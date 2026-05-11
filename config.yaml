@@ -47,4 +47,4 @@ two_stage:
   temperature: 0.0
   max_new_tokens_stage1: 32
   max_new_tokens_stage2: 512
-  batch_size: 0              # 0 = auto-detect from VRAM
+  batch_size: 0              
