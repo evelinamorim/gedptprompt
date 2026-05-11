@@ -106,8 +106,9 @@ def load_model(model_id: str, hf_cache: str) -> tuple:
         model_id,
         cache_dir=hf_cache,
         torch_dtype=torch.bfloat16,   # bf16 on A100 — fastest + numerically stable
-        device_map="auto",             # automatic GPU/CPU placement
+        device_map="cuda:0",             # automatic GPU/CPU placement
         trust_remote_code=True,
+        low_cpu_mem_usage=True
     )
     model.eval()
     print(f"  Model loaded. Parameters: {sum(p.numel() for p in model.parameters()) / 1e9:.2f}B")
