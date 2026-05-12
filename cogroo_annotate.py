@@ -35,18 +35,12 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-try:
-    ifrom cogroo4py.cogroo import Cogroo
-except ImportError:
-    print("ERROR: cogroo4py not installed. Run: pip install cogroo4py")
-    sys.exit(1)
 
 from data_reader import Sentence, read_bio_file
 
 
-# ------------------------------------------------------------------ #
-# CoGrOO wrapper
-# ------------------------------------------------------------------ #
+from cogroo4py.cogroo import Cogroo
+
 class CoGrOOChecker:
     def __init__(self):
         print("Initializing CoGrOO (this may take a few seconds)...")
@@ -61,14 +55,13 @@ class CoGrOOChecker:
                 mistakes.append({
                     "start": mistake.start,
                     "end": mistake.end,
-                    "rule_id": getattr(mistake, "rule_id", ""),
-                    "category": getattr(mistake, "category", "grammar_error"),
-                    "short_msg": getattr(mistake, "short_msg", ""),
+                    "rule_id": mistake.rule_id,
+                    "category": mistake.short_msg,  # human-readable Portuguese description
+                    "short_msg": mistake.short_msg,
                 })
         except Exception as e:
             print(f"  [WARNING] CoGrOO error on text '{text[:50]}': {e}")
         return mistakes
-
 
 # ------------------------------------------------------------------ #
 # Token offset computation
