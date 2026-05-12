@@ -433,10 +433,10 @@ def run_2stage_inference(
             _save_partial(results, partial_path, model_id)
 
     # Clean up stage caches on successful completion
-    for cache in [stage1_cache_path, stage2_cache_path]:
-        if Path(cache).exists():
-            os.remove(cache)
-            print(f"  Removed cache: {cache}")
+    # for cache in [stage1_cache_path, stage2_cache_path]:
+    #    if Path(cache).exists():
+    #        os.remove(cache)
+    #        print(f"  Removed cache: {cache}")
 
     return results
 
