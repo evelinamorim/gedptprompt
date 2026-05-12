@@ -60,24 +60,20 @@ Respond with ONLY: {{"has_error": true}} or {{"has_error": false}}"""
 # ------------------------------------------------------------------ #
 
 STAGE2_SYSTEM = """\
-You are a Brazilian Portuguese grammar error localizer.
+You are a Brazilian Portuguese grammar error detector.
 A sentence has been flagged as containing a grammatical error.
-Your task is to label each token with one of:
-  - O        : grammatically correct token
-  - B-WRONG  : FIRST token of an error span
-  - I-WRONG  : continuation of an error span
+Your task is to identify the exact word or words that are grammatically wrong.
 
-Rules:
-1. Every token must receive exactly one label.
-2. Error spans always start with B-WRONG followed by zero or more I-WRONG.
-3. Output ONLY a valid JSON object: {"labels": ["O", "B-WRONG", ...]}
-4. The labels list must have the SAME length as the input tokens list.
+Output ONLY a valid JSON object: {"wrong": ["word1", "word2"]}
+The "wrong" list must contain ONLY the incorrect words, exactly as they appear in the sentence.
+If there are multiple separate errors, include all wrong words.
 Do NOT output any explanation or extra text."""
 
 STAGE2_USER_TEMPLATE = """\
+Sentence: {sentence_text}
 Tokens: {tokens_json}
 
-Label each token. Respond with ONLY: {{"labels": [...]}}"""
+Which tokens are grammatically wrong? Respond with ONLY: {{"wrong": [...]}}"""
 
 
 # ------------------------------------------------------------------ #
@@ -275,6 +271,49 @@ def parse_labels(response: str, expected_len: int) -> list[str]:
     print(f"  [WARNING] Could not parse labels from response. Defaulting to all-O.")
     return ["O"] * expected_len
 
+def wrong_tokens_to_bio(wrong_tokens: list[str], sentence_tokens: list[str]) -> list[str]:
+    """Map a list of wrong token strings back to BIO labels."""
+    labels = ["O"] * len(sentence_tokens)
+    wrong_set = set(w.lower() for w in wrong_tokens)
+
+    i = 0
+    while i < len(sentence_tokens):
+        if sentence_tokens[i].lower() in wrong_set:
+            labels[i] = "B-WRONG"
+            j = i + 1
+            while j < len(sentence_tokens) and sentence_tokens[j].lower() in wrong_set:
+                labels[j] = "I-WRONG"
+                j += 1
+            i = j
+        else:
+            i += 1
+    return labels
+
+
+def parse_wrong_tokens(response: str, sentence_tokens: list[str]) -> list[str]:
+    """Parse Stage 2 reformulated response and convert to BIO labels."""
+    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
+
+    # Try full JSON parse
+    match = re.search(r'\{.*?"wrong"\s*:\s*\[.*?\]\s*\}', response, re.DOTALL)
+    if match:
+        try:
+            obj = json.loads(match.group())
+            wrong = obj.get("wrong", [])
+            if isinstance(wrong, list):
+                return wrong_tokens_to_bio(wrong, sentence_tokens)
+        except json.JSONDecodeError:
+            pass
+
+    # Fallback: extract quoted strings
+    found = re.findall(r'"([^"]+)"', response)
+    # Filter out JSON keys
+    found = [f for f in found if f not in ("wrong", "labels")]
+    if found:
+        return wrong_tokens_to_bio(found, sentence_tokens)
+
+    print(f"  [WARNING] Could not parse wrong tokens. Defaulting to all-O.")
+    return ["O"] * len(sentence_tokens)
 
 # ------------------------------------------------------------------ #
 # Main two-stage inference loop
@@ -395,7 +434,8 @@ def run_2stage_inference(
                 format_chat_prompt(
                     STAGE2_SYSTEM,
                     STAGE2_USER_TEMPLATE.format(
-                        tokens_json=json.dumps(s.tokens, ensure_ascii=False)
+                        tokens_json=json.dumps(s.tokens, ensure_ascii=False),
+                        sentence_text=" ".join(s.tokens)
                     ),
                     tokenizer,
                     model_id,
@@ -406,7 +446,7 @@ def run_2stage_inference(
                 prompts, tokenizer, model, max_new_tokens=max_new_tokens_s2
             )
             for sent, response in zip(batch, responses):
-                stage2_results[sent.id] = parse_labels(response, len(sent.tokens))
+                stage2_results[sent.id] = parse_wrong_tokens(response, len(sent.tokens))
 
             # Checkpoint Stage 2 cache every batch
             with open(stage2_cache_path, "w", encoding="utf-8") as fh:
