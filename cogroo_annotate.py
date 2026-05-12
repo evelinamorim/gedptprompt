@@ -36,7 +36,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 try:
-    import cogroo4py as cogroo
+    ifrom cogroo4py.cogroo import Cogroo
 except ImportError:
     print("ERROR: cogroo4py not installed. Run: pip install cogroo4py")
     sys.exit(1)
@@ -47,26 +47,13 @@ from data_reader import Sentence, read_bio_file
 # ------------------------------------------------------------------ #
 # CoGrOO wrapper
 # ------------------------------------------------------------------ #
-
 class CoGrOOChecker:
-    """Thin wrapper around cogroo4py for grammar checking."""
-
     def __init__(self):
         print("Initializing CoGrOO (this may take a few seconds)...")
-        self.checker = cogroo.Cogroo.Instance()
+        self.checker = Cogroo()
         print("CoGrOO ready.")
 
     def check(self, text: str) -> list[dict]:
-        """
-        Check a text string and return a list of mistake dicts:
-          {
-            "start": int,       # character offset in text
-            "end": int,         # character offset in text (exclusive)
-            "rule_id": str,     # CoGrOO rule identifier
-            "category": str,    # error category/type
-            "short_msg": str,   # short description
-          }
-        """
         mistakes = []
         try:
             doc = self.checker.grammar_check(text)
@@ -79,7 +66,7 @@ class CoGrOOChecker:
                     "short_msg": getattr(mistake, "short_msg", ""),
                 })
         except Exception as e:
-            print(f"  [WARNING] CoGrOO error on text '{text[:50]}...': {e}")
+            print(f"  [WARNING] CoGrOO error on text '{text[:50]}': {e}")
         return mistakes
 
 
