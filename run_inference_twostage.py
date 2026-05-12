@@ -337,7 +337,7 @@ def run_2stage_inference(
               f"(batch_size={batch_size}) ...")
         for batch_start in range(0, len(needs_stage1), batch_size):
             batch = needs_stage1[batch_start: batch_start + batch_size]
-            if batch_start % 500 == 0 or batch_start == 0:
+            if batch_start % 100 == 0 or batch_start == 0:
                 print(f"  Stage 1: [{batch_start}/{len(needs_stage1)}] ...")
 
             prompts = [
@@ -388,7 +388,7 @@ def run_2stage_inference(
               f"(batch_size={batch_size}) ...")
         for batch_start in range(0, len(flagged), batch_size):
             batch = flagged[batch_start: batch_start + batch_size]
-            if batch_start % 500 == 0 or batch_start == 0:
+            if batch_start % 100 == 0 or batch_start == 0:
                 print(f"  Stage 2: [{batch_start}/{len(flagged)}] ...")
 
             prompts = [
