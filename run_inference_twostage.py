@@ -446,7 +446,7 @@ def run_2stage_inference(
                 prompts, tokenizer, model, max_new_tokens=max_new_tokens_s2
             )
             for sent, response in zip(batch, responses):
-                stage2_results[sent.id] = parse_wrong_tokens(response, len(sent.tokens))
+                stage2_results[sent.id] = parse_wrong_tokens(response, sent.tokens)
 
             # Checkpoint Stage 2 cache every batch
             with open(stage2_cache_path, "w", encoding="utf-8") as fh:
