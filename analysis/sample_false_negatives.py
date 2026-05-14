@@ -247,7 +247,7 @@ def main():
     # Load predictions
     with open(args.predictions, encoding="utf-8") as f:
         data = json.load(f)
-        print(data[0])
+
     predictions = data["predictions"]
     print(f"Loaded {len(predictions)} sentences from {args.predictions}")
 
