@@ -111,7 +111,35 @@ def classify_unknown_span(span_tokens):
         return "sintatico_discursivo"
     return "ortografia_lexical"
 
-
+def classify_failure_mode(
+    gold_start: int,
+    gold_end: int,
+    pred_labels: list[str],
+) -> str:
+    # Check if model predicted anything at all in the sentence
+    pred_spans = bio_to_spans(pred_labels)
+    
+    if not pred_spans:
+        return "complete_miss"  # model predicted nothing in the whole sentence
+    
+    # Check for overlap with the gold span
+    gold_range = set(range(gold_start, gold_end + 1))
+    
+    for (ps, pe) in pred_spans:
+        pred_range = set(range(ps, pe + 1))
+        overlap = gold_range & pred_range
+        
+        if overlap:
+            # Some overlap exists — what kind?
+            if ps == gold_start and pe == gold_end:
+                return "exact_match"  # shouldn't appear in FNs but safety check
+            elif ps >= gold_start and pe <= gold_end:
+                return "partial_span"  # predicted span is inside gold span
+            else:
+                return "boundary_shift"  # predicted span overlaps but wrong boundaries
+    
+    # No overlap at all — model predicted errors elsewhere in the sentence
+    return "wrong_token"
 # ============================================================
 # Gold file parsing → span taxonomy map
 # ============================================================
@@ -214,17 +242,29 @@ def extract_false_negatives(predictions, span_taxonomy):
         gold_spans = set(map(tuple, bio_to_spans(entry["gold_labels"])))
         pred_spans = set(map(tuple, bio_to_spans(entry["pred_labels"])))
 
+        # Pre-compute predicted span tokens for this sentence
+        pred_spans_tokens = " | ".join(
+            " ".join(tokens[s:e+1]) for s, e in sorted(pred_spans)
+        ) if pred_spans else "(nenhuma previsão)"
+
+        pred_spans_positions = " | ".join(
+            f"[{s}:{e}]" for s, e in sorted(pred_spans)
+        ) if pred_spans else ""
+
         for (start, end) in gold_spans - pred_spans:
             cat = span_taxonomy.get((sid, start, end), "UNKNOWN")
+            failure_mode = classify_failure_mode(start, end, entry["pred_labels"])
             false_negatives.append({
-                "sentence_id":  sid,
-                "span_start":   start,
-                "span_end":     end,
-                "span_tokens":  " ".join(tokens[start: end + 1]),
-                "category":     cat,
-                "context":      " ".join(tokens),
-                "failure_mode": "",
-                "notes":        "",
+                "sentence_id":        sid,
+                "span_start":         start,
+                "span_end":           end,
+                "span_tokens":        " ".join(tokens[start: end + 1]),
+                "category":           cat,
+                "failure_mode":       failure_mode,
+                "pred_spans_tokens":  pred_spans_tokens,
+                "pred_spans_positions": pred_spans_positions,
+                "notes":              "",
+                "context":            " ".join(tokens),
             })
     return false_negatives
 
@@ -280,7 +320,9 @@ def stratified_sample(false_negatives, n, seed=42):
 FIELDNAMES = [
     "sentence_id", "span_start", "span_end",
     "span_tokens", "category",
-    "failure_mode", "notes",
+    "failure_mode",
+    "pred_spans_tokens", "pred_spans_positions",
+    "notes",
     "context",
 ]
 
