@@ -19,7 +19,7 @@ from pathlib import Path
 
 import torch
 import yaml
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoProcessor
 
 from data_reader import Sentence, read_bio_file
 
@@ -146,13 +146,18 @@ def load_model(model_id: str, hf_cache: str) -> tuple:
         print(f"  GPU: {torch.cuda.get_device_name(0)}")
         print(f"  VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
 
-    tokenizer = AutoTokenizer.from_pretrained(
-        model_id,
-        cache_dir=hf_cache,
-        trust_remote_code=True,
-        padding_side="left",
-        local_files_only=True,
-    )
+    # Use AutoProcessor for multimodal models like Gemma4
+    try:
+        tokenizer = AutoProcessor.from_pretrained(
+            model_id, cache_dir=hf_cache,
+            trust_remote_code=True, local_files_only=True,
+        )
+    except Exception:
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_id, cache_dir=hf_cache,
+            trust_remote_code=True, padding_side="left",
+            local_files_only=True,
+        )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
