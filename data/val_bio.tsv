@@ -13,7 +13,6 @@ esse	O
 um	O
 direito	O
 constituinte	B-WRONG
-constituinte	O
 do	O
 cidadão	O
 brasileiro	O
@@ -82,8 +81,6 @@ por	O
 um	O
 só	O
 objetivo	B-WRONG
-objetivo	O
-:	O
 a	O
 MUDANÇA	O
 ,	O
@@ -95,7 +92,6 @@ melhor	O
 Sentença Original N°4
 Cabe	O
 a	B-WRONG
-à	O
 instituição	O
 de	O
 ensino	O
@@ -171,7 +167,7 @@ consequências	O
 .	O
 
 Sentença Original N°8
-Algumas	O
+Algumas</correct>	O
 medidas	O
 devem	O
 ser	O
@@ -210,7 +206,6 @@ custos	O
 da	O
 meia	B-WRONG
 entrada	I-WRONG
-meia-entrada	O
 evitando	O
 assim	O
 o	O
@@ -232,17 +227,14 @@ Sentença Original N°9
 De	O
 um	O
 politico	B-WRONG
-político	O
 famoso	O
 ?	O
 
 Sentença Original N°10
 Para	O
 muda	B-WRONG
-mudar	O
 essa	O
 ação	B-WRONG
-situação	O
 o	O
 governo	O
 deve	O
@@ -268,7 +260,6 @@ Sentença Original N°11
 Um	O
 desrespeito	O
 a	B-WRONG
-à	O
 privacidade	O
 do	O
 indivíduo	O
@@ -403,7 +394,6 @@ atravessar	O
 a	O
 rua	O
 tem	B-WRONG
-têm	O
 valor	O
 muito	O
 grande	O
@@ -411,7 +401,6 @@ grande	O
 
 Sentença Original N°16
 Atravéz	B-WRONG
-Através	O
 das	O
 ondas	O
 de	O
@@ -428,7 +417,6 @@ mês	O
 ,	O
 ficou	O
 claro	B-WRONG
-clara	O
 a	O
 indignação	O
 do	O
@@ -437,7 +425,6 @@ brasileiro	O
 com	O
 os	O
 politícos	B-WRONG
-políticos	O
 e	O
 os	O
 diversos	O
@@ -483,7 +470,7 @@ e	O
 sedentos	O
 por	O
 informações	O
-"bombásticas"	O
+bombásticas	O
 acabam	O
 consultando	O
 fontes	O
@@ -497,15 +484,14 @@ Cabe	O
 portanto	O
 ao	O
 legislativo	B-WRONG
-Legislativo	O
 brasileiro	O
 não	O
 aprovar	O
 o	O
 atual	O
-"Estatuto	O
+Estatuto	O
 da	O
-Família"	O
+Família	O
 e	O
 modificar	O
 seu	O
@@ -572,7 +558,6 @@ usam	O
 ,	O
 pelos	O
 esportes	O
-de	O
 que	O
 gostam	O
 ou	O
@@ -584,7 +569,7 @@ hábitos	B-WRONG
 ,	I-WRONG
 e	I-WRONG
 consequêntemente	I-WRONG
-hábitos	O
+<correct>hábitos	O
 .	O
 
 Sentença Original N°22
@@ -600,7 +585,7 @@ mais	O
 "	O
 revelam	O
 especialista	B-WRONG
-especialistas	O
+<correct>especialistas	O
 .	O
 
 Sentença Original N°23
@@ -869,8 +854,6 @@ harmonia	O
 
 Sentença Original N°33
 Concomitantemente	B-WRONG
-Concomitantemente	O
-,	O
 a	O
 sociedade	O
 joga	O
@@ -880,7 +863,6 @@ no	O
 governo	O
 e	O
 mantem	B-WRONG
-mantém	O
 a	O
 postura	O
 de	O
@@ -907,7 +889,6 @@ pessoas	O
 que	O
 já	O
 tem	B-WRONG
-têm	O
 certa	O
 experiência	O
 em	O
@@ -993,10 +974,6 @@ geradas	O
 pela	O
 modernização	O
 ,	O
-e	O
-devem	O
-ser	O
-buscadas	O
 novas	O
 formas	O
 de	O
@@ -1008,6 +985,7 @@ e	O
 social	O
 do	O
 povo	O
+<correct>	O
 .	O
 
 Sentença Original N°37
@@ -1091,7 +1069,6 @@ necessidade	O
 de	O
 se	O
 testar	B-WRONG
-testarem	O
 os	O
 medicamentos	O
 que	O
@@ -1138,7 +1115,6 @@ ver	O
 
 Sentença Original N°41
 Geyse	B-WRONG
-Geisy	O
 pediu	O
 desculpas	O
 pelo	O
@@ -1195,11 +1171,6 @@ tempo	I-WRONG
 de	I-WRONG
 regência	I-WRONG
 nos	I-WRONG
-o	O
-tempo	O
-de	O
-vigência	O
-dos	O
 devidos	O
 cargos	O
 de	B-WRONG
@@ -1240,7 +1211,7 @@ amor	O
 .	O
 
 Sentença Original N°46
-Até	O
+Até</correct>	O
 quando	O
 teremos	O
 água	O
@@ -1273,22 +1244,18 @@ infelizmente	O
 ,	O
 possui	O
 o	B-WRONG
-um	O
 sistema	O
 de	O
 segurança	O
 pública	O
 é	B-WRONG
 precário	I-WRONG
-precário	O
 e	O
 ,	O
 por	B-WRONG
 outro	I-WRONG
 lado	I-WRONG
 ,	I-WRONG
-por	O
-isso	O
 as	O
 pessoas	O
 criam	O
@@ -1315,10 +1282,6 @@ questão	I-WRONG
 ,	I-WRONG
 se	I-WRONG
 deve	I-WRONG
-esse	O
-problema	O
-se	O
-deve	O
 ao	O
 fato	O
 de	O
@@ -1337,9 +1300,6 @@ seriamente	O
 ,	O
 como	B-WRONG
 por	I-WRONG
-como	O
-,	O
-por	O
 exemplo	O
 ,	O
 um	O
@@ -1359,8 +1319,6 @@ Roberto	O
 Carlos	B-WRONG
 ,	I-WRONG
 colocou	I-WRONG
-Carlos	O
-colocou	O
 na	O
 justiça	O
 um	O
@@ -1447,9 +1405,6 @@ os	O
 senadores	O
 e	O
 judiciários	B-WRONG
-trabalhadores	O
-do	O
-judiciário	O
 ,	O
 que	O
 foi	O
@@ -1491,7 +1446,6 @@ mudanças	O
 mas	O
 também	O
 varias	B-WRONG
-várias	O
 outras	O
 de	O
 elevada	O
@@ -1500,7 +1454,6 @@ para	O
 o	O
 povo	O
 ,	O
-tais	O
 como	O
 :	O
 melhoras	O
@@ -1511,7 +1464,7 @@ a	O
 aplicação	O
 da	O
 verdadeira	O
-"democracia"	O
+democracia	O
 que	O
 a	O
 nação	O
@@ -1521,7 +1474,6 @@ a	O
 desmoralização	O
 da	O
 politica	B-WRONG
-política	O
 adotada	O
 pelo	O
 governo	O
@@ -1560,15 +1512,12 @@ adolescência	O
 Sentença Original N°57
 Atualmente	O
 esta	B-WRONG
-está	O
 sendo	O
 publicado	B-WRONG
-publicada	O
 em	O
 vários	O
 sites	O
 noticia	B-WRONG
-notícia	O
 sobre	O
 o	O
 clima	O
@@ -1579,7 +1528,6 @@ constante	O
 mudança	O
 em	O
 varias	B-WRONG
-várias	O
 cidades	O
 do	O
 Brasil	O
@@ -1590,9 +1538,6 @@ há	B-WRONG
 10	I-WRONG
 anos	I-WRONG
 atrás	I-WRONG
-há	O
-10	O
-anos	O
 o	O
 clima	O
 era	O
@@ -1651,10 +1596,6 @@ o	B-WRONG
 mudar	I-WRONG
 o	I-WRONG
 meio	I-WRONG
-interferir	O
-no	O
-meio	O
-ambiente	O
 .	O
 
 Sentença Original N°59
@@ -1664,11 +1605,9 @@ de	O
 aceitarmos	O
 ou	O
 nao	B-WRONG
-não	O
 em	O
 nosso	O
 intimo	B-WRONG
-íntimo	O
 ,	O
 devemos	O
 fazer	O
@@ -1759,7 +1698,6 @@ psicológico	O
 Sentença Original N°62
 Constantemente	O
 encontrasse	B-WRONG
-encontram-se	O
 pilhas	O
 ,	O
 baterias	O
@@ -1769,7 +1707,6 @@ outros	O
 produtos	O
 que	O
 contem	B-WRONG
-contêm	O
 material	O
 tóxico	O
 em	O
@@ -1785,13 +1722,11 @@ questão	O
 foi	O
 integrada	O
 a	B-WRONG
-à	O
 onda	O
 de	O
 protestos	O
 que	O
 acontecem	B-WRONG
-acontece	O
 no	O
 Brasil	O
 .	O
@@ -1819,7 +1754,6 @@ portadoras	O
 da	O
 Aids	O
 vem	B-WRONG
-vêm	O
 aumentando	O
 anualmente	O
 segundo	O
@@ -1828,7 +1762,7 @@ dados	O
 fornecidos	B-WRONG
 ,	I-WRONG
 outro	I-WRONG
-fornecidos	O
+<correct>fornecidos	O
 .	O
 
 Sentença Original N°66
@@ -1895,7 +1829,7 @@ cassete	I-WRONG
 .	I-WRONG
 
 Sentença Original N°69
-Primeiramente	O
+Primeiramente</correct>	O
 é	O
 necessário	O
 que	O
@@ -1903,7 +1837,6 @@ se	O
 faça	O
 uma	O
 analise	B-WRONG
-análise	O
 das	O
 eleições	O
 ,	O
@@ -1971,7 +1904,6 @@ dia	O
 ,	O
 a	O
 escasses	B-WRONG
-escassez	O
 da	O
 água	O
 é	O
@@ -2001,7 +1933,6 @@ humanos	O
 Sentença Original N°73
 São	O
 inúmeros	O
-os	O
 casos	O
 em	O
 que	O
@@ -2070,10 +2001,6 @@ cotidiano	O
 Sentença Original N°77
 Observando	O
 ,	O
-agruras	O
-,	O
-observando	O
-,	O
 desse	O
 modo	O
 ,	O
@@ -2085,7 +2012,6 @@ admissão	O
 e	O
 permanência	O
 deste	B-WRONG
-desse	O
 modelo	O
 .	O
 
@@ -2235,9 +2161,6 @@ drogas	I-WRONG
 ,	I-WRONG
 está	I-WRONG
 presente	I-WRONG
-drogas	O
-estão	O
-presentes	O
 na	O
 vida	O
 destes	O
@@ -2258,14 +2181,9 @@ de	O
 obras	O
 superfaturadas	B-WRONG
 ,	I-WRONG
-superfaturadas	O
-e	O
-do	O
 recebimento	O
 de	O
 propina	B-WRONG
-propina	O
-,	O
 ocasionando	O
 o	O
 enriquecimento	O
@@ -2294,12 +2212,10 @@ não	O
 há	O
 como	O
 lançar	B-WRONG
-abrir	O
 mão	O
 desse	O
 avanço	O
 cientifico	B-WRONG
-científico	O
 de	O
 extrema	O
 importância	O
@@ -2316,19 +2232,16 @@ chamada	O
 Brasil	O
 ,	O
 onde	B-WRONG
-que	O
 podemos	O
 também	O
 chama-la	B-WRONG
-chamar	O
 de	O
-"coração	O
+coração	O
 de	O
-mãe"	O
+mãe	O
 ,	O
 ou	B-WRONG
 seja	I-WRONG
-onde	O
 sempre	O
 cabe	O
 mais	O
@@ -2349,8 +2262,6 @@ saber	O
 e	B-WRONG
 com	I-WRONG
 isto	I-WRONG
-e	O
-isso	O
 nos	O
 deixa	O
 mais	O
@@ -2417,10 +2328,6 @@ de	B-WRONG
 uma	I-WRONG
 maior	I-WRONG
 incentivação	I-WRONG
-maior	O
-incentivo	O
-ao	O
-ciclismo	O
 .	O
 
 Sentença Original N°91
@@ -2454,9 +2361,6 @@ Sentença Original N°92
 Alguns	B-WRONG
 dias	I-WRONG
 atrás	I-WRONG
-Há	O
-alguns	O
-dias	O
 mais	O
 uma	O
 mãe	O
@@ -2471,9 +2375,6 @@ sua	O
 filha	O
 ,	O
 13	B-WRONG
-de	O
-treze	O
-anos	O
 ,	O
 que	O
 foi	O
@@ -2484,10 +2385,6 @@ garoto	B-WRONG
 ,	I-WRONG
 16	I-WRONG
 ,	I-WRONG
-garoto	O
-de	O
-dezesseis	O
-,	O
 que	O
 tinha	O
 roubado	O
@@ -2504,18 +2401,16 @@ ele	O
 atropelou	O
 a	O
 garota	O
-"acidentalmente"	O
+acidentalmente	O
 .	O
 
 Sentença Original N°93
 Aonde	B-WRONG
-onde	O
 está	O
 o	O
 incentivo	O
 a	O
 estes	B-WRONG
-esses	O
 jovens	O
 ,	O
 que	O
@@ -2527,7 +2422,7 @@ irem	I-WRONG
 votar	I-WRONG
 ,	I-WRONG
 eles	I-WRONG
-para	O
+<correct>para	O
 votar	O
 ?	O
 
@@ -2540,7 +2435,7 @@ o	O
 problema	O
 é	O
 a	O
-"rebeldia"	O
+rebeldia	O
 dos	O
 alunos	O
 .	O
@@ -2581,7 +2476,6 @@ Sentença Original N°96
 O	O
 ensino	O
 à	O
-a	O
 distância	O
 ,	O
 também	O
@@ -2602,7 +2496,6 @@ Sentença Original N°97
 Com	O
 o	O
 avento	B-WRONG
-advento	O
 da	O
 tecnologia	O
 para	O
@@ -2625,8 +2518,6 @@ a	O
 pais	O
 e	O
 filhos	B-WRONG
-filhos	O
-,	O
 que	O
 já	O
 não	O
@@ -2639,7 +2530,6 @@ lugar	O
 feito	O
 para	O
 acolhe-los	B-WRONG
-acolhê-los	O
 .	O
 
 Sentença Original N°98
@@ -2674,23 +2564,17 @@ jovens	O
 Sentença Original N°99
 Se	O
 poucos	O
-o	O
 veem	O
 ,	O
 por	O
 que	O
 obriga-los	B-WRONG
-torná-lo	O
-obrigatório	O
 para	O
 todos	O
 ?	O
 
 Sentença Original N°100
 E	O
-lei	O
-,	O
-mas	O
 sim	O
 ,	O
 o	O
@@ -2765,11 +2649,6 @@ comunicação	O
 
 Sentença Original N°104
 Onde	B-WRONG
-Nessas	O
-condições	O
-,	O
-parece	O
-que	O
 todas	O
 as	O
 regras	O
@@ -2833,9 +2712,6 @@ a	O
 alienação	B-WRONG
 ,	I-WRONG
 seja	I-WRONG
-alienação	O
-seja	O
-,	O
 talvez	O
 ,	O
 o	O
@@ -2853,8 +2729,6 @@ da	O
 saúde	O
 no	O
 Brasil	B-WRONG
-Brasil	O
-,	O
 outro	O
 fator	O
 que	O
@@ -2862,7 +2736,6 @@ leva	O
 os	O
 jovens	O
 a	B-WRONG
-à	O
 automedicação	O
 é	O
 a	O
@@ -2919,8 +2792,6 @@ será	O
 essa	O
 redução	B-WRONG
 ;	I-WRONG
-redução	O
-:	O
 quatorze	O
 ou	O
 dezesseis	O
@@ -2929,7 +2800,7 @@ anos	O
 
 Sentença Original N°110
 O	O
-que	O
+que</correct>	O
 já	O
 sabemos	O
 com	O
@@ -2954,7 +2825,7 @@ voz	B-WRONG
 ,	I-WRONG
 as	I-WRONG
 vitórias	I-WRONG
-voz	O
+<correct>voz	O
 .	O
 
 Sentença Original N°111
@@ -2988,13 +2859,12 @@ no	O
 cidadão	O
 que	O
 esta	B-WRONG
-está	O
 voltando	O
 do	O
 serviço	B-WRONG
 ,	I-WRONG
 vencidos	I-WRONG
-serviço	O
+<correct>serviço	O
 .	O
 
 Sentença Original N°112
@@ -3056,8 +2926,6 @@ nas	B-WRONG
 matérias	I-WRONG
 de	I-WRONG
 reportagem	I-WRONG
-nas	O
-reportagens	O
 mostradas	O
 pela	O
 mídia	O
@@ -3071,13 +2939,13 @@ justificar	O
 o	O
 atentado	O
 com	O
-"Os	O
+Os	O
 autores	O
 das	O
 charges	O
 provocaram	O
 os	O
-terroristas"	O
+terroristas	O
 .	O
 
 Sentença Original N°115
@@ -3095,17 +2963,10 @@ pouco	I-WRONG
 pode	I-WRONG
 até	I-WRONG
 ser	I-WRONG
-negros	O
-em	O
-parte	O
-devido	O
-a	O
-uma	O
 concepção	O
 histórica	O
 mal	O
 dissolvida	B-WRONG
-interpretada	O
 ,	O
 no	O
 entanto	O
@@ -3178,9 +3039,6 @@ da	O
 zona	B-WRONG
 do	I-WRONG
 euro	I-WRONG
-Zona	O
-do	O
-Euro	O
 vem	O
 prejudicando	O
 as	O
@@ -3240,11 +3098,9 @@ saberes	O
 das	O
 pessoas	O
 que	O
-,	O
 por	O
 sua	O
 vez	O
-,	O
 fazem	O
 uso	O
 dos	O
@@ -3305,8 +3161,6 @@ nas	O
 questões	O
 que	B-WRONG
 encontra-se	I-WRONG
-se	O
-encontra	O
 o	O
 Brasil	O
 .	O
@@ -3351,7 +3205,6 @@ Sentença Original N°124
 De	O
 um	O
 lado	O
-,	O
 há	O
 estatísticas	O
 que	O
@@ -3360,7 +3213,6 @@ a	O
 precocidade	O
 do	O
 inicio	O
-início	O
 da	O
 vida	O
 sexual	O
@@ -3389,7 +3241,6 @@ Sentença Original N°125
 O	O
 ensino	O
 à	O
-a	O
 distância	O
 é	O
 tão	O
@@ -3454,8 +3305,6 @@ deve	O
 ao	O
 fato	O
 da	B-WRONG
-de	O
-a	O
 população	O
 mais	O
 carente	O
@@ -3493,7 +3342,6 @@ pacíficos	O
 com	O
 o	O
 intuído	B-WRONG
-intuito	O
 de	O
 melhoras	O
 nas	O
@@ -3504,7 +3352,6 @@ vida	O
 mas	O
 infelizmente	O
 houveram	B-WRONG
-houve	O
 pessoas	O
 com	O
 más	O
@@ -3516,8 +3363,6 @@ ato	I-WRONG
 de	O
 vandalismo	O
 obrigando	B-WRONG
-obrigando	O
-,	O
 assim	O
 ,	O
 a	O
@@ -3570,7 +3415,6 @@ com	O
 certeza	O
 iria	O
 segura-los	B-WRONG
-segurá-los	O
 por	O
 um	O
 curto	O
@@ -3678,8 +3522,6 @@ vontade	O
 de	O
 ter	O
 um	B-WRONG
-por	O
-um	O
 momento	O
 essa	O
 liberdade	O
@@ -3826,7 +3668,6 @@ não	O
 apenas	O
 como	O
 individuo	B-WRONG
-indivíduos	O
 ,	O
 mas	O
 como	O
@@ -3841,8 +3682,6 @@ humano	O
 Sentença Original N°140
 O	O
 jornal	B-WRONG
-jornal	O
-,	O
 que	O
 costumava	O
 publicar	O
@@ -3860,9 +3699,6 @@ grande	O
 ataque	O
 onde	B-WRONG
 morreu	I-WRONG
-em	O
-que	O
-morreram	O
 12	O
 pessoas	O
 e	O
@@ -3932,8 +3768,6 @@ recente	O
 atentado	O
 a	B-WRONG
 maratona	I-WRONG
-à	O
-Maratona	O
 de	O
 Boston	O
 ,	O
@@ -4034,7 +3868,6 @@ haverá	O
 a	O
 mudança	O
 neste	B-WRONG
-nesse	O
 ponto	O
 tão	O
 fundamental	O
@@ -4064,7 +3897,7 @@ um	O
 ajudando	O
 o	O
 outro	B-WRONG
-outro	O
+<correct>outro	O
 .	O
 
 Sentença Original N°148
@@ -4073,7 +3906,6 @@ vez	I-WRONG
 que	I-WRONG
 tomada	I-WRONG
 esta	O
-essa	O
 decisão	B-WRONG
 ,	O
 menores	O
@@ -4096,11 +3928,9 @@ consequentemente	B-WRONG
 a	O
 violência	O
 e	O
-o	O
 tráfico	O
 de	O
 droga	O
-drogas	O
 praticado	O
 por	O
 menores	O
@@ -4112,8 +3942,6 @@ Sentença Original N°149
 O	B-WRONG
 que	I-WRONG
 porque	I-WRONG
-O	O
-porque	O
 de	O
 tamanha	O
 revolta	O
@@ -4123,7 +3951,6 @@ a	O
 toda	O
 essa	O
 repercusão	B-WRONG
-repercussão	O
 nacional	O
 .	O
 
@@ -4134,29 +3961,24 @@ heróis	O
 ?	O
 
 Sentença Original N°151
-Poucos	O
+Poucos</correct>	O
 sabem	O
-,	O
 mais	O
 quem	O
 paga	O
 esse	O
 horário	O
 e	B-WRONG
-é	O
 o	O
 povo	B-WRONG
 ,	I-WRONG
 o	I-WRONG
 nome	I-WRONG
-povo	O
+<correct>povo	O
 .	O
 
 Sentença Original N°152
 Assim	O
-impulso	O
-,	O
-assim	O
 esquecendo	O
 sua	O
 ideologia	O
@@ -4174,7 +3996,6 @@ banais	O
 Sentença Original N°153
 Devido	O
 a	B-WRONG
-à	O
 globalização	O
 ,	O
 informação	O
@@ -4183,7 +4004,7 @@ falta	O
 .	O
 
 Sentença Original N°154
-Precisamos	O
+Precisamos</correct>	O
 espreitar	O
 novas	O
 descobertas	O
@@ -4199,7 +4020,7 @@ que	O
 habitamos	B-WRONG
 ,	I-WRONG
 devemos	I-WRONG
-habitamos	O
+<correct>habitamos	O
 .	O
 
 Sentença Original N°155
@@ -4211,14 +4032,9 @@ preocupação	O
 das	O
 crianças	O
 era	B-WRONG
-era	O
-saber	O
-o	O
 quanto	O
 ela	B-WRONG
 poderia	I-WRONG
-elas	O
-poderiam	O
 brincar	O
 na	O
 rua	O
@@ -4233,13 +4049,6 @@ motivos	O
 desses	O
 protestos	B-WRONG
 como	I-WRONG
-protestos	O
-,	O
-como	O
-,	O
-por	O
-exemplo	O
-,	O
 a	O
 PEC	O
 37	O
@@ -4255,7 +4064,6 @@ corrupção	O
 dentro	O
 das	O
 câmaras	B-WRONG
-Câmaras	O
 municipais	O
 diminuirá	B-WRONG
 com	O
@@ -4272,7 +4080,6 @@ ficha	O
 suja	O
 do	O
 senado	B-WRONG
-Senado	O
 .	O
 
 Sentença Original N°157
@@ -4320,12 +4127,6 @@ conhecido	B-WRONG
 Bullying	I-WRONG
 "	I-WRONG
 )	I-WRONG
-conhecidos	O
-(	O
-"	O
-bullying	O
-"	O
-)	O
 e	O
 ganha	O
 força	O
@@ -4337,13 +4138,6 @@ internet	I-WRONG
 CyberBullying	I-WRONG
 "	I-WRONG
 )	I-WRONG
-à	O
-internet	O
-(	O
-"	O
-cyberbullying	O
-"	O
-)	O
 .	O
 
 Sentença Original N°159
@@ -4452,8 +4246,6 @@ sendo	O
 depositado	O
 no	O
 meio-ambiente	B-WRONG
-meio	O
-ambiente	O
 .	O
 
 Sentença Original N°163
@@ -4484,7 +4276,6 @@ Brasil	O
 ,	O
 devido	O
 a	B-WRONG
-à	O
 intolerância	O
 religiosa	O
 .	O
@@ -4499,8 +4290,6 @@ ocupará	O
 o	O
 primeiro	O
 plano	B-WRONG
-plano	O
-,	O
 em	O
 vez	O
 da	O
@@ -4582,8 +4371,6 @@ da	O
 humanidade	O
 que	B-WRONG
 veremos	I-WRONG
-para	O
-vermos	O
 que	O
 está	O
 repleta	O
@@ -4671,19 +4458,15 @@ a	B-WRONG
 mulher	I-WRONG
 da	I-WRONG
 sociedade	I-WRONG
-a	O
-sociedade	O
 atual	O
 nos	O
 permite	O
 vivenciar	B-WRONG
-observar	O
 é	O
 a	O
 ascensão	O
 da	B-WRONG
 mulher	I-WRONG
-feminina	O
 em	O
 todos	O
 os	O
@@ -4715,7 +4498,6 @@ escolares	O
 como	O
 também	O
 absteu-se	B-WRONG
-absteve-se	O
 do	O
 ambiente	O
 onde	O
@@ -4742,7 +4524,6 @@ que	O
 ,	O
 devido	O
 a	B-WRONG
-à	O
 atual	O
 economia	O
 mundial	O
@@ -4751,7 +4532,6 @@ altamente	O
 globalizada	O
 ,	O
 esta	B-WRONG
-está	O
 afetando	O
 vários	B-WRONG
 países	I-WRONG
@@ -4769,7 +4549,6 @@ aparelhinhos	O
 "	O
 tiram	O
 à	B-WRONG
-a	O
 atenção	O
 dos	O
 alunos	O
@@ -4792,7 +4571,6 @@ também	O
 ,	O
 visando	O
 os	B-WRONG
-aos	O
 princípios	O
 éticos	O
 e	O
@@ -4835,7 +4613,7 @@ homem	O
 .	O
 
 Sentença Original N°177
-O	O
+O</correct>	O
 valor	O
 de	O
 dispersar	O
@@ -4844,7 +4622,6 @@ doutrina	O
 deve	O
 estar	O
 firmada	B-WRONG
-firmado	O
 no	O
 diálogo	O
 e	O
@@ -4873,14 +4650,12 @@ um	O
 médico	B-WRONG
 ,	I-WRONG
 na	I-WRONG
-médico	O
+<correct>médico	O
 .	O
 
 Sentença Original N°179
 E	B-WRONG
 necessária	I-WRONG
-É	O
-necessário	O
 muito	O
 mais	O
 de	O
@@ -4905,9 +4680,6 @@ autoridades	O
 são	B-WRONG
 quem	I-WRONG
 deveriam	I-WRONG
-é	O
-quem	O
-deveria	O
 ser	O
 os	O
 beneficiados	O
@@ -5232,16 +5004,12 @@ diferenciá-los	O
 Sentença Original N°192
 As	O
 sarges	B-WRONG
-charges	O
 retratavam	O
 o	O
 profeta	B-WRONG
 ,	I-WRONG
 e	I-WRONG
 criticava	I-WRONG
-profeta	O
-e	O
-criticavam	O
 o	O
 fanatismo	O
 religioso	O
@@ -5315,10 +5083,6 @@ Hoje	O
 eles	O
 querem	O
 mais	B-WRONG
-pessoas	O
-que	O
-saibam	O
-mais	O
 que	O
 apenas	O
 ler	O
@@ -5352,6 +5116,7 @@ Sentença Original N°196
 Na	O
 teoria	O
 ,	O
+</correct>	O
 ele	O
 quis	O
 dizer	O
@@ -5364,8 +5129,6 @@ ou	O
 massa	B-WRONG
 ,	I-WRONG
 não	I-WRONG
-massa	O
-não	O
 some	O
 simplesmente	O
 da	O
@@ -5396,7 +5159,6 @@ tolerância	O
 à	O
 corrupção	O
 e	O
-aos	O
 abusos	O
 de	O
 poder	O
@@ -5411,16 +5173,11 @@ Principalmente	O
 ,	O
 por	O
 que	O
-ousado	O
-principalmente	O
-porque	O
 tem	O
 como	O
 objetivo	B-WRONG
 ,	I-WRONG
 selecionar	I-WRONG
-objetivo	O
-selecionar	O
 pessoas	O
 consideradas	O
 comuns	O
@@ -5438,16 +5195,12 @@ em	O
 outro	O
 planeta	B-WRONG
 ;	I-WRONG
-planeta	O
-,	O
 para	O
 realizar	O
 uma	O
 viajem	B-WRONG
 para	I-WRONG
 o	I-WRONG
-viagem	O
-ao	O
 planeta	O
 vermelho	O
 .	O
@@ -5594,7 +5347,6 @@ unem-se	O
 para	O
 assistirem	O
 os	B-WRONG
-aos	O
 ,	O
 jogos	O
 da	O
@@ -5624,10 +5376,8 @@ uma	O
 variação	O
 na	O
 linguística	B-WRONG
-linguagem	O
 marcada	O
 de	B-WRONG
-por	O
 traços	O
 culturais	O
 ,	O
@@ -5635,8 +5385,6 @@ alcançados	O
 de	O
 geração	O
 pós-geração	B-WRONG
-em	O
-geração	O
 .	O
 
 Sentença Original N°206
@@ -5750,14 +5498,11 @@ disso	O
 vem	O
 a	O
 escola	B-WRONG
-escola	O
-,	O
 onde	O
 a	O
 criança	O
 vai	O
 entra	B-WRONG
-entrar	O
 pela	O
 primeira	O
 vez	O
@@ -5766,24 +5511,16 @@ um	O
 ambiente	O
 social	O
 ,	O
-em	O
 que	O
 aprenderá	O
-a	O
 conviver	O
 com	O
 as	O
 diferenças	O
 ,	O
 que	B-WRONG
-o	O
-que	O
-,	O
 para	O
 muitos	B-WRONG
-muitos	O
-,	O
-é	O
 uma	O
 tarefa	O
 fácil	O
@@ -5793,7 +5530,7 @@ outros	O
 impossível	B-WRONG
 ,	I-WRONG
 por	I-WRONG
-impossível	O
+<correct>impossível	O
 .	O
 
 Sentença Original N°210
@@ -5840,7 +5577,6 @@ Sentença Original N°212
 Porque	B-WRONG
 ,	I-WRONG
 para	I-WRONG
-Para	O
 solucioná-lo	O
 as	O
 instituições	O
@@ -5889,7 +5625,6 @@ lá	O
 Sentença Original N°214
 Um	O
 ultimo	B-WRONG
-último	O
 ponto	O
 que	O
 também	O
@@ -5918,7 +5653,6 @@ gera	O
 dor	O
 ,	O
 mal	B-WRONG
-males	O
 ,	O
 perdas	O
 ,	O
@@ -6015,7 +5749,7 @@ IPCC	O
 .	O
 
 Sentença Original N°217
-Para	O
+Para</correct>	O
 a	O
 sociedade	O
 daquele	O
@@ -6047,10 +5781,10 @@ dúvidas	O
 pensar	O
 com	O
 a	O
-"razão	O
+razão	O
 e	O
 o	O
-coração"	O
+coração	O
 é	O
 a	O
 maneira	O
@@ -6059,8 +5793,6 @@ apropriada	O
 para	O
 que	B-WRONG
 retorne	I-WRONG
-se	O
-obter	O
 um	O
 futuro	O
 próspero	O
@@ -6101,7 +5833,6 @@ vida	O
 o	O
 bem	O
 maior	O
-de	O
 que	O
 podemos	O
 dispor	O
@@ -6172,7 +5903,6 @@ ou	O
 criminal	O
 -	B-WRONG
 as	I-WRONG
-às	O
 vezes	O
 até	O
 pode	O
@@ -6232,12 +5962,10 @@ mais	O
 intrigante	O
 é	O
 vê	B-WRONG
-ver	O
 negros	O
 tendo	O
 preconceito	O
 de	B-WRONG
-contra	O
 sua	O
 própria	O
 cor	O
@@ -6402,7 +6130,6 @@ Sentença Original N°231
 Porém	O
 ,	O
 esta	B-WRONG
-essa	O
 forma	O
 de	O
 trabalho	O
@@ -6484,21 +6211,6 @@ sustentavél	I-WRONG
 para	I-WRONG
 futuras	I-WRONG
 gerações	I-WRONG
-a	O
-responsabilidade	O
-de	O
-criar	O
-um	O
-ambiente	O
-sustentável	O
-para	O
-as	O
-futuras	O
-gerações	O
-é	O
-de	O
-todos	O
-nós	O
 .	O
 
 Sentença Original N°234
@@ -6506,8 +6218,6 @@ O	O
 governo	O
 tem	B-WRONG
 que	I-WRONG
-tem	O
-de	O
 criar	O
 uma	O
 lei	O
@@ -6521,8 +6231,6 @@ e	O
 lanches	O
 tem	B-WRONG
 que	I-WRONG
-tem	O
-de	O
 haver	O
 um	O
 anúncio	O
@@ -6577,9 +6285,6 @@ As	O
 intensas	O
 chuvas	O
 inundaram	B-WRONG
-inundaram	O
-muitas	O
-regiões	O
 e	O
 provocaram	O
 deslizamentos	O
@@ -6609,7 +6314,6 @@ si	O
 mesmo	O
 ,	O
 portando	B-WRONG
-portanto	O
 a	O
 escola	O
 tem	O
@@ -6639,7 +6343,7 @@ vida	O
 .	O
 
 Sentença Original N°237
-Será	O
+Será</correct>	O
 que	O
 não	O
 houve	O
@@ -6848,8 +6552,6 @@ habitantes	O
 pois	B-WRONG
 ,	I-WRONG
 é	I-WRONG
-pois	O
-é	O
 de	O
 conhecimento	O
 internacional	O
@@ -6867,6 +6569,7 @@ desnutridas	O
 .	O
 
 Sentença Original N°245
+</correct>	O
 No	O
 entanto	O
 ,	O
@@ -6895,14 +6598,12 @@ deixando	O
 assim	O
 uma	O
 duvida	B-WRONG
-dúvida	O
 :	O
 se	O
 a	O
 educação	O
 é	O
 necessário	B-WRONG
-necessária	O
 para	O
 se	O
 ter	O
@@ -6912,16 +6613,13 @@ boa	O
 ,	O
 como	O
 estes	B-WRONG
-esses	O
 famosos	O
 tem	B-WRONG
-têm	O
 hoje	O
 uma	O
 vida	O
 muito	B-WRONG
 bem	I-WRONG
-tão	O
 favorável	O
 ?	O
 
@@ -7028,7 +6726,6 @@ evolução	O
 
 Sentença Original N°251
 È	B-WRONG
-É	O
 difícil	O
 pensar	O
 como	O
@@ -7044,7 +6741,7 @@ pai	O
 homem	O
 e	O
 a	O
-"mãe"	O
+mãe	O
 também	O
 .	O
 
@@ -7174,13 +6871,11 @@ de	O
 falar	O
 ,	O
 deixando	B-WRONG
-ficando	O
 ,	O
 muitas	O
 vezes	O
 ,	O
 esquecido	B-WRONG
-esquecidos	O
 os	O
 limites	O
 da	O
@@ -7191,12 +6886,9 @@ expressão	O
 
 Sentença Original N°257
 fazendo	O
-Fazendo-se	O
 isso	O
 pode	B-WRONG
 ivitar	I-WRONG
-pode-se	O
-evitar	O
 muitas	O
 discussoes	B-WRONG
 no	O
@@ -7228,8 +6920,6 @@ pessoas	O
 preferirão	B-WRONG
 em	I-WRONG
 não	I-WRONG
-preferirem	O
-não	O
 passar	O
 aperto	O
 no	O
@@ -7255,7 +6945,6 @@ de	O
 foram	O
 vistos	B-WRONG
 presentes	I-WRONG
-vistos	O
 durante	O
 dias	O
 após	O
@@ -7278,18 +6967,6 @@ e	I-WRONG
 jogá-los	I-WRONG
 ao	I-WRONG
 chão	I-WRONG
-quando	O
-pessoas	O
-quebraram	O
-e	O
-jogaram	O
-no	O
-chão	O
-objetos	O
-considerados	O
-sagrados	O
-pelos	O
-religiosos	O
 .	O
 
 Sentença Original N°261
@@ -7356,7 +7033,6 @@ a	O
 saúde	O
 e	O
 ao	B-WRONG
-o	O
 meio	O
 ambiente	O
 que	O
@@ -7440,15 +7116,12 @@ contra	O
 manifestantes	B-WRONG
 ,	I-WRONG
 pacíficos	I-WRONG
-manifestantes	O
-pacíficos	O
 .	O
 
 Sentença Original N°269
 Nada	O
 mais	O
 justo	O
-,	O
 afinal	O
 eles	O
 trabalharam	O
@@ -7543,8 +7216,6 @@ vida	O
 de	O
 uma	O
 pessoa	B-WRONG
-pessoa	O
-,	O
 porém	O
 sem	O
 consentimento	O
@@ -7557,20 +7228,16 @@ E	O
 eles	O
 também	O
 tem	B-WRONG
-têm	O
 total	O
 direito	O
 de	O
 podem	B-WRONG
-poder	O
 assistir	O
 um	O
 teatro	O
 ,	O
 um	O
 cinema	B-WRONG
-cinema	O
-,	O
 uma	O
 música	O
 .	O
@@ -7590,7 +7257,6 @@ para	O
 saciar	O
 o	O
 vicio	O
-vício	O
 ,	O
 assim	O
 será	O
@@ -7607,7 +7273,6 @@ ao	O
 seu	O
 habito	B-WRONG
 ,	O
-hábito	O
 sem	O
 tirar	O
 o	O
@@ -7620,15 +7285,10 @@ de	O
 não	O
 se	O
 tornar	B-WRONG
-em	O
 o	B-WRONG
-os	O
 chamado	B-WRONG
-s	O
 fumante	B-WRONG
-s	O
 passivo	B-WRONG
-s	O
 .	O
 
 Sentença Original N°275
@@ -7760,7 +7420,6 @@ e	O
 preservação	O
 da	O
 memoria	B-WRONG
-memória	O
 como	O
 pedir	O
 permissão	O
@@ -7768,7 +7427,6 @@ para	O
 escreve	O
 a	O
 estória	B-WRONG
-história	O
 que	O
 vai	O
 ser	O
@@ -7793,7 +7451,6 @@ qual	O
 ,	O
 o	O
 sentindo	B-WRONG
-sentido	O
 da	O
 liberdade	O
 de	O
@@ -7909,8 +7566,6 @@ direitos	O
 LGBT	O
 sendo	O
 ampliados	B-WRONG
-ampliados	O
-,	O
 torna-se	O
 cada	O
 vez	O
@@ -7990,7 +7645,6 @@ se	O
 adequasse	O
 a	O
 esta	B-WRONG
-essa	O
 proposta	O
 de	O
 novo	O
@@ -7998,7 +7652,6 @@ meio	O
 de	O
 transporte	O
 ocorreria	B-WRONG
-ocorreriam	O
 melhorias	O
 incontáveis	O
 para	O
@@ -8013,14 +7666,12 @@ possível	O
 não	O
 basta	B-WRONG
 as	I-WRONG
-bastam	O
 bicicletas	O
 ,	O
 pessoas	O
 que	O
 saibam	O
 usa-las	B-WRONG
-usá-las	O
 e	O
 ciclovias	O
 .	O
@@ -8066,7 +7717,6 @@ feito	O
 para	O
 a	O
 ascenção	B-WRONG
-ascensão	O
 social	O
 tanto	O
 do	O
@@ -8087,7 +7737,6 @@ caso	O
 o	O
 de	O
 Célsio	B-WRONG
-Celso	O
 Santebañes	O
 ,	O
 mais	O
@@ -8101,7 +7750,6 @@ fez	O
 várias	O
 modificações	O
 cirurgicas	B-WRONG
-cirúrgicas	O
 em	O
 busca	O
 do	O
@@ -8115,8 +7763,6 @@ do	O
 boneco	B-WRONG
 ,	I-WRONG
 ken	I-WRONG
-boneco	O
-Ken	O
 .	O
 
 Sentença Original N°290
@@ -8127,7 +7773,6 @@ são	O
 de	O
 pessoas	O
 publicas	B-WRONG
-públicas	O
 conhecidas	O
 em	O
 todo	O
@@ -8158,19 +7803,16 @@ Geisy	O
 Arruda	O
 ,	O
 e	B-WRONG
-é	O
 um	O
 grande	O
 exemplo	O
 dessa	O
 intolerância	B-WRONG
-intolerância	O
 para	O
 com	O
 os	O
 modelos	O
 não	B-WRONG
-não	O
 aceitos	O
 pelas	O
 diversas	O
@@ -8244,7 +7886,6 @@ as	O
 tecnologias	O
 que	O
 surgem	O
-,	O
 como	O
 os	O
 "	O
@@ -8254,9 +7895,6 @@ iPhone	O
 "	B-WRONG
 iPed	I-WRONG
 "	I-WRONG
-"	O
-iPad	O
-"	O
 ,	O
 entre	O
 outros	O
@@ -8329,8 +7967,6 @@ erro	O
 Sentença Original N°296
 Apesar	O
 das	B-WRONG
-de	O
-as	O
 ações	O
 serem	O
 diferentes	O
@@ -8341,9 +7977,6 @@ ritual	I-WRONG
 "	I-WRONG
 está	I-WRONG
 presente	I-WRONG
-esse	O
-ritual	O
-ocorre	O
 até	O
 os	O
 dias	O
@@ -8373,7 +8006,6 @@ para	O
 um	O
 relacionamento	O
 saudavel	O
-saudável	O
 .	O
 
 Sentença Original N°299
@@ -8408,28 +8040,6 @@ de	I-WRONG
 ocorrer	I-WRONG
 uma	I-WRONG
 tragédia	I-WRONG
-por	O
-isso	O
-aumentam	O
-a	O
-velocidade	O
-,	O
-às	O
-vezes	O
-dormem	O
-no	O
-volante	O
-,	O
-fazem	O
-coisas	O
-que	O
-aumentam	O
-os	O
-riscos	O
-de	O
-ocorrer	O
-uma	O
-tragédia	O
 .	O
 
 Sentença Original N°300
@@ -8507,7 +8117,6 @@ pensamento	O
 é	O
 totalmente	O
 descabido	B-WRONG
-descabida	O
 e	O
 completamente	O
 sem	O
@@ -8522,7 +8131,6 @@ que	O
 é	O
 estuprada	O
 usam	B-WRONG
-usa	O
 roupas	O
 consideradas	O
 normais	O
@@ -8578,9 +8186,6 @@ partirmos	O
 do	O
 pressuposto	O
 que	B-WRONG
-de	O
-que	O
-,	O
 quando	O
 depredamos	O
 algo	O
@@ -8591,7 +8196,6 @@ razão	O
 ,	O
 se	B-WRONG
 nota	I-WRONG
-nota-se	O
 que	O
 os	O
 manifestantes	O
@@ -8604,7 +8208,6 @@ que	O
 dentre	O
 eles	O
 estão	B-WRONG
-estejam	O
 alguns	O
 que	O
 conseguem	O
@@ -8689,7 +8292,6 @@ espelhos	O
 Sentença Original N°307
 Referente	O
 ás	B-WRONG
-às	O
 duas	O
 propostas	O
 apresentadas	O
@@ -8736,7 +8338,6 @@ marcada	O
 pela	O
 visão	O
 em	B-WRONG
-de	O
 que	O
 "	O
 somente	O
@@ -8883,8 +8484,6 @@ criar	O
 uma	O
 estrutura	O
 no	O
-para	O
-o	O
 combate	O
 ao	O
 contrabando	O
@@ -8902,7 +8501,6 @@ aumento	O
 do	O
 comércio	O
 ilegal	O
-,	O
 o	O
 qual	O
 está	O
@@ -8921,8 +8519,6 @@ Sentença Original N°312
 Realmente	O
 é	O
 porque	B-WRONG
-por	O
-que	O
 elas	O
 querem	O
 ?	O
@@ -8935,14 +8531,12 @@ anos	O
 ,	O
 foram	O
 inúmeras	O
-as	O
 barreiras	O
 ultrapassadas	O
 pelos	O
 idosos	O
 de	O
 hoje	O
-,	O
 que	O
 naquela	O
 época	O
@@ -9014,7 +8608,6 @@ que	O
 isso	O
 está	O
 ocorrendo	O
-,	O
 a	O
 escola	O
 tem	O
@@ -9048,12 +8641,10 @@ agressor	O
 es	O
 )	O
 e	O
-,	O
 se	O
 for	O
 o	O
 caso	O
-,	O
 fazer	O
 também	O
 um	O
@@ -9062,9 +8653,6 @@ com	O
 esses	O
 afim	B-WRONG
 de	I-WRONG
-a	O
-fim	O
-de	O
 tentar	O
 ajudar	O
 a	O
@@ -9106,15 +8694,11 @@ provocar	O
 danos	O
 psicológicos	O
 irreversíveis	O
-em	O
-quem	O
-?	O
 .	O
 
 Sentença Original N°317
 Muitos	O
 cidadões	B-WRONG
-cidadãos	O
 brasileiros	O
 não	O
 separam	O
@@ -9153,9 +8737,6 @@ onde	I-WRONG
 noventa	I-WRONG
 e	I-WRONG
 oito	I-WRONG
-militares	O
-e	O
-muitas	O
 vidas	O
 já	O
 foram	O
@@ -9337,14 +8918,10 @@ de	O
 jovens	O
 que	O
 possuem	B-WRONG
-possui	O
 celulares	O
 e	O
 levam	B-WRONG
 pra	I-WRONG
-os	O
-leva	O
-para	O
 as	O
 escolas	O
 está	O
@@ -9478,7 +9055,6 @@ que	O
 diz	O
 respeito	O
 em	B-WRONG
-a	O
 ser	O
 uma	O
 brincadeira	O
@@ -9497,23 +9073,16 @@ aplicada	B-WRONG
 o	I-WRONG
 trote	I-WRONG
 "	I-WRONG
-aplicado	O
-o	O
-trote	O
 .	O
 
 Sentença Original N°332
 Entretanto	B-WRONG
-Entretanto	O
-,	O
 mesmo	O
 que	O
 essa	O
 seja	O
 a	O
 realidade	B-WRONG
-realidade	O
-,	O
 é	O
 possível	O
 a	O
@@ -9529,7 +9098,6 @@ televisão	O
 ou	O
 o	O
 radio	B-WRONG
-rádio	O
 para	O
 uma	O
 escolha	O
@@ -9539,12 +9107,10 @@ do	O
 candidato	B-WRONG
 ,	I-WRONG
 já	I-WRONG
-candidato	O
+<correct>candidato	O
 .	O
 
 Sentença Original N°333
-europeia	O
-.	O
 A	O
 crise	O
 vem	O
@@ -9571,8 +9137,6 @@ Banco	O
 Europeu	O
 e	O
 que	B-WRONG
-que	O
-,	O
 por	O
 conta	O
 de	O
@@ -9584,8 +9148,6 @@ uma	O
 balança	O
 comercial	O
 desequilibrada	B-WRONG
-desequilibrada	O
-,	O
 não	O
 conseguiram	O
 quitar	O
@@ -9616,14 +9178,13 @@ para	O
 que	O
 a	O
 copa	B-WRONG
-Copa	O
 seja	O
 segura	O
 para	O
 todos	B-WRONG
 ,	I-WRONG
 os	I-WRONG
-todos	O
+<correct>todos	O
 .	O
 
 Sentença Original N°336
@@ -9677,6 +9238,7 @@ necessária	O
 Sentença Original N°337
 E	O
 ,	O
+</correct>	O
 em	O
 vez	O
 de	O
@@ -9687,8 +9249,6 @@ com	O
 programas	O
 como	O
 as	B-WRONG
-o	O
-das	O
 cotas	O
 raciais	O
 ,	O
@@ -9840,7 +9400,6 @@ que	O
 diz	O
 respeito	O
 a	B-WRONG
-à	O
 leitura	O
 .	O
 
@@ -9848,7 +9407,6 @@ Sentença Original N°345
 Então	O
 deixamos	O
 para	O
-deixemos	O
 que	O
 os	O
 donos	O
@@ -9857,11 +9415,9 @@ estabelecimento	O
 decidam	O
 que	O
 tipos	O
-tipo	O
 de	O
 clientes	O
 queiram	O
-querem	O
 ter	O
 e	O
 se	O
@@ -9869,7 +9425,6 @@ tiverem	O
 fumantes	O
 ,	O
 faça	O
-façam	O
 uma	O
 área	O
 restrita	O
@@ -10031,7 +9586,7 @@ entender	O
 a	O
 violência	O
 é	O
-que	O
+que</correct>	O
 no	O
 Estado	O
 de	O
@@ -10247,8 +9802,6 @@ nem	O
 mesmo	O
 quando	O
 trata-se	B-WRONG
-se	O
-trata	O
 da	O
 própria	O
 saúde	O
@@ -10304,15 +9857,6 @@ mundo	I-WRONG
 do	I-WRONG
 Brasil	I-WRONG
 ,	I-WRONG
-identificar	O
-,	O
-na	O
-Copa	O
-do	O
-Mundo	O
-do	O
-Brasil	O
-,	O
 uma	O
 oportunidade	O
 para	O
@@ -10391,7 +9935,6 @@ da	O
 ferramenta	O
 que	O
 tem	B-WRONG
-têm	O
 em	O
 mãos	O
 para	O
@@ -10448,7 +9991,6 @@ tem	O
 um	O
 lugar	O
 pra	B-WRONG
-para	O
 ele	O
 ,	O
 na	O
@@ -10468,7 +10010,6 @@ ir	O
 às	O
 ruas	O
 tantos	B-WRONG
-tanto	O
 em	O
 protestos	O
 pacíficos	O
@@ -10539,7 +10080,7 @@ vida	O
 revirada	O
 e	O
 seus	O
-"podres"	O
+podres	O
 revelados	O
 ,	O
 o	O
@@ -10608,10 +10149,6 @@ não	O
 são	O
 uma	B-WRONG
 realidade	I-WRONG
-uma	O
-forma	O
-de	O
-protesto	O
 exclusiva	O
 da	O
 juventude	O
@@ -10634,20 +10171,15 @@ mesma	O
 forma	O
 dela	O
 e	B-WRONG
-e	O
-,	O
 mesmo	O
 que	O
 pareça	O
 um	O
 problema	O
 ambiental	B-WRONG
-ambiental	O
-,	O
 está	O
 mais	O
 envolvido	B-WRONG
-envolvida	O
 uma	O
 questão	O
 social	O
@@ -10666,14 +10198,13 @@ da	O
 nossa	O
 humanidade	O
 esta	B-WRONG
-está	O
 em	O
 nossas	O
 mãos	O
 .	O
 
 Sentença Original N°371
-Votaram	O
+Votaram</correct>	O
 e	O
 nada	O
 aconteceu	O
@@ -10725,7 +10256,6 @@ nossa	O
 fica	O
 suscetível	O
 à	B-WRONG
-a	O
 ataques	O
 terroristas	O
 nessa	O
@@ -10882,8 +10412,6 @@ de	O
 liberdades	O
 ,	O
 onde	B-WRONG
-em	O
-que	O
 o	O
 aluno	O
 decide	O
@@ -10905,8 +10433,6 @@ o	O
 que	O
 acontece	O
 numa	B-WRONG
-como	O
-uma	O
 tentativa	O
 de	O
 "	O
@@ -10918,7 +10444,6 @@ do	O
 passado	O
 ,	O
 onde	B-WRONG
-quando	O
 a	O
 escola	O
 era	O
@@ -10965,8 +10490,6 @@ mais	O
 barato	B-WRONG
 ,	I-WRONG
 para	I-WRONG
-barato	O
-para	O
 manter	O
 a	O
 boa	O
@@ -10978,8 +10501,6 @@ acaba	O
 por	O
 ser	B-WRONG
 entregue	I-WRONG
-se	O
-entregar	O
 nas	O
 mãos	O
 de	O
@@ -11107,7 +10628,6 @@ e	O
 quanto	B-WRONG
 vale	I-WRONG
 a	I-WRONG
-da	O
 moral	O
 de	O
 uma	O
@@ -11144,7 +10664,6 @@ Sentença Original N°387
 Quando	O
 se	O
 houve	B-WRONG
-ouve	O
 falar	O
 em	O
 organismos	O
@@ -11197,24 +10716,19 @@ Sentença Original N°389
 Algum	B-WRONG
 tempo	I-WRONG
 sempre	I-WRONG
-Sempre	O
 se	O
 defendeu	O
 a	B-WRONG
 ideia	I-WRONG
-o	O
-ideal	O
 de	O
-uma	O
 mente	O
 sã	O
 e	B-WRONG
-num	O
 corpo	O
 são	B-WRONG
 ,	I-WRONG
 infelizmente	I-WRONG
-são	O
+<correct>são	O
 .	O
 
 Sentença Original N°390
@@ -11284,7 +10798,6 @@ ter	O
 o	O
 direito	O
 a	B-WRONG
-à	O
 democracia	O
 ,	O
 foi	O
@@ -11471,12 +10984,10 @@ cada	O
 vez	O
 mais	O
 considerada	B-WRONG
-considerado	O
 normal	O
 no	B-WRONG
 meio	I-WRONG
 da	I-WRONG
-na	O
 sociedade	O
 e	O
 merece	O
@@ -11493,9 +11004,6 @@ do	O
 controle	B-WRONG
 mas	I-WRONG
 que	I-WRONG
-controle	O
-,	O
-mas	O
 também	O
 não	O
 venha	O
@@ -11515,8 +11023,6 @@ por	O
 cirurgias	O
 de	O
 risco	B-WRONG
-risco	O
-,	O
 que	O
 têm	O
 se	O
@@ -11586,22 +11092,17 @@ A	O
 é	O
 a	O
 substância	O
-de	O
 que	O
 nós	B-WRONG
-nós	O
-,	O
 seres	O
 humanos	B-WRONG
-humanos	O
-,	O
 mais	O
 precisamos	B-WRONG
 ,	I-WRONG
 e	I-WRONG
 que	I-WRONG
 não	I-WRONG
-precisamos	O
+<correct>precisamos	O
 .	O
 
 Sentença Original N°401
@@ -11696,7 +11197,6 @@ gestantes	O
 com	O
 fetos	O
 enencéfalos	B-WRONG
-anencéfalos	O
 tudo	O
 isso	O
 se	O
@@ -11737,12 +11237,10 @@ e	O
 visa	O
 sempre	O
 o	B-WRONG
-ao	O
 bem	O
 estar	O
 e	O
 a	B-WRONG
-à	O
 preservação	O
 da	O
 vida	O
@@ -11859,7 +11357,6 @@ escola	O
 e	O
 também	O
 a	B-WRONG
-à	O
 sociedade	O
 .	O
 
@@ -11918,7 +11415,6 @@ de	O
 reais	O
 desviados	O
 ;	O
-,	O
 quando	O
 deveriam	O
 ser	O
@@ -11938,7 +11434,6 @@ aos	O
 alunos	O
 a	O
 prestação	B-WRONG
-realização	O
 de	O
 um	O
 bom	O
@@ -11947,10 +11442,6 @@ vestibular	O
 a	B-WRONG
 nível	I-WRONG
 de	I-WRONG
-no	O
-mesmo	O
-nível	O
-de	O
 estudantes	O
 da	O
 rede	O
@@ -11983,7 +11474,6 @@ gradual	O
 ,	O
 porém	O
 considerável	O
-,	O
 não	O
 tenha	O
 um	O
@@ -12015,9 +11505,6 @@ violência	O
 
 Sentença Original N°416
 Os	B-WRONG
-Os	O
-indivíduos	O
-com	O
 pensamentos	O
 extremados	O
 ,	O
@@ -12120,7 +11607,6 @@ ofereceria	O
 alternativas	O
 que	O
 reduzem	B-WRONG
-reduzissem	O
 a	O
 exposição	O
 do	O
@@ -12132,12 +11618,10 @@ criminalidade	O
 ,	O
 possibilitando	O
 o	B-WRONG
-ao	O
 jovem	O
 não	O
 só	B-WRONG
 de	I-WRONG
-só	O
 estudar	O
 ,	O
 mas	O
@@ -12145,9 +11629,6 @@ também	O
 de	B-WRONG
 fazer	I-WRONG
 o	I-WRONG
-fazer	O
-aquilo	O
-de	O
 que	O
 gosta	O
 ,	O
@@ -12269,12 +11750,13 @@ uma	O
 demonstração	O
 de	O
 afinidades	B-WRONG
-carinho	O
+<correct>carinho	O
 ,	O
 afeto	O
 .	O
 
 Sentença Original N°426
+</correct>	O
 Com	O
 essa	O
 modificação	O
@@ -12295,8 +11777,6 @@ seja	O
 a	O
 hora	O
 do	B-WRONG
-de	O
-o	O
 Brasil	O
 mostrar	O
 realmente	O
@@ -12318,8 +11798,6 @@ Esse	O
 fato	O
 ocorre	O
 porque	B-WRONG
-porque	O
-,	O
 ao	O
 passo	O
 que	O
@@ -12329,7 +11807,6 @@ número	O
 de	O
 adeptos	O
 deste	B-WRONG
-desse	O
 exercício	O
 ,	O
 enxerga-se	O
@@ -12349,7 +11826,6 @@ automóveis	B-WRONG
 
 Sentença Original N°428
 Deste	B-WRONG
-Desse	O
 modo	O
 ,	O
 a	O
@@ -12359,7 +11835,6 @@ de	O
 conciliar	O
 os	O
 pros	B-WRONG
-prós	O
 e	O
 contras	O
 dessa	O
@@ -12390,9 +11865,6 @@ que	O
 o	B-WRONG
 mesmo	I-WRONG
 mantenha-se	I-WRONG
-ele	O
-se	O
-mantenha	O
 desligado	O
 durante	O
 as	O
@@ -12404,7 +11876,6 @@ utilizado	O
 em	O
 casos	O
 extremos	O
-em	O
 que	O
 seu	O
 uso	O
@@ -12430,7 +11901,6 @@ Devido	O
 à	O
 legislação	O
 regente	B-WRONG
-vigente	O
 ,	O
 o	O
 país	O
@@ -12446,9 +11916,6 @@ protestos	O
 ocorridos	B-WRONG
 por	I-WRONG
 protestantes	I-WRONG
-praticados	O
-por	O
-manifestantes	O
 locais	O
 .	O
 
@@ -12465,7 +11932,6 @@ treinamento	O
 da	O
 corporação	O
 de	B-WRONG
-sobre	O
 como	O
 agir	O
 em	O
@@ -12487,7 +11953,6 @@ os	O
 causadores	B-WRONG
 da	I-WRONG
 baderna	I-WRONG
-baderneiros	O
 .	O
 
 Sentença Original N°432
@@ -12556,13 +12021,10 @@ planeta	O
 Sentença Original N°434
 Portanto	O
 ,	O
-os	O
 meios	O
 de	O
 comunicações	B-WRONG
 tem	I-WRONG
-comunicação	O
-têm	O
 ajudado	O
 muito	O
 na	O
@@ -12572,8 +12034,6 @@ o	O
 racismo	O
 ,	O
 mas	B-WRONG
-mas	O
-,	O
 ainda	O
 sim	O
 ,	O
@@ -12631,12 +12091,6 @@ qual	I-WRONG
 esse	I-WRONG
 lixo	I-WRONG
 constitui-se	I-WRONG
-nos	O
-quais	O
-esses	O
-lixos	O
-se	O
-encontram	O
 ?	O
 
 Sentença Original N°436
@@ -12652,18 +12106,12 @@ explícita	O
 sobre	O
 as	O
 conseqüências	B-WRONG
-consequências	O
 do	O
 uso	B-WRONG
 do	I-WRONG
 álcool	I-WRONG
 tão	I-WRONG
 cedo	I-WRONG
-do	O
-uso	O
-precoce	O
-do	O
-álcool	O
 são	O
 poucas	O
 em	O
@@ -12694,7 +12142,6 @@ despercebido	O
 sendo	O
 algumas	O
 conseqüências	B-WRONG
-consequências	O
 como	O
 perda	O
 de	O
@@ -12722,7 +12169,6 @@ do	O
 jovem	O
 que	O
 vira	B-WRONG
-virá	O
 a	O
 se	O
 tornar	O
@@ -12875,8 +12321,6 @@ Essas	O
 manifestações	O
 devem	O
 ser	B-WRONG
-ser	O
-,	O
 sim	O
 ,	O
 democráticas	O
@@ -12900,7 +12344,7 @@ culpa	O
 ?	O
 
 Sentença Original N°442
-A	O
+A</correct>	O
 precariedade	O
 na	O
 saúde	O
@@ -12914,7 +12358,6 @@ e	O
 na	O
 segurança	O
 foram	B-WRONG
-foi	O
 um	O
 dos	O
 motivos	O
@@ -13019,7 +12462,6 @@ correto	O
 assim	O
 todos	O
 receberam	B-WRONG
-receberão	O
 um	O
 ensino	O
 de	O
@@ -13094,13 +12536,6 @@ fatores	I-WRONG
 mais	I-WRONG
 importantes	I-WRONG
 é	I-WRONG
-Um	O
-dos	O
-fatores	O
-mais	O
-importantes	O
-talvez	O
-seja	O
 a	O
 criação	O
 .	O
@@ -13135,7 +12570,6 @@ uma	O
 vez	O
 que	O
 esta	B-WRONG
-essa	O
 prática	O
 encontra-se	O
 conjugada	O
@@ -13166,7 +12600,6 @@ física	O
 e/ou	O
 psicológica	O
 a	B-WRONG
-contra	O
 alguém	O
 ,	O
 sendo	O
@@ -13192,7 +12625,6 @@ um	O
 acordo	O
 pra	O
 resolve	B-WRONG
-resolver	O
 a	O
 situaçao	B-WRONG
 ,	O
@@ -13219,7 +12651,6 @@ de	O
 participação	O
 do	O
 isso	B-WRONG
-idoso	O
 em	O
 suas	O
 ações	O
@@ -13284,8 +12715,6 @@ mostra	O
 a	O
 frieza	O
 que	B-WRONG
-com	O
-que	O
 algumas	O
 pessoas	O
 encaram	O
@@ -13359,8 +12788,6 @@ como	O
 antes	O
 ,	O
 e	B-WRONG
-por	O
-isso	O
 essas	O
 pessoas	O
 acabam	O
@@ -13394,8 +12821,6 @@ concentração	O
 e	O
 desafios	O
 superados	B-WRONG
-superados	O
-,	O
 finalmente	O
 ingressam	O
 no	O
@@ -13403,13 +12828,10 @@ curso	O
 e	O
 universidade	O
 sonhadas	B-WRONG
-sonhados	O
 .	O
 
 Sentença Original N°460
 Porém	B-WRONG
-Porém	O
-,	O
 um	O
 ato	O
 que	O
@@ -13420,7 +12842,6 @@ festivo	O
 ,	O
 se	B-WRONG
 torna	I-WRONG
-torna-se	O
 uma	O
 ação	O
 de	O
@@ -13434,7 +12855,6 @@ calouros	O
 ,	O
 no	B-WRONG
 qual	I-WRONG
-pois	O
 gera	O
 humilhações	O
 ,	O
@@ -13449,7 +12869,6 @@ uma	O
 das	O
 piores	O
 causas	B-WRONG
-consequências	O
 que	O
 o	O
 trote	O
@@ -13714,7 +13133,6 @@ A	O
 frase	O
 do	O
 filósofo	B-WRONG
-escritor	O
 Victor	O
 Hugo	O
 já	O
@@ -13729,9 +13147,6 @@ com	O
 quaisquer	O
 religião	B-WRONG
 independente	I-WRONG
-religiões	O
-,	O
-independentemente	O
 de	O
 acreditar	O
 em	O
@@ -13787,8 +13202,6 @@ dos	O
 políticos	O
 ,	O
 onde	B-WRONG
-em	O
-que	O
 o	O
 nosso	O
 dinheiro	O
@@ -13827,11 +13240,11 @@ voto	O
 
 Sentença Original N°468
 "	O
+</correct>	O
 E	O
 o	O
 tradutor	O
 começou	B-WRONG
-começa	O
 a	O
 ajudar	O
 a	O
@@ -13939,9 +13352,6 @@ transporte	O
 ,	O
 claramente	B-WRONG
 reduzirá	I-WRONG
-será	O
-evidentemente	O
-reduzido	O
 o	O
 número	O
 de	O
@@ -13971,17 +13381,10 @@ estéticos	O
 Sentença Original N°475
 Os	B-WRONG
 noticiários	I-WRONG
-Ela	O
-está	O
-presente	O
-nos	O
-noticiários	O
-que	O
 frequentemente	O
 mostram	O
 as	O
 trajédias	B-WRONG
-tragédias	O
 em	O
 consequência	O
 do	O
@@ -14071,11 +13474,6 @@ sérios	B-WRONG
 e	I-WRONG
 digo	I-WRONG
 mais	I-WRONG
-sérios	O
-e	O
-digo	O
-mais	O
-:	O
 os	O
 que	O
 dizem	O
@@ -14085,7 +13483,6 @@ eles	O
 também	O
 são	O
 complice	B-WRONG
-cúmplices	O
 dos	O
 ladrões	O
 .	O
@@ -14182,19 +13579,17 @@ indivíduo	O
 .	O
 
 Sentença Original N°482
-Mas	O
+Mas</correct>	O
 como	O
 acabar	O
 com	O
 este	O
-esse	O
 vício	O
 e	O
 com	O
 o	O
 consumo	O
 desta	O
-dessa	O
 droga	O
 ?	O
 
@@ -14242,18 +13637,10 @@ leilão	O
 foi	O
 encerrado	O
 por	B-WRONG
-com	O
-o	O
-lance	O
-de	O
 um	O
 japonês	O
 ,	O
 Natsu	B-WRONG
-identificado	O
-apenas	O
-como	O
-Natsu	O
 ,	O
 que	O
 ofereceu	O
@@ -14345,14 +13732,11 @@ causados	O
 pelo	O
 cigarro	O
 por	O
-podem	O
 até	O
 ser	O
 comparado	O
-s	O
 com	O
 os	O
-aos	O
 de	O
 uma	O
 pessoa	O
@@ -14366,9 +13750,6 @@ hábito	O
 Sentença Original N°489
 Prática	O
 essa	O
-automedicar	O
-,	O
-prática	O
 nada	O
 saudável	O
 já	O
@@ -14380,8 +13761,6 @@ pessoa	O
 a	B-WRONG
 se	I-WRONG
 intoxicar	I-WRONG
-à	O
-intoxicação	O
 ou	O
 até	O
 mesmo	O
@@ -14390,9 +13769,8 @@ morte	O
 .	O
 
 Sentença Original N°490
-parágrafo	O
+</correct>	O
 com	O
-Com	O
 esse	O
 "	O
 novo	O
@@ -14461,8 +13839,6 @@ Sentença Original N°493
 Penso	B-WRONG
 que	I-WRONG
 não	I-WRONG
-Essa	O
-não	O
 é	O
 uma	O
 forma	O
@@ -14471,7 +13847,6 @@ inteligente	O
 de	O
 protesto	O
 o	B-WRONG
-e	O
 melhor	O
 seria	O
 se	O
@@ -14484,13 +13859,8 @@ em	O
 pessoas	O
 que	O
 mostrem	B-WRONG
-mostrassem	O
 verdadeiras	O
 plataformas	B-WRONG
-plataformas	O
-de	O
-governo	O
-,	O
 com	O
 um	O
 histórico	O
@@ -14500,7 +13870,7 @@ nos	O
 representar	B-WRONG
 mas	I-WRONG
 ,	I-WRONG
-representar	O
+<correct>representar	O
 .	O
 
 Sentença Original N°494
@@ -14559,18 +13929,6 @@ São	I-WRONG
 Paulo	I-WRONG
 ,	I-WRONG
 onde	I-WRONG
-na	O
-cidade	O
-de	O
-São	O
-Paulo	O
-o	O
-sistema	O
-de	O
-rodízio	O
-,	O
-em	O
-que	O
 só	O
 podiam	O
 ser	O
@@ -14605,15 +13963,11 @@ Esses	O
 números	B-WRONG
 ,	I-WRONG
 só	I-WRONG
-números	O
-só	O
 confirmam	O
 a	O
 urgência	O
 de	O
 criar-se	B-WRONG
-se	O
-criarem	O
 punições	O
 mais	O
 severas	O
@@ -14773,7 +14127,6 @@ o	O
 esforço	O
 passado	O
 não	O
-lhes	O
 garante-	O
 lhes	B-WRONG
 um	O
@@ -14794,7 +14147,6 @@ aposentadoria	O
 que	O
 não	O
 os	B-WRONG
-lhes	O
 permite	O
 luxo	O
 algum	O
@@ -14859,21 +14211,17 @@ pacientes	O
 
 Sentença Original N°504
 Dessa	O
-porcentagem	O
+porcentagem</correct>	O
 boa	O
 parte	O
 se	O
 perde	B-WRONG
 ,	I-WRONG
 pela	I-WRONG
-pede	O
-pelas	O
 tubulações	O
 arcaicas	B-WRONG
 ,	I-WRONG
 E	I-WRONG
-arcaicas	O
-e	O
 pelas	O
 ligações	O
 clandestinas	O
@@ -14896,7 +14244,6 @@ sobre	O
 os	O
 efeitos	O
 sócio-biológicos	B-WRONG
-sociobiológicos	O
 do	O
 álcool	O
 ,	O
@@ -14906,7 +14253,6 @@ Estado	O
 desenvolvendo	O
 apoio	O
 as	B-WRONG
-às	O
 famílias	O
 que	O
 são	O
@@ -15033,8 +14379,6 @@ samaritanos	O
 Sentença Original N°510
 A	O
 família	B-WRONG
-família	O
-,	O
 sendo	O
 um	O
 dos	O
@@ -15055,8 +14399,6 @@ e	O
 mulher	O
 ,	O
 afim	B-WRONG
-a	O
-fim	O
 de	O
 que	O
 não	O
@@ -15137,11 +14479,6 @@ brasileiros	O
 Sentença Original N°513
 Por	O
 outro	O
-física	O
-,	O
-por	O
-outro	O
-,	O
 há	O
 quem	O
 critique	O
@@ -15171,7 +14508,6 @@ utilizado	O
 pelos	O
 candidatos	B-WRONG
 ,	I-WRONG
-candidatos	O
 é	O
 obrigatório	O
 ,	O
@@ -15186,7 +14522,6 @@ para	O
 que	O
 os	B-WRONG
 próprios	I-WRONG
-eles	O
 sejam	O
 vistos	O
 e	O
@@ -15198,16 +14533,13 @@ eleitores	O
 Sentença Original N°515
 Quando	O
 o	O
-assunto	O
+assunto</correct>	O
 é	O
 abordado	O
 logo	B-WRONG
 ,	I-WRONG
 surge	I-WRONG
 uma	I-WRONG
-logo	O
-surge	O
-um	O
 argumento	O
 que	O
 muitas	O
@@ -15217,7 +14549,6 @@ unânime	O
 entre	O
 os	O
 universitário	B-WRONG
-universitários	O
 :	O
 a	O
 necessidade	O
@@ -15260,12 +14591,8 @@ país	O
 de	O
 todos	B-WRONG
 "	I-WRONG
-todos	O
-?	O
-,	O
 não	O
 da	B-WRONG
-dá	O
 oportunidade	O
 aos	O
 de	O
@@ -15323,10 +14650,6 @@ fato	B-WRONG
 ,	I-WRONG
 deve-se	I-WRONG
 a	I-WRONG
-fato	O
-se	O
-deve	O
-à	O
 falta	O
 de	O
 chuva	O
@@ -15393,7 +14716,6 @@ tal	O
 relevância	O
 seria	O
 resolvida	B-WRONG
-resolvido	O
 com	O
 um	O
 tratamento	O
@@ -15410,10 +14732,6 @@ educação	O
 ,	O
 assim	B-WRONG
 conscientizando	I-WRONG
-de	O
-modo	O
-a	O
-conscientizar	O
 os	O
 jovens	O
 do	O
@@ -15482,7 +14800,7 @@ incentivados	O
 
 Sentença Original N°522
 O	O
-telefone	O
+telefone</correct>	O
 celular	O
 facilita	O
 muito	O
@@ -15507,13 +14825,6 @@ mas	B-WRONG
 não	I-WRONG
 como	I-WRONG
 proibição	I-WRONG
-embora	O
-não	O
-seja	O
-o	O
-caso	O
-de	O
-proibi-la	O
 .	O
 
 Sentença Original N°523
@@ -15584,7 +14895,6 @@ Sentença Original N°528
 As	O
 cidades	O
 vem	B-WRONG
-vêm	O
 crescendo	O
 num	O
 ritmo	O
@@ -15891,25 +15201,19 @@ escolar	O
 .	O
 
 Sentença Original N°538
-refém	O
-.	O
 A	O
 repreensão	O
 das	O
 autoridades	O
 tende	B-WRONG
 a	I-WRONG
-deveria	O
 ser	O
 mais	O
 energética	B-WRONG
 ,	I-WRONG
 onde	I-WRONG
-enérgica	O
-e	O
 se	O
 concentrará	B-WRONG
-concentrar	O
 nas	O
 causas	O
 e	O
@@ -15938,8 +15242,6 @@ eutanásia	O
 ,	O
 pois	O
 isto	B-WRONG
-esse	O
-tema	O
 envolve	O
 questões	O
 emocionais	O
@@ -15969,14 +15271,6 @@ está	I-WRONG
 incluso	I-WRONG
 e	I-WRONG
 contribui	I-WRONG
-também	O
-para	O
-o	O
-Estado	O
-,	O
-que	O
-contribui	O
-,	O
 de	O
 certa	O
 forma	O
@@ -16010,11 +15304,6 @@ um	B-WRONG
 pouco	I-WRONG
 antes	I-WRONG
 ,	I-WRONG
-a	O
-previsão	O
-anterior	O
-afirmava	O
-que	O
 o	O
 mundo	O
 acabaria	O
@@ -16156,8 +15445,6 @@ do	O
 jovem	O
 ao	O
 idoso	B-WRONG
-idoso	O
-,	O
 estão	O
 aderindo	O
 a	B-WRONG
@@ -16165,11 +15452,6 @@ auto	I-WRONG
 medicação	I-WRONG
 sem	I-WRONG
 preocupar-se	I-WRONG
-à	O
-automedicação	O
-sem	O
-se	O
-preocupar	O
 com	O
 as	O
 consequências	O
@@ -16199,12 +15481,10 @@ o	O
 tédio	O
 ,	O
 celebrar	B-WRONG
-celebra	O
 a	O
 vitória	O
 e	O
 da	B-WRONG
-dá	O
 leveza	O
 ao	O
 dia	O
@@ -16401,24 +15681,16 @@ local	I-WRONG
 Sentença Original N°552
 Por	O
 que	O
-o	O
+o</correct>	O
 quadro	O
 chegou	O
 a	O
 este	B-WRONG
-esse	O
 ponto	O
 ?	O
 Claro	B-WRONG
 não	I-WRONG
 generalisando	I-WRONG
-Claro	O
-,	O
-não	O
-se	O
-pode	O
-generalizar	O
-,	O
 pois	O
 existem	O
 muitos	O
@@ -16432,7 +15704,6 @@ este	O
 exercício	O
 ,	O
 mais	B-WRONG
-mas	O
 com	O
 pouca	O
 vontade	O
@@ -16671,7 +15942,7 @@ opinião	B-WRONG
 ,	I-WRONG
 a	I-WRONG
 verdade	I-WRONG
-opinião	O
+<correct>opinião	O
 .	O
 
 Sentença Original N°558
@@ -16736,13 +16007,6 @@ e	I-WRONG
 fomentaram	I-WRONG
 o	I-WRONG
 comercio	I-WRONG
-da	O
-propaganda	O
-fomentou	O
-e	O
-alavancou	O
-o	O
-comércio	O
 mundial	O
 ,	O
 que	O
@@ -16750,7 +16014,6 @@ passou	O
 a	O
 vender	O
 quantidades	O
-exorbitantes	O
 de	O
 produtos	O
 	O
@@ -16766,7 +16029,6 @@ sendo	O
 não	O
 mais	O
 vendido	B-WRONG
-vendidos	O
 pela	O
 a	O
 utilidade	O
@@ -16833,15 +16095,11 @@ que	O
 a	O
 posição	O
 a	B-WRONG
-em	O
-relação	O
-a	O
 excessos	O
 das	O
 autoridades	O
 ,	O
 a	B-WRONG
-à	O
 oportunidade	O
 dos	O
 indivíduos	O
@@ -16851,7 +16109,6 @@ suas	O
 opiniões	O
 e	O
 a	B-WRONG
-à	O
 informação	O
 da	O
 população	O
@@ -16882,8 +16139,6 @@ objetivos	O
 -	O
 aparentemente	O
 frugais	O
-moderados	O
-?	O
 -	O
 a	O
 exemplo	O
@@ -16942,9 +16197,6 @@ utilidade	O
 
 Sentença Original N°567
 Onde	O
-70	O
-,	O
-quando	O
 inúmeras	O
 organizações	O
 universitárias	O
@@ -16989,7 +16241,6 @@ corriqueiro	O
 há	O
 manifestações	O
 para	B-WRONG
-por	O
 todos	O
 os	O
 motivos	O
@@ -17054,7 +16305,6 @@ herói	I-WRONG
 por	I-WRONG
 ter	I-WRONG
 arriscado	I-WRONG
-arriscar	O
 a	O
 vida	O
 para	O
@@ -17080,7 +16330,6 @@ comprometimento	O
 ,	O
 é	B-WRONG
 ter	I-WRONG
-tendo	O
 maturidade	O
 e	O
 senso	O
@@ -17163,7 +16412,6 @@ quem	O
 nunca	O
 errou	O
 joga	B-WRONG
-jogue	O
 a	O
 primeira	O
 pedra	O
@@ -17172,7 +16420,6 @@ pedra	O
 Sentença Original N°574
 A	O
 vitima	B-WRONG
-vítima	O
 de	O
 um	O
 assassinato	O
@@ -17229,10 +16476,8 @@ confiaram	O
 na	O
 lei	O
 teram	B-WRONG
-terão	O
 suas	O
 conciências	B-WRONG
-consciências	O
 limpas	O
 ,	O
 o	O
@@ -17306,7 +16551,6 @@ onda	O
 de	O
 violência	O
 venha	O
-a	O
 se	O
 propagar	O
 mais	O
@@ -17323,7 +16567,6 @@ e	O
 reeducação	O
 profissional	O
 nos	B-WRONG
-dos	O
 militares	O
 ,	O
 para	O
@@ -17336,7 +16579,6 @@ civil	O
 ,	O
 e	O
 saiba	B-WRONG
-saibam	O
 punir	O
 o	O
 transgressor	O
@@ -17361,7 +16603,6 @@ tempos	O
 começaram	O
 a	O
 imergir	B-WRONG
-emergir	O
 cada	O
 vez	O
 mais	O
@@ -17606,7 +16847,6 @@ escrever	O
 de	O
 forma	O
 aceita	B-WRONG
-indicada	O
 pela	O
 gramática	O
 da	O
@@ -17640,9 +16880,6 @@ animalescas	O
 irresponsaveis	B-WRONG
 e	I-WRONG
 antidemocraticas	I-WRONG
-irresponsáveis	O
-e	O
-antidemocráticas	O
 .	O
 
 Sentença Original N°590
@@ -17677,6 +16914,7 @@ capazes	O
 Sentença Original N°591
 Felizmente	O
 ,	O
+</correct>	O
 não	O
 aconteceu	O
 o	O
@@ -17696,12 +16934,6 @@ e	I-WRONG
 levado	I-WRONG
 a	I-WRONG
 morte	I-WRONG
-alunos	O
-,	O
-levando-os	O
-à	O
-morte	O
-?	O
 .	O
 
 Sentença Original N°592
@@ -17754,8 +16986,6 @@ Sentença Original N°594
 Essa	O
 que	O
 opina	B-WRONG
-opina	O
-sobre	O
 muitas	O
 questões	O
 do	O
@@ -17766,9 +16996,6 @@ que	B-WRONG
 o	I-WRONG
 país	I-WRONG
 seja	I-WRONG
-nosso	O
-país	O
-sendo	O
 laico	O
 .	O
 
@@ -17792,14 +17019,11 @@ terão	O
 validade	B-WRONG
 ,	I-WRONG
 e	I-WRONG
-validade	O
-e	O
 o	O
 direito	O
 à	O
 vida	B-WRONG
 ,	I-WRONG
-vida	O
 será	O
 uma	O
 incógnita	O
@@ -17807,9 +17031,6 @@ incógnita	O
 
 Sentença Original N°596
 Impactando	O
-adequado	O
-,	O
-impactando	O
 na	O
 expansão	O
 dos	O
@@ -17882,7 +17103,6 @@ Sabe-se	O
 que	O
 o	O
 caminho	O
-a	O
 percorrer	O
 em	O
 busca	O
@@ -17931,9 +17151,6 @@ muito	O
 medo	B-WRONG
 ,	I-WRONG
 que	I-WRONG
-medo	O
-de	O
-que	O
 eles	O
 estejam	O
 certos	O
@@ -17952,7 +17169,7 @@ sem	O
 alegria	B-WRONG
 ,	I-WRONG
 é	I-WRONG
-alegria	O
+<correct>alegria	O
 .	O
 
 Sentença Original N°601
@@ -17963,8 +17180,6 @@ dificuldade	O
 de	O
 ser	B-WRONG
 examinado	I-WRONG
-sermos	O
-examinados	O
 pelo	O
 profissional	O
 de	O
@@ -18028,7 +17243,6 @@ agredido	O
 pelo	O
 pai	B-WRONG
 ,	I-WRONG
-pai	O
 não	O
 vá	O
 cometer	O
@@ -18155,14 +17369,10 @@ relacionamentos	O
 atuais	O
 ainda	O
 são	B-WRONG
-é	O
 as	B-WRONG
-a	O
 diferenças	B-WRONG
-diferença	O
 de	B-WRONG
 idades	I-WRONG
-idade	O
 .	O
 
 Sentença Original N°608
@@ -18191,19 +17401,17 @@ tipo	O
 de	O
 imprensa	O
 esta	B-WRONG
-está	O
 cada	O
 vez	O
 mais	O
 difícil	O
 de	O
-se	O
 ver	O
 .	O
 
 Sentença Original N°609
 Nesse	O
-caso	O
+caso</correct>	O
 o	O
 apoio	O
 familiar	O
@@ -18211,14 +17419,13 @@ e	O
 tratamentos	O
 psicológicos	O
 seria	B-WRONG
-seriam	O
 a	O
 melhor	O
 opção	O
 .	O
 
 Sentença Original N°610
-Ao	O
+Ao</correct>	O
 contrario	O
 é	O
 uma	O
@@ -18243,7 +17450,7 @@ de	I-WRONG
 escolha	I-WRONG
 ,	I-WRONG
 são	I-WRONG
-respeitar	O
+<correct>respeitar	O
 .	O
 
 Sentença Original N°611
@@ -18254,7 +17461,6 @@ sobra	O
 a	O
 ele	B-WRONG
 ,	I-WRONG
-ele	O
 é	O
 o	O
 espetáculo	O
@@ -18428,8 +17634,6 @@ na	O
 sociedade	O
 tem	B-WRONG
 contribuído	I-WRONG
-venha	O
-contribuindo	O
 para	O
 sua	O
 perpetuação	O
@@ -18447,7 +17651,6 @@ homem	O
 como	O
 da	O
 mulher	O
-,	O
 deve	O
 ser	O
 um	O
@@ -18477,7 +17680,7 @@ coletivo	O
 .	O
 
 Sentença Original N°619
-Isso	O
+Isso</correct>	O
 percorreu	O
 todas	O
 as	O
@@ -18502,8 +17705,6 @@ da	O
 sociedade	O
 ,	O
 cada	B-WRONG
-pois	O
-cada	O
 pessoa	O
 tem	O
 sua	O
@@ -18515,7 +17716,7 @@ assunto	B-WRONG
 pode	I-WRONG
 se	I-WRONG
 notas	I-WRONG
-assunto	O
+<correct>assunto	O
 .	O
 
 Sentença Original N°620
@@ -18593,37 +17794,27 @@ Sentença Original N°622
 Infelizmente	O
 ,	O
 dentre	B-WRONG
-entre	O
 os	O
 políticos	O
 sérios	B-WRONG
 tem	B-WRONG
-sérios	O
-,	O
-há	O
 aqueles	O
 que	O
 acabam	O
 utilizando	O
 este	B-WRONG
-esse	O
 tempo	O
 para	O
 passar	O
 sua	O
 proposta	B-WRONG
-proposta	O
-,	O
 mas	O
 de	O
 postura	B-WRONG
-um	O
-modo	O
 informal	O
 ,	O
 utilizando	O
 musicas	B-WRONG
-músicas	O
 ,	O
 rimas	O
 ,	O
@@ -18637,7 +17828,6 @@ desanimando	O
 quem	O
 os	O
 assistem	B-WRONG
-assiste	O
 .	O
 
 Sentença Original N°623
@@ -18651,8 +17841,6 @@ método	O
 educativo	B-WRONG
 ,	I-WRONG
 forma	I-WRONG
-educativo	O
-forma	O
 pessoas	O
 com	O
 pouca	O
@@ -18669,25 +17857,16 @@ quê	B-WRONG
 cada	I-WRONG
 vez	I-WRONG
 mais	I-WRONG
-que	O
-,	O
-cada	O
-vez	O
-mais	O
-,	O
 se	O
 resolvam	O
 problemas	O
 pessoas	B-WRONG
-pessoais	O
 e	O
 sociais	O
 com	O
 o	O
 uso	O
-da	O
 brutalidade	O
-e	O
 da	O
 violência	O
 .	O
@@ -18716,10 +17895,6 @@ maior	O
 
 Sentença Original N°625
 Enquanto	O
-Aguiar	O
-)	O
-,	O
-enquanto	O
 cobria	O
 o	O
 protesto	O
@@ -18880,7 +18055,6 @@ tudo	O
 que	O
 consumimos	O
 produzem	B-WRONG
-produz	O
 algum	O
 impacto	O
 .	O
@@ -18893,7 +18067,6 @@ uma	O
 cultura	O
 que	O
 esta	O
-está	O
 sendo	O
 deixada	O
 de	O
@@ -18915,7 +18088,6 @@ a	O
 medida	O
 visa	O
 proteger	O
-,	O
 sim	O
 ,	O
 o	O
@@ -18947,7 +18119,6 @@ tempo	O
 ,	O
 a	O
 imagem	B-WRONG
-noção	O
 de	O
 submissão	O
 feminina	O
@@ -18998,7 +18169,6 @@ desejar	O
 Sentença Original N°634
 É	O
 impresindível	B-WRONG
-imprescindível	O
 insistir	O
 no	O
 fato	O
@@ -19011,9 +18181,6 @@ muito	O
 prejudicada	O
 nesse	B-WRONG
 meio	I-WRONG
-por	O
-esses	O
-procedimentos	O
 .	O
 
 Sentença Original N°635
@@ -19103,12 +18270,9 @@ As	O
 bicicletas	O
 que	O
 vem	O
-vêm	O
 ganhando	O
 as	O
 ruas	O
-ruas	O
-,	O
 levando	O
 os	O
 trabalhadores	O
@@ -19116,7 +18280,6 @@ para	O
 empresas	O
 ,	O
 ajuda	O
-ajudam	O
 a	O
 manter	O
 o	O
@@ -19125,10 +18288,8 @@ corpo	O
 já	O
 que	O
 é	O
-são	O
 totalmente	O
 livre	O
-livres	O
 de	O
 emissão	O
 de	O
@@ -19136,7 +18297,6 @@ gases	O
 que	O
 prejudicam	O
 á	O
-a	O
 atmosfera	O
 .	O
 
@@ -19271,7 +18431,6 @@ vai	O
 muito	O
 além	O
 destas	B-WRONG
-dessas	O
 palavras	O
 que	O
 causam	O
@@ -19283,7 +18442,6 @@ sociedade	O
 ,	O
 perante	O
 aos	B-WRONG
-os	O
 atos	O
 observados	O
 em	O
@@ -19297,7 +18455,7 @@ autoridades	O
 nacionais	B-WRONG
 ;	B-WRONG
 A	I-WRONG
-nacionais	O
+<correct>nacionais	O
 .	O
 
 Sentença Original N°644
@@ -19309,8 +18467,6 @@ estupro	O
 atribuída	O
 a	B-WRONG
 vitima	I-WRONG
-à	O
-vítima	O
 ,	O
 seja	O
 por	O
@@ -19458,22 +18614,16 @@ cigarro	O
 
 Sentença Original N°648
 Recentemente	B-WRONG
-Recentemente	O
-,	O
 a	O
 presidenta	B-WRONG
-presidente	O
 Dilma	O
 Rousseff	O
 alegou	O
 que	B-WRONG
-que	O
-,	O
 em	O
 um	O
 país	O
 como	B-WRONG
-com	O
 cerca	O
 de	O
 50	O
@@ -19482,11 +18632,6 @@ de	O
 jovens	B-WRONG
 ,	I-WRONG
 entre	B-WRONG
-jovens	O
-,	O
-com	O
-idade	O
-entre	O
 19	O
 a	O
 25	O
@@ -19680,7 +18825,6 @@ uma	O
 imprensa	O
 sem	O
 censuras	B-WRONG
-censura	O
 é	O
 a	O
 ferramenta	O
@@ -19767,7 +18911,6 @@ pois	O
 ela	O
 está	O
 implicitamente	B-WRONG
-implícita	O
 ou	O
 explicitamente	O
 causando	O
@@ -19828,7 +18971,6 @@ a	O
 sociedade	O
 ter	O
 conhecimento	O
-dele	O
 e	O
 se	O
 manifestar	O
@@ -19929,7 +19071,6 @@ Sentença Original N°662
 Pensamos	B-WRONG
 que	I-WRONG
 cada	I-WRONG
-Cada	O
 pai	O
 ou	O
 mãe	O
@@ -20023,8 +19164,6 @@ outros	O
 indivíduos	O
 pela	B-WRONG
 sua	I-WRONG
-por	O
-uma	O
 vaga	O
 nas	O
 universidades	O
@@ -20071,7 +19210,6 @@ responsáveis	O
 por	O
 toda	O
 esta	B-WRONG
-essa	O
 podridão	O
 .	O
 
@@ -20089,14 +19227,6 @@ namaioria	I-WRONG
 das	I-WRONG
 vezes	I-WRONG
 ,	O
-Na	O
-maioria	O
-das	O
-vezes	O
-,	O
-o	O
-Estado	O
-é	O
 o	O
 responsável	O
 pelo	O
@@ -20109,7 +19239,7 @@ uma	O
 sociedade	B-WRONG
 ,	I-WRONG
 é	I-WRONG
-sociedade	O
+<correct>sociedade	O
 .	O
 
 Sentença Original N°669
@@ -20130,7 +19260,6 @@ futebol	O
 ,	O
 esses	O
 5	B-WRONG
-cinco	O
 meses	O
 serão	O
 decisivos	O
@@ -20138,10 +19267,8 @@ na	O
 impressão	O
 que	O
 esse	B-WRONG
-ele	O
 exercerá	O
 aos	B-WRONG
-nos	O
 outros	O
 .	O
 
@@ -20318,9 +19445,6 @@ condições	O
 dignas	B-WRONG
 de	I-WRONG
 vivência	I-WRONG
-de	O
-vida	O
-digna	O
 e	O
 muito	O
 menos	O
@@ -20330,7 +19454,6 @@ suposta	I-WRONG
 melhora	I-WRONG
 de	I-WRONG
 vida	I-WRONG
-melhorar	O
 ,	O
 crianças	O
 e	O
@@ -20339,7 +19462,6 @@ são	O
 aliciados	O
 por	O
 maginais	B-WRONG
-marginais	O
 devido	O
 à	O
 falta	O
@@ -20347,7 +19469,6 @@ de	O
 punição	O
 para	O
 aqueles	B-WRONG
-estes	O
 .	O
 
 Sentença Original N°675
@@ -20474,8 +19595,6 @@ Sentença Original N°680
 Propostas	B-WRONG
 essas	I-WRONG
 que	I-WRONG
-Essas	O
-propostas	O
 passam	O
 por	O
 educação	O
@@ -20492,7 +19611,6 @@ alcoólicas	O
 para	O
 quem	O
 dirigi	B-WRONG
-dirige	O
 .	O
 
 Sentença Original N°681
@@ -20511,16 +19629,11 @@ amor	O
 
 Sentença Original N°682
 Com	B-WRONG
-Devido	O
-a	O
 uma	O
 enorme	O
 gama	B-WRONG
 de	I-WRONG
 medicações	I-WRONG
-variedade	O
-de	O
-medicamentos	O
 para	O
 os	O
 mais	O
@@ -20528,13 +19641,10 @@ variados	O
 tipos	O
 de	O
 sintomas	B-WRONG
-doenças	O
 e	O
 o	O
 fácil	O
 acesso	O
-a	O
-eles	O
 ;	O
 a	O
 automedicação	O
@@ -20542,11 +19652,9 @@ tem	O
 sido	O
 uma	O
 pratica	B-WRONG
-prática	O
 maléfica	O
 para	B-WRONG
 os	I-WRONG
-nos	O
 dias	O
 atuais	O
 .	O
@@ -20554,8 +19662,6 @@ atuais	O
 Sentença Original N°683
 Outro	B-WRONG
 fator	I-WRONG
-negativo	O
-?	O
 é	O
 não	O
 poder	O
@@ -20621,17 +19727,10 @@ maioria	O
 realmente	O
 estão	B-WRONG
 piores	I-WRONG
-está	O
-pior	O
 do	O
 que	O
 as	B-WRONG
 de	I-WRONG
-o	O
-praticado	O
-nas	O
-escolas	O
-da	O
 rede	O
 privada	O
 ,	O
@@ -20667,7 +19766,7 @@ bebê	O
 .	O
 
 Sentença Original N°686
-Nesse	O
+Nesse</correct>	O
 caso	O
 deveria	O
 haver	O
@@ -20679,7 +19778,6 @@ ao	O
 aluno	O
 que	O
 causasse	O
-o	O
 transtorno	O
 .	O
 
@@ -20687,8 +19785,6 @@ Sentença Original N°687
 O	O
 consumismo	B-WRONG
 ,	I-WRONG
-consumismo	O
-é	O
 um	O
 mal	O
 que	O
@@ -20854,8 +19950,6 @@ de	O
 minimizarmos	O
 a	B-WRONG
 problemática	I-WRONG
-o	O
-problema	O
 ,	O
 é	O
 criar	O
@@ -20889,8 +19983,6 @@ ambiente	O
 um	O
 indicador	O
 social	B-WRONG
-social	O
-,	O
 já	O
 que	O
 na	O
@@ -21059,7 +20151,6 @@ a	O
 desvie	O
 desse	O
 conceito	O
-padrão	O
 deve	O
 ser	O
 banida	O
@@ -21072,7 +20163,6 @@ como	O
 aparelhos	O
 eletrônicos	O
 ,	B-WRONG
-e	O
 bonés	O
 ,	O
 entre	O
@@ -21090,11 +20180,6 @@ colocados	I-WRONG
 exposição	I-WRONG
 dos	I-WRONG
 cidadãos	I-WRONG
-Antes	O
-de	O
-serem	O
-colocados	O
-àdisposiçãomuitos	O
 devem	O
 ser	O
 analisados	O
@@ -21134,7 +20219,6 @@ que	O
 essa	O
 lei	B-WRONG
 ,	I-WRONG
-lei	O
 resolveria	O
 essa	O
 catástrofe	O
@@ -21242,8 +20326,6 @@ Para	O
 amenizar	O
 tal	O
 situação	B-WRONG
-situação	O
-,	O
 os	O
 jovens	O
 poderiam	O
@@ -21257,7 +20339,6 @@ abertos	O
 para	O
 não	O
 facilitarem	B-WRONG
-facilitar	O
 a	O
 existência	O
 de	O
@@ -21354,7 +20435,6 @@ o	O
 que	O
 é	O
 mostra	B-WRONG
-mostrado	O
 ,	O
 pois	O
 candidatos	O
@@ -21370,7 +20450,7 @@ de	O
 corrupção	B-WRONG
 ,	I-WRONG
 é	I-WRONG
-corrupção	O
+<correct>corrupção	O
 .	O
 
 Sentença Original N°708
@@ -21505,7 +20585,6 @@ pessoais	O
 
 Sentença Original N°712
 Entretando	B-WRONG
-Entretanto	O
 ,	O
 é	O
 preciso	O
@@ -21525,13 +20604,11 @@ e	O
 não	O
 de	O
 violençia	B-WRONG
-violência	O
 .	O
 
 Sentença Original N°713
 Em	O
 suma	O
-,	O
 todos	O
 nós	O
 temos	O
@@ -21539,7 +20616,6 @@ direitos	O
 e	O
 deveres	O
 ,	O
-;	O
 um	O
 cidadão	O
 tem	O
@@ -21547,7 +20623,6 @@ o	O
 direito	O
 de	O
 fumar	O
-,	O
 mas	O
 a	O
 partir	O
@@ -21570,8 +20645,6 @@ pública	O
 ,	O
 assim	B-WRONG
 respeitando	I-WRONG
-respeitando	O
-assim	O
 o	O
 direito	O
 individual	O
@@ -21579,7 +20652,6 @@ de	O
 cada	O
 um	O
 ,	O
-:	O
 nesse	O
 caso	O
 o	O
@@ -21595,7 +20667,7 @@ mata	O
 .	O
 
 Sentença Original N°714
-É	O
+É</correct>	O
 de	O
 conhecimento	O
 geral	O
@@ -21607,7 +20679,6 @@ cresce	I-WRONG
 colocando	O
 medo	O
 a	B-WRONG
-na	O
 sociedade	O
 .	O
 
@@ -21672,7 +20743,6 @@ Sabemos	O
 que	O
 ao	O
 falarmos	B-WRONG
-falar	O
 de	O
 transgênicos	O
 não	O
@@ -21683,9 +20753,6 @@ o	O
 Brasil	O
 é	O
 uns	B-WRONG
-um	O
-dos	O
-países	O
 dos	O
 que	O
 mais	O
@@ -21696,19 +20763,13 @@ esses	B-WRONG
 novos	I-WRONG
 métodos	I-WRONG
 descobertos	I-WRONG
-essa	O
-nova	O
-tecnologia	O
-,	O
 que	O
 estão	B-WRONG
-está	O
 apenas	O
 na	O
 fase	O
 de	B-WRONG
 desenvolvimentos	I-WRONG
-inicial	O
 e	O
 poderá	O
 ainda	O
@@ -21760,7 +20821,6 @@ e	O
 divulgaram	O
 e-mails	O
 troados	B-WRONG
-trocados	O
 entre	O
 os	O
 membros	O
@@ -21803,7 +20863,6 @@ ter	O
 o	O
 direito	O
 a	B-WRONG
-à	O
 vida	O
 ,	O
 enquanto	O
@@ -21836,7 +20895,6 @@ tantas	O
 manifestações	O
 que	O
 acontecerá	B-WRONG
-acontecerão	O
 em	O
 nosso	O
 país	O
@@ -21863,9 +20921,6 @@ a	I-WRONG
 ser	I-WRONG
 o	I-WRONG
 país-alvo	I-WRONG
-pode	O
-ser	O
-alvo	O
 de	O
 terroristas	O
 em	O
@@ -21899,12 +20954,10 @@ em	O
 conta	O
 de	O
 que	O
-que	O
 essas	O
 pessoas	O
 não	O
 saiam	O
-saem	O
 de	O
 casa	O
 depois	O
@@ -21915,7 +20968,6 @@ horas	O
 diminuiu	O
 o	O
 numero	O
-número	O
 de	O
 usuários	O
 de	O
@@ -22178,7 +21230,6 @@ Sentença Original N°731
 Não	O
 se	O
 tem	B-WRONG
-têm	O
 muitas	O
 informações	O
 sobre	O
@@ -22196,7 +21247,6 @@ perguntarem	O
 se	O
 a	O
 idéia	B-WRONG
-ideia	O
 é	O
 viável	O
 ou	O
@@ -22211,7 +21261,6 @@ são	O
 contrárias	O
 à	O
 idéia	B-WRONG
-ideia	O
 de	O
 que	O
 o	O
@@ -22228,16 +21277,13 @@ afeto	O
 para	O
 essas	B-WRONG
 pessoas	I-WRONG
-elas	O
 ,	O
 o	O
 "	O
 selinho	O
 "	O
 exprime	O
-,	O
 sim	O
-,	O
 intenção	O
 sexual	O
 .	O
@@ -22410,8 +21456,6 @@ voz	O
 aqueles	I-WRONG
 os	I-WRONG
 quais	I-WRONG
-àqueles	O
-que	O
 seriam	O
 o	O
 futuro	O
@@ -22421,7 +21465,6 @@ país	O
 
 Sentença Original N°736
 Isto	B-WRONG
-Isso	O
 demonstra	O
 como	O
 a	O
@@ -22605,13 +21648,9 @@ estupro	O
 é	O
 a	O
 pratica	B-WRONG
-prática	O
 não	O
 consensual	B-WRONG
 imposto	I-WRONG
-consensual	O
-,	O
-imposta	O
 por	O
 meio	O
 da	O
@@ -22710,7 +21749,6 @@ tecnologia	O
 ,	O
 o	O
 País	B-WRONG
-país	O
 passará	O
 a	O
 desperdiçar	O
@@ -22741,8 +21779,6 @@ Tiririca	O
 .	O
 
 Sentença Original N°748
-nenhum	O
-.	O
 O	O
 que	O
 talvez	O
@@ -22750,8 +21786,6 @@ possa	O
 ser	O
 umas	B-WRONG
 da	I-WRONG
-uma	O
-das	O
 possíveis	O
 explicações	O
 para	O
@@ -22762,8 +21796,6 @@ o	O
 medo	O
 dado	B-WRONG
 a	I-WRONG
-atribuídos	O
-à	O
 profecia	O
 maia	O
 sobre	O
@@ -22810,13 +21842,6 @@ Brasileira	O
 concede	B-WRONG
 (	I-WRONG
 TODOS	I-WRONG
-garante	O
-,	O
-ao	O
-afirmar	O
-que	O
-'	O
-todos	O
 SÃO	O
 IGUAIS	O
 PERANTE	O
@@ -22878,8 +21903,6 @@ demais	O
 ,	O
 todavia	B-WRONG
 é	I-WRONG
-mas	O
-também	O
 uma	O
 obrigação	O
 de	O
@@ -22941,8 +21964,6 @@ cigarro	O
 Sentença Original N°753
 Faz-se	B-WRONG
 necessário	I-WRONG
-Fazem-se	O
-necessárias	O
 a	O
 redução	O
 e	O
@@ -23023,7 +22044,6 @@ virgindade	O
 .	O
 
 Sentença Original N°756
-Parágrafo	O
 Em	O
 relação	O
 ao	O
@@ -23088,7 +22108,6 @@ Sentença Original N°757
 Dentre	O
 essas	O
 noticias	B-WRONG
-notícias	O
 que	O
 não	O
 gostaríamos	O
@@ -23101,17 +22120,9 @@ que	O
 vem	B-WRONG
 sido	I-WRONG
 trazida	I-WRONG
-tem	O
-sido	O
-ou	O
-vem	O
-sendo	O
-trazida	O
 com	O
 muito	B-WRONG
 mais	I-WRONG
-tanto	O
-maior	O
 frequência	O
 ,	O
 que	O
@@ -23177,11 +22188,6 @@ caso	O
 anterior	B-WRONG
 o	I-WRONG
 qual	I-WRONG
-anteriormente	O
-mencionado	O
-,	O
-no	O
-qual	O
 o	O
 capitão	O
 buscou	O
@@ -23257,10 +22263,6 @@ brasileira	B-WRONG
 ainda	I-WRONG
 são	I-WRONG
 leigos	I-WRONG
-brasileira	O
-ainda	O
-é	O
-leiga	O
 quando	O
 o	O
 assunto	O
@@ -23530,6 +22532,7 @@ proteção	O
 .	O
 
 Sentença Original N°770
+</correct>	O
 Os	O
 escravos	O
 lutaram	O
@@ -23561,20 +22564,15 @@ Isabel	O
 ,	O
 visava	B-WRONG
 libertar	I-WRONG
-visava	O
-a	O
-libertar	O
 os	O
 escravos	O
 por	B-WRONG
-em	O
 todo	O
-o	O
 território	O
 nacional	B-WRONG
 ,	I-WRONG
 assim	I-WRONG
-nacional	O
+<correct>nacional	O
 .	O
 
 Sentença Original N°771
@@ -23613,7 +22611,6 @@ Os	O
 defensores	O
 da	O
 idéia	B-WRONG
-ideia	O
 de	O
 usar	O
 animais	O
@@ -23622,7 +22619,6 @@ testes	O
 de	O
 remédios	O
 apóiam	B-WRONG
-apoiam	O
 essa	O
 causa	O
 com	O
@@ -23632,8 +22628,6 @@ de	O
 que	O
 a	O
 ciência	B-WRONG
-ciência	O
-,	O
 para	O
 avançar	O
 de	O
@@ -23655,7 +22649,6 @@ animais	O
 Sentença Original N°774
 Se	O
 isto	B-WRONG
-isso	O
 fosse	O
 solucionado	O
 ,	O
@@ -23740,7 +22733,6 @@ fator	O
 de	O
 desmotivação	O
 aos	B-WRONG
-dos	O
 jovens	O
 ,	O
 quando	O
@@ -23842,12 +22834,10 @@ estar	O
 .	O
 
 Sentença Original N°780
-Há	O
+Há</correct>	O
 uma	O
 lei	O
 que	B-WRONG
-que	O
-obriga	O
 as	O
 emissoras	O
 a	O
@@ -23869,7 +22859,6 @@ políticos	O
 para	O
 falar	O
 mau	B-WRONG
-mal	O
 de	O
 candidatos	O
 adversários	O
@@ -23894,7 +22883,6 @@ fazer	O
 nem	O
 50%	O
 o	B-WRONG
-do	O
 que	O
 prometeu	O
 em	O
@@ -23965,7 +22953,6 @@ mulher	O
 que	O
 trabalha	B-WRONG
 ,	I-WRONG
-trabalha	O
 não	O
 deseja	O
 fazer	O
@@ -23978,20 +22965,6 @@ que	I-WRONG
 também	I-WRONG
 deseja	I-WRONG
 premissas	I-WRONG
-e	O
-também	O
-quer	O
-o	O
-direito	O
-a	O
-certos	O
-privilégios	O
-,	O
-antes	O
-garantidos	O
-só	O
-aos	O
-homens	O
 .	O
 
 Sentença Original N°783
@@ -24044,7 +23017,6 @@ má	O
 alimentação	O
 ,	O
 surge	B-WRONG
-surgem	O
 algumas	O
 perguntas	O
 como	O
@@ -24075,7 +23047,6 @@ com	O
 a	O
 região	O
 Serrana	B-WRONG
-serrana	O
 do	O
 Rio	O
 de	O
@@ -24096,8 +23067,6 @@ de	O
 que	B-WRONG
 ,	I-WRONG
 muitos	I-WRONG
-que	O
-muitos	O
 jovens	O
 deixam	O
 de	O
@@ -24107,7 +23076,6 @@ obras	O
 ,	O
 porque	O
 estas	B-WRONG
-essas	O
 exigem	O
 um	O
 domínio	O
@@ -24117,7 +23085,6 @@ linguístico	O
 superior	O
 a	O
 este	B-WRONG
-esse	O
 público	O
 .	O
 
@@ -24235,7 +23202,6 @@ crianças	O
 e	O
 adolescentes	O
 poderam	B-WRONG
-poderão	O
 fazer	O
 ,	O
 ao	O
@@ -24364,7 +23330,6 @@ vida	O
 que	O
 lhes	O
 sugere	B-WRONG
-garante	O
 uma	O
 melhoria	O
 ,	O
@@ -24413,7 +23378,6 @@ o	O
 interesse	O
 pelo	B-WRONG
 os	I-WRONG
-pelos	O
 estudos	O
 ,	O
 entrar	O
@@ -24423,15 +23387,12 @@ e	O
 muitas	B-WRONG
 vezes	I-WRONG
 chegam	I-WRONG
-até	O
-chegar	O
 ao	O
 ponto	O
 extremo	O
 ,	O
 se	B-WRONG
 suicidando	I-WRONG
-suicidando-se	O
 .	O
 
 Sentença Original N°800
@@ -24685,7 +23646,6 @@ e	O
 mulheres	O
 perante	O
 à	B-WRONG
-a	O
 Constituição	O
 nacional	O
 é	O
@@ -24700,7 +23660,6 @@ lembrados	O
 ,	O
 por	O
 àqueles	B-WRONG
-aqueles	O
 que	O
 se	O
 trancaram	O
@@ -24803,7 +23762,6 @@ ilusórias	O
 ,	O
 vinculadas	O
 aos	B-WRONG
-nos	O
 meios	O
 de	O
 comunicação	O
@@ -24991,7 +23949,6 @@ e	O
 visões	O
 diante	O
 ao	B-WRONG
-do	O
 mundo	O
 .	O
 
@@ -25058,7 +24015,6 @@ tanto	B-WRONG
 pelo	O
 professor	O
 ou	B-WRONG
-quanto	O
 por	O
 cartazes	O
 afixados	O
@@ -25076,7 +24032,7 @@ ou	O
 vibratório	B-WRONG
 ,	I-WRONG
 porém	I-WRONG
-vibratório	O
+<correct>vibratório	O
 .	O
 
 Sentença Original N°822
@@ -25108,8 +24064,6 @@ e	O
 portanto	O
 ,	O
 termos	B-WRONG
-de	O
-termos	O
 uma	O
 qualidade	O
 de	O
@@ -25127,7 +24081,7 @@ doenças	O
 .	O
 
 Sentença Original N°824
-O	O
+O</correct>	O
 Brasil	O
 ,	O
 devido	O
@@ -25155,7 +24109,6 @@ seu	O
 poderio	O
 frente	O
 as	B-WRONG
-às	O
 cidades	O
 desenvolvidas	O
 .	O
@@ -25191,11 +24144,8 @@ Andróginos	O
 Sentença Original N°827
 O	O
 país	B-WRONG
-país	O
-,	O
 com	O
 está	B-WRONG
-essa	O
 imensa	O
 força	O
 de	O
@@ -25219,9 +24169,6 @@ parte	O
 
 Sentença Original N°828
 O	O
-preparados	O
-,	O
-o	O
 que	O
 ,	O
 segundo	O
@@ -25231,7 +24178,6 @@ poderá	O
 acarretar	O
 em	O
 perca	B-WRONG
-perda	O
 na	O
 qualidade	O
 do	O
@@ -25269,7 +24215,6 @@ punições	O
 físicas	O
 ,	O
 o	B-WRONG
-e	O
 é	O
 o	O
 que	O
@@ -25280,7 +24225,6 @@ Sentença Original N°830
 Desde	O
 2013	O
 tem	B-WRONG
-têm	O
 ocorrido	O
 manifestações	O
 no	O
@@ -25294,12 +24238,6 @@ sua	I-WRONG
 maioria	I-WRONG
 é	I-WRONG
 para	I-WRONG
-objetivos	O
-,	O
-em	O
-sua	O
-maioria	O
-para	O
 criticar	O
 a	O
 realização	O
@@ -25307,9 +24245,6 @@ da	O
 copa	B-WRONG
 do	I-WRONG
 mundo	I-WRONG
-Copa	O
-do	O
-Mundo	O
 no	O
 país	O
 .	O
@@ -25319,7 +24254,6 @@ Segundo	O
 a	O
 nossa	O
 constituição	B-WRONG
-Constituição	O
 Federal	O
 de	O
 1988	O
@@ -25347,14 +24281,12 @@ religião	O
 
 Sentença Original N°832
 Tem	B-WRONG
-Há	O
 um	O
 limite	O
 ?	O
 
 Sentença Original N°833
 Desta	B-WRONG
-Dessa	O
 forma	O
 ,	O
 adquirirá	O
@@ -25392,7 +24324,6 @@ esse	O
 problema	O
 que	O
 afligem	B-WRONG
-aflige	O
 as	O
 escolas	O
 brasileiras	O
@@ -25402,11 +24333,9 @@ Sentença Original N°835
 E	B-WRONG
 que	I-WRONG
 os	I-WRONG
-Os	O
 homens	O
 que	O
 pratiquem	B-WRONG
-praticam	O
 esse	O
 tipo	O
 de	O
@@ -25426,13 +24355,10 @@ que	O
 leva	O
 a	B-WRONG
 alguém	I-WRONG
-alguém	O
-,	O
 em	O
 pleno	O
 século	O
 XXI	O
-,	O
 a	O
 agir	O
 com	O
@@ -25495,7 +24421,6 @@ diferentes	O
 idades	O
 ,	O
 dizem	B-WRONG
-dizer	O
 que	O
 existe	O
 um	O
@@ -25590,7 +24515,7 @@ Sentença Original N°841
 Por	O
 exemplo	O
 :	O
-"Iracema"	O
+Iracema	O
 ,	O
 livro	O
 escrito	O
@@ -25644,7 +24569,6 @@ cidadão	O
 tem	O
 direito	O
 a	B-WRONG
-à	O
 livre	O
 manifestação	O
 .	O
@@ -25710,7 +24634,6 @@ categorias	O
 ,	O
 onde	B-WRONG
 existem	I-WRONG
-possui	O
 regras	O
 e	O
 nem	O
@@ -25726,8 +24649,6 @@ Vale	O
 ressaltar	B-WRONG
 ,	I-WRONG
 que	I-WRONG
-ressaltar	O
-que	O
 é	O
 muito	O
 preocupante	O
@@ -25735,7 +24656,6 @@ o	O
 ataque	O
 de	B-WRONG
 terrorista	I-WRONG
-terrorista	O
 ,	O
 durante	O
 a	B-WRONG
@@ -25745,21 +24665,13 @@ confederações	I-WRONG
 e	I-WRONG
 do	I-WRONG
 mundo	I-WRONG
-Copa	O
-das	O
-Confederações	O
-e	O
-do	O
-Mundo	O
 ,	O
 pois	O
-em	O
 eventos	O
 iguais	O
 a	O
 esses	O
 a	B-WRONG
-há	O
 uma	O
 grande	O
 aglomeração	O
@@ -25827,7 +24739,7 @@ futuramente	O
 .	O
 
 Sentença Original N°849
-Isso	O
+Isso</correct>	O
 ocorre	O
 todos	O
 os	O
@@ -25846,7 +24758,7 @@ de	O
 comunicação	B-WRONG
 ,	I-WRONG
 já	I-WRONG
-comunicação	O
+<correct>comunicação	O
 .	O
 
 Sentença Original N°850
@@ -25925,7 +24837,6 @@ adianta	O
 apenas	O
 levar	O
 a	B-WRONG
-à	O
 diretoria	O
 e	O
 dar	O
@@ -25988,7 +24899,7 @@ comprovações	O
 cintíficas	B-WRONG
 ,	I-WRONG
 portanto	B-WRONG
-científicas	O
+<correct>científicas	O
 .	O
 
 Sentença Original N°856
@@ -26129,10 +25040,6 @@ Sentença Original N°859
 No	O
 entanto	B-WRONG
 ,	I-WRONG
-entanto	O
-,	O
-questiona-se	O
-:	O
 a	O
 realização	O
 de	O
@@ -26156,9 +25063,6 @@ preservada	O
 correto	B-WRONG
 ou	I-WRONG
 errado	I-WRONG
-correta	O
-ou	O
-errada	O
 ?	O
 
 Sentença Original N°860
@@ -26186,19 +25090,14 @@ combater	O
 .	O
 
 Sentença Original N°861
-As	O
 Universidades	O
-universidades	O
 virtuais	O
-são	O
-uma	O
 forma	O
 de	O
 aprendizagem	O
 pós-moderna	O
 que	O
 vem	O
-vêm	O
 crescendo	O
 no	O
 país	O
@@ -26267,7 +25166,7 @@ fisicamente	I-WRONG
 e	I-WRONG
 moralmente	I-WRONG
 e	I-WRONG
-futuro	O
+<correct>futuro	O
 .	O
 
 Sentença Original N°865
@@ -26357,15 +25256,8 @@ da	O
 politica	B-WRONG
 do	I-WRONG
 pais	I-WRONG
-política	O
-do	O
-país	O
 e	B-WRONG
 portanto	I-WRONG
-e	O
-,	O
-portanto	O
-,	O
 não	O
 adianta	O
 votar	O
@@ -26414,7 +25306,6 @@ invasão	I-WRONG
 
 Sentença Original N°873
 Podemos	B-WRONG
-Pode-se	O
 observar	O
 isso	O
 com	O
@@ -26513,7 +25404,6 @@ a	O
 educação	O
 ,	O
 está	B-WRONG
-essa	O
 necessidade	O
 é	O
 urgente	O
@@ -26604,8 +25494,6 @@ mundo	O
 há	B-WRONG
 décadas	I-WRONG
 atrás	I-WRONG
-há	O
-décadas	O
 ,	O
 com	O
 princípios	O
@@ -26656,10 +25544,7 @@ em	O
 outros	O
 ramos	B-WRONG
 na	I-WRONG
-setores	O
-da	O
 realidade	O
-em	O
 que	O
 o	O
 país	O
@@ -26695,11 +25580,9 @@ externa	O
 e	O
 nos	O
 diferenciamos	B-WRONG
-diferenciássemos	O
 por	O
 causa	O
 disto	B-WRONG
-disso	O
 .	O
 
 Sentença Original N°881
@@ -26707,7 +25590,6 @@ O	O
 que	O
 os	O
 cidadões	B-WRONG
-cidadãos	O
 não	O
 sabem	O
 é	O
@@ -26721,18 +25603,12 @@ nas	B-WRONG
 épocas	I-WRONG
 de	I-WRONG
 eleções	I-WRONG
-em	O
-época	O
-de	O
-eleições	O
 se	O
 vão	B-WRONG
-vai	O
 com	O
 o	O
 passar	O
 dele	B-WRONG
-delas	O
 ,	O
 mas	O
 a	O
@@ -26751,9 +25627,6 @@ desses	O
 padroes	B-WRONG
 nao	I-WRONG
 sera	I-WRONG
-padrões	O
-não	O
-será	O
 aceito	O
 .	O
 
@@ -26783,7 +25656,6 @@ Entretanto	O
 ,	O
 a	O
 falta	O
-de	O
 investimentos	O
 sociais	O
 da	O
@@ -26796,7 +25668,6 @@ com	O
 que	O
 a	B-WRONG
 mesma	I-WRONG
-isso	O
 seja	O
 em	O
 vão	O
@@ -26837,9 +25708,6 @@ possam	O
 entender	B-WRONG
 .	I-WRONG
 Padronizando	B-WRONG
-entender	O
-,	O
-padronizando	O
 assim	O
 a	O
 língua	O
@@ -26860,7 +25728,6 @@ eleitorais	O
 só	O
 vai	B-WRONG
 tornar	I-WRONG
-tornamos	O
 a	O
 situação	O
 de	O
@@ -26868,7 +25735,6 @@ candidatos	O
 corruptos	O
 mais	O
 favoráveis	B-WRONG
-favorável	O
 ,	O
 pois	O
 como	O
@@ -26895,7 +25761,6 @@ liberdade	O
 conquistada	O
 pelos	O
 jovens	O
-,	O
 especialmente	O
 a	O
 partir	O
@@ -26913,14 +25778,11 @@ com	O
 a	O
 guerra	B-WRONG
 fria	I-WRONG
-Guerra	O
-Fria	O
 ,	O
 a	O
 queda	O
 do	O
 muro	B-WRONG
-Muro	O
 de	O
 Berlin	O
 e	O
@@ -26933,8 +25795,6 @@ países	O
 do	O
 oriente	B-WRONG
 médio	I-WRONG
-Oriente	O
-Médio	O
 .	O
 
 Sentença Original N°889
@@ -27038,7 +25898,6 @@ pode	O
 privar	O
 uma	O
 criatura	B-WRONG
-pessoa	O
 de	O
 viver	O
 .	O
@@ -27050,7 +25909,6 @@ ajudar	O
 alguns	O
 eleitores	O
 à	B-WRONG
-a	O
 escolher	O
 para	O
 quem	O
@@ -27362,9 +26220,6 @@ que	I-WRONG
 na	I-WRONG
 grande	I-WRONG
 prejudica	I-WRONG
-extremos	O
-,	O
-prejudicando	O
 a	O
 si	O
 e	O
@@ -27376,7 +26231,7 @@ Sentença Original N°903
 Por	O
 exemplo	O
 ,	O
-expressar-me	O
+expressar-me</correct>	O
 sobre	O
 um	O
 religião	O
@@ -27391,8 +26246,6 @@ os	O
 seguidores	B-WRONG
 da	I-WRONG
 mesma	I-WRONG
-seus	O
-seguidores	O
 .	O
 
 Sentença Original N°904
@@ -27448,23 +26301,17 @@ Sentença Original N°906
 Mediante	O
 a	B-WRONG
 tanto	I-WRONG
-tanto	O
 sofrimento	O
 ,	O
 surge	O
 então	B-WRONG
 a	I-WRONG
-a	O
 hipótese	O
 que	B-WRONG
-de	O
-que	O
 talvez	O
 a	O
 eutanásia	O
 seria	B-WRONG
-possa	O
-ser	O
 a	O
 melhor	O
 opção	O
@@ -27476,14 +26323,6 @@ para	O
 o	O
 doente	B-WRONG
 morrer	I-WRONG
-doente	O
-,	O
-ou	O
-seja	O
-,	O
-morrer	O
-seria	O
-melhor	O
 que	O
 ficar	O
 em	O
@@ -27511,8 +26350,6 @@ divulgados	O
 pela	O
 mídia	B-WRONG
 ,	I-WRONG
-mídia	O
-:	O
 maus	O
 tratos	O
 ,	O
@@ -27593,9 +26430,9 @@ meio	O
 os	O
 conceitos	O
 de	O
-"certo"	O
+certo	O
 e	O
-"errado"	O
+errado	O
 normalmente	O
 prevalecem	O
 sobre	O
@@ -27657,16 +26494,10 @@ direito	O
 proporcionado	O
 pela	O
 constituição	B-WRONG
-Constituição	O
 brasileira	O
 que	B-WRONG
 no	I-WRONG
 entanto	I-WRONG
-que	O
-,	O
-no	O
-entanto	O
-,	O
 deve	O
 ocorrer	O
 da	O
@@ -27678,11 +26509,11 @@ violência	B-WRONG
 e	I-WRONG
 para	I-WRONG
 isso	I-WRONG
-violência	O
+<correct>violência	O
 .	O
 
 Sentença Original N°912
-Não	O
+Não</correct>	O
 importa	O
 quem	O
 somos	O
@@ -27700,9 +26531,6 @@ sobreviver	O
 ,	O
 e	B-WRONG
 mesmo	I-WRONG
-mas	O
-,	O
-mesmo	O
 sabendo	O
 disso	O
 ,	O
@@ -27735,8 +26563,6 @@ votação	O
 distrital	O
 trás	B-WRONG
 a	I-WRONG
-traz	O
-à	O
 população	O
 brasileira	O
 uma	O
@@ -27812,8 +26638,6 @@ que	O
 de	O
 forma	O
 hipócrita	B-WRONG
-hipócrita	O
-,	O
 com	O
 a	O
 justificativa	O
@@ -27878,7 +26702,7 @@ Johns	O
 Hopkins	O
 University	O
 ,	O
-"a	O
+a	O
 taxa	O
 de	O
 acidentes	O
@@ -27897,7 +26721,7 @@ de	O
 combate	O
 ,	O
 incluindo	O
-boxe"	O
+boxe	O
 .	O
 
 Sentença Original N°917
@@ -27959,9 +26783,6 @@ por	O
 exemplo	B-WRONG
 :	I-WRONG
 Para	I-WRONG
-exemplo	O
-,	O
-para	O
 se	O
 conseguir	O
 um	O
@@ -27984,8 +26805,6 @@ Sentença Original N°920
 O	O
 Poder	B-WRONG
 Público	I-WRONG
-poder	O
-público	O
 se	O
 mostra	O
 contraditório	O
@@ -28004,8 +26823,6 @@ ele	I-WRONG
 mesmo	I-WRONG
 não	I-WRONG
 possui	I-WRONG
-sem	O
-possuir	O
 recursos	O
 suficientes	O
 para	O
@@ -28020,7 +26837,6 @@ Sentença Original N°921
 Se	O
 decidir	O
 manifestar	B-WRONG
-manifestar-se	O
 é	O
 barrado	O
 .	O
@@ -28121,30 +26937,21 @@ Ao	B-WRONG
 longo	I-WRONG
 dos	I-WRONG
 anos	I-WRONG
-Há	O
-muitos	O
-anos	O
 o	O
 assunto	O
 "	B-WRONG
 terrorismo	I-WRONG
 "	I-WRONG
 é	I-WRONG
-terrorismo	O
-era	O
 sinônimo	O
 de	O
 países	O
 como	B-WRONG
 :	I-WRONG
-como	O
-o	O
 Paquistão	O
 ,	O
-o	O
 Iraque	O
 ou	O
-o	O
 Afeganistão	O
 ,	O
 mas	O
@@ -28154,7 +26961,7 @@ mudou	O
 .	O
 
 Sentença Original N°926
-A	O
+A</correct>	O
 escola	O
 é	O
 um	O
@@ -28172,12 +26979,6 @@ porém	B-WRONG
 hoje	I-WRONG
 em	I-WRONG
 dia	I-WRONG
-porém	O
-,	O
-hoje	O
-em	O
-dia	O
-,	O
 as	O
 brigas	O
 nas	O
@@ -28186,14 +26987,11 @@ são	O
 comuns	B-WRONG
 ,	B-WRONG
 e	I-WRONG
-comuns	O
-e	O
 não	O
 há	O
 maneiras	O
 para	O
 evita-las	B-WRONG
-evitá-las	O
 .	O
 
 Sentença Original N°927
@@ -28204,10 +27002,7 @@ estranho	O
 ,	O
 durante	B-WRONG
 num	I-WRONG
-durante	O
-um	O
 almoço	O
-,	O
 ver	O
 o	O
 jovem	O
@@ -28348,7 +27143,6 @@ não	O
 estão	O
 nem	O
 ai	B-WRONG
-aí	O
 para	O
 o	O
 que	O
@@ -28364,13 +27158,10 @@ futuro	O
 ,	O
 jogam	B-WRONG
 ele	I-WRONG
-jogam-no	O
 em	O
 toda	B-WRONG
 a	I-WRONG
 parte	I-WRONG
-toda	O
-parte	O
 ,	O
 nos	O
 rios	O
@@ -28398,8 +27189,6 @@ de	O
 ,	O
 bar	B-WRONG
 ,	I-WRONG
-bares	O
-e	O
 restaurantes	O
 ,	O
 entre	O
@@ -28423,10 +27212,6 @@ vítima	O
 
 Sentença Original N°934
 A	O
-moda	O
-,	O
-e	O
-a	O
 moda	O
 atual	O
 busca	O
@@ -28510,7 +27295,6 @@ Atualmente	O
 uma	O
 das	O
 notícias	O
-de	O
 que	O
 mais	O
 ouvimos	O
@@ -28518,9 +27302,6 @@ falar	B-WRONG
 ,	I-WRONG
 são	I-WRONG
 de	I-WRONG
-falar	O
-trata	O
-dos	O
 delitos	O
 cometidos	O
 por	O
@@ -28538,16 +27319,13 @@ chegou	O
 ao	O
 seu	O
 país	O
-,	O
 os	O
 torcedores	O
 lhe	B-WRONG
 receberam	I-WRONG
-receberam-na	O
 como	O
 se	O
 tivessem	B-WRONG
-tivesse	O
 ganhado	O
 o	O
 mundial	O
@@ -28562,9 +27340,6 @@ procuram	O
 apenas	B-WRONG
 dar	I-WRONG
 ênfase	I-WRONG
-dar	O
-ênfase	O
-apenas	O
 aos	O
 possíveis	O
 efeitos	O
@@ -28618,9 +27393,6 @@ Argumentos	O
 como	B-WRONG
 :	I-WRONG
 diminuir	I-WRONG
-tais	O
-como	O
-diminuir	O
 a	O
 área	O
 de	O
@@ -28629,10 +27401,8 @@ e	O
 mudanças	O
 no	O
 transito	B-WRONG
-trâniso	O
 são	O
 as	B-WRONG
-os	O
 mais	O
 frequentes	O
 .	O
@@ -28645,9 +27415,6 @@ elementos	B-WRONG
 favoráveis	I-WRONG
 ,	I-WRONG
 ao	I-WRONG
-aspectos	O
-favoráveis	O
-ao	O
 desenvolvimento	O
 social	O
 ,	O
@@ -28786,7 +27553,6 @@ andar	O
 nas	O
 ruas	O
 fica	B-WRONG
-ficou	O
 cada	O
 vez	O
 mais	O
@@ -28851,8 +27617,6 @@ países	O
 
 Sentença Original N°950
 Portanto	B-WRONG
-Portanto	O
-,	O
 os	O
 órgãos	O
 competentes	O
@@ -28889,7 +27653,6 @@ do	O
 corpo	O
 perfeito	O
 podem	B-WRONG
-pode	O
 gerar	O
 e	O
 entender	O
@@ -28906,12 +27669,6 @@ Sentença Original N°951
 recursos	B-WRONG
 naturais	I-WRONG
 que	I-WRONG
-Esses	O
-são	O
-recursos	O
-naturais	O
-de	O
-que	O
 somos	O
 dependentes	O
 e	O
@@ -28952,7 +27709,6 @@ disponíveis	O
 para	O
 tirar	O
 dúvidas	O
-,	O
 e	O
 as	O
 provas	O
@@ -28991,7 +27747,6 @@ Para	B-WRONG
 mim	I-WRONG
 ,	I-WRONG
 ela	I-WRONG
-Ela	O
 é	O
 uma	O
 opção	O
@@ -29005,8 +27760,6 @@ de	I-WRONG
 certa	I-WRONG
 forma	I-WRONG
 por	I-WRONG
-sofrem	O
-com	O
 doenças	O
 fisiológicas	O
 ou	O
@@ -29017,9 +27770,6 @@ mentais	O
 Sentença Original N°956
 Fator	O
 esse	O
-que	O
-consumismo	O
-,	O
 que	O
 eleva	O
 o	O
@@ -29073,7 +27823,6 @@ literário	O
 ,	O
 para	O
 passar	O
-a	O
 maior	O
 parte	O
 do	O
@@ -29105,16 +27854,12 @@ preconceito	O
 Sentença Original N°959
 Deste	B-WRONG
 modo	I-WRONG
-Desse	O
-modo	O
-,	O
 tanto	O
 é	O
 preservado	O
 o	O
 direito	O
 a	B-WRONG
-à	O
 cidadania	O
 como	O
 também	O
@@ -29203,7 +27948,6 @@ Sentença Original N°961
 Então	O
 se	B-WRONG
 deve	I-WRONG
-deve-se	O
 sempre	O
 analisar	O
 o	O
@@ -29257,9 +28001,6 @@ trabalhar	O
 
 Sentença Original N°963
 Conhecido	O
-Hebdo	O
-,	O
-conhecido	O
 por	O
 suas	O
 publicações	O
@@ -29289,9 +28030,6 @@ votem	O
 ao	B-WRONG
 invés	I-WRONG
 de	I-WRONG
-em	O
-vez	O
-de	O
 se	O
 acomodarem	O
 com	O
@@ -29610,8 +28348,6 @@ gente	O
 que	O
 são	B-WRONG
 influenciadas	I-WRONG
-é	O
-influenciada	O
 por	O
 propagandas	O
 em	O
@@ -29621,9 +28357,6 @@ televisões	O
 ,	O
 internet	O
 e	B-WRONG
-e	O
-também	O
-por	O
 vendedores	O
 .	O
 
@@ -29632,7 +28365,6 @@ São	O
 um	O
 alvo	O
 fácil	O
-pois	O
 ,	O
 como	O
 as	O
@@ -29648,7 +28380,7 @@ defender	O
 
 Sentença Original N°978
 mas	O
-mandato	O
+<correct>mandato	O
 .	O
 
 Sentença Original N°979
@@ -29727,7 +28459,6 @@ o	O
 mundo	O
 ,	O
 houve-se	B-WRONG
-ouve-se	O
 falar	O
 de	O
 mudanças	O
@@ -29831,7 +28562,6 @@ Sentença Original N°985
 Esta	O
 é	O
 a	B-WRONG
-uma	O
 geração	O
 mais	O
 bem	O
@@ -29844,21 +28574,18 @@ e	O
 mesmo	O
 assim	O
 ignoram	B-WRONG
-ignora	O
 o	O
 preservativo	O
 ,	O
 por	O
 não	O
 terem	B-WRONG
-ter	O
 medo	O
 da	O
 aids	O
 e	O
 por	O
 confiarem	B-WRONG
-confiar	O
 no	O
 parceiro	O
 .	O
@@ -29903,12 +28630,6 @@ humana	B-WRONG
 e	I-WRONG
 por	I-WRONG
 isso	I-WRONG
-humana	O
-e	O
-,	O
-por	O
-isso	O
-,	O
 nenhuma	O
 verdade	O
 absoluta	O
@@ -29956,8 +28677,6 @@ por	O
 último	O
 ,	O
 parar	B-WRONG
-deve-se	O
-parar	O
 para	O
 pensar	O
 se	O
@@ -30073,7 +28792,6 @@ próximo	O
 Sentença Original N°995
 Devido	O
 as	B-WRONG
-às	O
 mudanças	O
 ocorridas	O
 ,	O
@@ -30101,10 +28819,6 @@ os	B-WRONG
 quais	I-WRONG
 são	I-WRONG
 descartados	I-WRONG
-o	O
-qual	O
-é	O
-descartado	O
 de	O
 maneira	O
 imprópria	O
@@ -30138,7 +28852,6 @@ bueiros	I-WRONG
 
 Sentença Original N°996
 Deve-se	B-WRONG
-Devem-se	O
 estimular	O
 umas	O
 saídas	O
@@ -30281,7 +28994,7 @@ exemplo	O
 é	O
 a	O
 novela	O
-"Babilônia"	O
+Babilônia	O
 que	O
 expressa	O
 sentimentos	O
@@ -30370,7 +29083,6 @@ O	O
 tamanho	B-WRONG
 do	I-WRONG
 papel	I-WRONG
-tamanho	O
 do	O
 Estado	O
 em	O
@@ -30388,8 +29100,6 @@ Sentença Original N°1005
 Mas	B-WRONG
 ,	I-WRONG
 a	I-WRONG
-Mas	O
-há	O
 também	O
 projetos	O
 que	O
@@ -30397,14 +29107,11 @@ andam	O
 mudando	B-WRONG
 ,	I-WRONG
 a	I-WRONG
-mudando	O
-a	O
 renda	O
 familiar	O
 de	O
 pessoas	O
 pobre	B-WRONG
-pobres	O
 que	O
 catam	O
 material	O
@@ -30488,8 +29195,6 @@ pontos	O
 estratégicos	B-WRONG
 ,	I-WRONG
 postos	I-WRONG
-estratégicos	O
-postos	O
 de	O
 atendimento	O
 médico	O
@@ -30658,7 +29363,6 @@ Atualmente	O
 os	O
 jovens	O
 tem	B-WRONG
-têm	O
 sido	O
 o	B-WRONG
 grande	I-WRONG
@@ -30672,24 +29376,11 @@ país	I-WRONG
 cometidos	O
 pelos	O
 mesmos	O
-ao	O
-mesmo	O
-tempo	O
-os	O
-principais	O
-autores	O
-e	O
-vítimas	O
-da	O
-violência	O
-em	O
-nosso	O
-país	O
 .	O
 
 Sentença Original N°1016
 O	O
-que	O
+que</correct>	O
 será	O
 que	O
 acontecerá	O
@@ -30701,8 +29392,6 @@ levarmos	O
 o	O
 hexa	B-WRONG
 .	I-WRONG
-hexa	O
-?	O
 Qualquer	O
 país	O
 que	O
@@ -30762,7 +29451,6 @@ Isso	O
 realmente	O
 vale	O
 à	B-WRONG
-a	O
 pena	O
 ?	O
 
@@ -30970,17 +29658,12 @@ copa	B-WRONG
 do	I-WRONG
 mundo	I-WRONG
 nãos	I-WRONG
-Copa	O
-do	O
-Mundo	O
-não	O
 traz	O
 nenhum	O
 legado	O
 econômico	O
 e	O
 quão	B-WRONG
-quanto	O
 é	O
 importante	O
 investir	O
@@ -30995,7 +29678,6 @@ na	O
 saúde	O
 e	O
 dentre	B-WRONG
-em	O
 outras	O
 áreas	O
 fundamentais	O
@@ -31050,7 +29732,6 @@ universidades	O
 federais	O
 ,	O
 deixavam	B-WRONG
-deixava	O
 os	O
 jovens	O
 de	O
@@ -31075,15 +29756,8 @@ instituição	I-WRONG
 de	I-WRONG
 ensino	I-WRONG
 no	I-WRONG
-As	O
-instituições	O
-de	O
-ensino	O
-para	O
-o	O
 trânsito	O
 deixa	B-WRONG
-deixam	O
 muito	O
 a	O
 desejar	O
@@ -31116,10 +29790,6 @@ Tais	O
 indivíduos	B-WRONG
 ,	I-WRONG
 infelizmente	I-WRONG
-indivíduos	O
-,	O
-infelizmente	O
-,	O
 vão	O
 às	O
 ruas	O
@@ -31128,7 +29798,6 @@ depredar	O
 o	O
 patrimônio	O
 publico	B-WRONG
-público	O
 e	O
 para	O
 iniciar	O
@@ -31220,8 +29889,6 @@ verbalizadas	O
 ;	O
 assim	O
 sendo	B-WRONG
-sendo	O
-,	O
 cada	O
 elemento	O
 sintático	O
@@ -31250,7 +29917,6 @@ família	O
 de	O
 Wellington	O
 preveu	B-WRONG
-previu	O
 .	O
 
 Sentença Original N°1036
@@ -31279,7 +29945,7 @@ todos	O
 .	O
 
 Sentença Original N°1037
-Devido	O
+Devido</correct>	O
 ao	O
 pouco	O
 tempo	O
@@ -31289,13 +29955,10 @@ para	O
 começar	O
 o	O
 evento	B-WRONG
-evento	O
-,	O
 o	O
 Brasil	O
 já	O
 esta	B-WRONG
-está	O
 sendo	O
 criticado	O
 pelo	O
@@ -31362,7 +30025,7 @@ Ha	O
 quem	O
 diga	O
 :	O
-"e	O
+e	O
 nós	O
 cidadãos	O
 temos	O
@@ -31374,7 +30037,6 @@ acontecimentos	O
 dos	O
 nossos	O
 politicos	B-WRONG
-políticos	O
 ,	O
 artistas	O
 ,	O
@@ -31393,8 +30055,6 @@ mas	O
 também	O
 no	O
 exterior	B-WRONG
-exterior	O
-,	O
 foram	O
 divulgados	O
 casos	O
@@ -31404,11 +30064,8 @@ no	O
 futebol	O
 ;	O
 onde	B-WRONG
-em	O
-que	O
 negros	O
 são	B-WRONG
-foram	O
 atingidos	O
 por	O
 bananas	O
@@ -31434,8 +30091,6 @@ a	O
 opiniões	O
 divergentes	O
 ,	O
-seja	O
-divergentes	O
 seja	O
 ensinado	O
 desde	O
@@ -31483,8 +30138,6 @@ têm	O
 maturidade	O
 o	O
 suficiente	O
-maturidade	O
-suficiente	O
 para	B-WRONG
 se	I-WRONG
 conscientizarem	I-WRONG
@@ -31500,7 +30153,6 @@ eles	O
 então	O
 cabem	B-WRONG
 as	O
-às	O
 autoridades	O
 e	O
 aos	O
@@ -31513,7 +30165,6 @@ um	O
 futuro	O
 melhor	O
 aos	O
-para	O
 seus	O
 filhos	O
 .	O
@@ -31523,8 +30174,6 @@ Sentença Original N°1044
 Mas	O
 a	B-WRONG
 quê	I-WRONG
-por	O
-que	O
 se	O
 dá	O
 essa	O
@@ -31559,7 +30208,6 @@ frutas	O
 e	O
 grelhados	O
 ao	B-WRONG
-a	O
 seu	O
 favor	O
 .	O
@@ -31630,8 +30278,6 @@ que	O
 melhor	O
 os	B-WRONG
 convêm	I-WRONG
-lhes	O
-convém	O
 .	O
 
 Sentença Original N°1049
@@ -31729,7 +30375,6 @@ sátiras	O
 que	O
 o	O
 Jornal	B-WRONG
-jornal	O
 produziu	O
 sobre	O
 o	O
@@ -31753,7 +30398,6 @@ expressão	O
 :	O
 teria	O
 esta	B-WRONG
-ela	O
 limites	O
 ?	O
 
@@ -31770,7 +30414,6 @@ dessa	O
 vez	O
 sem	O
 por	O
-pôr	O
 em	O
 risco	O
 a	O
@@ -31894,9 +30537,6 @@ que	O
 a	B-WRONG
 classe	I-WRONG
 feminil	I-WRONG
-o	O
-sexo	O
-feminino	O
 pode	O
 se	O
 vestir	O
@@ -31983,14 +30623,6 @@ gerações	O
 à	B-WRONG
 tempo	I-WRONG
 reduzido	I-WRONG
-em	O
-espaços	O
-de	O
-tempo	O
-cada	O
-vez	O
-mais	O
-reduzidos	O
 não	O
 amedronta	O
 as	O
@@ -32085,10 +30717,6 @@ Com	O
 as	B-WRONG
 eleições	I-WRONG
 perto	I-WRONG
-a	O
-proximidade	O
-das	O
-eleições	O
 ,	O
 os	O
 brasileiros	O
@@ -32099,7 +30727,6 @@ escolher	O
 quem	O
 os	O
 representarão	B-WRONG
-representará	O
 no	O
 governo	O
 nos	O
@@ -32140,9 +30767,6 @@ de	O
 copa	B-WRONG
 do	I-WRONG
 mundo	I-WRONG
-Copa	O
-do	O
-Mundo	O
 acontece	O
 o	O
 contrário	O
@@ -32200,7 +30824,6 @@ tona	I-WRONG
 e	I-WRONG
 nos	I-WRONG
 faz	I-WRONG
-faz-nos	O
 refletir	O
 a	O
 respeito	O
@@ -32222,7 +30845,6 @@ forma	O
 de	O
 educação	O
 as	B-WRONG
-das	O
 crianças	O
 brasileiras	O
 .	O
@@ -32233,8 +30855,6 @@ vida	O
 do	O
 típico	B-WRONG
 adolescente	I-WRONG
-adolescente	O
-típico	O
 se	O
 divide	O
 entre	O
@@ -32342,12 +30962,10 @@ mitificação	O
 
 Sentença Original N°1075
 Esse	O
-índice	O
+índice</correct>	O
 aumentaria	O
 se	O
 contabilizassem	B-WRONG
-fossem	O
-contabilizados	O
 os	O
 feridos	O
 .	O
@@ -32397,10 +31015,8 @@ moderação	O
 pois	O
 essa	O
 industria	B-WRONG
-indústria	O
 cuida	O
 a	B-WRONG
-da	O
 saúde	O
 todos	O
 os	O
@@ -32460,15 +31076,10 @@ do	B-WRONG
 norte	I-WRONG
 ao	I-WRONG
 sul	I-WRONG
-de	O
-norte	O
-a	O
-sul	O
 do	O
 país	O
 ,	O
 jóvens	B-WRONG
-jovens	O
 ,	O
 adultos	O
 ,	O
@@ -32507,9 +31118,6 @@ a	O
 copa	B-WRONG
 do	I-WRONG
 mundo	I-WRONG
-Copa	O
-do	O
-Mundo	O
 de	O
 2014	O
 ,	O
@@ -32626,7 +31234,6 @@ o	O
 álcool	O
 nos	B-WRONG
 proporciona	I-WRONG
-provoca	O
 .	O
 
 Sentença Original N°1082
@@ -32658,7 +31265,7 @@ problema	O
 .	O
 
 Sentença Original N°1083
-É	O
+É</correct>	O
 preciso	O
 levar	O
 em	O
@@ -32699,12 +31306,10 @@ se	O
 deve	O
 à	O
 proliferação	O
-pelo	O
-país	O
 das	O
 redes	O
 de	O
-"fast-food"	O
+fast-food	O
 ,	O
 cujo	O
 carro	O
@@ -32737,7 +31342,7 @@ sinalização	O
 ?	O
 
 Sentença Original N°1086
-Agora	O
+Agora</correct>	O
 ,	O
 nós	O
 que	O
@@ -32787,7 +31392,6 @@ não	O
 fumarmos	O
 passivamente	O
 á	O
-à	O
 força	O
 .	O
 
@@ -32803,8 +31407,6 @@ casais	O
 heterossexuais	B-WRONG
 ,	I-WRONG
 mostra	I-WRONG
-heterossexuais	O
-mostra	O
 que	O
 a	O
 base	O
@@ -32812,7 +31414,6 @@ da	O
 sociedade	O
 é	B-WRONG
 de	I-WRONG
-tem	O
 uma	O
 visão	O
 muito	O
@@ -32869,8 +31470,6 @@ de	O
 sete	O
 alunos	O
 da	B-WRONG
-de	O
-uma	O
 universidade	O
 do	O
 interior	O
@@ -32880,15 +31479,10 @@ Paulo	B-WRONG
 (	I-WRONG
 Unifeb	I-WRONG
 )	I-WRONG
-Paulo	O
-,	O
-a	O
-Unifeb	O
 ,	O
 foram	O
 submetidos	O
 à	B-WRONG
-a	O
 jatos	O
 de	O
 creolina	O
@@ -32899,9 +31493,6 @@ altamente	O
 corrosiva	O
 ,	O
 onde	B-WRONG
-de	O
-modo	O
-que	O
 os	O
 calouros	O
 sofreram	O
@@ -32934,14 +31525,10 @@ para	O
 crianças	O
 e	O
 jovens	B-WRONG
-jovens	O
-,	O
 tornando	O
 a	O
 leitura	O
 agradável	B-WRONG
-agradável	O
-,	O
 pode	O
 ser	O
 fundamental	O
@@ -32952,17 +31539,12 @@ educação	O
 futura	O
 ,	O
 pois	B-WRONG
-pois	O
-,	O
 no	O
 mundo	O
 tecnológico	O
-em	O
 que	O
 vivemos	O
 hoje	B-WRONG
-hoje	O
-,	O
 incentivar	O
 nossos	O
 jovens	O
@@ -32972,13 +31554,11 @@ e	O
 criar	O
 o	O
 habito	B-WRONG
-hábito	O
 de	O
 leitura	O
 seria	O
 uma	O
 dadiva	B-WRONG
-dádiva	O
 .	O
 
 Sentença Original N°1090
@@ -33014,7 +31594,6 @@ causar	O
 o	O
 mesmo	O
 mau	B-WRONG
-mal	O
 ,	O
 já	O
 que	O
@@ -33042,7 +31621,6 @@ maioria	O
 dos	O
 idosos	O
 passam	B-WRONG
-passa	O
 por	O
 grandes	O
 dificuldades	O
@@ -33057,7 +31635,6 @@ da	O
 família	O
 ,	O
 mals	B-WRONG
-maus	O
 tratos	O
 ,	O
 impossibilidade	O
@@ -33200,7 +31777,6 @@ uma	O
 aponsentadoria	O
 que	O
 mau	B-WRONG
-mal	O
 podem	O
 pagar	O
 as	O
@@ -33314,7 +31890,6 @@ por	O
 isso	O
 ainda	O
 vem	B-WRONG
-vêm	O
 ocorrendo	O
 sérios	O
 conflitos	O
@@ -33325,9 +31900,6 @@ econômicos	O
 
 Sentença Original N°1100
 Gerando	B-WRONG
-Esse	O
-quadro	O
-gera	O
 um	O
 ciclo	O
 vicioso	O
@@ -33342,7 +31914,6 @@ reverter	O
 se	O
 desde	B-WRONG
 de	I-WRONG
-desde	O
 cedo	O
 cultivarmos	O
 uma	O
@@ -33439,27 +32010,22 @@ Talvez	O
 aí	O
 que	B-WRONG
 esteja	I-WRONG
-esteja	O
 a	O
 falha	O
 de	O
 muitos	O
 pais	B-WRONG
 ,	I-WRONG
-pais	O
-:	O
 pensar	O
 que	O
 seus	O
 filhos	O
 tem	B-WRONG
-têm	O
 o	O
 mesmo	O
 comportamento	O
 que	O
 tem	B-WRONG
-têm	O
 em	O
 casa	O
 e	O
@@ -33491,16 +32057,10 @@ campeões	I-WRONG
 que	I-WRONG
 nos	I-WRONG
 mostra	I-WRONG
-no	O
-livroO	O
-segredo	O
-dos	O
-campeões	O
 exatamente	O
 como	O
 devemos	O
 se	B-WRONG
-nos	O
 comportar	O
 durante	O
 a	O
@@ -33519,8 +32079,6 @@ por	O
 um	O
 outro	O
 lado	B-WRONG
-lado	O
-,	O
 o	O
 dinheiro	O
 que	O
@@ -33528,29 +32086,18 @@ ela	O
 vai	O
 consegui	B-WRONG
 pelo	I-WRONG
-conseguir	O
-com	O
-o	O
 leilão	O
 ,	O
 após	O
 ser	B-WRONG
-o	O
-ato	O
-sexual	O
-ser	O
 consumado	O
 ,	O
 foi	B-WRONG
-será	O
 bem	O
 gratificante	O
 ,	O
 com	B-WRONG
 este	I-WRONG
-pois	O
-com	O
-esse	O
 dinheiro	O
 vai	O
 poder	O
@@ -33587,7 +32134,6 @@ lhe	O
 render	O
 um	B-WRONG
 bom	I-WRONG
-bons	O
 frutos	O
 .	O
 
@@ -33689,7 +32235,6 @@ Assim	O
 as	O
 pessoas	O
 poderá	B-WRONG
-poderiam	O
 ter	O
 o	O
 mesmo	O
@@ -33715,10 +32260,6 @@ de	I-WRONG
 questões	I-WRONG
 como	I-WRONG
 ,	I-WRONG
-trata	O
-de	O
-questões	O
-como	O
 aborto	O
 ,	O
 pena	O
@@ -33734,17 +32275,14 @@ por	I-WRONG
 sua	I-WRONG
 vez	I-WRONG
 ,	I-WRONG
-que	O
 estão	O
 na	O
 contra	B-WRONG
 mão	I-WRONG
-contramão	O
 dos	O
 ensinamentos	O
 da	O
 igreja	B-WRONG
-Igreja	O
 ,	O
 ou	O
 qualquer	O
@@ -33784,7 +32322,6 @@ devem	O
 entender	O
 que	O
 este	B-WRONG
-esse	O
 fato	O
 revela	O
 a	O
@@ -33805,9 +32342,6 @@ lei	O
 para	B-WRONG
 esse	I-WRONG
 paradigma	I-WRONG
-com	O
-esse	O
-fim	O
 foram	O
 reprovadas	O
 .	O
@@ -33920,7 +32454,6 @@ que	O
 constantemente	O
 são	B-WRONG
 evidenciados	I-WRONG
-ocorrem	O
 nas	O
 cidades	O
 ,	O
@@ -34011,8 +32544,6 @@ do	O
 parceiro	O
 cuidar	O
 dela	B-WRONG
-da	O
-companheira	O
 e	O
 dos	O
 filhos	O
@@ -34132,10 +32663,6 @@ surgiu	O
 agora	B-WRONG
 ,	I-WRONG
 e	I-WRONG
-agora	O
-,	O
-mas	O
-,	O
 como	O
 sabemos	O
 ,	O
@@ -34198,7 +32725,6 @@ pouco	O
 ,	O
 e	O
 colocasse	B-WRONG
-colocássemos	O
 mais	O
 a	O
 nossa	O
@@ -34330,7 +32856,6 @@ Unidos	O
 podem	O
 constituir	O
 num	B-WRONG
-um	O
 caminho	O
 para	O
 o	O
@@ -34360,12 +32885,6 @@ fase	O
 ,	O
 de	B-WRONG
 decidir	I-WRONG
-em	O
-que	O
-o	O
-jovem	O
-pensa	O
-:	O
 "	O
 o	O
 que	O
@@ -34473,7 +32992,6 @@ além	O
 de	O
 melhorar	O
 a	O
-sua	O
 qualidade	O
 da	B-WRONG
 mesma	I-WRONG
@@ -34632,7 +33150,7 @@ roupa	O
 .	O
 
 Sentença Original N°1144
-Na	O
+Na</correct>	O
 Idade	O
 Média	O
 buscava-se	O
@@ -34658,7 +33176,7 @@ da	O
 sociedade	B-WRONG
 ,	I-WRONG
 já	I-WRONG
-sociedade	O
+<correct>sociedade	O
 .	O
 
 Sentença Original N°1145
@@ -34666,21 +33184,18 @@ Em	O
 nossa	O
 busca	O
 a	B-WRONG
-pela	O
 concretização	O
 de	O
 ideias	O
 ,	O
 nos	B-WRONG
 deparamos	I-WRONG
-deparamo-nos	O
 com	O
 o	O
 primeiro	O
 dilema	O
 :	O
 É	B-WRONG
-é	O
 permitido	O
 ou	O
 não	O
@@ -34698,7 +33213,6 @@ teriam	O
 que	O
 deixar	B-WRONG
 claro	I-WRONG
-claras	O
 as	O
 punições	O
 de	O
@@ -34722,7 +33236,6 @@ aparelho	O
 ,	O
 e	O
 ai	B-WRONG
-aí	O
 sim	O
 o	O
 aluno	O
@@ -34743,7 +33256,6 @@ aparelho	O
 só	O
 porque	O
 esta	B-WRONG
-está	O
 ali	O
 é	O
 muito	O
@@ -34757,7 +33269,6 @@ o	O
 celular	O
 para	O
 usar	B-WRONG
-usá-lo	O
 de	O
 má	O
 fé	O
@@ -34818,7 +33329,6 @@ educação	O
 Sentença Original N°1149
 Além	O
 disso	O
-,	O
 existem	O
 outras	O
 questões	O
@@ -34829,8 +33339,6 @@ exemplo	O
 :	O
 a	O
 liberdade	O
-dos	O
-pais	O
 de	O
 criar	O
 seus	O
@@ -34839,7 +33347,6 @@ da	O
 forma	O
 que	O
 lhe	O
-lhes	O
 convém	O
 ,	O
 admitindo	O
@@ -34848,8 +33355,6 @@ não	O
 que	O
 ele	O
 tenha	O
-eles	O
-tenham	O
 vida	O
 noturna	O
 ativa	O
@@ -34861,9 +33366,6 @@ liberdade	O
 do	O
 jovem	O
 em	O
-para	O
-,	O
-de	O
 tomar	O
 suas	O
 próprias	O
@@ -34882,9 +33384,6 @@ em	O
 harmonia	B-WRONG
 ,	B-WRONG
 e	I-WRONG
-harmonia	O
-e	O
-,	O
 quando	O
 algo	O
 acontece	O
@@ -34943,10 +33442,8 @@ contra	O
 a	O
 realização	O
 deste	B-WRONG
-desse	O
 evento	O
 contagio	B-WRONG
-contagiou	O
 a	O
 maioria	O
 da	O
@@ -34982,7 +33479,6 @@ Estado	O
 nunca	O
 conseguirá	O
 lidar	B-WRONG
-evitar	O
 .	O
 
 Sentença Original N°1154
@@ -35022,7 +33518,7 @@ mais	O
 assustados	B-WRONG
 ,	I-WRONG
 estamos	I-WRONG
-assustados	O
+<correct>assustados	O
 .	O
 
 Sentença Original N°1156
@@ -35057,7 +33553,6 @@ principalmente	O
 ,	O
 leva	O
 estes	B-WRONG
-esses	O
 jovens	O
 para	O
 esse	O
@@ -35101,11 +33596,6 @@ maiores	B-WRONG
 devem	I-WRONG
 ser	I-WRONG
 apontados	I-WRONG
-maiores	O
-,	O
-deve	O
-ser	O
-apontada	O
 como	O
 uma	O
 das	O
@@ -35164,7 +33654,6 @@ criança	O
 adentrando	O
 uma	O
 delegacia	O
-e	O
 pulando	O
 ao	O
 balcão	O
@@ -35217,20 +33706,15 @@ trânsito	O
 sendo	O
 o	B-WRONG
 primeiro	I-WRONG
-os	O
-primeiros	O
 muitas	O
 vezes	O
 causado	B-WRONG
-causados	O
 pelos	O
 mesmos	O
 fatores	O
 que	O
 o	B-WRONG
 segundo	I-WRONG
-os	O
-segundos	O
 ,	O
 ou	O
 sendo	O
@@ -35238,7 +33722,6 @@ uma	O
 consequência	O
 trágica	O
 deste	B-WRONG
-destes	O
 .	O
 
 Sentença Original N°1163
@@ -35342,7 +33825,6 @@ não	O
 proibi-lo	O
 e	O
 considera-lo	B-WRONG
-considerá-lo	O
 uma	O
 droga	O
 letal	O
@@ -35394,11 +33876,6 @@ que	I-WRONG
 de	I-WRONG
 um	I-WRONG
 lado	I-WRONG
-De	O
-um	O
-dos	O
-seus	O
-lados	O
 estão	O
 os	O
 direitos	O
@@ -35487,7 +33964,6 @@ Sentença Original N°1176
 "	O
 "	B-WRONG
 Ainda	I-WRONG
-Ainda	O
 não	O
 dá	O
 para	O
@@ -35502,7 +33978,7 @@ novos	O
 integrantes	B-WRONG
 "	I-WRONG
 afirmam	I-WRONG
-integrantes	O
+<correct>integrantes	O
 .	O
 
 Sentença Original N°1177
@@ -35586,7 +34062,6 @@ se	O
 possa	O
 manter	O
 as	B-WRONG
-os	O
 alertas	O
 e	O
 prevenções	O
@@ -35599,7 +34074,6 @@ tomem	O
 os	O
 cuidados	O
 necessário	B-WRONG
-necessários	O
 ao	O
 se	O
 automedicarem	O
@@ -35624,7 +34098,7 @@ vida	O
 "	O
 
 Sentença Original N°1181
-Essa	O
+Essa</correct>	O
 é	O
 a	O
 forma	O
@@ -35649,8 +34123,6 @@ que	O
 é	O
 competência	O
 humana	B-WRONG
-humana	O
-:	O
 amparar	O
 ,	O
 apoiar	O
@@ -35754,12 +34226,10 @@ Sentença Original N°1185
 Em	O
 contrapartida	O
 as	B-WRONG
-às	O
 demais	O
 crenças	O
 ,	O
 existe	B-WRONG
-existem	O
 duas	O
 que	O
 geralmente	O
@@ -35771,7 +34241,6 @@ repúdio	O
 ,	O
 atos	O
 descriminatórios	B-WRONG
-discriminatórias	O
 e	O
 violentos	O
 ,	O
@@ -35780,7 +34249,6 @@ elas	O
 as	O
 religiões	O
 Afrodescendentes	B-WRONG
-afro-brasileiras	O
 .	O
 
 Sentença Original N°1186
@@ -35789,8 +34257,6 @@ Entretanto	O
 fazer	O
 algo	O
 que	B-WRONG
-com	O
-que	O
 se	O
 obtenha	O
 prazer	O
@@ -35802,7 +34268,6 @@ qualquer	O
 teremos	O
 um	O
 funcionário	B-WRONG
-profissional	O
 motivado	O
 e	O
 em	O
@@ -35812,7 +34277,7 @@ aperfeiçoamentos	O
 .	O
 
 Sentença Original N°1187
-Neste	O
+Neste</correct>	O
 momento	O
 é	O
 muito	O
@@ -35838,7 +34303,6 @@ uma	O
 emissora	O
 aberta	B-WRONG
 ,	I-WRONG
-aberta	O
 fosse	O
 responsável	O
 pela	O
@@ -36006,13 +34470,12 @@ Sentença Original N°1191
 Por	O
 isso	O
 ,	O
-proibe-se	O
+proibe-se</correct>	O
 que	O
 restaurantes	O
 e	O
 bares	O
 recebem	O
-recebam	O
 fumantes	O
 em	B-WRONG
 seus	I-WRONG
@@ -36026,7 +34489,6 @@ e	O
 o	O
 bem	O
 estar	O
-bem-estar	O
 dos	O
 cidadãos	O
 que	O
@@ -36034,9 +34496,6 @@ não	O
 praticam	O
 esse	O
 habito	O
-têm	O
-esse	O
-hábito	O
 .	O
 
 Sentença Original N°1192
@@ -36211,12 +34670,10 @@ e	O
 a	O
 escola	O
 são	B-WRONG
-são	O
 locais	O
 de	O
 recepção	O
 a	B-WRONG
-à	O
 pluralidade	O
 cultural	O
 ,	O
@@ -36233,7 +34690,6 @@ A	O
 lei	O
 implica	B-WRONG
 em	I-WRONG
-implica	O
 subsídios	O
 aplicados	O
 sobre	O
@@ -36248,7 +34704,6 @@ os	O
 que	O
 são	O
 vendido	B-WRONG
-vendidos	O
 pela	O
 metade	O
 do	O
@@ -36315,7 +34770,6 @@ e	O
 adolescentes	O
 não	O
 esta	B-WRONG
-está	O
 na	O
 maioridade	O
 penal	O
@@ -36328,7 +34782,6 @@ de	O
 oportunidades	O
 e	O
 politicas	B-WRONG
-políticas	O
 incentivadoras	O
 para	O
 que	O
@@ -36579,7 +35032,6 @@ clássicos	O
 literários	O
 brasileiros	O
 vem	B-WRONG
-vêm	O
 sendo	O
 lidos	O
 nas	O
@@ -36609,7 +35061,6 @@ ou	O
 mentais	O
 e	O
 idosos	B-WRONG
-idosos	O
 que	O
 assegura	O
 o	O
@@ -36636,9 +35087,6 @@ para	O
 os	O
 lixões	B-WRONG
 aonde	I-WRONG
-lixões	O
-,	O
-onde	O
 todo	O
 o	O
 material	O
@@ -36648,11 +35096,10 @@ descartado	O
 .	O
 
 Sentença Original N°1215
-Essa	O
+Essa</correct>	O
 triste	O
 realidade	O
 trás	B-WRONG
-traz	O
 aos	O
 criminosos	O
 certa	O
@@ -36774,7 +35221,6 @@ o	O
 direito	O
 de	O
 suicidar	B-WRONG
-suicidar-se	O
 ,	O
 portanto	O
 independente	O
@@ -36791,7 +35237,6 @@ colocar	O
 um	O
 fim	O
 a	B-WRONG
-à	O
 vida	O
 e	O
 é	O
@@ -36911,17 +35356,11 @@ as	O
 enchentes	O
 no	O
 RJ	B-WRONG
-Rio	O
-de	O
-Janeiro	O
 .	O
 
 Sentença Original N°1222
 Muitos	O
 querem	B-WRONG
-dizem	O
-que	O
-querem	O
 a	O
 justiça	O
 ,	O
@@ -36978,7 +35417,6 @@ elas	O
 conseguiram	O
 ir	O
 a	B-WRONG
-à	O
 escola	O
 e	O
 mais	O
@@ -37087,8 +35525,6 @@ pelos	O
 meios	O
 de	O
 comunicações	B-WRONG
-comunicação	O
--	O
 jornais	O
 ,	O
 televisão	O
@@ -37103,7 +35539,6 @@ homofobia	O
 ,	O
 o	B-WRONG
 que	I-WRONG
-que	O
 acabam	O
 sendo	O
 justificados	O
@@ -37121,8 +35556,6 @@ ainda	O
 a	O
 possibilidade	O
 do	B-WRONG
-de	O
-o	O
 Estado	O
 não	O
 ter	O
@@ -37246,7 +35679,6 @@ atraente	O
 principalmente	O
 devido	O
 as	B-WRONG
-às	O
 grandes	O
 catástrofes	O
 naturais	O
@@ -37321,12 +35753,6 @@ que	I-WRONG
 espera	I-WRONG
 se	I-WRONG
 ,	I-WRONG
-contrário	O
-do	O
-que	O
-se	O
-espera	O
-,	O
 os	O
 constantes	O
 conflitos	O
@@ -37346,14 +35772,13 @@ melhores	O
 condições	O
 transporte	O
 publico	B-WRONG
-público	O
 e	O
 outras	O
 reivindicações	B-WRONG
 ,	B-WRONG
 o	I-WRONG
 fato	I-WRONG
-reivindicações	O
+<correct>reivindicações	O
 .	O
 
 Sentença Original N°1236
@@ -37365,7 +35790,6 @@ em	O
 si	O
 não	O
 lhe	B-WRONG
-lhes	O
 dá	O
 motivos	O
 para	O
@@ -37411,7 +35835,6 @@ que	O
 não	O
 aproveitar	O
 deste	B-WRONG
-desse	O
 recurso	O
 abrangente	O
 ?	O
@@ -37483,7 +35906,6 @@ já	O
 é	O
 ,	O
 a	B-WRONG
-há	O
 muito	O
 tempo	O
 ,	O
@@ -37493,8 +35915,6 @@ problema	O
 interno	O
 e	O
 agora	B-WRONG
-agora	O
-,	O
 como	O
 futuro	O
 sediador	O
@@ -37502,9 +35922,6 @@ da	O
 copa	B-WRONG
 do	I-WRONG
 mundo	I-WRONG
-Copa	O
-do	O
-Mundo	O
 ,	O
 deve	O
 melhorar	O
@@ -37571,8 +35988,6 @@ mais	O
 um	O
 incidente	B-WRONG
 terroristas	I-WRONG
-atentado	O
-terrorista	O
 .	O
 
 Sentença Original N°1245
@@ -37627,7 +36042,7 @@ compulsório	O
 
 Sentença Original N°1246
 "	O
-perfil	O
+<correct>perfil	O
 "	O
 .	O
 
@@ -37647,8 +36062,6 @@ Sítio	O
 do	O
 pica-pau	B-WRONG
 amarelo	I-WRONG
-Pica-pau	O
-Amarelo	O
 ,	O
 que	O
 tem	O
@@ -37670,7 +36083,6 @@ sobretudo	O
 entendam	O
 de	O
 política	O
-e	O
 sejam	O
 justos	O
 ,	O
@@ -37694,7 +36106,6 @@ que	O
 diz	O
 respeito	O
 à	B-WRONG
-a	O
 todos	O
 .	O
 
@@ -37797,7 +36208,7 @@ Nação	O
 Sentença Original N°1254
 Essas	O
 pessoas	O
-cada	O
+cada</correct>	O
 vez	O
 mais	O
 veem	O
@@ -37814,7 +36225,7 @@ a	O
 ser	O
 normal	O
 ,	O
-passam	O
+<correct>passam	O
 a	O
 achar	O
 tudo	O
@@ -37830,7 +36241,6 @@ parcela	O
 tais	O
 propagandas	O
 tem	B-WRONG
-têm	O
 o	O
 reflexo	O
 de	O
@@ -37917,8 +36327,6 @@ isolado	O
 ,	O
 já	O
 que	B-WRONG
-que	O
-,	O
 segundo	O
 dados	O
 ,	O
@@ -37971,7 +36379,6 @@ brasileiro	O
 Sentença Original N°1259
 Somadas	O
 a	B-WRONG
-à	O
 conscientização	O
 social	O
 de	O
@@ -37986,7 +36393,6 @@ de	O
 omissão	O
 para	O
 formar	B-WRONG
-ser	O
 um	O
 "	O
 país	O
@@ -38040,8 +36446,6 @@ profissional	O
 
 Sentença Original N°1261
 Isso	B-WRONG
-Isso	O
-,	O
 de	O
 fato	O
 ,	O
@@ -38055,9 +36459,6 @@ de	O
 lado	B-WRONG
 ,	I-WRONG
 devemos	I-WRONG
-lado	O
-:	O
-devemos	O
 fazer	O
 algo	O
 para	O
@@ -38072,7 +36473,6 @@ criminalidade	O
 infantil	O
 constituiu-se	B-WRONG
 de	I-WRONG
-tornou-se	O
 um	O
 problema	O
 gravíssimo	O
@@ -38088,7 +36488,7 @@ danos	O
 sociedade	B-WRONG
 ,	I-WRONG
 esse	I-WRONG
-sociedade	O
+<correct>sociedade	O
 .	O
 
 Sentença Original N°1263
@@ -38103,9 +36503,6 @@ a	O
 sobrevivencia	B-WRONG
 na	I-WRONG
 terra	I-WRONG
-sobrevivência	O
-na	O
-Terra	O
 .	O
 
 Sentença Original N°1264
@@ -38126,9 +36523,6 @@ crianças	O
 
 Sentença Original N°1265
 As	O
-poder	O
-;	O
-as	O
 propagandas	O
 cada	O
 vez	O
@@ -38206,7 +36600,6 @@ delituosa	O
 já	O
 que	O
 houvera	B-WRONG
-houve	O
 invasão	O
 duma	O
 propiedade	O
@@ -38258,7 +36651,6 @@ fuzuê	O
 ,	O
 parece	O
 que	B-WRONG
-esta	O
 é	O
 só	O
 mais	O
@@ -38266,7 +36658,6 @@ uma	O
 das	O
 leis	O
 Petistas	B-WRONG
-petistas	O
 que	O
 só	O
 vão	O
@@ -38328,7 +36719,6 @@ em	O
 equidade	O
 entre	B-WRONG
 os	I-WRONG
-entre	O
 ricos	O
 ,	O
 pobres	O
@@ -38399,6 +36789,7 @@ fácil	O
 Sentença Original N°1276
 Atualmente	O
 ,	O
+</correct>	O
 tem	O
 um	O
 dos	O
@@ -38407,7 +36798,6 @@ de	O
 abastecimento	O
 mais	O
 eficiente	B-WRONG
-eficientes	O
 do	O
 mundo	O
 .	O
@@ -38454,10 +36844,7 @@ Sentença Original N°1279
 Acontece	O
 que	O
 este	O
-esse	O
 conceito	O
-qual	O
-?	O
 se	O
 enraizou	O
 em	B-WRONG
@@ -38471,7 +36858,6 @@ uma	O
 pessoa	O
 relevante	O
 a	B-WRONG
-à	O
 história	O
 do	O
 país	O
@@ -38538,16 +36924,13 @@ sofrente	I-WRONG
 em	I-WRONG
 meio	I-WRONG
 ao	I-WRONG
-sofre	O
-com	O
-o	O
 alto	O
 nível	O
 de	O
 violência	B-WRONG
 ,	I-WRONG
 de	I-WRONG
-violência	O
+<correct>violência	O
 .	O
 
 Sentença Original N°1284
@@ -38588,7 +36971,6 @@ ano	O
 
 Sentença Original N°1285
 Este	B-WRONG
-Esse	O
 estatuto	O
 ,	O
 assim	O
@@ -38609,8 +36991,6 @@ informações	O
 sem	O
 nenhuma	B-WRONG
 significância	I-WRONG
-nenhum	O
-significado	O
 .	O
 
 Sentença Original N°1286
@@ -38660,8 +37040,6 @@ prática	O
 perigosa	O
 e	O
 humilhante	B-WRONG
-humilhante	O
-,	O
 que	O
 já	O
 se	O
@@ -38879,7 +37257,6 @@ claro	O
 ,	O
 uma	O
 descriminação	B-WRONG
-discriminação	O
 bem	O
 mais	O
 disfarçada	O
@@ -38892,7 +37269,7 @@ de	O
 existir	B-WRONG
 ,	I-WRONG
 muitas	I-WRONG
-existir	O
+<correct>existir	O
 .	O
 
 Sentença Original N°1295
@@ -38917,7 +37294,6 @@ os	O
 fumantes	O
 tenham	O
 livre-arbítrio	O
-,	O
 optando	O
 pelo	O
 uso	O
@@ -38970,9 +37346,6 @@ forma	O
 como	O
 vive	O
 coletivamente	B-WRONG
-cortar	O
-:	O
-redundância	O
 nos	O
 dias	O
 de	O
@@ -39003,8 +37376,6 @@ de	O
 dar	B-WRONG
 um	I-WRONG
 poder	I-WRONG
-dar	O
-poder	O
 para	O
 pessoas	O
 que	O
@@ -39099,7 +37470,6 @@ fato	O
 o	O
 mal	O
 caudados	B-WRONG
-causado	O
 pelo	O
 uso	O
 de	O
@@ -39115,7 +37485,6 @@ no	O
 cumprimento	O
 das	O
 leis	B-WRONG
-leis	O
 ,	O
 essas	O
 crianças	O
@@ -39167,7 +37536,6 @@ sofrimento	O
 e	O
 ,	O
 desta	B-WRONG
-dessa	O
 forma	O
 ,	O
 permitir	O
@@ -39415,12 +37783,6 @@ globalização	I-WRONG
 atual	I-WRONG
 fase	I-WRONG
 ,	I-WRONG
-à	O
-atual	O
-fase	O
-da	O
-globalização	O
-,	O
 tendo	O
 características	O
 a	O
@@ -39534,8 +37896,6 @@ o	O
 exercício	O
 da	O
 liberdade	B-WRONG
-liberdade	O
-,	O
 valor	O
 supremo	O
 de	O
@@ -39545,7 +37905,6 @@ sociedade	O
 
 Sentença Original N°1317
 Mais	B-WRONG
-Mas	O
 do	O
 que	O
 adianta	O
@@ -39564,7 +37923,6 @@ teve	O
 como	O
 pretexto	O
 vigar	B-WRONG
-vingar	O
 as	O
 diferentes	O
 publicações	O
@@ -39576,7 +37934,6 @@ Maomé	O
 
 Sentença Original N°1319
 Esta	B-WRONG
-Essa	O
 situação	O
 tornou-se	O
 cada	O
@@ -39615,7 +37972,6 @@ exagero	O
 ou	O
 incoerente	O
 esta	B-WRONG
-essa	O
 comparação	O
 ,	O
 mas	O
@@ -39641,7 +37997,6 @@ o	O
 preconceito	O
 contra	O
 estas	B-WRONG
-elas	O
 ,	O
 e	O
 principalmente	O
@@ -39650,7 +38005,6 @@ machismo	O
 ,	O
 que	O
 já	B-WRONG
-já	O
 não	O
 deveria	O
 mais	O
@@ -39678,10 +38032,6 @@ e	O
 comícios	B-WRONG
 ao	I-WRONG
 invés	I-WRONG
-comícios	O
-,	O
-em	O
-vez	O
 de	O
 gastar	O
 dinheiro	O
@@ -39709,10 +38059,6 @@ idade	B-WRONG
 média	I-WRONG
 ,	I-WRONG
 onde	B-WRONG
-Idade	O
-Média	O
-,	O
-quando	O
 os	O
 jovens	O
 eram	O
@@ -39738,8 +38084,6 @@ medidas	O
 eram	O
 necessárias	O
 afim	B-WRONG
-a	O
-fim	O
 de	O
 diminuir	O
 o	O
@@ -39783,8 +38127,6 @@ e	O
 teatro	B-WRONG
 ,	I-WRONG
 recusaram	I-WRONG
-teatro	O
-recusaram	O
 a	O
 aceitar	O
 a	O
@@ -39841,7 +38183,6 @@ um	O
 processo	O
 em	B-WRONG
 que	I-WRONG
-que	O
 as	O
 mulheres	O
 enfrentam	O
@@ -39852,19 +38193,14 @@ anos	O
 para	O
 que	O
 possa	B-WRONG
-possam	O
 ocupar	O
 cargos	O
 e	O
 ser	O
 valorizada	B-WRONG
-valorizadas	O
 ,	O
 pois	O
 todos	B-WRONG
-todos	O
-os	O
-didadãos	O
 possuem	O
 capacidades	O
 e	O
@@ -39906,7 +38242,7 @@ amar	O
 .	O
 
 Sentença Original N°1329
-A	O
+A</correct>	O
 falta	B-WRONG
 de	O
 interesse	O
@@ -39916,12 +38252,10 @@ da	O
 juventude	O
 é	O
 devido	B-WRONG
-devida	O
 ao	O
 atual	O
 cenário	O
 politico	B-WRONG
-político	O
 brasileiro	O
 .	O
 
@@ -40023,7 +38357,7 @@ do	O
 tempo	B-WRONG
 ,	I-WRONG
 a	I-WRONG
-tempo	O
+<correct>tempo	O
 .	O
 
 Sentença Original N°1334
@@ -40150,7 +38484,6 @@ gera-se	O
 uma	O
 grande	O
 repercusão	B-WRONG
-repercussão	O
 entre	O
 autores	O
 e	O
@@ -40173,7 +38506,6 @@ informações	O
 atenção	O
 e	O
 preparação	O
-,	O
 mas	O
 não	O
 é	O
@@ -40312,9 +38644,6 @@ que	O
 nos	O
 é	B-WRONG
 imposto	I-WRONG
-são	O
-impostos	O
-a	O
 cada	O
 dia	O
 .	O
@@ -40369,7 +38698,6 @@ diversos	O
 públicos	O
 são	O
 tópicos	B-WRONG
-elementos	O
 que	O
 dão	O
 importância	O
@@ -40387,7 +38715,6 @@ permite	O
 termos	O
 acesso	O
 as	B-WRONG
-às	O
 mais	O
 variadas	O
 informações	O
@@ -40452,10 +38779,8 @@ dos	O
 homens	O
 é	O
 atingido	B-WRONG
-atingida	O
 pelo	O
 estereotipo	B-WRONG
-estereótipo	O
 masculino	O
 que	O
 está	O
@@ -40502,7 +38827,6 @@ emprego	O
 ,	O
 não	O
 ha	B-WRONG
-há	O
 desenvolvimento	O
 financeiro	O
 .	O
@@ -40556,8 +38880,6 @@ Sentença Original N°1350
 No	O
 auxilio	B-WRONG
 no	I-WRONG
-auxílio	O
-ao	O
 ramo	O
 da	O
 farmácia	O
@@ -40598,17 +38920,14 @@ chegada	O
 
 Sentença Original N°1352
 Ela	O
-,	O
 de	O
 modo	O
 geral	O
-,	O
 trouxe	O
 benefícios	O
 para	O
 a	O
 educação	O
-,	O
 assumindo	O
 assim	O
 ,	B-WRONG
@@ -40706,7 +39025,7 @@ desigualdade	I-WRONG
 na	I-WRONG
 mesma	I-WRONG
 .	I-WRONG
-No	O
+<correct>No	O
 Brasil	O
 ,	O
 os	O
@@ -40738,11 +39057,8 @@ com	O
 imóveis	O
 ,	O
 viajens	B-WRONG
-viagens	O
 e	O
 carros	B-WRONG
-carros	O
-,	O
 achando	O
 que	O
 nunca	O
@@ -40759,7 +39075,6 @@ E	O
 cabe	O
 a	O
 nós	O
-,	O
 da	O
 geração	O
 atual	O
@@ -40809,7 +39124,6 @@ superpopulação	O
 ;	O
 que	O
 jogam	B-WRONG
-joga	O
 lixo	O
 a	O
 céu	O
@@ -40822,8 +39136,6 @@ rios	O
 ;	O
 O	B-WRONG
 mal	I-WRONG
-ao	O
-mau	O
 planejamento	O
 urbano	O
 ,	O
@@ -40881,7 +39193,6 @@ está	O
 sendo	O
 tão	O
 contrariada	B-WRONG
-contrariado	O
 por	O
 várias	O
 entidades	O
@@ -40903,9 +39214,6 @@ Sendo	B-WRONG
 também	I-WRONG
 ,	I-WRONG
 ignorada	I-WRONG
-São	O
-também	O
-ignorados	O
 os	O
 840	O
 milhões	O
@@ -40915,8 +39223,6 @@ vindos	O
 de	O
 nossos	O
 bolsos	B-WRONG
-bolsos	O
-,	O
 que	O
 pagam	O
 por	O
@@ -40924,12 +39230,10 @@ um	O
 programa	O
 ineficiente	O
 ao	B-WRONG
-à	O
 qual	O
 não	O
 queremos	O
 vê-lo	B-WRONG
-ver	O
 .	O
 
 Sentença Original N°1363
@@ -41008,7 +39312,7 @@ países	O
 da	O
 eurozona	B-WRONG
 .	I-WRONG
-Eurozona	O
+<correct>Eurozona	O
 .	O
 
 Sentença Original N°1365
@@ -41099,7 +39403,7 @@ sem	O
 valor	B-WRONG
 ,	I-WRONG
 não	I-WRONG
-valor	O
+<correct>valor	O
 .	O
 
 Sentença Original N°1370
@@ -41109,7 +39413,6 @@ forma	O
 não	O
 tem	O
 politicas	B-WRONG
-políticas	O
 públicas	O
 que	O
 atendam	O
@@ -41120,9 +39423,6 @@ e	O
 anseios	B-WRONG
 ,	I-WRONG
 desta	I-WRONG
-anseios	O
-;	O
-dessa	O
 forma	O
 ,	O
 ele	O
@@ -41139,8 +39439,6 @@ da	O
 vida	O
 politica	B-WRONG
 na	I-WRONG
-política	O
-da	O
 qual	O
 ele	O
 foi	O
@@ -41240,9 +39538,6 @@ exceção	O
 com	O
 relação	O
 a	B-WRONG
-à	O
-prática	O
-da	O
 eutanásia	O
 :	O
 caso	O
@@ -41252,8 +39547,6 @@ esteja	O
 em	O
 coma	O
 ou	B-WRONG
-ou	O
-em	O
 estado	O
 vegetativo	O
 ,	O
@@ -41304,13 +39597,10 @@ o	O
 Brasil	O
 ,	O
 pais	B-WRONG
-país	O
 de	O
 ampla	O
 diversidade	O
 climáticas	B-WRONG
-climática	O
-,	O
 tem	O
 enfrentado	O
 complicaçõe	O
@@ -41471,13 +39761,11 @@ de	O
 um	O
 fato	O
 ocorrido	O
-em	O
 qualquer	O
 âmbito	O
 e	O
 ,	O
 concomitante	B-WRONG
-concomitantemente	O
 a	O
 isso	O
 ,	O
@@ -41757,8 +40045,6 @@ forma	O
 percebe-se	O
 que	O
 ela	B-WRONG
-a	O
-imprensa	O
 ,	O
 como	O
 também	O
@@ -41818,7 +40104,6 @@ desacordo	O
 pelo	O
 fato	O
 destes	B-WRONG
-de	O
 não	O
 concordarem	O
 em	O
@@ -41826,10 +40111,6 @@ aceitar	O
 fazê-lo	B-WRONG
 por	I-WRONG
 que	I-WRONG
-fazer	O
-o	O
-aborto	O
-porque	O
 creem	O
 que	O
 ?	O
@@ -41851,7 +40132,6 @@ comum	O
 Sentença Original N°1395
 Mais	O
 à	B-WRONG
-há	O
 uma	O
 duvida	O
 no	O
@@ -41890,8 +40170,6 @@ punir	O
 seus	O
 filhos	B-WRONG
 ,	I-WRONG
-filhos	O
-e	O
 alunos	O
 sobre	O
 esse	O
@@ -41952,7 +40230,7 @@ uma	O
 prática	O
 milenar	O
 denominada	O
-"trote"	O
+trote	O
 ,	O
 caracterizada	O
 como	O
@@ -41977,12 +40255,9 @@ grande	O
 popularidade	O
 entre	B-WRONG
 a	I-WRONG
-na	O
 mídia	O
 e	O
 as	B-WRONG
-entre	O
-as	O
 pessoas	O
 comuns	O
 .	O
@@ -41993,14 +40268,11 @@ Paulo	O
 ,	O
 apontados	B-WRONG
 pra	I-WRONG
-apontada	O
-por	O
 muitos	O
 como	O
 uma	O
 grande	O
 potencia	B-WRONG
-potência	O
 industrial	O
 e	O
 econômica	O
@@ -42016,9 +40288,6 @@ cidades	O
 atingida	B-WRONG
 com	I-WRONG
 forte	I-WRONG
-atingidas	O
-por	O
-fortes	O
 chuvas	O
 e	O
 enchentes	O
@@ -42357,9 +40626,6 @@ própria	O
 maneira	B-WRONG
 e	I-WRONG
 deixar	I-WRONG
-maneira	O
-,	O
-deixando	O
 que	O
 as	O
 pessoas	O
@@ -42372,7 +40638,7 @@ do	O
 mesmo	B-WRONG
 ,	I-WRONG
 assim	I-WRONG
-mesmo	O
+<correct>mesmo	O
 .	O
 
 Sentença Original N°1415
@@ -42409,8 +40675,6 @@ vamos	O
 expressar	O
 nossas	O
 opiniões	B-WRONG
-opiniões	O
-,	O
 pois	O
 sempre	O
 haverá	O
@@ -42501,7 +40765,6 @@ governantes	O
 só	O
 favorecem	O
 aqueles	B-WRONG
-àqueles	O
 que	O
 sofrem	O
 ou	O
@@ -42523,7 +40786,6 @@ pessoas	O
 que	O
 não	O
 teem	B-WRONG
-têm	O
 condição	O
 de	O
 pagar	O
@@ -42566,8 +40828,6 @@ uma	O
 sociedade	B-WRONG
 ,	I-WRONG
 aonde	I-WRONG
-sociedade	O
-onde	O
 a	O
 liberdade	O
 de	O
@@ -42577,21 +40837,14 @@ ir	O
 e	O
 vir	O
 ,	O
-de	O
 religião	O
 ,	O
-de	O
 expressão	O
 artística	O
 ,	O
 profissional	B-WRONG
-de	O
-profissão	O
 ,	O
 com	B-WRONG
-da	O
-pessoa	O
-com	O
 quem	O
 vamos	O
 nos	O
@@ -42599,8 +40852,6 @@ casar	O
 ,	O
 e	O
 o	B-WRONG
-de	O
-tudo	O
 que	O
 é	O
 melhor	O
@@ -42608,8 +40859,6 @@ para	O
 nós	O
 fica	B-WRONG
 de	I-WRONG
-garante	O
-a	O
 exclusiva	O
 decisão	O
 particular	O
@@ -42672,8 +40921,6 @@ para	O
 por	O
 um	O
 ponto	B-WRONG
-ponto	O
-final	O
 nas	O
 disputas	O
 .	O
@@ -42703,8 +40950,6 @@ acentuou	O
 -se	B-WRONG
 ,	I-WRONG
 e	I-WRONG
--se	O
-e	O
 uma	O
 das	O
 formas	O
@@ -42859,7 +41104,6 @@ para	O
 reivindicarem	O
 eleições	O
 presidências	B-WRONG
-presidenciais	O
 diretas	O
 no	O
 Brasil	O
@@ -42973,7 +41217,6 @@ está	O
 em	O
 constante	O
 reivindicação	B-WRONG
-reivindicação	O
 por	O
 segurança	O
 ,	O
@@ -43000,7 +41243,6 @@ são	O
 alguns	O
 dos	O
 tópicos	B-WRONG
-problemas	O
 mais	O
 frequentes	O
 nas	O
@@ -43063,27 +41305,20 @@ Todavia	O
 ,	O
 existe	O
 uma	O
-"história"	B-WRONG
+história	B-WRONG
 ,	I-WRONG
 com	I-WRONG
-"história"	O
-com	O
 apenas	O
 uma	O
 versão	B-WRONG
 ,	I-WRONG
 e	I-WRONG
-versão	O
-e	O
-,	O
 nela	O
 ,	O
 a	O
 verdade	O
 ,	O
 talvez	B-WRONG
-talvez	O
-,	O
 para	O
 os	O
 envolvidos	O
@@ -43158,7 +41393,6 @@ controle	O
 Sentença Original N°1438
 Isso	B-WRONG
 se	I-WRONG
-Isso	O
 explica	O
 o	O
 pequeno	O
@@ -43170,12 +41404,6 @@ no	I-WRONG
 topo	I-WRONG
 ou	I-WRONG
 ao	I-WRONG
-negros	O
-inseridos	O
-no	O
-topo	O
-ou	O
-no	O
 meio	O
 da	O
 pirâmide	O
@@ -43234,23 +41462,18 @@ CHARUTOS	O
 EM	O
 LUGARES	O
 PUBLICOS	O
-públicos	O
 FECHADOS	O
 OU	O
 SEMICHADOS	B-WRONG
-semifechados	O
 ,	O
 FOI	O
 LEVANTADO	O
-levantou-se	O
 UMA	O
 GRANDE	O
 POLÊMICA	O
-:	O
 DE	B-WRONG
 UM	I-WRONG
 LADO	I-WRONG
-estão	O
 PESSOAS	O
 QUE	O
 APLAUDEM	O
@@ -43261,13 +41484,9 @@ LEI	O
 POR	B-WRONG
 OUTRO	I-WRONG
 ÀS	I-WRONG
-de	O
-outro	O
-as	O
 QUE	O
 A	O
 CONSIDERA	O
-m	O
 RADICAL	O
 .	O
 
@@ -43416,15 +41635,12 @@ Sentença Original N°1448
 Superpopulação	O
 ,	O
 Hurbanização	B-WRONG
-urbanização	O
 caótica	O
 ,	O
 Redes	B-WRONG
-redes	O
 de	O
 esgoto	O
 precária	B-WRONG
-precária	O
 .	O
 
 Sentença Original N°1449
@@ -43472,21 +41688,18 @@ no	O
 Brasil	B-WRONG
 ,	I-WRONG
 já	B-WRONG
-Brasil	O
+<correct>Brasil	O
 .	O
 
 Sentença Original N°1451
 Entretendo	B-WRONG
-Entretanto	O
 ,	O
 atualmente	O
 este	B-WRONG
-esse	O
 direito	O
 democrático	O
 não	O
 esta	B-WRONG
-está	O
 sendo	O
 valorizado	O
 pela	O
@@ -43522,16 +41735,12 @@ Brasil	O
 e	O
 o	B-WRONG
 mesmo	I-WRONG
-este	O
-,	O
 sem	O
 o	O
 capital	O
 oriundo	O
 das	O
 exportações	B-WRONG
-exportações	O
-,	O
 deixa	O
 de	O
 importar	O
@@ -43634,7 +41843,6 @@ produção	O
 ,	O
 industrias	O
 ,	O
-indústrias	O
 fabricas<correct/>	O
 ,	O
 e	O
@@ -43654,11 +41862,9 @@ para	O
 os	O
 dias	O
 atuas	O
-atuais	O
 ,	O
 pois	O
 tem	O
-têm	O
 uma	O
 grande	O
 força	O
@@ -43686,7 +41892,6 @@ ou	O
 seja	O
 ,	O
 a	O
-sua	O
 capacidade	O
 de	O
 defesa	O
@@ -43710,8 +41915,6 @@ deles	O
 sentindo-se	O
 encurralados	B-WRONG
 e	I-WRONG
-encurralados	O
-,	O
 começaram	O
 a	O
 agir	O
@@ -43732,7 +41935,6 @@ retraído	O
 que	O
 se	O
 exprimem	B-WRONG
-exprime	O
 geralmente	O
 em	O
 coletividade	O
@@ -43758,7 +41960,6 @@ a	O
 pé	O
 ,	O
 a	B-WRONG
-de	O
 ônibus	O
 ,	O
 uma	B-WRONG
@@ -43767,8 +41968,6 @@ ou	I-WRONG
 dar	I-WRONG
 uma	I-WRONG
 carona	I-WRONG
-de	O
-carona	O
 ,	O
 há	O
 infinitas	O
@@ -43790,7 +41989,6 @@ o	O
 assassinato	O
 em	O
 Springfiel	B-WRONG
-Springfield	O
 em	O
 território	O
 ianque	O
@@ -43799,7 +41997,6 @@ o	O
 morticínio	O
 na	O
 Columbie	B-WRONG
-Columbine	O
 High	O
 School	O
 ,	O
@@ -43813,8 +42010,6 @@ outras	O
 nações	B-WRONG
 ,	I-WRONG
 são	I-WRONG
-nações	O
-são	O
 evidências	O
 explícitas	O
 de	O
@@ -43915,8 +42110,6 @@ forma	O
 a	O
 probabilidade	O
 da	B-WRONG
-de	O
-a	O
 crise	O
 afetar	O
 tais	O
@@ -43940,7 +42133,6 @@ de	O
 São	O
 Paulo	O
 ,	O
-o	O
 que	O
 gerou	O
 polêmica	O
@@ -43951,9 +42143,6 @@ que	I-WRONG
 usam	I-WRONG
 do	I-WRONG
 mesmo	I-WRONG
-dos	O
-seus	O
-usuários	O
 .	O
 
 Sentença Original N°1465
@@ -44015,7 +42204,6 @@ todos	O
 que	B-WRONG
 falam	I-WRONG
 ,	I-WRONG
-falam	O
 sabem	O
 ler	O
 e	O
@@ -44212,8 +42400,6 @@ Sentença Original N°1473
 Atualmente	O
 apesar	O
 da	B-WRONG
-de	O
-a	O
 Aids	O
 ser	O
 controlável	O
@@ -44284,14 +42470,11 @@ social	B-WRONG
 
 Sentença Original N°1476
 A	O
-EUA	O
-,	O
 com	O
 seu	O
 sistema	O
 político	O
 diferenciado	B-WRONG
-diferenciado	O
 os	O
 candidatos	O
 falam	O
@@ -44318,7 +42501,6 @@ o	O
 meio	O
 ambiente	O
 tem-se	B-WRONG
-tem	O
 os	O
 seus	O
 problemas	O
@@ -44331,7 +42513,6 @@ do	O
 tempo	O
 ,	O
 vem	B-WRONG
-vêm	O
 se	O
 agravando	O
 .	O
@@ -44347,8 +42528,6 @@ grande	O
 parte	O
 dos	O
 países	B-WRONG
-países	O
-europeus	O
 com	O
 uma	O
 economia	O
@@ -44385,8 +42564,6 @@ contrário	O
 ,	O
 e	B-WRONG
 fruto	I-WRONG
-como	O
-consequência	O
 da	O
 iniciativa	O
 da	O
@@ -44400,8 +42577,6 @@ qualificação	O
 profissional	O
 aliada	B-WRONG
 às	I-WRONG
-e	O
-das	O
 políticas	O
 governamentais	O
 exclusivas	O
@@ -44457,7 +42632,6 @@ com	O
 melhores	O
 hábitos	B-WRONG
 alimentares	I-WRONG
-hábitos	O
 ,	O
 que	O
 se	O
@@ -44465,8 +42639,6 @@ alimentem	O
 de	O
 menos	B-WRONG
 comidas	I-WRONG
-comidas	O
-menos	O
 gordurosas	O
 e	O
 menos	O
@@ -44504,7 +42676,6 @@ e	O
 nem	O
 se	B-WRONG
 quer	I-WRONG
-sequer	O
 nos	O
 perguntamos	O
 ,	O
@@ -44516,8 +42687,6 @@ começou	O
 o	O
 porquê	O
 dessas	B-WRONG
-de	O
-essas	O
 crianças	O
 estarem	O
 se	O
@@ -44584,7 +42753,6 @@ se	O
 defender	O
 ,	O
 a	B-WRONG
-e	O
 realizar	O
 qualquer	O
 tipo	O
@@ -44617,34 +42785,16 @@ palavras	I-WRONG
 desconhecidas	I-WRONG
 ,	I-WRONG
 confere	I-WRONG
-A	O
-busca	O
-do	O
-leitor	O
-pelo	O
-significado	O
-de	O
-palavras	O
-desconhecidas	O
-,	O
-no	O
-original	O
-,	O
-torna	O
 a	O
 leitura	O
 da	O
 obra	O
-uma	O
 tarefa	O
 árdua	O
 ,	O
 entretanto	O
 o	B-WRONG
 proporciona	I-WRONG
-entretanto	O
-lhe	O
-proporciona	O
 a	O
 ampliação	O
 de	O
@@ -44679,7 +42829,6 @@ envelhecer	O
 não	O
 implica	O
 na	B-WRONG
-a	O
 perda	O
 da	O
 importância	O
@@ -44712,7 +42861,6 @@ demonstrar	O
 seu	O
 valor	O
 a	B-WRONG
-à	O
 população	O
 :	O
 oportunidade	O
@@ -44751,7 +42899,6 @@ vida	O
 e	O
 não	O
 há	B-WRONG
-a	O
 omissão	O
 dela	O
 ,	O
@@ -44817,7 +42964,6 @@ bom	O
 senso	O
 empiricamente	B-WRONG
 existente	I-WRONG
-existente	O
 nas	O
 pessoas	O
 ,	O
@@ -44836,19 +42982,14 @@ irracional	O
 não	O
 teria	O
 o	B-WRONG
-um	O
 porquê	O
 ter	B-WRONG
-para	O
-ter	O
 uma	O
 conta	O
 bancária	O
 milionária	O
 ,	O
 apenas	B-WRONG
-bastando-lhe	O
-apenas	O
 uma	O
 casa	O
 e	O
@@ -44877,7 +43018,7 @@ Sentença Original N°1492
 Já	O
 para	O
 aquele	O
-que	O
+que</correct>	O
 tinha	O
 uma	O
 porta	O
@@ -44896,10 +43037,6 @@ e	O
 ,	O
 porque	B-WRONG
 não	I-WRONG
-por	O
-que	O
-não	O
-,	O
 desigual	O
 .	O
 
@@ -44923,15 +43060,6 @@ com	I-WRONG
 o	I-WRONG
 crescimento	I-WRONG
 econômico	I-WRONG
-priorizar	O
-o	O
-crescimento	O
-econômico	O
-e	O
-seguir	O
-adiante	O
-com	O
-ele	O
 ,	O
 de	O
 forma	O
@@ -44957,8 +43085,8 @@ os	O
 tripulantes	O
 instalarem-se	O
 no	O
-"planeta	O
-vermelho"	O
+planeta	O
+vermelho	O
 ,	O
 poderão	O
 ser	O
@@ -44977,7 +43105,6 @@ atos	O
 de	O
 criminalidade	O
 tem	B-WRONG
-têm	O
 crescido	O
 muito	O
 nos	O
@@ -45002,8 +43129,6 @@ vem	O
 a	O
 pergunta	B-WRONG
 ,	I-WRONG
-pergunta	O
-:	O
 será	O
 que	O
 não	O
@@ -45030,7 +43155,6 @@ alguns	O
 covardes	O
 que	O
 tem	B-WRONG
-têm	O
 a	O
 coragem	O
 de	O
@@ -45201,11 +43325,9 @@ aptos	O
 a	O
 medicar-se	O
 pudesse	B-WRONG
-pudessem	O
 refletir	O
 que	O
 a	B-WRONG
-uma	O
 simples	O
 virose	O
 mal	O
@@ -45214,14 +43336,11 @@ pode	O
 vir	O
 a	O
 ser	B-WRONG
-se	O
-tornar	O
 uma	O
 grave	O
 doença	O
 ,	O
 ou	O
-que	O
 aquela	O
 dor	O
 de	O
@@ -45257,7 +43376,6 @@ exaltar	O
 ,	O
 junto	O
 á	O
-à	O
 trabalhos	O
 socioeducativos	O
 que	O
@@ -45300,7 +43418,6 @@ má-educação	O
 de	O
 outros	O
 alunos	O
-,	O
 que	O
 acabou	O
 gerando	O
@@ -45434,7 +43551,6 @@ a	O
 conscientização	O
 dos	O
 riscos	O
-de	O
 que	O
 o	O
 consumo	O
@@ -45659,12 +43775,6 @@ Brasil	B-WRONG
 nas	I-WRONG
 ultimas	I-WRONG
 décadas	I-WRONG
-Brasil	O
-,	O
-nas	O
-últimas	O
-décadas	O
-,	O
 evoluiu	O
 muito	O
 ;	O
@@ -45701,8 +43811,6 @@ erro	O
 
 Sentença Original N°1517
 O	B-WRONG
-Como	O
-o	O
 período	O
 gestacional	O
 humano	O
@@ -45715,18 +43823,13 @@ uma	O
 mãe	O
 que	O
 descobre	B-WRONG
-descobrisse	O
 que	O
 seu	O
 feto	O
 é	B-WRONG
 enencéfalo	I-WRONG
-era	O
-anencéfalo	O
 até	O
 então	B-WRONG
-bem	O
-recentemente	O
 era	O
 obrigada	O
 a	O
@@ -45879,7 +43982,6 @@ prazerosa	O
 Sentença Original N°1525
 Por	O
 que	B-WRONG
-quê	O
 ?	O
 
 Sentença Original N°1526
@@ -45903,7 +44005,6 @@ se	O
 a	O
 família	B-WRONG
 têm	I-WRONG
-tem	O
 o	O
 costume	O
 de	O
@@ -45911,7 +44012,6 @@ dar	O
 "	O
 selinhos	O
 "	O
-,	O
 este	O
 complexo	O
 pode	O
@@ -45975,7 +44075,6 @@ tragédia	O
 sempre	O
 se	O
 busca	B-WRONG
-buscam	O
 os	O
 culpados	O
 ,	O
@@ -45997,8 +44096,6 @@ Uma	O
 vez	O
 que	O
 ela	B-WRONG
-a	O
-natureza	O
 se	O
 enfurece	O
 ,	O
@@ -46023,7 +44120,6 @@ Sentença Original N°1532
 Tem	O
 de	B-WRONG
 se	I-WRONG
-de	O
 haver	O
 uma	O
 evolução	O
@@ -46056,9 +44152,6 @@ de	O
 ambos	B-WRONG
 os	I-WRONG
 praticantes	I-WRONG
-ambas	O
-as	O
-partes	O
 .	O
 
 Sentença Original N°1534
@@ -46121,11 +44214,8 @@ não-fumantes	O
 Sentença Original N°1537
 O	O
 Brasil	B-WRONG
-Brasil	O
-,	O
 hoje	O
 de	B-WRONG
-com	O
 200	O
 milhões	O
 de	O
@@ -46167,17 +44257,12 @@ mais	O
 graves	O
 e	O
 mereciam	B-WRONG
-mereceram	O
 maior	O
 atenção	O
 .	O
 
 Sentença Original N°1539
 Na	O
-qual	O
-social	O
-,	O
-no	O
 qual	O
 busca	O
 manter	O
@@ -46201,14 +44286,10 @@ Sentença Original N°1540
 Havendo	O
 uma	O
 preparação	B-WRONG
-preparação	O
-,	O
 assim	O
 como	O
 é	B-WRONG
 organizado	I-WRONG
-são	O
-organizados	O
 campeonatos	O
 e	O
 jogos	O
@@ -46222,14 +44303,6 @@ ser	I-WRONG
 feito	I-WRONG
 tal	I-WRONG
 recebimento	I-WRONG
-escolas	O
-,	O
-pode	O
-também	O
-ser	O
-feita	O
-essa	O
-recepção	O
 ,	O
 com	O
 o	O
@@ -46247,8 +44320,6 @@ apoio	O
 da	O
 polícia	B-WRONG
 militar	I-WRONG
-Polícia	O
-Militar	O
 mantendo	O
 a	O
 segurança	O
