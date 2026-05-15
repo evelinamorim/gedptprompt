@@ -5,27 +5,35 @@
 
 # --- Model settings ---
 model:
-  name: "gemma4:e2b"          # Ollama model tag (e.g. gemma3:12b, qwen2.5:14b, llama3.1:8b)
-  temperature: 0.0             # 0.0 for deterministic output (recommended for classification)
-  top_p: 1.0
-  max_tokens: 2048             # max tokens for model response
-  num_ctx: 4096                # Ollama context window (num_ctx)
-  ollama_host: "http://127.0.0.1:11434"
+  name: "Qwen/Qwen3-8B"              # HuggingFace model ID
+  hf_cache: "/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
+  temperature: 0.0
+  max_new_tokens: 512                 # overridden dynamically based on sentence length
+
+# --- HuggingFace model IDs for all benchmark models ---
+# Use these as --model argument to slurm_eval.sh
+models:
+  gemma3_12b:   "google/gemma-3-12b-it"
+  gemma4_e2b:   "google/gemma-4-e2b-it"         # if available on HF
+  qwen3_8b:     "Qwen/Qwen3-8B"
+  qwen3_14b:    "Qwen/Qwen3-14B"
+  aya_8b:       "CohereForAI/aya-expanse-8b"
+  deepseek_7b:  "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+  tucano_2b4:   "TucanoBR/Tucano-2b4-Instruct"
 
 # --- Data settings ---
 data:
-  test_file: "data/test_bio.tsv"
-  val_file: "data/val_bio.tsv"
-  train_file: "data/train_bio.tsv"        # not used for inference, listed for reference
-  sentence_delimiter_prefix: "Sentença"   # line prefix that marks sentence boundaries
+  test_file:  "data/test_bio.tsv"
+  val_file:   "data/val_bio.tsv"
+  train_file: "data/train_bio.tsv"
+  sentence_delimiter_prefix: "Sentença"
 
 # --- Prompting settings ---
 prompting:
-  strategy: "zero_shot"          # zero_shot | few_shot
-  num_few_shot_examples: 3       # number of examples to include when strategy=few_shot
-  contrastive: true
+  strategy: "zero_shot"             # zero_shot | few_shot
+  num_few_shot_examples: 5
+  contrastive: true                 # use contrastive few-shot examples
   few_shot_source: "data/train_bio.tsv"
-  batch_size: 1                  # sentences per Ollama call (keep at 1 for reliability)
 
 # --- Output settings ---
 output:
@@ -40,11 +48,9 @@ labels:
   inside_error: "I-WRONG"
   valid_set: ["O", "B-WRONG", "I-WRONG"]
 
-# ---- Two-stage HuggingFace inference settings ----
+# --- Two-stage settings ---
 two_stage:
-  model: "Qwen/Qwen3-8B"
   hf_cache: "/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
-  temperature: 0.0
   max_new_tokens_stage1: 32
-  max_new_tokens_stage2: 2048
-  batch_size: 0              
+  max_new_tokens_stage2: 1024
+  batch_size: 0                     # 0 = auto-detect from VRAM

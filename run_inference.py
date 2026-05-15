@@ -1,25 +1,25 @@
 """
 run_inference.py
-Query an Ollama-hosted SLM for Grammar Error Detection on Brazilian Portuguese.
-
-For each sentence in the test split, the model is asked to label each token
-with O, B-WRONG, or I-WRONG and the result is saved to a JSON file.
+Grammar Error Detection for Brazilian Portuguese using HuggingFace Transformers.
+Replaces the previous Ollama-based implementation for faster batched inference.
 
 Usage:
     python run_inference.py --config config.yaml --split test
-    python run_inference.py --config config.yaml --split val --strategy few_shot
+    python run_inference.py --config config.yaml --split test --strategy few_shot
+    python run_inference.py --config config.yaml --split test --model Qwen/Qwen3-8B
 """
 
 from __future__ import annotations
 import argparse
 import json
+import os
 import re
 import time
 from pathlib import Path
-import os
 
-import requests
+import torch
 import yaml
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from data_reader import Sentence, read_bio_file
 
@@ -104,9 +104,8 @@ def select_few_shot_examples(
     max_sentence_length: int = 30,
     contrastive: bool = False,
 ) -> list[Sentence]:
-    
+
     if contrastive:
-        # One correct sentence, rest with errors
         correct = [
             s for s in train_sentences
             if all(l == "O" for l in s.labels)
@@ -118,13 +117,11 @@ def select_few_shot_examples(
             and all(end - start <= max_span_length for start, end in s.error_spans())
             and len(s) <= max_sentence_length
         ]
-        # 1 correct + (n-1) with errors
         correct_pick = [correct[len(correct) // 2]] if correct else []
         step = max(1, len(with_errors) // (n - 1))
         error_picks = [with_errors[i * step] for i in range(n - 1)]
         return correct_pick + error_picks
-    
-    # original behavior
+
     with_errors = [
         s for s in train_sentences
         if any(l != "O" for l in s.labels)
@@ -137,64 +134,131 @@ def select_few_shot_examples(
 
 
 # ------------------------------------------------------------------ #
-# Ollama API call
+# Model loading
 # ------------------------------------------------------------------ #
 
-def query_ollama(
-    user_prompt: str,
-    *,
-    host: str,
-    model: str,
-    temperature: float,
-    top_p: float,
-    max_tokens: int,
-    num_ctx: int,
-    retries: int = 3,
-    backoff: float = 2.0,
-) -> str:
-    """Send a chat completion request to Ollama and return the assistant text."""
-    url = f"{host.rstrip('/')}/api/chat"
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
-        "stream": False,
-        "format": {                          # <-- add this block
-        "type": "object",
-        "properties": {
-            "labels": {
-                "type": "array",
-                "items": {
-                    "type": "string",
-                    "enum": ["O", "B-WRONG", "I-WRONG"]
-                }
-            }
-          },
-          "required": ["labels"]
-        },
-        "options": {
-            "temperature": temperature,
-            "top_p": top_p,
-            "num_predict": max_tokens,
-            "num_ctx": num_ctx,
-        },
-    }
+def load_model(model_id: str, hf_cache: str) -> tuple:
+    """Load tokenizer and model onto GPU."""
+    print(f"Loading model: {model_id}")
+    print(f"  HF cache: {hf_cache}")
+    print(f"  CUDA available: {torch.cuda.is_available()}")
+    if torch.cuda.is_available():
+        print(f"  GPU: {torch.cuda.get_device_name(0)}")
+        print(f"  VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
 
-    for attempt in range(1, retries + 1):
-        try:
-            resp = requests.post(url, json=payload, timeout=120)
-            resp.raise_for_status()
-            data = resp.json()
-            return data["message"]["content"]
-        except (requests.RequestException, KeyError) as exc:
-            if attempt == retries:
-                raise
-            wait = backoff ** attempt
-            print(f"  [retry {attempt}/{retries}] error: {exc}. Waiting {wait:.1f}s …")
-            time.sleep(wait)
-    return ""  # unreachable
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_id,
+        cache_dir=hf_cache,
+        trust_remote_code=True,
+        padding_side="left",
+        local_files_only=True,
+    )
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        cache_dir=hf_cache,
+        torch_dtype=torch.bfloat16,
+        device_map="cuda:0",
+        trust_remote_code=True,
+        low_cpu_mem_usage=True,
+        local_files_only=True,
+    )
+    model.eval()
+    n_params = sum(p.numel() for p in model.parameters()) / 1e9
+    print(f"  Model loaded. Parameters: {n_params:.2f}B")
+    return tokenizer, model
+
+
+# ------------------------------------------------------------------ #
+# Dynamic batch sizing
+# ------------------------------------------------------------------ #
+
+def estimate_batch_size(model: AutoModelForCausalLM) -> int:
+    if not torch.cuda.is_available():
+        return 1
+    total_vram = torch.cuda.get_device_properties(0).total_memory / 1e9
+    model_params_b = sum(p.numel() for p in model.parameters()) / 1e9
+    model_vram = model_params_b * 2   # bf16 = 2 bytes/param
+    available = total_vram - model_vram - 2.0
+    batch_size = max(1, min(int(available / 1.0), 32))
+    print(f"  Dynamic batch size: {batch_size} "
+          f"(VRAM: {total_vram:.1f}GB, model: {model_vram:.1f}GB)")
+    return batch_size
+
+
+# ------------------------------------------------------------------ #
+# Chat prompt formatting
+# ------------------------------------------------------------------ #
+
+def format_chat_prompt(user: str, tokenizer: AutoTokenizer, model_id: str) -> str:
+    """Format system+user prompt using the model's chat template."""
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": user},
+    ]
+    try:
+        # disable thinking for Qwen3 and Gemma4
+        prompt = tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+    except TypeError:
+        prompt = tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+    except Exception:
+        # Fallback for models without chat template (e.g. Tucano base)
+        prompt = (
+            f"<|system|>\n{SYSTEM_PROMPT}\n"
+            f"<|user|>\n{user}\n"
+            f"<|assistant|>\n"
+        )
+    return prompt
+
+
+# ------------------------------------------------------------------ #
+# Batch generation
+# ------------------------------------------------------------------ #
+
+def generate_batch(
+    prompts: list[str],
+    tokenizer: AutoTokenizer,
+    model: AutoModelForCausalLM,
+    max_new_tokens: int = 512,
+) -> list[str]:
+    """Run a batch of prompts and return generated text per prompt."""
+    inputs = tokenizer(
+        prompts,
+        return_tensors="pt",
+        padding=True,
+        truncation=True,
+        max_length=2048,
+    ).to(model.device)
+
+    with torch.no_grad():
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=max_new_tokens,
+            do_sample=False,
+            temperature=None,
+            top_p=None,
+            pad_token_id=tokenizer.pad_token_id,
+            eos_token_id=tokenizer.eos_token_id,
+        )
+
+    responses = []
+    input_len = inputs["input_ids"].shape[1]
+    for output in outputs:
+        new_tokens = output[input_len:]
+        text = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+        responses.append(text)
+    return responses
 
 
 # ------------------------------------------------------------------ #
@@ -202,22 +266,25 @@ def query_ollama(
 # ------------------------------------------------------------------ #
 
 _JSON_RE = re.compile(r'\{.*?"labels"\s*:\s*\[.*?\]\s*\}', re.DOTALL)
+VALID_LABELS = {"O", "B-WRONG", "I-WRONG"}
 
-def parse_labels(response_text: str, expected_len: int, valid_labels: set[str]) -> list[str]:
-    """
-    Extract the labels list from the model response.
-    Falls back to all-O if parsing fails or lengths mismatch.
-    """
+
+def parse_labels(response_text: str, expected_len: int) -> list[str]:
+    """Extract labels from model response with fallback for truncated JSON."""
+    # Strip thinking blocks (Qwen3, DeepSeek)
+    response_text = re.sub(
+        r'<think>.*?</think>', '', response_text, flags=re.DOTALL
+    ).strip()
+
+    # Try full JSON parse
     match = _JSON_RE.search(response_text)
     if match:
         try:
             obj = json.loads(match.group())
             labels = obj.get("labels", [])
-            # Sanitise: replace unknowns with O
-            labels = [l if l in valid_labels else "O" for l in labels]
+            labels = [l if l in VALID_LABELS else "O" for l in labels]
             if len(labels) == expected_len:
                 return labels
-            # Length mismatch: pad or truncate
             if len(labels) < expected_len:
                 labels += ["O"] * (expected_len - len(labels))
             else:
@@ -226,7 +293,16 @@ def parse_labels(response_text: str, expected_len: int, valid_labels: set[str]) 
         except json.JSONDecodeError:
             pass
 
-    print(f"  [WARNING] Could not parse JSON from response. Defaulting to all-O.")
+    # Fallback: extract individual label strings from truncated response
+    partial = re.findall(r'"(O|B-WRONG|I-WRONG)"', response_text)
+    if partial:
+        if len(partial) < expected_len:
+            partial += ["O"] * (expected_len - len(partial))
+        else:
+            partial = partial[:expected_len]
+        return partial
+
+    print(f"  [WARNING] Could not parse labels. Defaulting to all-O.")
     return ["O"] * expected_len
 
 
@@ -234,16 +310,17 @@ def parse_labels(response_text: str, expected_len: int, valid_labels: set[str]) 
 # Main inference loop
 # ------------------------------------------------------------------ #
 
-def run_inference(cfg: dict, split: str, strategy: str) -> None:
-    model_cfg = cfg["model"]
-    data_cfg = cfg["data"]
+def run_inference(cfg: dict, split: str, strategy: str, model_id_override: str | None = None) -> None:
+    model_cfg  = cfg["model"]
+    data_cfg   = cfg["data"]
     prompt_cfg = cfg["prompting"]
-    out_cfg = cfg["output"]
-    label_cfg = cfg["labels"]
+    out_cfg    = cfg["output"]
+    label_cfg  = cfg["labels"]
 
     valid_labels = set(label_cfg["valid_set"])
-    model_name = model_cfg["name"]
-    model_tag = model_name.replace(":", "-").replace("/", "-")
+    model_id  = model_id_override or model_cfg.get("hf_model_id", model_cfg["name"])
+    hf_cache  = model_cfg.get("hf_cache", "hf_cache")
+    model_tag = model_id.replace(":", "-").replace("/", "-")
 
     # Load data
     test_path = data_cfg[f"{split}_file"]
@@ -258,105 +335,127 @@ def run_inference(cfg: dict, split: str, strategy: str) -> None:
         print(f"Loading few-shot examples from: {train_path}")
         train_sents = read_bio_file(train_path, valid_labels=valid_labels)
         few_shot_examples = select_few_shot_examples(
-            train_sents, prompt_cfg["num_few_shot_examples"]
+            train_sents,
+            prompt_cfg["num_few_shot_examples"],
+            contrastive=prompt_cfg.get("contrastive", False),
         )
         print(f"  Selected {len(few_shot_examples)} examples.")
+        for ex in few_shot_examples:
+            print(f"    [{ex.id}] spans={ex.error_spans()} tokens={ex.tokens[:8]}")
 
     # Prepare output path
     pred_path = out_cfg["predictions_file"].format(
         model_tag=model_tag, split=split, strategy=strategy
     )
     Path(pred_path).parent.mkdir(parents=True, exist_ok=True)
-    
-    # Resume from partial if it exists
+
+    # Resume from partial if available
     partial_path = pred_path + ".partial"
     results: list[dict] = []
     completed_ids: set[int] = set()
 
     if Path(partial_path).exists():
-        print(f"Found partial predictions at: {partial_path}")
+        print(f"Found partial predictions: {partial_path}")
         with open(partial_path, encoding="utf-8") as fh:
             partial_data = json.load(fh)
         results = partial_data["predictions"]
         completed_ids = {r["sentence_id"] for r in results}
-        print(f"  Resuming from sentence {max(completed_ids) + 1} ({len(completed_ids)} already done)")
+        print(f"  Resuming from {len(completed_ids)} completed sentences.")
 
-    # Filter out already completed sentences
     sentences = [s for s in sentences if s.id not in completed_ids]
     n = len(sentences)
     print(f"  {n} sentences remaining.")
 
-    for i, sent in enumerate(sentences, 1):
-        if i % 50 == 0 or i == 1:
-            print(f"  [{i}/{n}] sentence id={sent.id} …")
+    if n == 0:
+        print("All sentences already processed.")
+    else:
+        # Load model
+        t0 = time.time()
+        tokenizer, model = load_model(model_id, hf_cache)
+        print(f"  Model loaded in {time.time() - t0:.1f}s")
 
-        # Build prompt
-        if strategy == "few_shot":
-            user_prompt = build_few_shot_prompt(sent, few_shot_examples)
-        else:
-            user_prompt = build_zero_shot_prompt(sent)
+        batch_size = estimate_batch_size(model)
 
-        # Query model
-        raw_response = query_ollama(
-            user_prompt,
-            host=model_cfg["ollama_host"],
-            model=model_name,
-            temperature=model_cfg["temperature"],
-            top_p=model_cfg["top_p"],
-            max_tokens=model_cfg["max_tokens"],
-            num_ctx=model_cfg["num_ctx"],
-        )
+        # Determine max_new_tokens based on average sentence length
+        avg_len = sum(len(s.tokens) for s in sentences) / len(sentences)
+        max_new_tokens = min(int(avg_len * 6) + 50, 1024)
+        print(f"  max_new_tokens: {max_new_tokens} (avg sentence len: {avg_len:.1f})")
 
-        # Parse labels
-        pred_labels = parse_labels(raw_response, len(sent.tokens), valid_labels)
+        # Inference loop
+        t1 = time.time()
+        for batch_start in range(0, n, batch_size):
+            batch = sentences[batch_start: batch_start + batch_size]
 
-        results.append({
-            "sentence_id": sent.id,
-            "tokens": sent.tokens,
-            "gold_labels": sent.labels,
-            "pred_labels": pred_labels,
-            "raw_response": raw_response,
-        })
-        if i % 100 == 0:
-            with open(pred_path + ".partial", "w", encoding="utf-8") as fh:
-                json.dump({
-                    "model": model_name,
-                    "split": split,
-                    "strategy": strategy,
-                    "num_sentences": len(results),
-                    "predictions": results,
-                }, fh, ensure_ascii=False, indent=2)
-            print(f"  [checkpoint] {len(results)} sentences saved.")
+            if batch_start % 500 == 0 or batch_start == 0:
+                elapsed = time.time() - t1
+                print(f"  [{batch_start}/{n}] elapsed: {elapsed:.0f}s ...")
 
-    partial_path = pred_path + ".partial"
+            # Build prompts
+            prompts = []
+            for sent in batch:
+                if strategy == "few_shot":
+                    user = build_few_shot_prompt(sent, few_shot_examples)
+                else:
+                    user = build_zero_shot_prompt(sent)
+                prompts.append(format_chat_prompt(user, tokenizer, model_id))
+
+            # Generate
+            responses = generate_batch(prompts, tokenizer, model, max_new_tokens)
+
+            # Parse and store
+            for sent, response in zip(batch, responses):
+                pred_labels = parse_labels(response, len(sent.tokens))
+                results.append({
+                    "sentence_id": sent.id,
+                    "tokens":      sent.tokens,
+                    "gold_labels": sent.labels,
+                    "pred_labels": pred_labels,
+                    "raw_response": response,
+                })
+
+            # Checkpoint every 100 sentences
+            if len(results) % 100 < batch_size:
+                with open(partial_path, "w", encoding="utf-8") as fh:
+                    json.dump({
+                        "model": model_id,
+                        "split": split,
+                        "strategy": strategy,
+                        "num_sentences": len(results),
+                        "predictions": results,
+                    }, fh, ensure_ascii=False, indent=2)
+
+        elapsed = time.time() - t1
+        print(f"\nInference complete in {elapsed:.1f}s "
+              f"({elapsed / n:.2f}s/sentence)")
+
+    # Save final predictions
     with open(partial_path, "w", encoding="utf-8") as fh:
-        json.dump(
-            {
-                "model": model_name,
-                "split": split,
-                "strategy": strategy,
-                "num_sentences": len(results),
-                "predictions": results,
-            },
-            fh,
-            ensure_ascii=False,
-            indent=2,
-        )
+        json.dump({
+            "model": model_id,
+            "split": split,
+            "strategy": strategy,
+            "num_sentences": len(results),
+            "predictions": results,
+        }, fh, ensure_ascii=False, indent=2)
     os.rename(partial_path, pred_path)
-    print(f"\nPredictions saved to: {pred_path}")
+    print(f"Predictions saved to: {pred_path}")
+
 
 # ------------------------------------------------------------------ #
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="GED-PT SLM inference via Ollama")
-    parser.add_argument("--config", default="config.yaml", help="Path to config.yaml")
+    parser = argparse.ArgumentParser(
+        description="GED-PT SLM inference via HuggingFace Transformers"
+    )
+    parser.add_argument("--config", default="config.yaml")
+    parser.add_argument("--split", default="test", choices=["test", "val"])
     parser.add_argument(
-        "--split", default="test", choices=["test", "val"], help="Dataset split to run"
+        "--strategy", default=None,
+        help="zero_shot or few_shot (overrides config)"
     )
     parser.add_argument(
-        "--strategy",
-        default=None,
-        help="Prompting strategy: zero_shot or few_shot (overrides config)",
+        "--model", default=None,
+        help="HuggingFace model ID (overrides config)"
     )
     return parser.parse_args()
 
@@ -365,6 +464,5 @@ if __name__ == "__main__":
     args = parse_args()
     with open(args.config, encoding="utf-8") as fh:
         cfg = yaml.safe_load(fh)
-
     strategy = args.strategy or cfg["prompting"]["strategy"]
-    run_inference(cfg, args.split, strategy)
+    run_inference(cfg, args.split, strategy, model_id_override=args.model)
