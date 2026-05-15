@@ -40,9 +40,8 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo "=========================================="
-echo "  GED-PT SLM Benchmark (Transformers)"
+echo " GED-PT SLM Benchmark (Transformers)""
 echo "  Model    : $MODEL"
-echo "  Strategy : $STRATEGY"
 echo "  Split    : $SPLIT"
 echo "  Config   : $CONFIG"
 echo "  Job ID   : $SLURM_JOB_ID"
@@ -59,52 +58,30 @@ module load CUDA/12.1.1
 
 source /projects/F202600026AIVLABDEUCALION/evelinamorim/venv/bin/activate
 
-export PYTHONPATH="/projects/F202600026AIVLABDEUCALION/evelinamorim/venv/lib/python3.11/site-packages:${PYTHONPATH}:$(pwd)"
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 export HF_HOME="/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
 export TRANSFORMERS_CACHE="$HF_HOME"
 export HF_DATASETS_CACHE="$HF_HOME"
-export CUDA_VISIBLE_DEVICES=0
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export PYTHONUNBUFFERED=1
+
 
 PYTHON=$(which python3)
 echo "Python: $PYTHON ($($PYTHON --version))"
+echo "CUDA devices: $CUDA_VISIBLE_DEVICES"
 
-# ---- diagnostics ----
-$PYTHON -c "
-import torch
-print('torch:', torch.__version__)
-print('CUDA:', torch.cuda.is_available())
-if torch.cuda.is_available():
-    print('GPU:', torch.cuda.get_device_name(0))
-    print('VRAM:', torch.cuda.get_device_properties(0).total_memory / 1e9, 'GB')
-"
 
-# ---- inference ----
+# ---- run two-stage inference ----
 echo ""
-echo "[$(date +%T)] Starting inference ..."
-$PYTHON run_inference.py \
-    --config "$CONFIG" \
+echo "[$(date +%T)] Starting two-stage inference ..."
+$PYTHON run_inference_2stage.py \
+    --model "$MODEL" \
     --split "$SPLIT" \
-    --strategy "$STRATEGY" \
-    --model "$MODEL"
-INFERENCE_EXIT=$?
+    --batch_size "$BATCH_SIZE" \
+    --hf_cache "$HF_HOME"
 
-if [ $INFERENCE_EXIT -ne 0 ]; then
-    echo "ERROR: Inference failed (exit code $INFERENCE_EXIT)"
-    exit $INFERENCE_EXIT
-fi
+EXIT_CODE=$?
 
-# ---- evaluation ----
-MODEL_TAG=$(echo "$MODEL" | tr ':/' '--')
-PRED_FILE="predictions/${MODEL_TAG}_${SPLIT}_${STRATEGY}.json"
+
 
 echo ""
-echo "[$(date +%T)] Running evaluation on: $PRED_FILE"
-$PYTHON evaluate.py \
-    --predictions "$PRED_FILE" \
-    --verbose
-
-echo ""
-echo "[$(date +%T)] Done."
+echo "[$(date +%T)] Done. Exit code: $EXIT_CODE"
+exit $EXIT_CODE
