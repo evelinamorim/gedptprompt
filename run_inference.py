@@ -238,6 +238,9 @@ def generate_batch(
     max_new_tokens: int = 512,
 ) -> list[str]:
     """Run a batch of prompts and return generated text per prompt."""
+
+    tokenizer.padding_side = "left"
+
     inputs = tokenizer(
         prompts,
         return_tensors="pt",
@@ -258,8 +261,9 @@ def generate_batch(
         )
 
     responses = []
-    input_len = inputs["input_ids"].shape[1]
-    for output in outputs:
+    attention_mask = inputs["attention_mask"]
+    for i, output in enumerate(outputs):
+        input_len = attention_mask[i].sum().item() 
         new_tokens = output[input_len:]
         text = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
         responses.append(text)
