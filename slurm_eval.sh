@@ -22,12 +22,12 @@
 #SBATCH --output=logs/%x_%j.out
 #SBATCH --error=logs/%x_%j.err
 
-# ---- parse optional overrides from sbatch extra args ----
-MODEL="gemma4:e2b"
+# ---- parse optional overrides ----
+MODEL="Qwen/Qwen3-8B"
 STRATEGY="zero_shot"
 SPLIT="test"
 CONFIG="config.yaml"
-
+ 
 while [[ $# -gt 0 ]]; do
     case $1 in
         --model)    MODEL="$2";    shift 2 ;;
@@ -37,9 +37,9 @@ while [[ $# -gt 0 ]]; do
         *)          shift ;;
     esac
 done
-
+ 
 echo "=========================================="
-echo "  GED-PT SLM Benchmark"
+echo "  GED-PT SLM Benchmark (Transformers)"
 echo "  Model    : $MODEL"
 echo "  Strategy : $STRATEGY"
 echo "  Split    : $SPLIT"
@@ -48,102 +48,62 @@ echo "  Job ID   : $SLURM_JOB_ID"
 echo "  Node     : $SLURMD_NODENAME"
 echo "  Date     : $(date)"
 echo "=========================================="
-
-# ---- environment ----
+ 
 mkdir -p logs predictions metrics
-
+ 
+# ---- environment ----
 module purge
 module load Python/3.11.3-GCCcore-12.3.0
-module load ollama/0.20.3-GCCcore-14.2.0-CUDA-12.8.0
-
+module load CUDA/12.1.1
+ 
 source /projects/F202600026AIVLABDEUCALION/evelinamorim/venv/bin/activate
-
-export PYTHONPATH="${PYTHONPATH}:$(pwd)"
-export HF_HOME="$(pwd)/hf_cache"
-export OLLAMA_MODELS=/projects/F202600026AIVLABDEUCALION/evelinamorim/ollama_models/
-
-# Capture the correct python binary after module load
+ 
+export PYTHONPATH="/projects/F202600026AIVLABDEUCALION/evelinamorim/venv/lib/python3.11/site-packages:${PYTHONPATH}:$(pwd)"
+export HF_HOME="/projects/F202600026AIVLABDEUCALION/evelinamorim/hf_cache"
+export TRANSFORMERS_CACHE="$HF_HOME"
+export HF_DATASETS_CACHE="$HF_HOME"
+export CUDA_VISIBLE_DEVICES=0
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export PYTHONUNBUFFERED=1
+ 
 PYTHON=$(which python3)
-echo "Python binary: $PYTHON"
-$PYTHON --version
-
-# Try to connect to existing Ollama instance first
-if curl -s http://127.0.0.1:11434/api/tags > /dev/null 2>&1; then
-    echo "Ollama already running, reusing existing instance."
-    OLLAMA_PID=""
-else
-    echo "Starting new Ollama instance..."
-    ollama serve &
-    OLLAMA_PID=$!
-    # Wait until ready
-    for i in $(seq 1 30); do
-        curl -s http://127.0.0.1:11434/api/tags > /dev/null 2>&1 && echo "Ollama ready." && break
-        sleep 2
-    done
-fi
-
-# Pre-warm: force model weights into GPU VRAM before inference starts
-echo "Pre-warming model: $MODEL"
-curl -s -X POST http://127.0.0.1:11434/api/chat \
-    -H "Content-Type: application/json" \
-    -d "{\"model\": \"$MODEL\", \"messages\": [{\"role\": \"user\", \"content\": \"Olá\"}], \"stream\": false}" \
-    > /dev/null 2>&1
-echo "Model warmed up."
-
-# ---- update config with the requested model ----
-# Write a temporary config per job to avoid conflicts between parallel jobs
-TMP_CONFIG="config_${SLURM_JOB_ID}.yaml"
-$PYTHON - <<PYEOF
-import yaml, sys
-
-with open("$CONFIG") as f:
-    cfg = yaml.safe_load(f)
-
-cfg["model"]["name"] = "$MODEL"
-cfg["prompting"]["strategy"] = "$STRATEGY"
-cfg["model"]["ollama_host"] = "http://127.0.0.1:11434"
-
-with open("$TMP_CONFIG", "w") as f:
-    yaml.dump(cfg, f, allow_unicode=True)
-
-print("Temporary config written:", "$TMP_CONFIG")
-PYEOF
-
+echo "Python: $PYTHON ($($PYTHON --version))"
+ 
+# ---- diagnostics ----
+$PYTHON -c "
+import torch
+print('torch:', torch.__version__)
+print('CUDA:', torch.cuda.is_available())
+if torch.cuda.is_available():
+    print('GPU:', torch.cuda.get_device_name(0))
+    print('VRAM:', torch.cuda.get_device_properties(0).total_memory / 1e9, 'GB')
+"
+ 
 # ---- inference ----
 echo ""
 echo "[$(date +%T)] Starting inference ..."
 $PYTHON run_inference.py \
-    --config "$TMP_CONFIG" \
+    --config "$CONFIG" \
     --split "$SPLIT" \
-    --strategy "$STRATEGY"
+    --strategy "$STRATEGY" \
+    --model "$MODEL"
 INFERENCE_EXIT=$?
-
+ 
 if [ $INFERENCE_EXIT -ne 0 ]; then
     echo "ERROR: Inference failed (exit code $INFERENCE_EXIT)"
-    kill $OLLAMA_PID 2>/dev/null
-    rm -f "$TMP_CONFIG"
     exit $INFERENCE_EXIT
 fi
-
+ 
 # ---- evaluation ----
 MODEL_TAG=$(echo "$MODEL" | tr ':/' '--')
 PRED_FILE="predictions/${MODEL_TAG}_${SPLIT}_${STRATEGY}.json"
-
+ 
 echo ""
 echo "[$(date +%T)] Running evaluation on: $PRED_FILE"
 $PYTHON evaluate.py \
     --predictions "$PRED_FILE" \
     --verbose
-
-EVAL_EXIT=$?
-
-# ---- cleanup ----
-# Only kill Ollama if this job started it
-if [ -n "$OLLAMA_PID" ]; then
-    kill $OLLAMA_PID 2>/dev/null
-fi
-rm -f "$TMP_CONFIG"
-
+ 
 echo ""
-echo "[$(date +%T)] Done. Exit code: $EVAL_EXIT"
-exit $EVAL_EXIT
+echo "[$(date +%T)] Done."
