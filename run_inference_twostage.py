@@ -80,36 +80,30 @@ Which tokens are grammatically wrong? Respond with ONLY: {{"wrong": [...]}}"""
 # Model loading
 # ------------------------------------------------------------------ #
 
-def load_model(model_id: str, hf_cache: str) -> tuple:
-    """Load tokenizer and model onto GPU with automatic device mapping."""
-    print(f"Loading model: {model_id}")
-    print(f"  HF_HOME: {hf_cache}")
-    print(f"  CUDA available: {torch.cuda.is_available()}")
-    if torch.cuda.is_available():
-        print(f"  GPU: {torch.cuda.get_device_name(0)}")
-        print(f"  VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+def load_model(model_id, hf_cache):
+    # Gemma3 models require AutoProcessor instead of AutoTokenizer
+    if "gemma-3" in model_id.lower():
+        from transformers import AutoProcessor
+        processor = AutoProcessor.from_pretrained(model_id, cache_dir=hf_cache)
+        tokenizer = processor.tokenizer  # extract the underlying tokenizer
+    else:
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_id,
+            cache_dir=hf_cache,
+            trust_remote_code=True,
+        )
 
-    tokenizer = AutoTokenizer.from_pretrained(
-        model_id,
-        cache_dir=hf_cache,
-        trust_remote_code=True,
-        padding_side="left",   # left padding for decoder-only batch inference
-        local_files_only=True
-    )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
         cache_dir=hf_cache,
-        torch_dtype=torch.bfloat16,   # bf16 on A100 — fastest + numerically stable
-        device_map="cuda:0",             # automatic GPU/CPU placement
+        torch_dtype=torch.bfloat16,
+        device_map="auto",
         trust_remote_code=True,
-        low_cpu_mem_usage=True,
-        local_files_only=True
     )
-    model.eval()
-    print(f"  Model loaded. Parameters: {sum(p.numel() for p in model.parameters()) / 1e9:.2f}B")
+
     return tokenizer, model
 
 
