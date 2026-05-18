@@ -169,9 +169,7 @@ def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_i
 
 # ------------------------------------------------------------------ #
 # Batch generation
-# ------------------------------------------------------------------ #
-
-def generate_batch(
+# ------------------------------------------------------------------ #def generate_batch(
     prompts: list[str],
     tokenizer: AutoTokenizer,
     model: AutoModelForCausalLM,
@@ -182,6 +180,9 @@ def generate_batch(
     Run a batch of prompts through the model and return generated text per prompt.
     Uses greedy decoding (temperature=0) for deterministic output.
     """
+
+    tokenizer.padding_side = "left"  # required for decoder-only batch generation
+
     inputs = tokenizer(
         prompts,
         return_tensors="pt",
@@ -194,17 +195,17 @@ def generate_batch(
         outputs = model.generate(
             **inputs,
             max_new_tokens=max_new_tokens,
-            do_sample=False,          # greedy — deterministic
-            temperature=None,         # must be None when do_sample=False
-            top_p=None,               # must be None when do_sample=False
+            do_sample=False,
+            temperature=None,
+            top_p=None,
             pad_token_id=tokenizer.pad_token_id,
             eos_token_id=tokenizer.eos_token_id,
         )
 
-    # Decode only the newly generated tokens (not the input prompt)
     responses = []
+    attention_mask = inputs["attention_mask"]
     for i, output in enumerate(outputs):
-        input_len = inputs["input_ids"].shape[1]
+        input_len = attention_mask[i].sum().item()  # per-prompt real length
         new_tokens = output[input_len:]
         text = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
         responses.append(text)
