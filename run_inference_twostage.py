@@ -169,7 +169,8 @@ def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_i
 
 # ------------------------------------------------------------------ #
 # Batch generation
-# ------------------------------------------------------------------ #def generate_batch(
+# ------------------------------------------------------------------ #
+def generate_batch(
     prompts: list[str],
     tokenizer: AutoTokenizer,
     model: AutoModelForCausalLM,
