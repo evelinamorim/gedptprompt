@@ -11,7 +11,7 @@
 # ============================================================
 
 #SBATCH --job-name=ged_slm
-#SBATCH --account=f202500017aivlabdeucaliong
+#SBATCH --account=f202600026aivlabdeucaliong
 #SBATCH --gpus=1
 #SBATCH --partition=normal-a100-40
 #SBATCH --nodes=1
