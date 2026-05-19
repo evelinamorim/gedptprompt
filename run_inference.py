@@ -233,6 +233,7 @@ def generate_batch(
     prompts: list[str],
     tokenizer: AutoTokenizer,
     model: AutoModelForCausalLM,
+    model_id: str,
     max_new_tokens: int = 512,
 ) -> list[str]:
     """Run a batch of prompts and return generated text per prompt."""
@@ -248,8 +249,7 @@ def generate_batch(
     ).to(model.device)
 
     with torch.no_grad():
-        outputs = model.generate(
-            **inputs,
+        gen_kwargs = dict(
             max_new_tokens=max_new_tokens,
             do_sample=False,
             temperature=None,
@@ -257,6 +257,9 @@ def generate_batch(
             pad_token_id=tokenizer.pad_token_id,
             eos_token_id=tokenizer.eos_token_id,
         )
+        if "tucano" in model_id.lower():
+            gen_kwargs["repetition_penalty"] = 1.2
+        outputs = model.generate(**inputs, **gen_kwargs)
 
     responses = []
     attention_mask = inputs["attention_mask"]
@@ -407,7 +410,7 @@ def run_inference(cfg: dict, split: str, strategy: str, model_id_override: str |
                 prompts.append(format_chat_prompt(user, tokenizer, model_id))
 
             # Generate
-            responses = generate_batch(prompts, tokenizer, model, max_new_tokens)
+            responses = generate_batch(prompts, tokenizer, model, model_id, max_new_tokens)
 
             # Parse and store
             for sent, response in zip(batch, responses):
