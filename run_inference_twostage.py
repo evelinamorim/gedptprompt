@@ -145,33 +145,33 @@ def estimate_batch_size(model: AutoModelForCausalLM, tokenizer: AutoTokenizer) -
 # ------------------------------------------------------------------ #
 def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_id: str) -> str:
     # Tucano (LLaMA-2 based) doesn't support system role — fold into user turn
+
     if "tucano" in model_id.lower():
-        messages = [
-            {"role": "user", "content": system + "\n\n" + user},
-        ]
+        # Raw instruction format, no chat template
+        return f"<instruction>{system}\n\n{user}</instruction>"
     else:
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ]
     
-    try:
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-            enable_thinking=False,    # disable chain-of-thought for Qwen3
-        )
-    except TypeError:
-        # Fallback for models that don't support enable_thinking
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
-    except Exception:
-        prompt = f"<|system|>\n{system}\n<|user|>\n{user}\n<|assistant|>\n"
-    return prompt
+        try:
+            prompt = tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=False,    # disable chain-of-thought for Qwen3
+            )
+        except TypeError:
+            # Fallback for models that don't support enable_thinking
+            prompt = tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        except Exception:
+            prompt = f"<|system|>\n{system}\n<|user|>\n{user}\n<|assistant|>\n"
+        return prompt
 
 
 # ------------------------------------------------------------------ #
@@ -181,6 +181,7 @@ def generate_batch(
     prompts: list[str],
     tokenizer: AutoTokenizer,
     model: AutoModelForCausalLM,
+    model_id: str,
     max_new_tokens: int = 256,
     temperature: float = 0.0,
 ) -> list[str]:
@@ -200,8 +201,7 @@ def generate_batch(
     ).to(model.device)
 
     with torch.no_grad():
-        outputs = model.generate(
-            **inputs,
+        gen_kwargs = dict(
             max_new_tokens=max_new_tokens,
             do_sample=False,
             temperature=None,
@@ -209,6 +209,9 @@ def generate_batch(
             pad_token_id=tokenizer.pad_token_id,
             eos_token_id=tokenizer.eos_token_id,
         )
+        if "tucano" in model_id.lower():
+            gen_kwargs["repetition_penalty"] = 1.2
+        outputs = model.generate(**inputs, **gen_kwargs)
 
     responses = []
     attention_mask = inputs["attention_mask"]
@@ -400,7 +403,7 @@ def run_2stage_inference(
                 for s in batch
             ]
             responses = generate_batch(
-                prompts, tokenizer, model, max_new_tokens=max_new_tokens_s1
+                prompts, tokenizer, model,model_id, max_new_tokens=max_new_tokens_s1
             )
             for sent, response in zip(batch, responses):
                 stage1_results[sent.id] = parse_has_error(response)
@@ -452,7 +455,7 @@ def run_2stage_inference(
                 for s in batch
             ]
             responses = generate_batch(
-                prompts, tokenizer, model, max_new_tokens=max_new_tokens_s2
+                prompts, tokenizer, model, model_id, max_new_tokens=max_new_tokens_s2
             )
             for sent, response in zip(batch, responses):
                 stage2_results[sent.id] = parse_wrong_tokens(response, sent.tokens)

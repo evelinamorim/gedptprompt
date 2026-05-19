@@ -193,35 +193,36 @@ def format_chat_prompt(user: str, tokenizer: AutoTokenizer, model_id: str) -> st
     """Format system+user prompt using the model's chat template."""
 
     if "tucano" in model_id.lower():
-        messages = [{'role': 'user', 'content': SYSTEM_PROMPT + '\n' + user}]
+        # Raw instruction format, no chat template
+        return f"<instruction>{SYSTEM_PROMPT}\n\n{user}</instruction>"
     else:
         messages = [
             {'role': 'system', 'content': SYSTEM_PROMPT},
             {'role': 'user', 'content': user},
         ]
 
-    try:
-        # disable thinking for Qwen3 and Gemma4
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-            enable_thinking=False,
-        )
-    except TypeError:
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
-    except Exception:
-        # Fallback for models without chat template (e.g. Tucano base)
-        prompt = (
-            f"<|system|>\n{SYSTEM_PROMPT}\n"
-            f"<|user|>\n{user}\n"
-            f"<|assistant|>\n"
-        )
-    return prompt
+        try:
+            # disable thinking for Qwen3 and Gemma4
+            prompt = tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=False,
+            )
+        except TypeError:
+            prompt = tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        except Exception:
+            # Fallback for models without chat template (e.g. Tucano base)
+            prompt = (
+                f"<|system|>\n{SYSTEM_PROMPT}\n"
+                f"<|user|>\n{user}\n"
+                f"<|assistant|>\n"
+            )
+        return prompt
 
 
 # ------------------------------------------------------------------ #
@@ -232,6 +233,7 @@ def generate_batch(
     prompts: list[str],
     tokenizer: AutoTokenizer,
     model: AutoModelForCausalLM,
+    model_id: str,
     max_new_tokens: int = 512,
 ) -> list[str]:
     """Run a batch of prompts and return generated text per prompt."""
@@ -247,8 +249,7 @@ def generate_batch(
     ).to(model.device)
 
     with torch.no_grad():
-        outputs = model.generate(
-            **inputs,
+        gen_kwargs = dict(
             max_new_tokens=max_new_tokens,
             do_sample=False,
             temperature=None,
@@ -256,6 +257,9 @@ def generate_batch(
             pad_token_id=tokenizer.pad_token_id,
             eos_token_id=tokenizer.eos_token_id,
         )
+        if "tucano" in model_id.lower():
+            gen_kwargs["repetition_penalty"] = 1.2
+        outputs = model.generate(**inputs, **gen_kwargs)
 
     responses = []
     attention_mask = inputs["attention_mask"]
@@ -406,7 +410,7 @@ def run_inference(cfg: dict, split: str, strategy: str, model_id_override: str |
                 prompts.append(format_chat_prompt(user, tokenizer, model_id))
 
             # Generate
-            responses = generate_batch(prompts, tokenizer, model, max_new_tokens)
+            responses = generate_batch(prompts, tokenizer, model, model_id, max_new_tokens)
 
             # Parse and store
             for sent, response in zip(batch, responses):
