@@ -12,7 +12,6 @@
 
 #SBATCH --job-name=ged_slm
 #SBATCH --account=f202500017aivlabdeucaliong
-#SBATCH --exclusive
 #SBATCH --gpus=1
 #SBATCH --partition=normal-a100-40
 #SBATCH --nodes=1
@@ -65,7 +64,8 @@ export HF_DATASETS_CACHE="$HF_HOME"
 
 
 PYTHON=$(which python3)
-echo "Python: $PYTHON ($($PYTHON --version))"
+PYTHON_VERSION=$($PYTHON --version)
+echo "Python: $PYTHON ($PYTHON_VERSION)"
 echo "CUDA devices: $CUDA_VISIBLE_DEVICES"
 
 
