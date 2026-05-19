@@ -144,10 +144,17 @@ def estimate_batch_size(model: AutoModelForCausalLM, tokenizer: AutoTokenizer) -
 # Chat prompt formatting
 # ------------------------------------------------------------------ #
 def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_id: str) -> str:
-    messages = [
-        {"role": "system", "content": system},
-        {"role": "user", "content": user},
-    ]
+    # Tucano (LLaMA-2 based) doesn't support system role — fold into user turn
+    if "tucano" in model_id.lower():
+        messages = [
+            {"role": "user", "content": system + "\n\n" + user},
+        ]
+    else:
+        messages = [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ]
+    
     try:
         prompt = tokenizer.apply_chat_template(
             messages,

@@ -191,10 +191,15 @@ def estimate_batch_size(model: AutoModelForCausalLM) -> int:
 
 def format_chat_prompt(user: str, tokenizer: AutoTokenizer, model_id: str) -> str:
     """Format system+user prompt using the model's chat template."""
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": user},
-    ]
+
+    if "tucano" in model_id.lower():
+        messages = [{'role': 'user', 'content': SYSTEM_PROMPT + '\n' + user}]
+    else:
+        messages = [
+            {'role': 'system', 'content': SYSTEM_PROMPT},
+            {'role': 'user', 'content': user},
+        ]
+
     try:
         # disable thinking for Qwen3 and Gemma4
         prompt = tokenizer.apply_chat_template(
