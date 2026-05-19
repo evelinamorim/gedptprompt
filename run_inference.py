@@ -140,12 +140,11 @@ def select_few_shot_examples(
 def load_model(model_id, hf_cache):
     # Gemma3 models require AutoProcessor instead of AutoTokenizer
     if "gemma-3" in model_id.lower():
-        processor = AutoProcessor.from_pretrained(
+          tokenizer = AutoTokenizer.from_pretrained(
             model_id,
             cache_dir=hf_cache,
             local_files_only=True,
-    )
-        tokenizer = processor.tokenizer
+        )
     else:
         tokenizer = AutoTokenizer.from_pretrained(
             model_id,
@@ -163,6 +162,7 @@ def load_model(model_id, hf_cache):
         torch_dtype=torch.bfloat16,
         device_map="auto",
         trust_remote_code=True,
+        local_files_only=True,
     )
 
     return tokenizer, model
