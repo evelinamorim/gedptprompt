@@ -398,7 +398,6 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_args()
 
-    # Load taxonomy
     taxonomy_path = Path(args.taxonomy)
     if not taxonomy_path.exists():
         print(f"ERROR: taxonomy file not found: {taxonomy_path}")
@@ -412,19 +411,23 @@ if __name__ == "__main__":
     pred_dir = Path(args.predictions_dir)
     output_dir = Path(args.output)
 
-    # ---- Ollama-based prediction files ----
-    # Skip partial files and qwen3-14b partial
     prediction_files = [
-        ("aya-expanse:8b zero_shot",      "aya-expanse-8b_test_zero_shot.json"),
-        ("aya-expanse:8b few_shot",        "aya-expanse-8b_test_few_shot.json"),
-        ("deepseek-r1:7b zero_shot",       "deepseek-r1-7b_test_zero_shot.json"),
-        ("gemma3:12b zero_shot",           "gemma3-12b_test_zero_shot.json"),
-        ("gemma3:12b few_shot",            "gemma3-12b_test_few_shot.json"),
-        ("gemma4:e2b zero_shot",           "gemma4-e2b_test_zero_shot.json"),
-        ("gemma4:e2b few_shot",            "gemma4-e2b_test_few_shot.json"),
-        ("qwen3:8b zero_shot",             "qwen3-8b_test_zero_shot.json"),
-        ("qwen3:8b few_shot",              "qwen3-8b_test_few_shot.json"),
-        ("Qwen3-8B two_stage",             "Qwen-Qwen3-8B_test_two_stage.json"),
+        # Gemma3-12b
+        ("gemma-3-12b-it zero_shot",   "google-gemma-3-12b-it_test_zero_shot.json"),
+        ("gemma-3-12b-it few_shot",    "google-gemma-3-12b-it_test_few_shot.json"),
+        # Gemma3-4b
+        ("gemma-3-4b-it zero_shot",    "google-gemma-3-4b-it_test_zero_shot.json"),
+        ("gemma-3-4b-it few_shot",     "google-gemma-3-4b-it_test_few_shot.json"),
+        # Qwen3-8B
+        ("Qwen3-8B zero_shot",         "Qwen-Qwen3-8B_test_zero_shot.json"),
+        ("Qwen3-8B few_shot",          "Qwen-Qwen3-8B_test_few_shot.json"),
+        ("Qwen3-8B two_stage",         "Qwen-Qwen3-8B_test_two_stage.json"),
+        # Qwen3-14B
+        ("Qwen3-14B zero_shot",        "Qwen-Qwen3-14B_test_zero_shot.json"),
+        ("Qwen3-14B few_shot",         "Qwen-Qwen3-14B_test_few_shot.json"),
+        # Amadeus-Verbo-7B
+        ("Amadeus-Verbo-7B zero_shot", "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_zero_shot.json"),
+        ("Amadeus-Verbo-7B few_shot",  "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_few_shot.json"),
     ]
 
     all_span_metrics: dict[str, dict[str, CategoryMetrics]] = {}
@@ -445,8 +448,8 @@ if __name__ == "__main__":
 
     # ---- Stage 1 cache files ----
     stage1_files = [
-        ("Qwen3-8B Stage1",      "Qwen-Qwen3-8B_test_stage1_cache.json"),
-        ("gemma3-12b-it Stage1", "google-gemma-3-12b-it_test_stage1_cache.json"),
+        ("Qwen3-8B Stage1",          "Qwen-Qwen3-8B_test_stage1_cache.json"),
+        ("gemma-3-12b-it Stage1",    "google-gemma-3-12b-it_test_stage1_cache.json"),
     ]
 
     for model_name, filename in stage1_files:
