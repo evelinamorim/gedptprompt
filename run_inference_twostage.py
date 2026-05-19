@@ -145,33 +145,33 @@ def estimate_batch_size(model: AutoModelForCausalLM, tokenizer: AutoTokenizer) -
 # ------------------------------------------------------------------ #
 def format_chat_prompt(system: str, user: str, tokenizer: AutoTokenizer, model_id: str) -> str:
     # Tucano (LLaMA-2 based) doesn't support system role — fold into user turn
+
     if "tucano" in model_id.lower():
-        messages = [
-            {"role": "user", "content": system + "\n\n" + user},
-        ]
+        # Raw instruction format, no chat template
+        return f"<instruction>{system}\n\n{user}</instruction>"
     else:
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ]
     
-    try:
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-            enable_thinking=False,    # disable chain-of-thought for Qwen3
-        )
-    except TypeError:
-        # Fallback for models that don't support enable_thinking
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
-    except Exception:
-        prompt = f"<|system|>\n{system}\n<|user|>\n{user}\n<|assistant|>\n"
-    return prompt
+        try:
+            prompt = tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+                enable_thinking=False,    # disable chain-of-thought for Qwen3
+            )
+        except TypeError:
+            # Fallback for models that don't support enable_thinking
+            prompt = tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        except Exception:
+            prompt = f"<|system|>\n{system}\n<|user|>\n{user}\n<|assistant|>\n"
+        return prompt
 
 
 # ------------------------------------------------------------------ #
