@@ -415,19 +415,21 @@ if __name__ == "__main__":
         # Gemma3-12b
         ("gemma-3-12b-it zero_shot",   "google-gemma-3-12b-it_test_zero_shot.json"),
         ("gemma-3-12b-it few_shot",    "google-gemma-3-12b-it_test_few_shot.json"),
+        ("gemma-3-12b-it two_stage",   "google-gemma-3-12b-it_test_two_stage.json"),  # NEW
         # Gemma3-4b
         ("gemma-3-4b-it zero_shot",    "google-gemma-3-4b-it_test_zero_shot.json"),
         ("gemma-3-4b-it few_shot",     "google-gemma-3-4b-it_test_few_shot.json"),
         # Qwen3-8B
         ("Qwen3-8B zero_shot",         "Qwen-Qwen3-8B_test_zero_shot.json"),
         ("Qwen3-8B few_shot",          "Qwen-Qwen3-8B_test_few_shot.json"),
-        ("Qwen3-8B two_stage",         "Qwen-Qwen3-8B_test_two_stage.json"),
         # Qwen3-14B
         ("Qwen3-14B zero_shot",        "Qwen-Qwen3-14B_test_zero_shot.json"),
         ("Qwen3-14B few_shot",         "Qwen-Qwen3-14B_test_few_shot.json"),
+        ("Qwen3-14B two_stage",        "Qwen-Qwen3-14B_test_two_stage.json"),          # NEW
         # Amadeus-Verbo-7B
-        ("Amadeus-Verbo-7B zero_shot", "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_zero_shot.json"),
-        ("Amadeus-Verbo-7B few_shot",  "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_few_shot.json"),
+       ("Amadeus-Verbo-7B zero_shot", "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_zero_shot.json"),
+       ("Amadeus-Verbo-7B few_shot",  "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_few_shot.json"),
+       ("Amadeus-Verbo-7B two_stage", "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_two_stage.json"),  # NEW
     ]
 
     all_span_metrics: dict[str, dict[str, CategoryMetrics]] = {}
@@ -448,8 +450,9 @@ if __name__ == "__main__":
 
     # ---- Stage 1 cache files ----
     stage1_files = [
-        ("Qwen3-8B Stage1",          "Qwen-Qwen3-8B_test_stage1_cache.json"),
+        ("Qwen3-14B Stage1",         "Qwen-Qwen3-14B_test_stage1_cache.json"),
         ("gemma-3-12b-it Stage1",    "google-gemma-3-12b-it_test_stage1_cache.json"),
+        ("Amadeus-Verbo-7B Stage1",  "amadeusai-Amadeus-Verbo-FI-Qwen2.5-7B-PT-BR-Instruct_test_stage1_cache.json"),
     ]
 
     for model_name, filename in stage1_files:
