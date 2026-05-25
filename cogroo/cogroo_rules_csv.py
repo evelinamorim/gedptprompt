@@ -8,6 +8,10 @@ The XML structure per rule:
     <Group>...</Group>
     <Message>...</Message>
     <ShortMessage>...</ShortMessage>
+    <Example>
+        <Incorrect>...</Incorrect>
+        <Correct>...</Correct>
+    </Example>
   </Rule>
 
 Output CSV columns:
@@ -17,6 +21,8 @@ Output CSV columns:
   group             : CoGrOO rule group (sub-category)
   short_message     : short human-readable description (Portuguese)
   message           : full description (Portuguese)
+  example_incorrect : incorrect example sentence from CoGrOO XML
+  example_correct   : corrected example sentence from CoGrOO XML
   taxonomy_auto     : automatically assigned taxonomy category
   taxonomy_validated: empty column for linguist to fill
   notes             : empty column for linguist comments
@@ -149,13 +155,26 @@ def parse_rules_xml(xml_path: str | Path) -> list[dict]:
         group = rule_elem.findtext("Group", "").strip()
         message = rule_elem.findtext("Message", "").strip()
         short_msg = rule_elem.findtext("ShortMessage", "").strip()
+
+        # Extract first Example element (incorrect + correct)
+        example_incorrect = ""
+        example_correct = ""
+        first_example = rule_elem.find("Example")
+        if first_example is not None:
+            inc = first_example.findtext("Incorrect", "").strip()
+            cor = first_example.findtext("Correct", "").strip()
+            example_incorrect = inc
+            example_correct = cor
+
         rules.append({
-            "rule_id": f"xml:{rule_id}",
-            "active": active,
-            "type": rule_type,
-            "group": group,
-            "short_message": short_msg,
-            "message": message,
+            "rule_id":           f"xml:{rule_id}",
+            "active":            active,
+            "type":              rule_type,
+            "group":             group,
+            "short_message":     short_msg,
+            "message":           message,
+            "example_incorrect": example_incorrect,
+            "example_correct":   example_correct,
         })
     return rules
 
@@ -189,6 +208,8 @@ def generate_csv(xml_path: str | Path, output_path: str | Path) -> None:
             "group":              rule["group"],
             "short_message":      short_msg,
             "message":            rule["message"],
+            "example_incorrect":  rule["example_incorrect"],
+            "example_correct":    rule["example_correct"],
             "taxonomy_auto":      taxonomy,
             "taxonomy_validated": "",
             "notes":              "",
@@ -204,6 +225,7 @@ def generate_csv(xml_path: str | Path, output_path: str | Path) -> None:
     fieldnames = [
         "rule_id", "active", "type", "group",
         "short_message", "message",
+        "example_incorrect", "example_correct",
         "taxonomy_auto", "taxonomy_validated", "notes",
         "in_dataset", "count_train", "count_val", "count_test", "count_total",
     ]
@@ -214,10 +236,11 @@ def generate_csv(xml_path: str | Path, output_path: str | Path) -> None:
         writer.writerows(rows)
 
     print(f"\nCSV written to: {output_path}")
-    print(f"Total rules       : {len(rows)}")
-    print(f"Active rules      : {sum(1 for r in rows if r['active'] == 'true')}")
-    print(f"Rules in dataset  : {sum(1 for r in rows if r['in_dataset'] == 'yes')}")
+    print(f"Total rules         : {len(rows)}")
+    print(f"Active rules        : {sum(1 for r in rows if r['active'] == 'true')}")
+    print(f"Rules in dataset    : {sum(1 for r in rows if r['in_dataset'] == 'yes')}")
     print(f"Rules not in dataset: {sum(1 for r in rows if r['in_dataset'] == 'no')}")
+    print(f"Rules with examples : {sum(1 for r in rows if r['example_incorrect'])}")
 
     tax_counts = Counter(r["taxonomy_auto"] for r in rows if r["active"] == "true")
     print(f"\nAuto taxonomy distribution (active rules):")
