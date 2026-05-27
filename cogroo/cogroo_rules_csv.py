@@ -259,3 +259,4 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_args()
     generate_csv(args.rules, args.output)
+    print()
