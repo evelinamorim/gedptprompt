@@ -204,8 +204,8 @@ com	O	-	-
 dos	O	-	-
 custos	O	-	-
 da	O	-	-
-meia	B-WRONG	UNKNOWN	ortografia_lexical
-entrada	I-WRONG	UNKNOWN	ortografia_lexical
+meia	B-WRONG	UNKNOWN	classe_gramatical
+entrada	I-WRONG	UNKNOWN	classe_gramatical
 evitando	O	-	-
 assim	O	-	-
 o	O	-	-
@@ -234,7 +234,7 @@ Sentença Original N°10
 Para	O	-	-
 muda	B-WRONG	UNKNOWN	ortografia_lexical
 essa	O	-	-
-ação	B-WRONG	UNKNOWN	ortografia_acento
+ação	B-WRONG	UNKNOWN	acentuacao
 o	O	-	-
 governo	O	-	-
 deve	O	-	-
@@ -393,14 +393,14 @@ a	O	-	-
 atravessar	O	-	-
 a	O	-	-
 rua	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 valor	O	-	-
 muito	O	-	-
 grande	O	-	-
 .	O	-	-
 
 Sentença Original N°16
-Atravéz	B-WRONG	UNKNOWN	ortografia_acento
+Atravéz	B-WRONG	UNKNOWN	acentuacao
 das	O	-	-
 ondas	O	-	-
 de	O	-	-
@@ -424,7 +424,7 @@ povo	O	-	-
 brasileiro	O	-	-
 com	O	-	-
 os	O	-	-
-politícos	B-WRONG	UNKNOWN	ortografia_acento
+politícos	B-WRONG	UNKNOWN	acentuacao
 e	O	-	-
 os	O	-	-
 diversos	O	-	-
@@ -888,7 +888,7 @@ das	O	-	-
 pessoas	O	-	-
 que	O	-	-
 já	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 certa	O	-	-
 experiência	O	-	-
 em	O	-	-
@@ -992,7 +992,7 @@ Sentença Original N°37
 Existem	O	-	-
 inúmeras	O	-	-
 fórmulas	O	-	-
-de	B-WRONG	UNKNOWN	ortografia_lexical
+de	B-WRONG	UNKNOWN	acentuacao
 realizarmos	O	-	-
 uma	O	-	-
 mudança	O	-	-
@@ -1243,7 +1243,7 @@ Brasil	O	-	-
 infelizmente	O	-	-
 ,	O	-	-
 possui	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 sistema	O	-	-
 de	O	-	-
 segurança	O	-	-
@@ -1404,7 +1404,7 @@ para	O	-	-
 os	O	-	-
 senadores	O	-	-
 e	O	-	-
-judiciários	B-WRONG	UNKNOWN	ortografia_acento
+judiciários	B-WRONG	UNKNOWN	acentuacao
 ,	O	-	-
 que	O	-	-
 foi	O	-	-
@@ -1511,7 +1511,7 @@ adolescência	O	-	-
 
 Sentença Original N°57
 Atualmente	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 sendo	O	-	-
 publicado	B-WRONG	UNKNOWN	ortografia_lexical
 em	O	-	-
@@ -1534,10 +1534,10 @@ Brasil	O	-	-
 ,	O	-	-
 sendo	O	-	-
 que	O	-	-
-há	B-WRONG	"Atrás" é redundante, devido ao uso do verbo "haver".	cogroo_other:"Atrás" é redundante, devido ao uso do v
-10	I-WRONG	"Atrás" é redundante, devido ao uso do verbo "haver".	cogroo_other:"Atrás" é redundante, devido ao uso do v
-anos	I-WRONG	"Atrás" é redundante, devido ao uso do verbo "haver".	cogroo_other:"Atrás" é redundante, devido ao uso do v
-atrás	I-WRONG	"Atrás" é redundante, devido ao uso do verbo "haver".	cogroo_other:"Atrás" é redundante, devido ao uso do v
+há	B-WRONG	xml:122|"Atrás" é redundante, devido ao uso do verbo "haver".	sintatico_discursivo
+10	I-WRONG	xml:122|"Atrás" é redundante, devido ao uso do verbo "haver".	sintatico_discursivo
+anos	I-WRONG	xml:122|"Atrás" é redundante, devido ao uso do verbo "haver".	sintatico_discursivo
+atrás	I-WRONG	xml:122|"Atrás" é redundante, devido ao uso do verbo "haver".	sintatico_discursivo
 o	O	-	-
 clima	O	-	-
 era	O	-	-
@@ -1592,10 +1592,10 @@ como	O	-	-
 se	O	-	-
 desenvolver	O	-	-
 sem	O	-	-
-o	B-WRONG	UNKNOWN	sintatico_discursivo
-mudar	I-WRONG	UNKNOWN	sintatico_discursivo
-o	I-WRONG	UNKNOWN	sintatico_discursivo
-meio	I-WRONG	UNKNOWN	sintatico_discursivo
+o	B-WRONG	UNKNOWN	classe_gramatical
+mudar	I-WRONG	UNKNOWN	classe_gramatical
+o	I-WRONG	UNKNOWN	classe_gramatical
+meio	I-WRONG	UNKNOWN	classe_gramatical
 .	O	-	-
 
 Sentença Original N°59
@@ -1753,7 +1753,7 @@ são	O	-	-
 portadoras	O	-	-
 da	O	-	-
 Aids	O	-	-
-vem	B-WRONG	UNKNOWN	ortografia_lexical
+vem	B-WRONG	UNKNOWN	acentuacao
 aumentando	O	-	-
 anualmente	O	-	-
 segundo	O	-	-
@@ -1817,16 +1817,16 @@ coloca	O	-	-
 .	O	-	-
 
 Sentença Original N°68
-Costumo	B-WRONG	UNKNOWN	sintatico_discursivo
-dizer	I-WRONG	UNKNOWN	sintatico_discursivo
-que	I-WRONG	UNKNOWN	sintatico_discursivo
-virgem	I-WRONG	UNKNOWN	sintatico_discursivo
-hoje	I-WRONG	UNKNOWN	sintatico_discursivo
-nem	I-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
-fita	I-WRONG	UNKNOWN	sintatico_discursivo
-cassete	I-WRONG	UNKNOWN	sintatico_discursivo
-.	I-WRONG	UNKNOWN	sintatico_discursivo
+Costumo	B-WRONG	UNKNOWN	classe_gramatical
+dizer	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+virgem	I-WRONG	UNKNOWN	classe_gramatical
+hoje	I-WRONG	UNKNOWN	classe_gramatical
+nem	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+fita	I-WRONG	UNKNOWN	classe_gramatical
+cassete	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 
 Sentença Original N°69
 Primeiramente</correct>	O	-	-
@@ -2211,7 +2211,7 @@ que	O	-	-
 não	O	-	-
 há	O	-	-
 como	O	-	-
-lançar	B-WRONG	UNKNOWN	ortografia_acento
+lançar	B-WRONG	UNKNOWN	acentuacao
 mão	O	-	-
 desse	O	-	-
 avanço	O	-	-
@@ -2240,8 +2240,8 @@ de	O	-	-
 de	O	-	-
 mãe	O	-	-
 ,	O	-	-
-ou	B-WRONG	A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
-seja	I-WRONG	A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
+ou	B-WRONG	xml:111|A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
+seja	I-WRONG	xml:111|A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
 sempre	O	-	-
 cabe	O	-	-
 mais	O	-	-
@@ -2858,7 +2858,7 @@ paciência	O	-	-
 no	O	-	-
 cidadão	O	-	-
 que	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 voltando	O	-	-
 do	O	-	-
 serviço	B-WRONG	UNKNOWN	sintatico_discursivo
@@ -3159,8 +3159,8 @@ a	O	-	-
 diferença	O	-	-
 nas	O	-	-
 questões	O	-	-
-que	B-WRONG	Pron. relativos e conj. subordinativas atraem o pronome para antes do verbo.	colocacao_pronominal
-encontra-se	I-WRONG	Pron. relativos e conj. subordinativas atraem o pronome para antes do verbo.	colocacao_pronominal
+que	B-WRONG	xml:65|Pron. relativos e conj. subordinativas atraem o pronome para antes do verbo.	colocacao_pronominal
+encontra-se	I-WRONG	xml:65|Pron. relativos e conj. subordinativas atraem o pronome para antes do verbo.	colocacao_pronominal
 o	O	-	-
 Brasil	O	-	-
 .	O	-	-
@@ -3341,7 +3341,7 @@ pacíficos	O	-	-
 ,	O	-	-
 com	O	-	-
 o	O	-	-
-intuído	B-WRONG	UNKNOWN	ortografia_acento
+intuído	B-WRONG	UNKNOWN	acentuacao
 de	O	-	-
 melhoras	O	-	-
 nas	O	-	-
@@ -3835,13 +3835,13 @@ essa	O	-	-
 situação	O	-	-
 ,	O	-	-
 devido	O	-	-
-a	B-WRONG	"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
+a	B-WRONG	xml:13|"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
 postura	O	-	-
 de	O	-	-
 nossos	O	-	-
 governantes	O	-	-
 e	O	-	-
-órgão	B-WRONG	UNKNOWN	ortografia_acento
+órgão	B-WRONG	UNKNOWN	acentuacao
 de	O	-	-
 proteção	O	-	-
 ,	O	-	-
@@ -3906,7 +3906,7 @@ vez	I-WRONG	UNKNOWN	sintatico_discursivo
 que	I-WRONG	UNKNOWN	sintatico_discursivo
 tomada	I-WRONG	UNKNOWN	sintatico_discursivo
 esta	O	-	-
-decisão	B-WRONG	UNKNOWN	ortografia_acento
+decisão	B-WRONG	UNKNOWN	acentuacao
 ,	O	-	-
 menores	O	-	-
 não	O	-	-
@@ -3950,7 +3950,7 @@ levou	O	-	-
 a	O	-	-
 toda	O	-	-
 essa	O	-	-
-repercusão	B-WRONG	UNKNOWN	ortografia_acento
+repercusão	B-WRONG	UNKNOWN	acentuacao
 nacional	O	-	-
 .	O	-	-
 
@@ -3968,7 +3968,7 @@ quem	O	-	-
 paga	O	-	-
 esse	O	-	-
 horário	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	acentuacao
 o	O	-	-
 povo	B-WRONG	UNKNOWN	sintatico_discursivo
 ,	I-WRONG	UNKNOWN	sintatico_discursivo
@@ -3995,7 +3995,7 @@ banais	O	-	-
 
 Sentença Original N°153
 Devido	O	-	-
-a	B-WRONG	"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
+a	B-WRONG	xml:13|"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
 globalização	O	-	-
 ,	O	-	-
 informação	O	-	-
@@ -4063,9 +4063,9 @@ da	O	-	-
 corrupção	O	-	-
 dentro	O	-	-
 das	O	-	-
-câmaras	B-WRONG	UNKNOWN	ortografia_acento
+câmaras	B-WRONG	UNKNOWN	acentuacao
 municipais	O	-	-
-diminuirá	B-WRONG	UNKNOWN	ortografia_acento
+diminuirá	B-WRONG	UNKNOWN	acentuacao
 com	O	-	-
 a	O	-	-
 formulação	O	-	-
@@ -4275,7 +4275,7 @@ no	O	-	-
 Brasil	O	-	-
 ,	O	-	-
 devido	O	-	-
-a	B-WRONG	"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
+a	B-WRONG	xml:13|"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
 intolerância	O	-	-
 religiosa	O	-	-
 .	O	-	-
@@ -4531,7 +4531,7 @@ mundial	O	-	-
 altamente	O	-	-
 globalizada	O	-	-
 ,	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 afetando	O	-	-
 vários	B-WRONG	UNKNOWN	sintatico_discursivo
 países	I-WRONG	UNKNOWN	sintatico_discursivo
@@ -5082,7 +5082,7 @@ Sentença Original N°194
 Hoje	O	-	-
 eles	O	-	-
 querem	O	-	-
-mais	B-WRONG	UNKNOWN	ortografia_lexical
+mais	B-WRONG	UNKNOWN	classe_gramatical
 que	O	-	-
 apenas	O	-	-
 ler	O	-	-
@@ -5375,16 +5375,16 @@ Brasil	O	-	-
 uma	O	-	-
 variação	O	-	-
 na	O	-	-
-linguística	B-WRONG	UNKNOWN	ortografia_acento
+linguística	B-WRONG	UNKNOWN	acentuacao
 marcada	O	-	-
-de	B-WRONG	UNKNOWN	ortografia_lexical
+de	B-WRONG	UNKNOWN	acentuacao
 traços	O	-	-
 culturais	O	-	-
 ,	O	-	-
 alcançados	O	-	-
 de	O	-	-
 geração	O	-	-
-pós-geração	B-WRONG	UNKNOWN	ortografia_acento
+pós-geração	B-WRONG	UNKNOWN	acentuacao
 .	O	-	-
 
 Sentença Original N°206
@@ -5961,11 +5961,11 @@ O	O	-	-
 mais	O	-	-
 intrigante	O	-	-
 é	O	-	-
-vê	B-WRONG	UNKNOWN	ortografia_acento
+vê	B-WRONG	UNKNOWN	acentuacao
 negros	O	-	-
 tendo	O	-	-
 preconceito	O	-	-
-de	B-WRONG	UNKNOWN	ortografia_lexical
+de	B-WRONG	UNKNOWN	acentuacao
 sua	O	-	-
 própria	O	-	-
 cor	O	-	-
@@ -6083,19 +6083,19 @@ ch	O	-	-
 ?	O	-	-
 
 Sentença Original N°229
-Uma	B-WRONG	UNKNOWN	concordancia_verbal
-das	I-WRONG	UNKNOWN	concordancia_verbal
-características	I-WRONG	UNKNOWN	concordancia_verbal
-mais	I-WRONG	UNKNOWN	concordancia_verbal
-marcantes	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-um	I-WRONG	UNKNOWN	concordancia_verbal
-povo	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-a	I-WRONG	UNKNOWN	concordancia_verbal
-sua	I-WRONG	UNKNOWN	concordancia_verbal
-língua	I-WRONG	UNKNOWN	concordancia_verbal
+Uma	B-WRONG	UNKNOWN	classe_gramatical
+das	I-WRONG	UNKNOWN	classe_gramatical
+características	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+marcantes	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+um	I-WRONG	UNKNOWN	classe_gramatical
+povo	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+sua	I-WRONG	UNKNOWN	classe_gramatical
+língua	I-WRONG	UNKNOWN	classe_gramatical
 ,	O	-	-
 indispensável	O	-	-
 meio	O	-	-
@@ -6129,7 +6129,7 @@ nada	O	-	-
 Sentença Original N°231
 Porém	O	-	-
 ,	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 forma	O	-	-
 de	O	-	-
 trabalho	O	-	-
@@ -6603,7 +6603,7 @@ se	O	-	-
 a	O	-	-
 educação	O	-	-
 é	O	-	-
-necessário	B-WRONG	UNKNOWN	ortografia_acento
+necessário	B-WRONG	UNKNOWN	acentuacao
 para	O	-	-
 se	O	-	-
 ter	O	-	-
@@ -6612,9 +6612,9 @@ vida	O	-	-
 boa	O	-	-
 ,	O	-	-
 como	O	-	-
-estes	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+estes	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 famosos	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 hoje	O	-	-
 uma	O	-	-
 vida	O	-	-
@@ -6684,7 +6684,7 @@ A	O	-	-
 gramática	O	-	-
 tem	O	-	-
 sido	O	-	-
-vítima	B-WRONG	UNKNOWN	ortografia_acento
+vítima	B-WRONG	UNKNOWN	acentuacao
 de	O	-	-
 constantes	O	-	-
 mutações	O	-	-
@@ -7215,7 +7215,7 @@ a	O	-	-
 vida	O	-	-
 de	O	-	-
 uma	O	-	-
-pessoa	B-WRONG	O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
+pessoa	B-WRONG	xml:124|O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
 porém	O	-	-
 sem	O	-	-
 consentimento	O	-	-
@@ -7227,7 +7227,7 @@ Sentença Original N°273
 E	O	-	-
 eles	O	-	-
 também	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 total	O	-	-
 direito	O	-	-
 de	O	-	-
@@ -7271,7 +7271,7 @@ dar	O	-	-
 continuidade	O	-	-
 ao	O	-	-
 seu	O	-	-
-habito	B-WRONG	Possível confusão entre habito e hábito.	ortografia_acento
+habito	B-WRONG	probs:paronyms|Possível confusão entre habito e hábito.	acentuacao
 ,	O	-	-
 sem	O	-	-
 tirar	O	-	-
@@ -7285,7 +7285,7 @@ de	O	-	-
 não	O	-	-
 se	O	-	-
 tornar	B-WRONG	UNKNOWN	ortografia_lexical
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 chamado	B-WRONG	UNKNOWN	ortografia_lexical
 fumante	B-WRONG	UNKNOWN	ortografia_lexical
 passivo	B-WRONG	UNKNOWN	ortografia_lexical
@@ -7426,7 +7426,7 @@ permissão	O	-	-
 para	O	-	-
 escreve	O	-	-
 a	O	-	-
-estória	B-WRONG	UNKNOWN	ortografia_acento
+estória	B-WRONG	UNKNOWN	acentuacao
 que	O	-	-
 vai	O	-	-
 ser	O	-	-
@@ -7644,7 +7644,7 @@ população	O	-	-
 se	O	-	-
 adequasse	O	-	-
 a	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 proposta	O	-	-
 de	O	-	-
 novo	O	-	-
@@ -7716,7 +7716,7 @@ disso	O	-	-
 feito	O	-	-
 para	O	-	-
 a	O	-	-
-ascenção	B-WRONG	UNKNOWN	ortografia_acento
+ascenção	B-WRONG	UNKNOWN	acentuacao
 social	O	-	-
 tanto	O	-	-
 do	O	-	-
@@ -7736,7 +7736,7 @@ caso	O	-	-
 é	O	-	-
 o	O	-	-
 de	O	-	-
-Célsio	B-WRONG	UNKNOWN	ortografia_acento
+Célsio	B-WRONG	UNKNOWN	acentuacao
 Santebañes	O	-	-
 ,	O	-	-
 mais	O	-	-
@@ -7802,17 +7802,17 @@ estudante	O	-	-
 Geisy	O	-	-
 Arruda	O	-	-
 ,	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	acentuacao
 um	O	-	-
 grande	O	-	-
 exemplo	O	-	-
 dessa	O	-	-
-intolerância	B-WRONG	UNKNOWN	ortografia_acento
+intolerância	B-WRONG	UNKNOWN	acentuacao
 para	O	-	-
 com	O	-	-
 os	O	-	-
 modelos	O	-	-
-não	B-WRONG	UNKNOWN	ortografia_acento
+não	B-WRONG	UNKNOWN	acentuacao
 aceitos	O	-	-
 pelas	O	-	-
 diversas	O	-	-
@@ -8116,7 +8116,7 @@ de	O	-	-
 pensamento	O	-	-
 é	O	-	-
 totalmente	O	-	-
-descabido	B-WRONG	O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
+descabido	B-WRONG	xml:124|O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
 e	O	-	-
 completamente	O	-	-
 sem	O	-	-
@@ -8207,7 +8207,7 @@ mesmo	O	-	-
 que	O	-	-
 dentre	O	-	-
 eles	O	-	-
-estão	B-WRONG	UNKNOWN	ortografia_acento
+estão	B-WRONG	UNKNOWN	acentuacao
 alguns	O	-	-
 que	O	-	-
 conseguem	O	-	-
@@ -8247,7 +8247,7 @@ do	O	-	-
 governo	O	-	-
 com	O	-	-
 a	O	-	-
-Cúpula	B-WRONG	UNKNOWN	ortografia_acento
+Cúpula	B-WRONG	UNKNOWN	acentuacao
 da	O	-	-
 Igreja	O	-	-
 Católica	O	-	-
@@ -8291,7 +8291,7 @@ espelhos	O	-	-
 
 Sentença Original N°307
 Referente	O	-	-
-ás	B-WRONG	UNKNOWN	ortografia_acento
+ás	B-WRONG	UNKNOWN	acentuacao
 duas	O	-	-
 propostas	O	-	-
 apresentadas	O	-	-
@@ -8439,8 +8439,8 @@ humano	I-WRONG	UNKNOWN	concordancia_verbal
 do	I-WRONG	UNKNOWN	concordancia_verbal
 racismo	I-WRONG	UNKNOWN	concordancia_verbal
 .	I-WRONG	UNKNOWN	concordancia_verbal
-A	B-WRONG	Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
-cerne	I-WRONG	Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
+A	B-WRONG	xml:114|Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
+cerne	I-WRONG	xml:114|Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
 do	O	-	-
 pensamento	O	-	-
 liberal	O	-	-
@@ -8651,8 +8651,8 @@ um	O	-	-
 acompanhamento	O	-	-
 com	O	-	-
 esses	O	-	-
-afim	B-WRONG	Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
-de	I-WRONG	Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
+afim	B-WRONG	xml:114|Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
+de	I-WRONG	xml:114|Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
 tentar	O	-	-
 ajudar	O	-	-
 a	O	-	-
@@ -8698,7 +8698,7 @@ irreversíveis	O	-	-
 
 Sentença Original N°317
 Muitos	O	-	-
-cidadões	B-WRONG	UNKNOWN	ortografia_acento
+cidadões	B-WRONG	UNKNOWN	acentuacao
 brasileiros	O	-	-
 não	O	-	-
 separam	O	-	-
@@ -9801,7 +9801,7 @@ perfeição	O	-	-
 nem	O	-	-
 mesmo	O	-	-
 quando	O	-	-
-trata-se	B-WRONG	Pron. relativos e conj. subordinativas atraem o pronome para antes do verbo.	colocacao_pronominal
+trata-se	B-WRONG	xml:65|Pron. relativos e conj. subordinativas atraem o pronome para antes do verbo.	colocacao_pronominal
 da	O	-	-
 própria	O	-	-
 saúde	O	-	-
@@ -9934,7 +9934,7 @@ da	O	-	-
 única	O	-	-
 ferramenta	O	-	-
 que	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 em	O	-	-
 mãos	O	-	-
 para	O	-	-
@@ -10170,7 +10170,7 @@ da	O	-	-
 mesma	O	-	-
 forma	O	-	-
 dela	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	acentuacao
 mesmo	O	-	-
 que	O	-	-
 pareça	O	-	-
@@ -10197,7 +10197,7 @@ futuro	O	-	-
 da	O	-	-
 nossa	O	-	-
 humanidade	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 em	O	-	-
 nossas	O	-	-
 mãos	O	-	-
@@ -10255,7 +10255,7 @@ nossa	O	-	-
 ,	O	-	-
 fica	O	-	-
 suscetível	O	-	-
-à	B-WRONG	Não ocorre crase antes de palavras masculinas.	crase_preposicao
+à	B-WRONG	xml:2|Não ocorre crase antes de palavras masculinas.	crase_preposicao
 ataques	O	-	-
 terroristas	O	-	-
 nessa	O	-	-
@@ -10282,45 +10282,45 @@ discernimento	O	-	-
 .	O	-	-
 
 Sentença Original N°375
-Apesar	B-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-desejado	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-a	I-WRONG	UNKNOWN	concordancia_verbal
-criança	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-deve	I-WRONG	UNKNOWN	concordancia_verbal
-ser	I-WRONG	UNKNOWN	concordancia_verbal
-castigada	I-WRONG	UNKNOWN	concordancia_verbal
-pela	I-WRONG	UNKNOWN	concordancia_verbal
-falta	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-responabilidade	I-WRONG	UNKNOWN	concordancia_verbal
-dos	I-WRONG	UNKNOWN	concordancia_verbal
-pais	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-ele	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-só	I-WRONG	UNKNOWN	concordancia_verbal
-uma	I-WRONG	UNKNOWN	concordancia_verbal
-vítima	I-WRONG	UNKNOWN	concordancia_verbal
-.	I-WRONG	UNKNOWN	concordancia_verbal
-Legalizando	I-WRONG	UNKNOWN	concordancia_verbal
-o	I-WRONG	UNKNOWN	concordancia_verbal
-sexo	I-WRONG	UNKNOWN	concordancia_verbal
-será	I-WRONG	UNKNOWN	concordancia_verbal
-feito	I-WRONG	UNKNOWN	concordancia_verbal
-com	I-WRONG	UNKNOWN	concordancia_verbal
-menos	I-WRONG	UNKNOWN	concordancia_verbal
-responsabilidade	I-WRONG	UNKNOWN	concordancia_verbal
-ainda	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-sem	I-WRONG	UNKNOWN	concordancia_verbal
-qualquer	I-WRONG	UNKNOWN	concordancia_verbal
-preparação	I-WRONG	UNKNOWN	concordancia_verbal
-e	I-WRONG	UNKNOWN	concordancia_verbal
-procupação	I-WRONG	UNKNOWN	concordancia_verbal
+Apesar	B-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+desejado	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+criança	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+deve	I-WRONG	UNKNOWN	classe_gramatical
+ser	I-WRONG	UNKNOWN	classe_gramatical
+castigada	I-WRONG	UNKNOWN	classe_gramatical
+pela	I-WRONG	UNKNOWN	classe_gramatical
+falta	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+responabilidade	I-WRONG	UNKNOWN	classe_gramatical
+dos	I-WRONG	UNKNOWN	classe_gramatical
+pais	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+ele	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+só	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+vítima	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
+Legalizando	I-WRONG	UNKNOWN	classe_gramatical
+o	I-WRONG	UNKNOWN	classe_gramatical
+sexo	I-WRONG	UNKNOWN	classe_gramatical
+será	I-WRONG	UNKNOWN	classe_gramatical
+feito	I-WRONG	UNKNOWN	classe_gramatical
+com	I-WRONG	UNKNOWN	classe_gramatical
+menos	I-WRONG	UNKNOWN	classe_gramatical
+responsabilidade	I-WRONG	UNKNOWN	classe_gramatical
+ainda	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+sem	I-WRONG	UNKNOWN	classe_gramatical
+qualquer	I-WRONG	UNKNOWN	classe_gramatical
+preparação	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+procupação	I-WRONG	UNKNOWN	classe_gramatical
 .	O	-	-
 
 Sentença Original N°376
@@ -10350,28 +10350,28 @@ armas	O	-	-
 .	O	-	-
 
 Sentença Original N°377
-Nas	B-WRONG	UNKNOWN	concordancia_verbal
-famílias	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-se	I-WRONG	UNKNOWN	concordancia_verbal
-fala	I-WRONG	UNKNOWN	concordancia_verbal
-mais	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-respeito	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-onde	I-WRONG	UNKNOWN	concordancia_verbal
-o	I-WRONG	UNKNOWN	concordancia_verbal
-mesmo	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-a	I-WRONG	UNKNOWN	concordancia_verbal
-ferramenta	I-WRONG	UNKNOWN	concordancia_verbal
-principal	I-WRONG	UNKNOWN	concordancia_verbal
-na	I-WRONG	UNKNOWN	concordancia_verbal
-formação	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-um	I-WRONG	UNKNOWN	concordancia_verbal
-caráter	I-WRONG	UNKNOWN	concordancia_verbal
-.	I-WRONG	UNKNOWN	concordancia_verbal
+Nas	B-WRONG	UNKNOWN	classe_gramatical
+famílias	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+se	I-WRONG	UNKNOWN	classe_gramatical
+fala	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+respeito	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+onde	I-WRONG	UNKNOWN	classe_gramatical
+o	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+ferramenta	I-WRONG	UNKNOWN	classe_gramatical
+principal	I-WRONG	UNKNOWN	classe_gramatical
+na	I-WRONG	UNKNOWN	classe_gramatical
+formação	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+um	I-WRONG	UNKNOWN	classe_gramatical
+caráter	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 
 Sentença Original N°378
 O	O	-	-
@@ -10723,7 +10723,7 @@ ideia	I-WRONG	UNKNOWN	colocacao_pronominal
 de	O	-	-
 mente	O	-	-
 sã	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	acentuacao
 corpo	O	-	-
 são	B-WRONG	UNKNOWN	concordancia_verbal
 ,	I-WRONG	UNKNOWN	concordancia_verbal
@@ -10985,9 +10985,9 @@ vez	O	-	-
 mais	O	-	-
 considerada	B-WRONG	UNKNOWN	ortografia_lexical
 normal	O	-	-
-no	B-WRONG	UNKNOWN	sintatico_discursivo
-meio	I-WRONG	UNKNOWN	sintatico_discursivo
-da	I-WRONG	UNKNOWN	sintatico_discursivo
+no	B-WRONG	UNKNOWN	classe_gramatical
+meio	I-WRONG	UNKNOWN	classe_gramatical
+da	I-WRONG	UNKNOWN	classe_gramatical
 sociedade	O	-	-
 e	O	-	-
 merece	O	-	-
@@ -11093,7 +11093,7 @@ A	O	-	-
 a	O	-	-
 substância	O	-	-
 que	O	-	-
-nós	B-WRONG	UNKNOWN	ortografia_acento
+nós	B-WRONG	UNKNOWN	acentuacao
 seres	O	-	-
 humanos	B-WRONG	UNKNOWN	ortografia_lexical
 mais	O	-	-
@@ -11196,7 +11196,7 @@ as	O	-	-
 gestantes	O	-	-
 com	O	-	-
 fetos	O	-	-
-enencéfalos	B-WRONG	UNKNOWN	ortografia_acento
+enencéfalos	B-WRONG	UNKNOWN	acentuacao
 tudo	O	-	-
 isso	O	-	-
 se	O	-	-
@@ -11236,7 +11236,7 @@ país	O	-	-
 e	O	-	-
 visa	O	-	-
 sempre	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 bem	O	-	-
 estar	O	-	-
 e	O	-	-
@@ -11433,7 +11433,7 @@ possível	O	-	-
 aos	O	-	-
 alunos	O	-	-
 a	O	-	-
-prestação	B-WRONG	UNKNOWN	ortografia_acento
+prestação	B-WRONG	UNKNOWN	acentuacao
 de	O	-	-
 um	O	-	-
 bom	O	-	-
@@ -11617,7 +11617,7 @@ de	O	-	-
 criminalidade	O	-	-
 ,	O	-	-
 possibilitando	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 jovem	O	-	-
 não	O	-	-
 só	B-WRONG	UNKNOWN	ortografia_lexical
@@ -11862,9 +11862,9 @@ escolar	O	-	-
 mas	O	-	-
 sim	O	-	-
 que	O	-	-
-o	B-WRONG	UNKNOWN	colocacao_pronominal
-mesmo	I-WRONG	UNKNOWN	colocacao_pronominal
-mantenha-se	I-WRONG	UNKNOWN	colocacao_pronominal
+o	B-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
+mantenha-se	I-WRONG	UNKNOWN	classe_gramatical
 desligado	O	-	-
 durante	O	-	-
 as	O	-	-
@@ -11931,7 +11931,7 @@ melhor	O	-	-
 treinamento	O	-	-
 da	O	-	-
 corporação	O	-	-
-de	B-WRONG	UNKNOWN	ortografia_lexical
+de	B-WRONG	UNKNOWN	acentuacao
 como	O	-	-
 agir	O	-	-
 em	O	-	-
@@ -12023,8 +12023,8 @@ Portanto	O	-	-
 ,	O	-	-
 meios	O	-	-
 de	O	-	-
-comunicações	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
-tem	I-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+comunicações	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	I-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 ajudado	O	-	-
 muito	O	-	-
 na	O	-	-
@@ -12105,7 +12105,7 @@ informação	O	-	-
 explícita	O	-	-
 sobre	O	-	-
 as	O	-	-
-conseqüências	B-WRONG	UNKNOWN	ortografia_acento
+conseqüências	B-WRONG	UNKNOWN	acentuacao
 do	O	-	-
 uso	B-WRONG	UNKNOWN	sintatico_discursivo
 do	I-WRONG	UNKNOWN	sintatico_discursivo
@@ -12141,7 +12141,7 @@ despercebido	O	-	-
 ,	O	-	-
 sendo	O	-	-
 algumas	O	-	-
-conseqüências	B-WRONG	UNKNOWN	ortografia_acento
+conseqüências	B-WRONG	UNKNOWN	acentuacao
 como	O	-	-
 perda	O	-	-
 de	O	-	-
@@ -12488,7 +12488,7 @@ A	O	-	-
 mulher	O	-	-
 ,	O	-	-
 como	O	-	-
-Mãe	B-WRONG	UNKNOWN	ortografia_acento
+Mãe	B-WRONG	UNKNOWN	acentuacao
 ,	O	-	-
 tem	O	-	-
 seu	O	-	-
@@ -12527,15 +12527,15 @@ pública	O	-	-
 .	O	-	-
 
 Sentença Original N°448
-Talvez	B-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-seja	I-WRONG	UNKNOWN	concordancia_verbal
-um	I-WRONG	UNKNOWN	concordancia_verbal
-dos	I-WRONG	UNKNOWN	concordancia_verbal
-fatores	I-WRONG	UNKNOWN	concordancia_verbal
-mais	I-WRONG	UNKNOWN	concordancia_verbal
-importantes	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
+Talvez	B-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+seja	I-WRONG	UNKNOWN	classe_gramatical
+um	I-WRONG	UNKNOWN	classe_gramatical
+dos	I-WRONG	UNKNOWN	classe_gramatical
+fatores	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+importantes	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
 a	O	-	-
 criação	O	-	-
 .	O	-	-
@@ -12569,7 +12569,7 @@ urbanos	O	-	-
 uma	O	-	-
 vez	O	-	-
 que	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 prática	O	-	-
 encontra-se	O	-	-
 conjugada	O	-	-
@@ -12626,7 +12626,7 @@ acordo	O	-	-
 pra	O	-	-
 resolve	B-WRONG	UNKNOWN	ortografia_lexical
 a	O	-	-
-situaçao	B-WRONG	UNKNOWN	ortografia_acento
+situaçao	B-WRONG	UNKNOWN	acentuacao
 ,	O	-	-
 Adriano	O	-	-
 nao	B-WRONG	UNKNOWN	ortografia_lexical
@@ -12787,7 +12787,7 @@ comprar	O	-	-
 como	O	-	-
 antes	O	-	-
 ,	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	acentuacao
 essas	O	-	-
 pessoas	O	-	-
 acabam	O	-	-
@@ -12831,7 +12831,7 @@ sonhadas	B-WRONG	UNKNOWN	ortografia_lexical
 .	O	-	-
 
 Sentença Original N°460
-Porém	B-WRONG	UNKNOWN	ortografia_acento
+Porém	B-WRONG	UNKNOWN	acentuacao
 um	O	-	-
 ato	O	-	-
 que	O	-	-
@@ -13132,7 +13132,7 @@ Sentença Original N°466
 A	O	-	-
 frase	O	-	-
 do	O	-	-
-filósofo	B-WRONG	UNKNOWN	ortografia_acento
+filósofo	B-WRONG	UNKNOWN	acentuacao
 Victor	O	-	-
 Hugo	O	-	-
 já	O	-	-
@@ -13244,7 +13244,7 @@ Sentença Original N°468
 E	O	-	-
 o	O	-	-
 tradutor	O	-	-
-começou	B-WRONG	UNKNOWN	ortografia_acento
+começou	B-WRONG	UNKNOWN	acentuacao
 a	O	-	-
 ajudar	O	-	-
 a	O	-	-
@@ -13384,7 +13384,7 @@ noticiários	I-WRONG	UNKNOWN	concordancia_nominal
 frequentemente	O	-	-
 mostram	O	-	-
 as	O	-	-
-trajédias	B-WRONG	UNKNOWN	ortografia_acento
+trajédias	B-WRONG	UNKNOWN	acentuacao
 em	O	-	-
 consequência	O	-	-
 do	O	-	-
@@ -13469,11 +13469,11 @@ longe	O	-	-
 de	O	-	-
 eleger	O	-	-
 candidatos	O	-	-
-sérios	B-WRONG	UNKNOWN	sintatico_discursivo
-,	I-WRONG	UNKNOWN	sintatico_discursivo
-e	I-WRONG	UNKNOWN	sintatico_discursivo
-digo	I-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
+sérios	B-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+digo	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
 os	O	-	-
 que	O	-	-
 dizem	O	-	-
@@ -13636,7 +13636,7 @@ O	O	-	-
 leilão	O	-	-
 foi	O	-	-
 encerrado	O	-	-
-por	B-WRONG	UNKNOWN	ortografia_lexical
+por	B-WRONG	UNKNOWN	acentuacao
 um	O	-	-
 japonês	O	-	-
 ,	O	-	-
@@ -13846,7 +13846,7 @@ muito	O	-	-
 inteligente	O	-	-
 de	O	-	-
 protesto	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 melhor	O	-	-
 seria	O	-	-
 se	O	-	-
@@ -14243,7 +14243,7 @@ filhos	O	-	-
 sobre	O	-	-
 os	O	-	-
 efeitos	O	-	-
-sócio-biológicos	B-WRONG	UNKNOWN	ortografia_acento
+sócio-biológicos	B-WRONG	UNKNOWN	acentuacao
 do	O	-	-
 álcool	O	-	-
 ,	O	-	-
@@ -14378,7 +14378,7 @@ samaritanos	O	-	-
 
 Sentença Original N°510
 A	O	-	-
-família	B-WRONG	UNKNOWN	ortografia_acento
+família	B-WRONG	UNKNOWN	acentuacao
 sendo	O	-	-
 um	O	-	-
 dos	O	-	-
@@ -14548,7 +14548,7 @@ parece	O	-	-
 unânime	O	NO_MATCH	NO_MATCH
 entre	O	-	-
 os	O	-	-
-universitário	B-WRONG	Os artigos concordam com o substantivo a que se referem.	concordancia_nominal
+universitário	B-WRONG	xml:95|Os artigos concordam com o substantivo a que se referem.	concordancia_nominal
 :	O	-	-
 a	O	-	-
 necessidade	O	-	-
@@ -14894,7 +14894,7 @@ filhos	O	-	-
 Sentença Original N°528
 As	O	-	-
 cidades	O	-	-
-vem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+vem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 crescendo	O	-	-
 num	O	-	-
 ritmo	O	-	-
@@ -15213,7 +15213,7 @@ energética	B-WRONG	UNKNOWN	sintatico_discursivo
 ,	I-WRONG	UNKNOWN	sintatico_discursivo
 onde	I-WRONG	UNKNOWN	sintatico_discursivo
 se	O	-	-
-concentrará	B-WRONG	UNKNOWN	ortografia_acento
+concentrará	B-WRONG	UNKNOWN	acentuacao
 nas	O	-	-
 causas	O	-	-
 e	O	-	-
@@ -15703,132 +15703,132 @@ praticam	O	-	-
 este	O	-	-
 exercício	O	-	-
 ,	O	-	-
-mais	B-WRONG	UNKNOWN	ortografia_lexical
+mais	B-WRONG	UNKNOWN	classe_gramatical
 com	O	-	-
 pouca	O	-	-
 vontade	O	-	-
 .	O	-	-
 
 Sentença Original N°553
-Como	B-WRONG	UNKNOWN	concordancia_verbal
-dizem	I-WRONG	UNKNOWN	concordancia_verbal
-atualmente	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-o	I-WRONG	UNKNOWN	concordancia_verbal
-Brasil	I-WRONG	UNKNOWN	concordancia_verbal
-só	I-WRONG	UNKNOWN	concordancia_verbal
-dispõe	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-três	I-WRONG	UNKNOWN	concordancia_verbal
-soluções	I-WRONG	UNKNOWN	concordancia_verbal
-:	I-WRONG	UNKNOWN	concordancia_verbal
-"	I-WRONG	UNKNOWN	concordancia_verbal
-educação	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-educação	I-WRONG	UNKNOWN	concordancia_verbal
-e	I-WRONG	UNKNOWN	concordancia_verbal
-educação	I-WRONG	UNKNOWN	concordancia_verbal
-"	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-e	I-WRONG	UNKNOWN	concordancia_verbal
-isto	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-fato	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-deixa	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-ser	I-WRONG	UNKNOWN	concordancia_verbal
-verdade	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-porém	I-WRONG	UNKNOWN	concordancia_verbal
-o	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-vemos	I-WRONG	UNKNOWN	concordancia_verbal
-em	I-WRONG	UNKNOWN	concordancia_verbal
-escolas	I-WRONG	UNKNOWN	concordancia_verbal
-públicas	I-WRONG	UNKNOWN	concordancia_verbal
-do	I-WRONG	UNKNOWN	concordancia_verbal
-nosso	I-WRONG	UNKNOWN	concordancia_verbal
-país	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-lamentável	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-imaginem	I-WRONG	UNKNOWN	concordancia_verbal
-uma	I-WRONG	UNKNOWN	concordancia_verbal
-criança	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-consegue	I-WRONG	UNKNOWN	concordancia_verbal
-fazer	I-WRONG	UNKNOWN	concordancia_verbal
-uma	I-WRONG	UNKNOWN	concordancia_verbal
-conta	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-fração	I-WRONG	UNKNOWN	concordancia_verbal
-e	I-WRONG	UNKNOWN	concordancia_verbal
-transformá-la	I-WRONG	UNKNOWN	concordancia_verbal
-em	I-WRONG	UNKNOWN	concordancia_verbal
-porcentagem	I-WRONG	UNKNOWN	concordancia_verbal
-;	I-WRONG	UNKNOWN	concordancia_verbal
-para	I-WRONG	UNKNOWN	concordancia_verbal
-outras	I-WRONG	UNKNOWN	concordancia_verbal
-crianças	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-estudam	I-WRONG	UNKNOWN	concordancia_verbal
-ou	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-estudaram	I-WRONG	UNKNOWN	concordancia_verbal
-em	I-WRONG	UNKNOWN	concordancia_verbal
-escolas	I-WRONG	UNKNOWN	concordancia_verbal
-particulares	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-algo	I-WRONG	UNKNOWN	concordancia_verbal
-simples	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-mas	I-WRONG	UNKNOWN	concordancia_verbal
-para	I-WRONG	UNKNOWN	concordancia_verbal
-essa	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-estuda	I-WRONG	UNKNOWN	concordancia_verbal
-em	I-WRONG	UNKNOWN	concordancia_verbal
-escola	I-WRONG	UNKNOWN	concordancia_verbal
-pública	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-coisa	I-WRONG	UNKNOWN	concordancia_verbal
-de	I-WRONG	UNKNOWN	concordancia_verbal
-outro	I-WRONG	UNKNOWN	concordancia_verbal
-mundo	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-todo	I-WRONG	UNKNOWN	concordancia_verbal
-esse	I-WRONG	UNKNOWN	concordancia_verbal
-problema	I-WRONG	UNKNOWN	concordancia_verbal
-começa	I-WRONG	UNKNOWN	concordancia_verbal
-com	I-WRONG	UNKNOWN	concordancia_verbal
-o	I-WRONG	UNKNOWN	concordancia_verbal
-ensino	I-WRONG	UNKNOWN	concordancia_verbal
-da	I-WRONG	UNKNOWN	concordancia_verbal
-escola	I-WRONG	UNKNOWN	concordancia_verbal
-ao	I-WRONG	UNKNOWN	concordancia_verbal
-qual	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-tem	I-WRONG	UNKNOWN	concordancia_verbal
-professores	I-WRONG	UNKNOWN	concordancia_verbal
-capacitados	I-WRONG	UNKNOWN	concordancia_verbal
-e	I-WRONG	UNKNOWN	concordancia_verbal
-experientes	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-ou	I-WRONG	UNKNOWN	concordancia_verbal
-até	I-WRONG	UNKNOWN	concordancia_verbal
-mesmo	I-WRONG	UNKNOWN	concordancia_verbal
-não	I-WRONG	UNKNOWN	concordancia_verbal
-tiveram	I-WRONG	UNKNOWN	concordancia_verbal
-uma	I-WRONG	UNKNOWN	concordancia_verbal
-boa	I-WRONG	UNKNOWN	concordancia_verbal
-formação	I-WRONG	UNKNOWN	concordancia_verbal
-em	I-WRONG	UNKNOWN	concordancia_verbal
-uma	I-WRONG	UNKNOWN	concordancia_verbal
-boa	I-WRONG	UNKNOWN	concordancia_verbal
-faculdade	I-WRONG	UNKNOWN	concordancia_verbal
-.	I-WRONG	UNKNOWN	concordancia_verbal
+Como	B-WRONG	UNKNOWN	classe_gramatical
+dizem	I-WRONG	UNKNOWN	classe_gramatical
+atualmente	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+o	I-WRONG	UNKNOWN	classe_gramatical
+Brasil	I-WRONG	UNKNOWN	classe_gramatical
+só	I-WRONG	UNKNOWN	classe_gramatical
+dispõe	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+três	I-WRONG	UNKNOWN	classe_gramatical
+soluções	I-WRONG	UNKNOWN	classe_gramatical
+:	I-WRONG	UNKNOWN	classe_gramatical
+"	I-WRONG	UNKNOWN	classe_gramatical
+educação	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+educação	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+educação	I-WRONG	UNKNOWN	classe_gramatical
+"	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+isto	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+fato	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+deixa	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+ser	I-WRONG	UNKNOWN	classe_gramatical
+verdade	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+porém	I-WRONG	UNKNOWN	classe_gramatical
+o	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+vemos	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+escolas	I-WRONG	UNKNOWN	classe_gramatical
+públicas	I-WRONG	UNKNOWN	classe_gramatical
+do	I-WRONG	UNKNOWN	classe_gramatical
+nosso	I-WRONG	UNKNOWN	classe_gramatical
+país	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+lamentável	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+imaginem	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+criança	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+consegue	I-WRONG	UNKNOWN	classe_gramatical
+fazer	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+conta	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+fração	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+transformá-la	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+porcentagem	I-WRONG	UNKNOWN	classe_gramatical
+;	I-WRONG	UNKNOWN	classe_gramatical
+para	I-WRONG	UNKNOWN	classe_gramatical
+outras	I-WRONG	UNKNOWN	classe_gramatical
+crianças	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+estudam	I-WRONG	UNKNOWN	classe_gramatical
+ou	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+estudaram	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+escolas	I-WRONG	UNKNOWN	classe_gramatical
+particulares	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+algo	I-WRONG	UNKNOWN	classe_gramatical
+simples	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+mas	I-WRONG	UNKNOWN	classe_gramatical
+para	I-WRONG	UNKNOWN	classe_gramatical
+essa	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+estuda	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+escola	I-WRONG	UNKNOWN	classe_gramatical
+pública	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+coisa	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+outro	I-WRONG	UNKNOWN	classe_gramatical
+mundo	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+todo	I-WRONG	UNKNOWN	classe_gramatical
+esse	I-WRONG	UNKNOWN	classe_gramatical
+problema	I-WRONG	UNKNOWN	classe_gramatical
+começa	I-WRONG	UNKNOWN	classe_gramatical
+com	I-WRONG	UNKNOWN	classe_gramatical
+o	I-WRONG	UNKNOWN	classe_gramatical
+ensino	I-WRONG	UNKNOWN	classe_gramatical
+da	I-WRONG	UNKNOWN	classe_gramatical
+escola	I-WRONG	UNKNOWN	classe_gramatical
+ao	I-WRONG	UNKNOWN	classe_gramatical
+qual	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+tem	I-WRONG	UNKNOWN	classe_gramatical
+professores	I-WRONG	UNKNOWN	classe_gramatical
+capacitados	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+experientes	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+ou	I-WRONG	UNKNOWN	classe_gramatical
+até	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+tiveram	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+boa	I-WRONG	UNKNOWN	classe_gramatical
+formação	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+boa	I-WRONG	UNKNOWN	classe_gramatical
+faculdade	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 Então	O	-	-
 tudo	O	-	-
 isso	O	-	-
@@ -16240,7 +16240,7 @@ corriqueiro	O	-	-
 ,	O	-	-
 há	O	-	-
 manifestações	O	-	-
-para	B-WRONG	UNKNOWN	ortografia_lexical
+para	B-WRONG	UNKNOWN	acentuacao
 todos	O	-	-
 os	O	-	-
 motivos	O	-	-
@@ -16477,7 +16477,7 @@ na	O	-	-
 lei	O	-	-
 teram	B-WRONG	UNKNOWN	ortografia_lexical
 suas	O	-	-
-conciências	B-WRONG	UNKNOWN	ortografia_acento
+conciências	B-WRONG	UNKNOWN	acentuacao
 limpas	O	-	-
 ,	O	-	-
 o	O	-	-
@@ -17346,13 +17346,13 @@ globalizado	O	-	-
 mais	O	-	-
 do	O	-	-
 que	O	-	-
-normal	B-WRONG	UNKNOWN	sintatico_discursivo
-que	I-WRONG	UNKNOWN	sintatico_discursivo
-a	I-WRONG	UNKNOWN	sintatico_discursivo
-sociedade	I-WRONG	UNKNOWN	sintatico_discursivo
-fique	I-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
-liberal	I-WRONG	UNKNOWN	sintatico_discursivo
+normal	B-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+sociedade	I-WRONG	UNKNOWN	classe_gramatical
+fique	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+liberal	I-WRONG	UNKNOWN	classe_gramatical
 em	O	-	-
 relação	O	-	-
 a	O	-	-
@@ -17368,9 +17368,9 @@ nos	O	-	-
 relacionamentos	O	-	-
 atuais	O	-	-
 ainda	O	-	-
-são	B-WRONG	UNKNOWN	ortografia_acento
+são	B-WRONG	UNKNOWN	acentuacao
 as	B-WRONG	UNKNOWN	crase_preposicao
-diferenças	B-WRONG	UNKNOWN	ortografia_acento
+diferenças	B-WRONG	UNKNOWN	acentuacao
 de	B-WRONG	UNKNOWN	ortografia_lexical
 idades	I-WRONG	UNKNOWN	ortografia_lexical
 .	O	-	-
@@ -17400,7 +17400,7 @@ esse	O	-	-
 tipo	O	-	-
 de	O	-	-
 imprensa	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 cada	O	-	-
 vez	O	-	-
 mais	O	-	-
@@ -17720,28 +17720,28 @@ notas	I-WRONG	UNKNOWN	concordancia_verbal
 .	O	-	-
 
 Sentença Original N°620
-As	B-WRONG	UNKNOWN	concordancia_nominal
-fontes	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-energia	I-WRONG	UNKNOWN	concordancia_nominal
-,	I-WRONG	UNKNOWN	concordancia_nominal
-por	I-WRONG	UNKNOWN	concordancia_nominal
-mais	I-WRONG	UNKNOWN	concordancia_nominal
-diversas	I-WRONG	UNKNOWN	concordancia_nominal
-que	I-WRONG	UNKNOWN	concordancia_nominal
-sejam	I-WRONG	UNKNOWN	concordancia_nominal
-,	I-WRONG	UNKNOWN	concordancia_nominal
-sempre	I-WRONG	UNKNOWN	concordancia_nominal
-apresentaram	I-WRONG	UNKNOWN	concordancia_nominal
-uma	I-WRONG	UNKNOWN	concordancia_nominal
-real	I-WRONG	UNKNOWN	concordancia_nominal
-importância	I-WRONG	UNKNOWN	concordancia_nominal
-no	I-WRONG	UNKNOWN	concordancia_nominal
-desenvolvimento	I-WRONG	UNKNOWN	concordancia_nominal
-e	I-WRONG	UNKNOWN	concordancia_nominal
-sobrevivência	I-WRONG	UNKNOWN	concordancia_nominal
-humana	I-WRONG	UNKNOWN	concordancia_nominal
-.	I-WRONG	UNKNOWN	concordancia_nominal
+As	B-WRONG	UNKNOWN	classe_gramatical
+fontes	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+energia	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+por	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+diversas	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+sejam	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+sempre	I-WRONG	UNKNOWN	classe_gramatical
+apresentaram	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+real	I-WRONG	UNKNOWN	classe_gramatical
+importância	I-WRONG	UNKNOWN	classe_gramatical
+no	I-WRONG	UNKNOWN	classe_gramatical
+desenvolvimento	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+sobrevivência	I-WRONG	UNKNOWN	classe_gramatical
+humana	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 
 Sentença Original N°621
 Mas	O	-	-
@@ -17796,8 +17796,8 @@ Infelizmente	O	-	-
 dentre	B-WRONG	UNKNOWN	ortografia_lexical
 os	O	-	-
 políticos	O	-	-
-sérios	B-WRONG	UNKNOWN	ortografia_acento
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+sérios	B-WRONG	UNKNOWN	acentuacao
+tem	B-WRONG	UNKNOWN	acentuacao
 aqueles	O	-	-
 que	O	-	-
 acabam	O	-	-
@@ -17852,11 +17852,11 @@ e	O	-	-
 ,	O	-	-
 faz	O	-	-
 com	O	-	-
-quê	B-WRONG	UNKNOWN	sintatico_discursivo
-,	I-WRONG	UNKNOWN	sintatico_discursivo
-cada	I-WRONG	UNKNOWN	sintatico_discursivo
-vez	I-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
+quê	B-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+cada	I-WRONG	UNKNOWN	classe_gramatical
+vez	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
 se	O	-	-
 resolvam	O	-	-
 problemas	O	-	-
@@ -18168,7 +18168,7 @@ desejar	O	-	-
 
 Sentença Original N°634
 É	O	-	-
-impresindível	B-WRONG	UNKNOWN	ortografia_acento
+impresindível	B-WRONG	UNKNOWN	acentuacao
 insistir	O	-	-
 no	O	-	-
 fato	O	-	-
@@ -18179,8 +18179,8 @@ saúde	O	-	-
 é	O	-	-
 muito	O	-	-
 prejudicada	O	-	-
-nesse	B-WRONG	UNKNOWN	ortografia_lexical
-meio	I-WRONG	UNKNOWN	ortografia_lexical
+nesse	B-WRONG	UNKNOWN	classe_gramatical
+meio	I-WRONG	UNKNOWN	classe_gramatical
 .	O	-	-
 
 Sentença Original N°635
@@ -18364,7 +18364,7 @@ etc	O	-	-
 
 Sentença Original N°641
 Essa	O	-	-
-omissão	B-WRONG	UNKNOWN	ortografia_acento
+omissão	B-WRONG	UNKNOWN	acentuacao
 do	O	-	-
 racismo	O	-	-
 é	O	-	-
@@ -18486,7 +18486,7 @@ a	O	-	-
 juventude	O	-	-
 e	O	-	-
 a	O	-	-
-mesma	B-WRONG	UNKNOWN	ortografia_lexical
+mesma	B-WRONG	UNKNOWN	classe_gramatical
 ser	O	-	-
 esquecida	O	-	-
 com	O	-	-
@@ -18588,10 +18588,10 @@ vontade	O	-	-
 seu	O	-	-
 direito	O	-	-
 de	O	-	-
-prejudicar	B-WRONG	UNKNOWN	sintatico_discursivo
-a	I-WRONG	UNKNOWN	sintatico_discursivo
-si	I-WRONG	UNKNOWN	sintatico_discursivo
-mesmo	I-WRONG	UNKNOWN	sintatico_discursivo
+prejudicar	B-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+si	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
 sem	O	-	-
 ,	O	-	-
 contudo	O	-	-
@@ -19209,7 +19209,7 @@ os	O	-	-
 responsáveis	O	-	-
 por	O	-	-
 toda	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 podridão	O	-	-
 .	O	-	-
 
@@ -19540,7 +19540,7 @@ os	O	-	-
 países	O	-	-
 lusófonos	O	-	-
 terão	O	-	-
-uma	B-WRONG	Os artigos concordam com o substantivo a que se referem.	concordancia_nominal
+uma	B-WRONG	xml:104|Os artigos concordam com o substantivo a que se referem.	concordancia_nominal
 avanço	O	-	-
 sobremaneira	B-WRONG	UNKNOWN	ortografia_lexical
 .	O	-	-
@@ -19982,7 +19982,7 @@ ambiente	O	-	-
 é	O	-	-
 um	O	-	-
 indicador	O	-	-
-social	B-WRONG	O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
+social	B-WRONG	xml:124|O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
 já	O	-	-
 que	O	-	-
 na	O	-	-
@@ -20261,8 +20261,8 @@ característica	O	-	-
 genética	O	-	-
 ,	O	-	-
 ou	O	-	-
-seja	B-WRONG	A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
-não	I-WRONG	A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
+seja	B-WRONG	xml:111|A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
+não	I-WRONG	xml:111|A expressão "ou seja" deve ser isolada por vírgulas.	sintatico_discursivo
 nascemos	O	-	-
 sabendo	O	-	-
 mentir	O	-	-
@@ -20325,7 +20325,7 @@ Sentença Original N°705
 Para	O	-	-
 amenizar	O	-	-
 tal	O	-	-
-situação	B-WRONG	UNKNOWN	ortografia_acento
+situação	B-WRONG	UNKNOWN	acentuacao
 os	O	-	-
 jovens	O	-	-
 poderiam	O	-	-
@@ -20603,7 +20603,7 @@ aprendizado	O	-	-
 e	O	-	-
 não	O	-	-
 de	O	-	-
-violençia	B-WRONG	UNKNOWN	ortografia_acento
+violençia	B-WRONG	UNKNOWN	acentuacao
 .	O	-	-
 
 Sentença Original N°713
@@ -20752,7 +20752,7 @@ que	O	-	-
 o	O	-	-
 Brasil	O	-	-
 é	O	-	-
-uns	B-WRONG	O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
+uns	B-WRONG	xml:124|O adjetivo na função de predicativo concorda com o sujeito.	concordancia_nominal
 dos	O	-	-
 que	O	-	-
 mais	O	-	-
@@ -20764,7 +20764,7 @@ novos	I-WRONG	UNKNOWN	sintatico_discursivo
 métodos	I-WRONG	UNKNOWN	sintatico_discursivo
 descobertos	I-WRONG	UNKNOWN	sintatico_discursivo
 que	O	-	-
-estão	B-WRONG	UNKNOWN	ortografia_acento
+estão	B-WRONG	UNKNOWN	acentuacao
 apenas	O	-	-
 na	O	-	-
 fase	O	-	-
@@ -20894,7 +20894,7 @@ Com	O	-	-
 tantas	O	-	-
 manifestações	O	-	-
 que	O	-	-
-acontecerá	B-WRONG	UNKNOWN	ortografia_acento
+acontecerá	B-WRONG	UNKNOWN	acentuacao
 em	O	-	-
 nosso	O	-	-
 país	O	-	-
@@ -21163,7 +21163,7 @@ ideal	O	-	-
 ou	O	-	-
 se	O	-	-
 são	O	-	-
-nessárias	B-WRONG	UNKNOWN	ortografia_acento
+nessárias	B-WRONG	UNKNOWN	acentuacao
 melhorias	O	-	-
 na	O	-	-
 lei	O	-	-
@@ -21229,7 +21229,7 @@ ganhando	O	-	-
 Sentença Original N°731
 Não	O	-	-
 se	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 muitas	O	-	-
 informações	O	-	-
 sobre	O	-	-
@@ -21246,7 +21246,7 @@ se	O	-	-
 perguntarem	O	-	-
 se	O	-	-
 a	O	-	-
-idéia	B-WRONG	UNKNOWN	ortografia_acento
+idéia	B-WRONG	UNKNOWN	acentuacao
 é	O	-	-
 viável	O	-	-
 ou	O	-	-
@@ -21260,7 +21260,7 @@ pessoas	O	-	-
 são	O	-	-
 contrárias	O	-	-
 à	O	-	-
-idéia	B-WRONG	UNKNOWN	ortografia_acento
+idéia	B-WRONG	UNKNOWN	acentuacao
 de	O	-	-
 que	O	-	-
 o	O	-	-
@@ -21289,64 +21289,64 @@ sexual	O	-	-
 .	O	-	-
 
 Sentença Original N°733
-Em	B-WRONG	UNKNOWN	concordancia_nominal
-certos	I-WRONG	UNKNOWN	concordancia_nominal
-locais	I-WRONG	UNKNOWN	concordancia_nominal
-do	I-WRONG	UNKNOWN	concordancia_nominal
-Brasil	I-WRONG	UNKNOWN	concordancia_nominal
-houve	I-WRONG	UNKNOWN	concordancia_nominal
-uma	I-WRONG	UNKNOWN	concordancia_nominal
-imigração	I-WRONG	UNKNOWN	concordancia_nominal
-muito	I-WRONG	UNKNOWN	concordancia_nominal
-grande	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-pessoas	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-outros	I-WRONG	UNKNOWN	concordancia_nominal
-paises	I-WRONG	UNKNOWN	concordancia_nominal
-,	I-WRONG	UNKNOWN	concordancia_nominal
-ocasionando	I-WRONG	UNKNOWN	concordancia_nominal
-um	I-WRONG	UNKNOWN	concordancia_nominal
-aumento	I-WRONG	UNKNOWN	concordancia_nominal
-considerável	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-crianças	I-WRONG	UNKNOWN	concordancia_nominal
-com	I-WRONG	UNKNOWN	concordancia_nominal
-pai	I-WRONG	UNKNOWN	concordancia_nominal
-e	I-WRONG	UNKNOWN	concordancia_nominal
-mãe	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-nacionalidades	I-WRONG	UNKNOWN	concordancia_nominal
-diferentes	I-WRONG	UNKNOWN	concordancia_nominal
-,	I-WRONG	UNKNOWN	concordancia_nominal
-desta	I-WRONG	UNKNOWN	concordancia_nominal
-maneira	I-WRONG	UNKNOWN	concordancia_nominal
-cada	I-WRONG	UNKNOWN	concordancia_nominal
-um	I-WRONG	UNKNOWN	concordancia_nominal
-passava	I-WRONG	UNKNOWN	concordancia_nominal
-a	I-WRONG	UNKNOWN	concordancia_nominal
-sua	I-WRONG	UNKNOWN	concordancia_nominal
-educação	I-WRONG	UNKNOWN	concordancia_nominal
-para	I-WRONG	UNKNOWN	concordancia_nominal
-os	I-WRONG	UNKNOWN	concordancia_nominal
-filhos	I-WRONG	UNKNOWN	concordancia_nominal
-gerando	I-WRONG	UNKNOWN	concordancia_nominal
-uma	I-WRONG	UNKNOWN	concordancia_nominal
-criança	I-WRONG	UNKNOWN	concordancia_nominal
-cada	I-WRONG	UNKNOWN	concordancia_nominal
-vez	I-WRONG	UNKNOWN	concordancia_nominal
-mais	I-WRONG	UNKNOWN	concordancia_nominal
-influenciada	I-WRONG	UNKNOWN	concordancia_nominal
-por	I-WRONG	UNKNOWN	concordancia_nominal
-culturas	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-outros	I-WRONG	UNKNOWN	concordancia_nominal
-paises	I-WRONG	UNKNOWN	concordancia_nominal
-e	I-WRONG	UNKNOWN	concordancia_nominal
-menos	I-WRONG	UNKNOWN	concordancia_nominal
-a	I-WRONG	UNKNOWN	concordancia_nominal
-brasileira	I-WRONG	UNKNOWN	concordancia_nominal
-.	I-WRONG	UNKNOWN	concordancia_nominal
+Em	B-WRONG	UNKNOWN	classe_gramatical
+certos	I-WRONG	UNKNOWN	classe_gramatical
+locais	I-WRONG	UNKNOWN	classe_gramatical
+do	I-WRONG	UNKNOWN	classe_gramatical
+Brasil	I-WRONG	UNKNOWN	classe_gramatical
+houve	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+imigração	I-WRONG	UNKNOWN	classe_gramatical
+muito	I-WRONG	UNKNOWN	classe_gramatical
+grande	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+pessoas	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+outros	I-WRONG	UNKNOWN	classe_gramatical
+paises	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+ocasionando	I-WRONG	UNKNOWN	classe_gramatical
+um	I-WRONG	UNKNOWN	classe_gramatical
+aumento	I-WRONG	UNKNOWN	classe_gramatical
+considerável	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+crianças	I-WRONG	UNKNOWN	classe_gramatical
+com	I-WRONG	UNKNOWN	classe_gramatical
+pai	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+mãe	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+nacionalidades	I-WRONG	UNKNOWN	classe_gramatical
+diferentes	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+desta	I-WRONG	UNKNOWN	classe_gramatical
+maneira	I-WRONG	UNKNOWN	classe_gramatical
+cada	I-WRONG	UNKNOWN	classe_gramatical
+um	I-WRONG	UNKNOWN	classe_gramatical
+passava	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+sua	I-WRONG	UNKNOWN	classe_gramatical
+educação	I-WRONG	UNKNOWN	classe_gramatical
+para	I-WRONG	UNKNOWN	classe_gramatical
+os	I-WRONG	UNKNOWN	classe_gramatical
+filhos	I-WRONG	UNKNOWN	classe_gramatical
+gerando	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+criança	I-WRONG	UNKNOWN	classe_gramatical
+cada	I-WRONG	UNKNOWN	classe_gramatical
+vez	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+influenciada	I-WRONG	UNKNOWN	classe_gramatical
+por	I-WRONG	UNKNOWN	classe_gramatical
+culturas	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+outros	I-WRONG	UNKNOWN	classe_gramatical
+paises	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+menos	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+brasileira	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 Um	O	-	-
 fator	O	-	-
 preocupante	O	-	-
@@ -21396,17 +21396,17 @@ jovens	O	-	-
 dizem	O	-	-
 que	O	-	-
 é	O	-	-
-até	B-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
-fácil	I-WRONG	UNKNOWN	sintatico_discursivo
-falar	I-WRONG	UNKNOWN	sintatico_discursivo
-algo	I-WRONG	UNKNOWN	sintatico_discursivo
-em	I-WRONG	UNKNOWN	sintatico_discursivo
-inglês	I-WRONG	UNKNOWN	sintatico_discursivo
-do	I-WRONG	UNKNOWN	sintatico_discursivo
-que	I-WRONG	UNKNOWN	sintatico_discursivo
-em	I-WRONG	UNKNOWN	sintatico_discursivo
-brasileiro	I-WRONG	UNKNOWN	sintatico_discursivo
+até	B-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+fácil	I-WRONG	UNKNOWN	classe_gramatical
+falar	I-WRONG	UNKNOWN	classe_gramatical
+algo	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+inglês	I-WRONG	UNKNOWN	classe_gramatical
+do	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+brasileiro	I-WRONG	UNKNOWN	classe_gramatical
 pois	O	-	-
 já	O	-	-
 se	O	-	-
@@ -21748,7 +21748,7 @@ nova	O	-	-
 tecnologia	O	-	-
 ,	O	-	-
 o	O	-	-
-País	B-WRONG	UNKNOWN	ortografia_acento
+País	B-WRONG	UNKNOWN	acentuacao
 passará	O	-	-
 a	O	-	-
 desperdiçar	O	-	-
@@ -22121,8 +22121,8 @@ vem	B-WRONG	UNKNOWN	concordancia_verbal
 sido	I-WRONG	UNKNOWN	concordancia_verbal
 trazida	I-WRONG	UNKNOWN	concordancia_verbal
 com	O	-	-
-muito	B-WRONG	UNKNOWN	ortografia_lexical
-mais	I-WRONG	UNKNOWN	ortografia_lexical
+muito	B-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
 frequência	O	-	-
 ,	O	-	-
 que	O	-	-
@@ -22566,7 +22566,7 @@ visava	B-WRONG	UNKNOWN	ortografia_lexical
 libertar	I-WRONG	UNKNOWN	ortografia_lexical
 os	O	-	-
 escravos	O	-	-
-por	B-WRONG	UNKNOWN	ortografia_lexical
+por	B-WRONG	UNKNOWN	acentuacao
 todo	O	-	-
 território	O	-	-
 nacional	B-WRONG	UNKNOWN	sintatico_discursivo
@@ -22610,7 +22610,7 @@ Sentença Original N°773
 Os	O	-	-
 defensores	O	-	-
 da	O	-	-
-idéia	B-WRONG	UNKNOWN	ortografia_acento
+idéia	B-WRONG	UNKNOWN	acentuacao
 de	O	-	-
 usar	O	-	-
 animais	O	-	-
@@ -22618,7 +22618,7 @@ em	O	-	-
 testes	O	-	-
 de	O	-	-
 remédios	O	-	-
-apóiam	B-WRONG	UNKNOWN	ortografia_acento
+apóiam	B-WRONG	UNKNOWN	acentuacao
 essa	O	-	-
 causa	O	-	-
 com	O	-	-
@@ -22627,7 +22627,7 @@ argumento	O	-	-
 de	O	-	-
 que	O	-	-
 a	O	-	-
-ciência	B-WRONG	UNKNOWN	ortografia_acento
+ciência	B-WRONG	UNKNOWN	acentuacao
 para	O	-	-
 avançar	O	-	-
 de	O	-	-
@@ -22804,7 +22804,7 @@ tudo	O	-	-
 como	O	-	-
 gastos	O	-	-
 com	O	-	-
-água	B-WRONG	UNKNOWN	ortografia_acento
+água	B-WRONG	UNKNOWN	acentuacao
 e	O	-	-
 com	O	-	-
 energia	O	-	-
@@ -22813,7 +22813,7 @@ energia	O	-	-
 Sentença Original N°779
 Mas	O	-	-
 todos	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 que	O	-	-
 aprender	O	-	-
 a	O	-	-
@@ -22882,7 +22882,7 @@ algum	O	-	-
 fazer	O	-	-
 nem	O	-	-
 50%	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 que	O	-	-
 prometeu	O	-	-
 em	O	-	-
@@ -23341,7 +23341,7 @@ leito	O	-	-
 ?	O	-	-
 
 Sentença Original N°798
-Tem	B-WRONG	UNKNOWN	ortografia_lexical
+Tem	B-WRONG	UNKNOWN	acentuacao
 falado	O	-	-
 muito	O	-	-
 nestas	O	-	-
@@ -23466,7 +23466,7 @@ errada	O	-	-
 ou	O	-	-
 há	O	-	-
 uma	O	-	-
-discrimação	B-WRONG	UNKNOWN	ortografia_acento
+discrimação	B-WRONG	UNKNOWN	acentuacao
 às	O	-	-
 claras	O	-	-
 ou	O	-	-
@@ -23497,9 +23497,9 @@ menção	O	-	-
 para	O	-	-
 entendimento	O	-	-
 da	O	-	-
-ideía	B-WRONG	UNKNOWN	ortografia_acento
+ideía	B-WRONG	UNKNOWN	acentuacao
 em	O	-	-
-sí	B-WRONG	UNKNOWN	ortografia_acento
+sí	B-WRONG	UNKNOWN	acentuacao
 .	O	-	-
 
 Sentença Original N°805
@@ -23659,7 +23659,7 @@ são	O	-	-
 lembrados	O	-	-
 ,	O	-	-
 por	O	-	-
-àqueles	B-WRONG	UNKNOWN	ortografia_acento
+àqueles	B-WRONG	UNKNOWN	crase_preposicao
 que	O	-	-
 se	O	-	-
 trancaram	O	-	-
@@ -24143,9 +24143,9 @@ Andróginos	O	-	-
 
 Sentença Original N°827
 O	O	-	-
-país	B-WRONG	UNKNOWN	ortografia_acento
+país	B-WRONG	UNKNOWN	acentuacao
 com	O	-	-
-está	B-WRONG	UNKNOWN	ortografia_acento
+está	B-WRONG	UNKNOWN	acentuacao
 imensa	O	-	-
 força	O	-	-
 de	O	-	-
@@ -24214,7 +24214,7 @@ com	O	-	-
 punições	O	-	-
 físicas	O	-	-
 ,	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 é	O	-	-
 o	O	-	-
 que	O	-	-
@@ -24224,7 +24224,7 @@ acontece	O	-	-
 Sentença Original N°830
 Desde	O	-	-
 2013	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 ocorrido	O	-	-
 manifestações	O	-	-
 no	O	-	-
@@ -24253,7 +24253,7 @@ Sentença Original N°831
 Segundo	O	-	-
 a	O	-	-
 nossa	O	-	-
-constituição	B-WRONG	UNKNOWN	ortografia_acento
+constituição	B-WRONG	UNKNOWN	acentuacao
 Federal	O	-	-
 de	O	-	-
 1988	O	-	-
@@ -24280,7 +24280,7 @@ religião	O	-	-
 .	O	-	-
 
 Sentença Original N°832
-Tem	B-WRONG	UNKNOWN	ortografia_lexical
+Tem	B-WRONG	UNKNOWN	acentuacao
 um	O	-	-
 limite	O	-	-
 ?	O	-	-
@@ -24936,7 +24936,7 @@ tecnologia	O	-	-
 se	O	-	-
 infiltra	O	-	-
 ,	O	-	-
-fácilidade	B-WRONG	UNKNOWN	ortografia_acento
+fácilidade	B-WRONG	UNKNOWN	acentuacao
 e	O	-	-
 praticidade	O	-	-
 vem	O	-	-
@@ -25403,7 +25403,7 @@ saúde	O	-	-
 a	O	-	-
 educação	O	-	-
 ,	O	-	-
-está	B-WRONG	UNKNOWN	ortografia_acento
+está	B-WRONG	UNKNOWN	acentuacao
 necessidade	O	-	-
 é	O	-	-
 urgente	O	-	-
@@ -25589,7 +25589,7 @@ Sentença Original N°881
 O	O	-	-
 que	O	-	-
 os	O	-	-
-cidadões	B-WRONG	UNKNOWN	ortografia_acento
+cidadões	B-WRONG	UNKNOWN	acentuacao
 não	O	-	-
 sabem	O	-	-
 é	O	-	-
@@ -25604,7 +25604,7 @@ nas	B-WRONG	UNKNOWN	sintatico_discursivo
 de	I-WRONG	UNKNOWN	sintatico_discursivo
 eleções	I-WRONG	UNKNOWN	sintatico_discursivo
 se	O	-	-
-vão	B-WRONG	UNKNOWN	ortografia_acento
+vão	B-WRONG	UNKNOWN	acentuacao
 com	O	-	-
 o	O	-	-
 passar	O	-	-
@@ -25666,8 +25666,8 @@ acaba	O	-	-
 fazendo	O	-	-
 com	O	-	-
 que	O	-	-
-a	B-WRONG	UNKNOWN	colocacao_pronominal
-mesma	I-WRONG	UNKNOWN	colocacao_pronominal
+a	B-WRONG	UNKNOWN	classe_gramatical
+mesma	I-WRONG	UNKNOWN	classe_gramatical
 seja	O	-	-
 em	O	-	-
 vão	O	-	-
@@ -25734,7 +25734,7 @@ de	O	-	-
 candidatos	O	-	-
 corruptos	O	-	-
 mais	O	-	-
-favoráveis	B-WRONG	UNKNOWN	ortografia_acento
+favoráveis	B-WRONG	UNKNOWN	acentuacao
 ,	O	-	-
 pois	O	-	-
 como	O	-	-
@@ -25753,7 +25753,7 @@ prometido	O	-	-
 
 Sentença Original N°887
 É	O	-	-
-tautológico	B-WRONG	UNKNOWN	ortografia_acento
+tautológico	B-WRONG	UNKNOWN	acentuacao
 dissertar	O	-	-
 sobre	O	-	-
 a	O	-	-
@@ -25908,7 +25908,7 @@ até	O	-	-
 ajudar	O	-	-
 alguns	O	-	-
 eleitores	O	-	-
-à	B-WRONG	Não acontece crase antes de verbo.	crase_preposicao
+à	B-WRONG	xml:4|Não acontece crase antes de verbo.	crase_preposicao
 escolher	O	-	-
 para	O	-	-
 quem	O	-	-
@@ -26106,20 +26106,20 @@ ser	O	-	-
 comentado	O	-	-
 mundialmente	O	-	-
 ,	O	-	-
-no	B-WRONG	UNKNOWN	concordancia_verbal
-Brasil	I-WRONG	UNKNOWN	concordancia_verbal
-esse	I-WRONG	UNKNOWN	concordancia_verbal
-assunto	I-WRONG	UNKNOWN	concordancia_verbal
-já	I-WRONG	UNKNOWN	concordancia_verbal
-é	I-WRONG	UNKNOWN	concordancia_verbal
-esclarecido	I-WRONG	UNKNOWN	concordancia_verbal
-sendo	I-WRONG	UNKNOWN	concordancia_verbal
-totalmente	I-WRONG	UNKNOWN	concordancia_verbal
-proibida	I-WRONG	UNKNOWN	concordancia_verbal
-a	I-WRONG	UNKNOWN	concordancia_verbal
-prática	I-WRONG	UNKNOWN	concordancia_verbal
-do	I-WRONG	UNKNOWN	concordancia_verbal
-mesmo	I-WRONG	UNKNOWN	concordancia_verbal
+no	B-WRONG	UNKNOWN	classe_gramatical
+Brasil	I-WRONG	UNKNOWN	classe_gramatical
+esse	I-WRONG	UNKNOWN	classe_gramatical
+assunto	I-WRONG	UNKNOWN	classe_gramatical
+já	I-WRONG	UNKNOWN	classe_gramatical
+é	I-WRONG	UNKNOWN	classe_gramatical
+esclarecido	I-WRONG	UNKNOWN	classe_gramatical
+sendo	I-WRONG	UNKNOWN	classe_gramatical
+totalmente	I-WRONG	UNKNOWN	classe_gramatical
+proibida	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+prática	I-WRONG	UNKNOWN	classe_gramatical
+do	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
 ,	O	-	-
 mas	O	-	-
 a	O	-	-
@@ -26243,9 +26243,9 @@ que	O	-	-
 não	O	-	-
 ofenda	O	-	-
 os	O	-	-
-seguidores	B-WRONG	UNKNOWN	sintatico_discursivo
-da	I-WRONG	UNKNOWN	sintatico_discursivo
-mesma	I-WRONG	UNKNOWN	sintatico_discursivo
+seguidores	B-WRONG	UNKNOWN	classe_gramatical
+da	I-WRONG	UNKNOWN	classe_gramatical
+mesma	I-WRONG	UNKNOWN	classe_gramatical
 .	O	-	-
 
 Sentença Original N°904
@@ -26493,11 +26493,11 @@ um	O	-	-
 direito	O	-	-
 proporcionado	O	-	-
 pela	O	-	-
-constituição	B-WRONG	UNKNOWN	ortografia_acento
+constituição	B-WRONG	UNKNOWN	acentuacao
 brasileira	O	-	-
-que	B-WRONG	Deve haver vírgula antes de "no entanto".	sintatico_discursivo
-no	I-WRONG	Deve haver vírgula antes de "no entanto".	sintatico_discursivo
-entanto	I-WRONG	Deve haver vírgula antes de "no entanto".	sintatico_discursivo
+que	B-WRONG	xml:113|Deve haver vírgula antes de "no entanto".	sintatico_discursivo
+no	I-WRONG	xml:113|Deve haver vírgula antes de "no entanto".	sintatico_discursivo
+entanto	I-WRONG	xml:113|Deve haver vírgula antes de "no entanto".	sintatico_discursivo
 deve	O	-	-
 ocorrer	O	-	-
 da	O	-	-
@@ -26529,8 +26529,8 @@ dela	O	-	-
 para	O	-	-
 sobreviver	O	-	-
 ,	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
-mesmo	I-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
 sabendo	O	-	-
 disso	O	-	-
 ,	O	-	-
@@ -26637,7 +26637,7 @@ denominações	O	-	-
 que	O	-	-
 de	O	-	-
 forma	O	-	-
-hipócrita	B-WRONG	UNKNOWN	ortografia_acento
+hipócrita	B-WRONG	UNKNOWN	acentuacao
 com	O	-	-
 a	O	-	-
 justificativa	O	-	-
@@ -26803,8 +26803,8 @@ contratado	O	-	-
 
 Sentença Original N°920
 O	O	-	-
-Poder	B-WRONG	UNKNOWN	ortografia_lexical
-Público	I-WRONG	UNKNOWN	ortografia_lexical
+Poder	B-WRONG	UNKNOWN	colocacao_verbal
+Público	I-WRONG	UNKNOWN	colocacao_verbal
 se	O	-	-
 mostra	O	-	-
 contraditório	O	-	-
@@ -26818,11 +26818,11 @@ parte	O	-	-
 da	O	-	-
 sociedade	O	-	-
 ,	O	-	-
-mas	B-WRONG	UNKNOWN	sintatico_discursivo
-ele	I-WRONG	UNKNOWN	sintatico_discursivo
-mesmo	I-WRONG	UNKNOWN	sintatico_discursivo
-não	I-WRONG	UNKNOWN	sintatico_discursivo
-possui	I-WRONG	UNKNOWN	sintatico_discursivo
+mas	B-WRONG	UNKNOWN	classe_gramatical
+ele	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
+não	I-WRONG	UNKNOWN	classe_gramatical
+possui	I-WRONG	UNKNOWN	classe_gramatical
 recursos	O	-	-
 suficientes	O	-	-
 para	O	-	-
@@ -27652,7 +27652,7 @@ busca	O	-	-
 do	O	-	-
 corpo	O	-	-
 perfeito	O	-	-
-podem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+podem	B-WRONG	xml:118|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 gerar	O	-	-
 e	O	-	-
 entender	O	-	-
@@ -28313,9 +28313,9 @@ penas	O	-	-
 Sentença Original N°975
 É	O	-	-
 importante	O	-	-
-também	B-WRONG	UNKNOWN	ortografia_acento
+também	B-WRONG	UNKNOWN	acentuacao
 frisar	O	-	-
-também	B-WRONG	UNKNOWN	ortografia_acento
+também	B-WRONG	UNKNOWN	acentuacao
 que	O	-	-
 ruas	O	-	-
 e	O	-	-
@@ -28356,7 +28356,7 @@ rádios	O	-	-
 televisões	O	-	-
 ,	O	-	-
 internet	O	-	-
-e	B-WRONG	UNKNOWN	ortografia_lexical
+e	B-WRONG	UNKNOWN	acentuacao
 vendedores	O	-	-
 .	O	-	-
 
@@ -28791,7 +28791,7 @@ próximo	O	-	-
 
 Sentença Original N°995
 Devido	O	-	-
-as	B-WRONG	"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
+as	B-WRONG	xml:14|"Devido" rege a preposição "a", logo há crase aqui.	crase_preposicao
 mudanças	O	-	-
 ocorridas	O	-	-
 ,	O	-	-
@@ -29111,7 +29111,7 @@ renda	O	-	-
 familiar	O	-	-
 de	O	-	-
 pessoas	O	-	-
-pobre	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+pobre	B-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 que	O	-	-
 catam	O	-	-
 material	O	-	-
@@ -29362,7 +29362,7 @@ Atualmente	O	-	-
 ,	O	-	-
 os	O	-	-
 jovens	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 sido	O	-	-
 o	B-WRONG	UNKNOWN	sintatico_discursivo
 grande	I-WRONG	UNKNOWN	sintatico_discursivo
@@ -29663,7 +29663,7 @@ nenhum	O	-	-
 legado	O	-	-
 econômico	O	-	-
 e	O	-	-
-quão	B-WRONG	UNKNOWN	ortografia_acento
+quão	B-WRONG	UNKNOWN	acentuacao
 é	O	-	-
 importante	O	-	-
 investir	O	-	-
@@ -29958,7 +29958,7 @@ evento	B-WRONG	UNKNOWN	ortografia_lexical
 o	O	-	-
 Brasil	O	-	-
 já	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 sendo	O	-	-
 criticado	O	-	-
 pelo	O	-	-
@@ -30065,7 +30065,7 @@ futebol	O	-	-
 ;	O	-	-
 onde	B-WRONG	UNKNOWN	ortografia_lexical
 negros	O	-	-
-são	B-WRONG	UNKNOWN	ortografia_acento
+são	B-WRONG	UNKNOWN	acentuacao
 atingidos	O	-	-
 por	O	-	-
 bananas	O	-	-
@@ -30397,7 +30397,7 @@ de	O	-	-
 expressão	O	-	-
 :	O	-	-
 teria	O	-	-
-esta	B-WRONG	Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
+esta	B-WRONG	xml:114|Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
 limites	O	-	-
 ?	O	-	-
 
@@ -30714,9 +30714,9 @@ vida	O	-	-
 
 Sentença Original N°1065
 Com	O	-	-
-as	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
-eleições	I-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
-perto	I-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+as	B-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+eleições	I-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+perto	I-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 ,	O	-	-
 os	O	-	-
 brasileiros	O	-	-
@@ -30726,7 +30726,7 @@ a	O	-	-
 escolher	O	-	-
 quem	O	-	-
 os	O	-	-
-representarão	B-WRONG	UNKNOWN	ortografia_acento
+representarão	B-WRONG	UNKNOWN	acentuacao
 no	O	-	-
 governo	O	-	-
 nos	O	-	-
@@ -31079,7 +31079,7 @@ sul	I-WRONG	UNKNOWN	sintatico_discursivo
 do	O	-	-
 país	O	-	-
 ,	O	-	-
-jóvens	B-WRONG	UNKNOWN	ortografia_acento
+jóvens	B-WRONG	UNKNOWN	acentuacao
 ,	O	-	-
 adultos	O	-	-
 ,	O	-	-
@@ -31129,10 +31129,10 @@ corrupção	O	-	-
 .	O	-	-
 
 Sentença Original N°1079
-Ver	B-WRONG	UNKNOWN	sintatico_discursivo
-quem	I-WRONG	UNKNOWN	sintatico_discursivo
-se	I-WRONG	UNKNOWN	sintatico_discursivo
-amo	I-WRONG	UNKNOWN	sintatico_discursivo
+Ver	B-WRONG	UNKNOWN	colocacao_verbal
+quem	I-WRONG	UNKNOWN	colocacao_verbal
+se	I-WRONG	UNKNOWN	colocacao_verbal
+amo	I-WRONG	UNKNOWN	colocacao_verbal
 indo	O	-	-
 embora	O	-	-
 ,	O	-	-
@@ -31482,7 +31482,7 @@ Unifeb	I-WRONG	UNKNOWN	sintatico_discursivo
 ,	O	-	-
 foram	O	-	-
 submetidos	O	-	-
-à	B-WRONG	Não ocorre crase antes de palavras masculinas.	crase_preposicao
+à	B-WRONG	xml:2|Não ocorre crase antes de palavras masculinas.	crase_preposicao
 jatos	O	-	-
 de	O	-	-
 creolina	O	-	-
@@ -31528,7 +31528,7 @@ jovens	B-WRONG	UNKNOWN	ortografia_lexical
 tornando	O	-	-
 a	O	-	-
 leitura	O	-	-
-agradável	B-WRONG	UNKNOWN	ortografia_acento
+agradável	B-WRONG	UNKNOWN	acentuacao
 pode	O	-	-
 ser	O	-	-
 fundamental	O	-	-
@@ -31620,7 +31620,7 @@ A	O	-	-
 maioria	O	-	-
 dos	O	-	-
 idosos	O	-	-
-passam	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+passam	B-WRONG	xml:118|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 por	O	-	-
 grandes	O	-	-
 dificuldades	O	-	-
@@ -31776,7 +31776,7 @@ ganham	O	-	-
 uma	O	-	-
 aponsentadoria	O	-	-
 que	O	-	-
-mau	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+mau	B-WRONG	xml:118|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 podem	O	-	-
 pagar	O	-	-
 as	O	-	-
@@ -31889,7 +31889,7 @@ e	O	-	-
 por	O	-	-
 isso	O	-	-
 ainda	O	-	-
-vem	B-WRONG	UNKNOWN	ortografia_lexical
+vem	B-WRONG	UNKNOWN	acentuacao
 ocorrendo	O	-	-
 sérios	O	-	-
 conflitos	O	-	-
@@ -32020,12 +32020,12 @@ pensar	O	-	-
 que	O	-	-
 seus	O	-	-
 filhos	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 o	O	-	-
 mesmo	O	-	-
 comportamento	O	-	-
 que	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 em	O	-	-
 casa	O	-	-
 e	O	-	-
@@ -32132,8 +32132,8 @@ certeza	O	-	-
 vai	O	-	-
 lhe	O	-	-
 render	O	-	-
-um	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
-bom	I-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+um	B-WRONG	xml:21|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+bom	I-WRONG	xml:21|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 frutos	O	-	-
 .	O	-	-
 
@@ -32234,7 +32234,7 @@ Assim	O	-	-
 ,	O	-	-
 as	O	-	-
 pessoas	O	-	-
-poderá	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+poderá	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 ter	O	-	-
 o	O	-	-
 mesmo	O	-	-
@@ -32993,8 +32993,8 @@ de	O	-	-
 melhorar	O	-	-
 a	O	-	-
 qualidade	O	-	-
-da	B-WRONG	UNKNOWN	ortografia_lexical
-mesma	I-WRONG	UNKNOWN	ortografia_lexical
+da	B-WRONG	UNKNOWN	classe_gramatical
+mesma	I-WRONG	UNKNOWN	classe_gramatical
 .	O	-	-
 
 Sentença Original N°1138
@@ -33195,7 +33195,7 @@ o	O	-	-
 primeiro	O	-	-
 dilema	O	-	-
 :	O	-	-
-É	B-WRONG	UNKNOWN	ortografia_lexical
+É	B-WRONG	UNKNOWN	acentuacao
 permitido	O	-	-
 ou	O	-	-
 não	O	-	-
@@ -33255,7 +33255,7 @@ o	O	-	-
 aparelho	O	-	-
 só	O	-	-
 porque	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 ali	O	-	-
 é	O	-	-
 muito	O	-	-
@@ -34061,7 +34061,7 @@ onde	B-WRONG	UNKNOWN	ortografia_lexical
 se	O	-	-
 possa	O	-	-
 manter	O	-	-
-as	B-WRONG	Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
+as	B-WRONG	xml:114|Os determinantes concordam com o substantivo a que se referem.	concordancia_nominal
 alertas	O	-	-
 e	O	-	-
 prevenções	O	-	-
@@ -34073,7 +34073,7 @@ pessoas	O	-	-
 tomem	O	-	-
 os	O	-	-
 cuidados	O	-	-
-necessário	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+necessário	B-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 ao	O	-	-
 se	O	-	-
 automedicarem	O	-	-
@@ -34240,7 +34240,7 @@ de	O	-	-
 repúdio	O	-	-
 ,	O	-	-
 atos	O	-	-
-descriminatórios	B-WRONG	UNKNOWN	ortografia_acento
+descriminatórios	B-WRONG	UNKNOWN	acentuacao
 e	O	-	-
 violentos	O	-	-
 ,	O	-	-
@@ -34267,7 +34267,7 @@ qualquer	O	-	-
 ,	O	-	-
 teremos	O	-	-
 um	O	-	-
-funcionário	B-WRONG	UNKNOWN	ortografia_acento
+funcionário	B-WRONG	UNKNOWN	acentuacao
 motivado	O	-	-
 e	O	-	-
 em	O	-	-
@@ -34617,7 +34617,7 @@ cada	O	-	-
 um	O	-	-
 fazer	O	-	-
 sua	O	-	-
-diferênça	B-WRONG	UNKNOWN	ortografia_acento
+diferênça	B-WRONG	UNKNOWN	acentuacao
 ,	B-WRONG	UNKNOWN	concordancia_verbal
 pois	I-WRONG	UNKNOWN	concordancia_verbal
 se	I-WRONG	UNKNOWN	concordancia_verbal
@@ -34669,7 +34669,7 @@ universidade	O	-	-
 e	O	-	-
 a	O	-	-
 escola	O	-	-
-são	B-WRONG	UNKNOWN	ortografia_acento
+são	B-WRONG	UNKNOWN	acentuacao
 locais	O	-	-
 de	O	-	-
 recepção	O	-	-
@@ -34769,7 +34769,7 @@ jovens	O	-	-
 e	O	-	-
 adolescentes	O	-	-
 não	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 na	O	-	-
 maioridade	O	-	-
 penal	O	-	-
@@ -35031,7 +35031,7 @@ vários	O	-	-
 clássicos	O	-	-
 literários	O	-	-
 brasileiros	O	-	-
-vem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+vem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 sendo	O	-	-
 lidos	O	-	-
 nas	O	-	-
@@ -35099,7 +35099,7 @@ Sentença Original N°1215
 Essa</correct>	O	-	-
 triste	O	-	-
 realidade	O	-	-
-trás	B-WRONG	UNKNOWN	ortografia_acento
+trás	B-WRONG	UNKNOWN	acentuacao
 aos	O	-	-
 criminosos	O	NO_MATCH	NO_MATCH
 certa	O	NO_MATCH	NO_MATCH
@@ -35416,7 +35416,7 @@ assim	O	-	-
 elas	O	-	-
 conseguiram	O	-	-
 ir	O	-	-
-a	B-WRONG	"Ir" constrói-se com prep. "a". Há crase com compl. feminino.	cogroo_other:"Ir" constrói-se com prep. "a". Há crase
+a	B-WRONG	xml:78|"Ir" constrói-se com prep. "a". Há crase com compl. feminino.	crase_preposicao
 escola	O	-	-
 e	O	-	-
 mais	O	-	-
@@ -35524,7 +35524,7 @@ preconceito	O	-	-
 pelos	O	-	-
 meios	O	-	-
 de	O	-	-
-comunicações	B-WRONG	UNKNOWN	ortografia_acento
+comunicações	B-WRONG	UNKNOWN	acentuacao
 jornais	O	-	-
 ,	O	-	-
 televisão	O	-	-
@@ -35659,7 +35659,7 @@ No	O	-	-
 Brasil	O	-	-
 muitas	O	-	-
 meninas	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 engravidado	O	-	-
 precocemente	O	-	-
 .	O	-	-
@@ -35771,10 +35771,10 @@ justiça	O	-	-
 melhores	O	-	-
 condições	O	-	-
 transporte	O	-	-
-publico	B-WRONG	Possível confusão entre publico e público.	ortografia_acento
+publico	B-WRONG	probs:paronyms|Possível confusão entre publico e público.	acentuacao
 e	O	-	-
 outras	O	-	-
-reivindicações	B-WRONG	UNKNOWN	ortografia_acento
+reivindicações	B-WRONG	UNKNOWN	acentuacao
 ,	B-WRONG	UNKNOWN	colocacao_pronominal
 o	I-WRONG	UNKNOWN	colocacao_pronominal
 fato	I-WRONG	UNKNOWN	colocacao_pronominal
@@ -35986,8 +35986,8 @@ EUA	O	-	-
 enfrentaram	O	-	-
 mais	O	-	-
 um	O	-	-
-incidente	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
-terroristas	I-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+incidente	B-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+terroristas	I-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 .	O	-	-
 
 Sentença Original N°1245
@@ -36240,7 +36240,7 @@ outra	O	-	-
 parcela	O	-	-
 tais	O	-	-
 propagandas	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 o	O	-	-
 reflexo	O	-	-
 de	O	-	-
@@ -36689,7 +36689,7 @@ parte	I-WRONG	UNKNOWN	sintatico_discursivo
 ,	I-WRONG	UNKNOWN	sintatico_discursivo
 visa	I-WRONG	UNKNOWN	sintatico_discursivo
 apenas	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 lucro	O	-	-
 ,	O	-	-
 como	O	-	-
@@ -36919,11 +36919,11 @@ Atualmente	O	-	-
 a	O	-	-
 sociedade	O	-	-
 brasileira	O	-	-
-está	B-WRONG	UNKNOWN	concordancia_verbal
-sofrente	I-WRONG	UNKNOWN	concordancia_verbal
-em	I-WRONG	UNKNOWN	concordancia_verbal
-meio	I-WRONG	UNKNOWN	concordancia_verbal
-ao	I-WRONG	UNKNOWN	concordancia_verbal
+está	B-WRONG	UNKNOWN	classe_gramatical
+sofrente	I-WRONG	UNKNOWN	classe_gramatical
+em	I-WRONG	UNKNOWN	classe_gramatical
+meio	I-WRONG	UNKNOWN	classe_gramatical
+ao	I-WRONG	UNKNOWN	classe_gramatical
 alto	O	-	-
 nível	O	-	-
 de	O	-	-
@@ -37233,8 +37233,8 @@ outra	O	-	-
 pessoa	O	-	-
 se	O	-	-
 casa	O	-	-
-e	B-WRONG	Repetição de palavras.	sintatico_discursivo
-e	I-WRONG	Repetição de palavras.	sintatico_discursivo
+e	B-WRONG	repetition:DUPLICATED_TOKEN|Repetição de palavras.	sintatico_discursivo
+e	I-WRONG	repetition:DUPLICATED_TOKEN|Repetição de palavras.	sintatico_discursivo
 fica	O	-	-
 tudo	O	-	-
 certo	O	-	-
@@ -37256,7 +37256,7 @@ racial	O	-	-
 claro	O	-	-
 ,	O	-	-
 uma	O	-	-
-descriminação	B-WRONG	UNKNOWN	ortografia_acento
+descriminação	B-WRONG	UNKNOWN	acentuacao
 bem	O	-	-
 mais	O	-	-
 disfarçada	O	-	-
@@ -37373,9 +37373,9 @@ as	O	-	-
 coisas	O	-	-
 ,	O	-	-
 de	O	-	-
-dar	B-WRONG	UNKNOWN	sintatico_discursivo
-um	I-WRONG	UNKNOWN	sintatico_discursivo
-poder	I-WRONG	UNKNOWN	sintatico_discursivo
+dar	B-WRONG	UNKNOWN	colocacao_verbal
+um	I-WRONG	UNKNOWN	colocacao_verbal
+poder	I-WRONG	UNKNOWN	colocacao_verbal
 para	O	-	-
 pessoas	O	-	-
 que	O	-	-
@@ -37904,7 +37904,7 @@ sociedade	O	-	-
 .	O	-	-
 
 Sentença Original N°1317
-Mais	B-WRONG	UNKNOWN	ortografia_lexical
+Mais	B-WRONG	UNKNOWN	classe_gramatical
 do	O	-	-
 que	O	-	-
 adianta	O	-	-
@@ -37933,7 +37933,7 @@ Maomé	O	-	-
 .	O	-	-
 
 Sentença Original N°1319
-Esta	B-WRONG	UNKNOWN	ortografia_lexical
+Esta	B-WRONG	UNKNOWN	acentuacao
 situação	O	-	-
 tornou-se	O	-	-
 cada	O	-	-
@@ -37971,7 +37971,7 @@ parecer	O	-	-
 exagero	O	-	-
 ou	O	-	-
 incoerente	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 comparação	O	-	-
 ,	O	-	-
 mas	O	-	-
@@ -38004,7 +38004,7 @@ o	O	-	-
 machismo	O	-	-
 ,	O	-	-
 que	O	-	-
-já	B-WRONG	UNKNOWN	ortografia_acento
+já	B-WRONG	UNKNOWN	acentuacao
 não	O	-	-
 deveria	O	-	-
 mais	O	-	-
@@ -38083,7 +38083,7 @@ as	O	-	-
 medidas	O	-	-
 eram	O	-	-
 necessárias	O	-	-
-afim	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+afim	B-WRONG	xml:21|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 de	O	-	-
 diminuir	O	-	-
 o	O	-	-
@@ -38302,40 +38302,40 @@ muita	O	-	-
 polêmica	O	-	-
 ,	O	-	-
 pois	O	-	-
-não	B-WRONG	UNKNOWN	ortografia_acento
+não	B-WRONG	UNKNOWN	acentuacao
 basta	O	-	-
 apenas	O	-	-
 responsabilizar	O	-	-
 o	O	-	-
 próximo	O	-	-
 ,	O	-	-
-as	B-WRONG	UNKNOWN	concordancia_verbal
-pessoas	I-WRONG	UNKNOWN	concordancia_verbal
-devem	I-WRONG	UNKNOWN	concordancia_verbal
-se	I-WRONG	UNKNOWN	concordancia_verbal
-conscientizar	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-cada	I-WRONG	UNKNOWN	concordancia_verbal
-um	I-WRONG	UNKNOWN	concordancia_verbal
-pode	I-WRONG	UNKNOWN	concordancia_verbal
-fazer	I-WRONG	UNKNOWN	concordancia_verbal
-sua	I-WRONG	UNKNOWN	concordancia_verbal
-parte	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-mesmo	I-WRONG	UNKNOWN	concordancia_verbal
-que	I-WRONG	UNKNOWN	concordancia_verbal
-seja	I-WRONG	UNKNOWN	concordancia_verbal
-mínima	I-WRONG	UNKNOWN	concordancia_verbal
-,	I-WRONG	UNKNOWN	concordancia_verbal
-para	I-WRONG	UNKNOWN	concordancia_verbal
-tentar	I-WRONG	UNKNOWN	concordancia_verbal
-melhorar	I-WRONG	UNKNOWN	concordancia_verbal
-esta	I-WRONG	UNKNOWN	concordancia_verbal
-situação	I-WRONG	UNKNOWN	concordancia_verbal
-nos	I-WRONG	UNKNOWN	concordancia_verbal
-próximos	I-WRONG	UNKNOWN	concordancia_verbal
-anos	I-WRONG	UNKNOWN	concordancia_verbal
-.	I-WRONG	UNKNOWN	concordancia_verbal
+as	B-WRONG	UNKNOWN	classe_gramatical
+pessoas	I-WRONG	UNKNOWN	classe_gramatical
+devem	I-WRONG	UNKNOWN	classe_gramatical
+se	I-WRONG	UNKNOWN	classe_gramatical
+conscientizar	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+cada	I-WRONG	UNKNOWN	classe_gramatical
+um	I-WRONG	UNKNOWN	classe_gramatical
+pode	I-WRONG	UNKNOWN	classe_gramatical
+fazer	I-WRONG	UNKNOWN	classe_gramatical
+sua	I-WRONG	UNKNOWN	classe_gramatical
+parte	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+seja	I-WRONG	UNKNOWN	classe_gramatical
+mínima	I-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+para	I-WRONG	UNKNOWN	classe_gramatical
+tentar	I-WRONG	UNKNOWN	classe_gramatical
+melhorar	I-WRONG	UNKNOWN	classe_gramatical
+esta	I-WRONG	UNKNOWN	classe_gramatical
+situação	I-WRONG	UNKNOWN	classe_gramatical
+nos	I-WRONG	UNKNOWN	classe_gramatical
+próximos	I-WRONG	UNKNOWN	classe_gramatical
+anos	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 
 Sentença Original N°1333
 A	O	-	-
@@ -38483,7 +38483,7 @@ mencionados	O	-	-
 gera-se	O	-	-
 uma	O	-	-
 grande	O	-	-
-repercusão	B-WRONG	UNKNOWN	ortografia_acento
+repercusão	B-WRONG	UNKNOWN	acentuacao
 entre	O	-	-
 autores	O	-	-
 e	O	-	-
@@ -38697,7 +38697,7 @@ diversos	O	-	-
 órgãos	O	-	-
 públicos	O	-	-
 são	O	-	-
-tópicos	B-WRONG	UNKNOWN	ortografia_acento
+tópicos	B-WRONG	UNKNOWN	acentuacao
 que	O	-	-
 dão	O	-	-
 importância	O	-	-
@@ -39007,24 +39007,24 @@ lingüística	O	-	-
 .	O	-	-
 
 Sentença Original N°1356
-No	B-WRONG	UNKNOWN	sintatico_discursivo
-Brasil	I-WRONG	UNKNOWN	sintatico_discursivo
-há	I-WRONG	UNKNOWN	sintatico_discursivo
-a	I-WRONG	UNKNOWN	sintatico_discursivo
-eficácia	I-WRONG	UNKNOWN	sintatico_discursivo
-dos	I-WRONG	UNKNOWN	sintatico_discursivo
-veículos	I-WRONG	UNKNOWN	sintatico_discursivo
-de	I-WRONG	UNKNOWN	sintatico_discursivo
-massa	I-WRONG	UNKNOWN	sintatico_discursivo
-na	I-WRONG	UNKNOWN	sintatico_discursivo
-eleição	I-WRONG	UNKNOWN	sintatico_discursivo
-eleitoral	I-WRONG	UNKNOWN	sintatico_discursivo
-e	I-WRONG	UNKNOWN	sintatico_discursivo
-a	I-WRONG	UNKNOWN	sintatico_discursivo
-desigualdade	I-WRONG	UNKNOWN	sintatico_discursivo
-na	I-WRONG	UNKNOWN	sintatico_discursivo
-mesma	I-WRONG	UNKNOWN	sintatico_discursivo
-.	I-WRONG	UNKNOWN	sintatico_discursivo
+No	B-WRONG	UNKNOWN	classe_gramatical
+Brasil	I-WRONG	UNKNOWN	classe_gramatical
+há	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+eficácia	I-WRONG	UNKNOWN	classe_gramatical
+dos	I-WRONG	UNKNOWN	classe_gramatical
+veículos	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+massa	I-WRONG	UNKNOWN	classe_gramatical
+na	I-WRONG	UNKNOWN	classe_gramatical
+eleição	I-WRONG	UNKNOWN	classe_gramatical
+eleitoral	I-WRONG	UNKNOWN	classe_gramatical
+e	I-WRONG	UNKNOWN	classe_gramatical
+a	I-WRONG	UNKNOWN	classe_gramatical
+desigualdade	I-WRONG	UNKNOWN	classe_gramatical
+na	I-WRONG	UNKNOWN	classe_gramatical
+mesma	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 <correct>No	O	-	-
 Brasil	O	-	-
 ,	O	-	-
@@ -39233,7 +39233,7 @@ ao	B-WRONG	UNKNOWN	crase_preposicao
 qual	O	-	-
 não	O	-	-
 queremos	O	-	-
-vê-lo	B-WRONG	UNKNOWN	ortografia_acento
+vê-lo	B-WRONG	UNKNOWN	acentuacao
 .	O	-	-
 
 Sentença Original N°1363
@@ -39537,7 +39537,7 @@ uma	O	-	-
 exceção	O	-	-
 com	O	-	-
 relação	O	-	-
-a	B-WRONG	"Com relação" rege a preposição "a", logo há crase aqui.	cogroo_other:"Com relação" rege a preposição "a", log
+a	B-WRONG	xml:11|"Com relação" rege a preposição "a", logo há crase aqui.	crase_preposicao
 eutanásia	O	-	-
 :	O	-	-
 caso	O	-	-
@@ -39600,7 +39600,7 @@ pais	B-WRONG	UNKNOWN	ortografia_lexical
 de	O	-	-
 ampla	O	-	-
 diversidade	O	-	-
-climáticas	B-WRONG	O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
+climáticas	B-WRONG	xml:17|O adjetivo concorda com o substantivo a que se refere.	concordancia_nominal
 tem	O	-	-
 enfrentado	O	-	-
 complicaçõe	O	-	-
@@ -39993,21 +39993,21 @@ brasileiro	O	-	-
 .	O	-	-
 
 Sentença Original N°1391
-Cada	B-WRONG	UNKNOWN	concordancia_nominal
-vez	I-WRONG	UNKNOWN	concordancia_nominal
-mais	I-WRONG	UNKNOWN	concordancia_nominal
-fica	I-WRONG	UNKNOWN	concordancia_nominal
-difícil	I-WRONG	UNKNOWN	concordancia_nominal
-definir	I-WRONG	UNKNOWN	concordancia_nominal
-os	I-WRONG	UNKNOWN	concordancia_nominal
-limites	I-WRONG	UNKNOWN	concordancia_nominal
-temporais	I-WRONG	UNKNOWN	concordancia_nominal
-de	I-WRONG	UNKNOWN	concordancia_nominal
-uma	I-WRONG	UNKNOWN	concordancia_nominal
-geração	I-WRONG	UNKNOWN	concordancia_nominal
-para	I-WRONG	UNKNOWN	concordancia_nominal
-outra	I-WRONG	UNKNOWN	concordancia_nominal
-.	I-WRONG	UNKNOWN	concordancia_nominal
+Cada	B-WRONG	UNKNOWN	classe_gramatical
+vez	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+fica	I-WRONG	UNKNOWN	classe_gramatical
+difícil	I-WRONG	UNKNOWN	classe_gramatical
+definir	I-WRONG	UNKNOWN	classe_gramatical
+os	I-WRONG	UNKNOWN	classe_gramatical
+limites	I-WRONG	UNKNOWN	classe_gramatical
+temporais	I-WRONG	UNKNOWN	classe_gramatical
+de	I-WRONG	UNKNOWN	classe_gramatical
+uma	I-WRONG	UNKNOWN	classe_gramatical
+geração	I-WRONG	UNKNOWN	classe_gramatical
+para	I-WRONG	UNKNOWN	classe_gramatical
+outra	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 O	O	-	-
 fácil	O	-	-
 acesso	O	-	-
@@ -40190,11 +40190,11 @@ os	O	-	-
 homens	O	-	-
 seres	O	-	-
 melhores	O	-	-
-e	B-WRONG	Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
-superiores	I-WRONG	Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
-as	I-WRONG	Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
-mulheres	I-WRONG	Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
-.	I-WRONG	Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
+e	B-WRONG	xml:91|Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
+superiores	I-WRONG	xml:91|Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
+as	I-WRONG	xml:91|Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
+mulheres	I-WRONG	xml:91|Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
+.	I-WRONG	xml:91|Alguns nomes regem a preposição "a", logo há crase aqui.	crase_preposicao
 
 Sentença Original N°1398
 A	O	-	-
@@ -40635,9 +40635,9 @@ suas	O	-	-
 próprias	O	-	-
 interpretações	O	-	-
 do	O	-	-
-mesmo	B-WRONG	UNKNOWN	sintatico_discursivo
-,	I-WRONG	UNKNOWN	sintatico_discursivo
-assim	I-WRONG	UNKNOWN	sintatico_discursivo
+mesmo	B-WRONG	UNKNOWN	classe_gramatical
+,	I-WRONG	UNKNOWN	classe_gramatical
+assim	I-WRONG	UNKNOWN	classe_gramatical
 <correct>mesmo	O	-	-
 .	O	-	-
 
@@ -40674,7 +40674,7 @@ quando	O	-	-
 vamos	O	-	-
 expressar	O	-	-
 nossas	O	-	-
-opiniões	B-WRONG	UNKNOWN	ortografia_acento
+opiniões	B-WRONG	UNKNOWN	acentuacao
 pois	O	-	-
 sempre	O	-	-
 haverá	O	-	-
@@ -40851,7 +40851,7 @@ nos	O	-	-
 casar	O	-	-
 ,	O	-	-
 e	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 que	O	-	-
 é	O	-	-
 melhor	O	-	-
@@ -41043,9 +41043,9 @@ aceitar	O	-	-
 .	O	-	-
 
 Sentença Original N°1426
-Cada	B-WRONG	UNKNOWN	sintatico_discursivo
-vez	I-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
+Cada	B-WRONG	UNKNOWN	classe_gramatical
+vez	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
 vem	O	-	-
 crescendo	O	-	-
 um	O	-	-
@@ -41103,7 +41103,7 @@ lideranças	O	-	-
 para	O	-	-
 reivindicarem	O	-	-
 eleições	O	-	-
-presidências	B-WRONG	UNKNOWN	ortografia_acento
+presidências	B-WRONG	UNKNOWN	acentuacao
 diretas	O	-	-
 no	O	-	-
 Brasil	O	-	-
@@ -41188,16 +41188,16 @@ dia	O	-	-
 mais	O	-	-
 ,	O	-	-
 e	O	-	-
-cada	B-WRONG	UNKNOWN	sintatico_discursivo
-vez	I-WRONG	UNKNOWN	sintatico_discursivo
-mais	I-WRONG	UNKNOWN	sintatico_discursivo
-nos	I-WRONG	UNKNOWN	sintatico_discursivo
-tornamos	I-WRONG	UNKNOWN	sintatico_discursivo
-dependentes	I-WRONG	UNKNOWN	sintatico_discursivo
-desse	I-WRONG	UNKNOWN	sintatico_discursivo
-avanço	I-WRONG	UNKNOWN	sintatico_discursivo
-tecnológico	I-WRONG	UNKNOWN	sintatico_discursivo
-.	I-WRONG	UNKNOWN	sintatico_discursivo
+cada	B-WRONG	UNKNOWN	classe_gramatical
+vez	I-WRONG	UNKNOWN	classe_gramatical
+mais	I-WRONG	UNKNOWN	classe_gramatical
+nos	I-WRONG	UNKNOWN	classe_gramatical
+tornamos	I-WRONG	UNKNOWN	classe_gramatical
+dependentes	I-WRONG	UNKNOWN	classe_gramatical
+desse	I-WRONG	UNKNOWN	classe_gramatical
+avanço	I-WRONG	UNKNOWN	classe_gramatical
+tecnológico	I-WRONG	UNKNOWN	classe_gramatical
+.	I-WRONG	UNKNOWN	classe_gramatical
 
 Sentença Original N°1431
 Hoje	O	-	-
@@ -41216,7 +41216,7 @@ que	O	-	-
 está	O	-	-
 em	O	-	-
 constante	O	-	-
-reivindicação	B-WRONG	UNKNOWN	ortografia_acento
+reivindicação	B-WRONG	UNKNOWN	acentuacao
 por	O	-	-
 segurança	O	-	-
 ,	O	-	-
@@ -41242,7 +41242,7 @@ coração	O	-	-
 são	O	-	-
 alguns	O	-	-
 dos	O	-	-
-tópicos	B-WRONG	UNKNOWN	ortografia_acento
+tópicos	B-WRONG	UNKNOWN	acentuacao
 mais	O	-	-
 frequentes	O	-	-
 nas	O	-	-
@@ -41634,13 +41634,13 @@ criminosos	O	-	-
 Sentença Original N°1448
 Superpopulação	O	-	-
 ,	O	-	-
-Hurbanização	B-WRONG	UNKNOWN	ortografia_acento
+Hurbanização	B-WRONG	UNKNOWN	acentuacao
 caótica	O	-	-
 ,	O	-	-
 Redes	B-WRONG	UNKNOWN	ortografia_lexical
 de	O	-	-
 esgoto	O	-	-
-precária	B-WRONG	UNKNOWN	ortografia_acento
+precária	B-WRONG	UNKNOWN	acentuacao
 .	O	-	-
 
 Sentença Original N°1449
@@ -41687,7 +41687,7 @@ papel	O	-	-
 no	O	-	-
 Brasil	B-WRONG	UNKNOWN	ortografia_lexical
 ,	I-WRONG	UNKNOWN	ortografia_lexical
-já	B-WRONG	UNKNOWN	ortografia_acento
+já	B-WRONG	UNKNOWN	acentuacao
 <correct>Brasil	O	-	-
 .	O	-	-
 
@@ -41699,7 +41699,7 @@ este	B-WRONG	UNKNOWN	ortografia_lexical
 direito	O	-	-
 democrático	O	-	-
 não	O	-	-
-esta	B-WRONG	UNKNOWN	ortografia_lexical
+esta	B-WRONG	UNKNOWN	acentuacao
 sendo	O	-	-
 valorizado	O	-	-
 pela	O	-	-
@@ -41733,14 +41733,14 @@ importar	O	-	-
 do	O	-	-
 Brasil	O	-	-
 e	O	-	-
-o	B-WRONG	UNKNOWN	colocacao_pronominal
-mesmo	I-WRONG	UNKNOWN	colocacao_pronominal
+o	B-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
 sem	O	-	-
 o	O	-	-
 capital	O	-	-
 oriundo	O	-	-
 das	O	-	-
-exportações	B-WRONG	UNKNOWN	ortografia_acento
+exportações	B-WRONG	UNKNOWN	acentuacao
 deixa	O	-	-
 de	O	-	-
 importar	O	-	-
@@ -42138,11 +42138,11 @@ gerou	O	-	-
 polêmica	O	-	-
 e	O	-	-
 revolta	O	-	-
-pelos	B-WRONG	UNKNOWN	sintatico_discursivo
-que	I-WRONG	UNKNOWN	sintatico_discursivo
-usam	I-WRONG	UNKNOWN	sintatico_discursivo
-do	I-WRONG	UNKNOWN	sintatico_discursivo
-mesmo	I-WRONG	UNKNOWN	sintatico_discursivo
+pelos	B-WRONG	UNKNOWN	classe_gramatical
+que	I-WRONG	UNKNOWN	classe_gramatical
+usam	I-WRONG	UNKNOWN	classe_gramatical
+do	I-WRONG	UNKNOWN	classe_gramatical
+mesmo	I-WRONG	UNKNOWN	classe_gramatical
 .	O	-	-
 
 Sentença Original N°1465
@@ -42512,7 +42512,7 @@ longo	O	-	-
 do	O	-	-
 tempo	O	-	-
 ,	O	-	-
-vem	B-WRONG	UNKNOWN	ortografia_lexical
+vem	B-WRONG	UNKNOWN	acentuacao
 se	O	-	-
 agravando	O	-	-
 .	O	-	-
@@ -42527,7 +42527,7 @@ atingiu	O	-	-
 grande	O	-	-
 parte	O	-	-
 dos	O	-	-
-países	B-WRONG	UNKNOWN	ortografia_acento
+países	B-WRONG	UNKNOWN	acentuacao
 com	O	-	-
 uma	O	-	-
 economia	O	-	-
@@ -42637,8 +42637,8 @@ que	O	-	-
 se	O	-	-
 alimentem	O	-	-
 de	O	-	-
-menos	B-WRONG	UNKNOWN	ortografia_lexical
-comidas	I-WRONG	UNKNOWN	ortografia_lexical
+menos	B-WRONG	UNKNOWN	classe_gramatical
+comidas	I-WRONG	UNKNOWN	classe_gramatical
 gordurosas	O	-	-
 e	O	-	-
 menos	O	-	-
@@ -42898,7 +42898,7 @@ sua	O	-	-
 vida	O	-	-
 e	O	-	-
 não	O	-	-
-há	B-WRONG	UNKNOWN	ortografia_acento
+há	B-WRONG	UNKNOWN	acentuacao
 omissão	O	-	-
 dela	O	-	-
 ,	O	-	-
@@ -42981,7 +42981,7 @@ irracional	O	-	-
 ,	O	-	-
 não	O	-	-
 teria	O	-	-
-o	B-WRONG	UNKNOWN	ortografia_lexical
+o	B-WRONG	UNKNOWN	acentuacao
 porquê	O	-	-
 ter	B-WRONG	UNKNOWN	ortografia_lexical
 uma	O	-	-
@@ -43104,7 +43104,7 @@ Os	O	-	-
 atos	O	-	-
 de	O	-	-
 criminalidade	O	-	-
-tem	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+tem	B-WRONG	xml:117|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 crescido	O	-	-
 muito	O	-	-
 nos	O	-	-
@@ -43154,7 +43154,7 @@ de	O	-	-
 alguns	O	-	-
 covardes	O	-	-
 que	O	-	-
-tem	B-WRONG	UNKNOWN	ortografia_lexical
+tem	B-WRONG	UNKNOWN	acentuacao
 a	O	-	-
 coragem	O	-	-
 de	O	-	-
@@ -43506,7 +43506,7 @@ obvio	B-WRONG	UNKNOWN	ortografia_lexical
 que	O	-	-
 um	O	-	-
 se	O	-	-
-saía	B-WRONG	UNKNOWN	ortografia_acento
+saía	B-WRONG	UNKNOWN	acentuacao
 melhor	O	-	-
 que	O	-	-
 o	O	-	-
@@ -43563,8 +43563,8 @@ um	O	-	-
 profissional	O	-	-
 capacitado	O	-	-
 pode	O	-	-
-trazer	B-WRONG	UNKNOWN	ortografia_lexical
-.	I-WRONG	UNKNOWN	ortografia_lexical
+trazer	B-WRONG	UNKNOWN	colocacao_verbal
+.	I-WRONG	UNKNOWN	colocacao_verbal
 
 Sentença Original N°1511
 Por	O	-	-
@@ -43750,8 +43750,8 @@ de	O	-	-
 um	O	-	-
 governo	O	-	-
 que	O	-	-
-não	B-WRONG	Palavras negativas atraem o pronome átono para antes do verbo.	colocacao_pronominal
-importou-se	I-WRONG	Palavras negativas atraem o pronome átono para antes do verbo.	colocacao_pronominal
+não	B-WRONG	xml:61|Palavras negativas atraem o pronome átono para antes do verbo.	colocacao_pronominal
+importou-se	I-WRONG	xml:61|Palavras negativas atraem o pronome átono para antes do verbo.	colocacao_pronominal
 em	O	-	-
 realizar	O	-	-
 um	O	-	-
@@ -43810,7 +43810,7 @@ erro	O	-	-
 .	O	-	-
 
 Sentença Original N°1517
-O	B-WRONG	UNKNOWN	ortografia_lexical
+O	B-WRONG	UNKNOWN	acentuacao
 período	O	-	-
 gestacional	O	-	-
 humano	O	-	-
@@ -43829,7 +43829,7 @@ feto	O	-	-
 é	B-WRONG	UNKNOWN	concordancia_verbal
 enencéfalo	I-WRONG	UNKNOWN	concordancia_verbal
 até	O	-	-
-então	B-WRONG	UNKNOWN	ortografia_acento
+então	B-WRONG	UNKNOWN	acentuacao
 era	O	-	-
 obrigada	O	-	-
 a	O	-	-
@@ -44003,8 +44003,8 @@ Portanto	O	-	-
 ,	O	-	-
 se	O	-	-
 a	O	-	-
-família	B-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
-têm	I-WRONG	Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+família	B-WRONG	xml:118|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
+têm	I-WRONG	xml:118|Verificou-se erro de concordância entre o sujeito e o verbo.	concordancia_verbal
 o	O	-	-
 costume	O	-	-
 de	O	-	-
@@ -44215,7 +44215,7 @@ Sentença Original N°1537
 O	O	-	-
 Brasil	B-WRONG	UNKNOWN	ortografia_lexical
 hoje	O	-	-
-de	B-WRONG	UNKNOWN	ortografia_lexical
+de	B-WRONG	UNKNOWN	acentuacao
 200	O	-	-
 milhões	O	-	-
 de	O	-	-
@@ -44285,7 +44285,7 @@ coletiva	O	-	-
 Sentença Original N°1540
 Havendo	O	-	-
 uma	O	-	-
-preparação	B-WRONG	UNKNOWN	ortografia_acento
+preparação	B-WRONG	UNKNOWN	acentuacao
 assim	O	-	-
 como	O	-	-
 é	B-WRONG	UNKNOWN	concordancia_verbal

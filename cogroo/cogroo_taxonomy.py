@@ -722,8 +722,8 @@ if __name__ == "__main__":
     all_stats: dict[str, dict] = {}
 
     for split in splits:
-        input_path  = Path(f"../data/{split}_bio_typed.tsv")
-        output_path = Path(f"../data/{split}_bio_taxonomy.tsv")
+        input_path  = Path(f"data/{split}_bio_typed.tsv")
+        output_path = Path(f"data/{split}_bio_taxonomy.tsv")
 
         if not input_path.exists():
             print(f"Skipping {split} — {input_path} not found")
