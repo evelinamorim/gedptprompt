@@ -4,10 +4,14 @@ Runs CoGrOO on BIO-tagged TSV files and produces an enriched output
 with a third column containing the error type for each token.
 
 Third column values:
-  -          : token is correct (O label) and CoGrOO found no error
-  <type>     : token is part of a gold error span matched by CoGrOO (overlap >= 50%)
-  UNKNOWN    : token is part of a gold error span that CoGrOO did NOT catch
-  NO_MATCH   : token has no gold error but CoGrOO flagged it as wrong
+  -                        : token is correct (O label) and CoGrOO found no error
+  <rule_id>|<short_msg>    : token is part of a gold error span matched by CoGrOO
+  UNKNOWN                  : token is part of a gold error span CoGrOO did NOT catch
+  NO_MATCH                 : token has no gold error but CoGrOO flagged it as wrong
+
+The rule_id|short_msg format (pipe-separated) allows cogroo_taxonomy.py to use
+the rule ID for unambiguous category resolution when multiple rules share the
+same short message.
 
 Input format (BIO TSV):
     Sentença Original N°1
@@ -19,8 +23,8 @@ Output format (BIO TSV + error type):
     Sentença Original N°1
     O       O       -
     maior   O       -
-    Entre   B-WRONG concordância_verbal
-    muitos  I-WRONG concordância_verbal
+    Entre   B-WRONG xml:3|Verificou-se erro de concordância entre o sujeito e o verbo.
+    muitos  I-WRONG xml:3|Verificou-se erro de concordância entre o sujeito e o verbo.
 
 Usage:
     python cogroo_annotate.py --input data/test_bio.tsv --output data/test_bio_typed.tsv
@@ -57,7 +61,7 @@ class CoGrOOChecker:
                     "start": mistake.start,
                     "end": mistake.end,
                     "rule_id": mistake.rule_id,
-                    "category": mistake.short_msg,  # human-readable Portuguese description
+                    "category": mistake.short_msg,
                     "short_msg": mistake.short_msg,
                 })
         except Exception as e:
@@ -69,17 +73,13 @@ class CoGrOOChecker:
 # ------------------------------------------------------------------ #
 
 def compute_token_offsets(tokens: list[str]) -> list[tuple[int, int]]:
-    """
-    Compute character offsets for each token assuming single-space joining.
-    Returns list of (start, end_exclusive) tuples.
-    """
     offsets = []
     pos = 0
     for token in tokens:
         start = pos
         end = pos + len(token)
         offsets.append((start, end))
-        pos = end + 1  # +1 for space separator
+        pos = end + 1
     return offsets
 
 
@@ -94,10 +94,6 @@ def compute_overlap_ratio(
     gold_span_start_idx: int,
     gold_span_end_idx: int,
 ) -> float:
-    """
-    Compute overlap ratio between a CoGrOO character span and a gold token span.
-    Returns the fraction of the gold span covered by the CoGrOO span.
-    """
     gold_char_start = gold_token_offsets[gold_span_start_idx][0]
     gold_char_end = gold_token_offsets[gold_span_end_idx][1]
     gold_len = gold_char_end - gold_char_start
@@ -118,13 +114,12 @@ def compute_overlap_ratio(
 
 @dataclass
 class GoldSpan:
-    start_idx: int   # token index
-    end_idx: int     # token index inclusive
-    error_type: str = "UNKNOWN"   # filled in after CoGrOO matching
+    start_idx: int
+    end_idx: int
+    error_type: str = "UNKNOWN"
 
 
 def extract_gold_spans(labels: list[str]) -> list[GoldSpan]:
-    """Extract gold error spans from BIO labels."""
     spans = []
     start = None
     for i, lbl in enumerate(labels):
@@ -154,25 +149,24 @@ def match_cogroo_to_gold(
     strings, one per token.
 
     Token labels:
-      "-"       : correct token, no CoGrOO flag
-      <type>    : matched gold span with CoGrOO type
-      "UNKNOWN" : gold error span not caught by CoGrOO
-      "NO_MATCH": CoGrOO flagged but no gold span
+      "-"                    : correct token, no CoGrOO flag
+      "<rule_id>|<short_msg>": matched gold span — pipe-separated so
+                               cogroo_taxonomy.py can resolve by rule ID first
+      "UNKNOWN"              : gold error span not caught by CoGrOO
+      "NO_MATCH"             : CoGrOO flagged but no gold span
     """
     token_types = ["-"] * len(sentence.tokens)
     token_offsets = compute_token_offsets(sentence.tokens)
     gold_spans = extract_gold_spans(sentence.labels)
 
-    # Track which CoGrOO mistakes have been matched
     matched_cogroo: set[int] = set()
-    # Track which gold spans have been matched
     matched_gold: set[int] = set()
 
-    # For each gold span, find the best overlapping CoGrOO mistake
     for gi, gold_span in enumerate(gold_spans):
         best_overlap = 0.0
         best_mistake_idx = -1
-        best_category = "UNKNOWN"
+        best_rule_id = ""
+        best_short_msg = ""
 
         for mi, mistake in enumerate(cogroo_mistakes):
             overlap = compute_overlap_ratio(
@@ -185,27 +179,25 @@ def match_cogroo_to_gold(
             if overlap > best_overlap:
                 best_overlap = overlap
                 best_mistake_idx = mi
-                best_category = mistake["category"] or mistake["rule_id"] or "grammar_error"
+                best_rule_id  = mistake.get("rule_id", "") or ""
+                best_short_msg = mistake.get("short_msg", "") or mistake.get("category", "") or "grammar_error"
 
         if best_overlap >= overlap_threshold:
-            # Gold span matched by CoGrOO
             matched_cogroo.add(best_mistake_idx)
             matched_gold.add(gi)
+            # Write "rule_id|short_msg" so taxonomy lookup can use either
+            error_type = f"{best_rule_id}|{best_short_msg}" if best_rule_id else best_short_msg
             for idx in range(gold_span.start_idx, gold_span.end_idx + 1):
-                token_types[idx] = best_category
+                token_types[idx] = error_type
         else:
-            # Gold span not caught by CoGrOO
             for idx in range(gold_span.start_idx, gold_span.end_idx + 1):
                 token_types[idx] = "UNKNOWN"
 
-    # Handle CoGrOO mistakes with no gold match → NO_MATCH
     for mi, mistake in enumerate(cogroo_mistakes):
         if mi in matched_cogroo:
             continue
-        # Find tokens covered by this CoGrOO mistake
         for ti, (tok_start, tok_end) in enumerate(token_offsets):
             if tok_start < mistake["end"] and tok_end > mistake["start"]:
-                # Only mark as NO_MATCH if not already assigned a gold type
                 if token_types[ti] == "-":
                     token_types[ti] = "NO_MATCH"
 
@@ -226,17 +218,9 @@ def write_typed_bio(
     overlap_threshold: float = 0.5,
     progress_every: int = 100,
 ) -> None:
-    """
-    Read a BIO TSV file, annotate with CoGrOO error types,
-    and write the enriched output with a third column.
-    """
     sentences = read_bio_file(input_path)
     print(f"Loaded {len(sentences)} sentences from {input_path}")
 
-    # Build sentence lookup by id
-    sentence_map = {s.id: s for s in sentences}
-
-    # Run CoGrOO on all sentences and collect results
     print("Running CoGrOO...")
     cogroo_results: dict[int, list[str]] = {}
 
@@ -249,7 +233,6 @@ def write_typed_bio(
         token_types = match_cogroo_to_gold(sent, mistakes, overlap_threshold)
         cogroo_results[sent.id] = token_types
 
-    # Write output preserving original file structure
     print(f"Writing output to {output_path}...")
     sentence_idx = 0
 
@@ -261,19 +244,16 @@ def write_typed_bio(
         for raw_line in fin:
             line = raw_line.rstrip("\n")
 
-            # Sentence boundary line
             if _SENTENCE_RE.match(line):
                 sentence_idx += 1
                 current_token_idx = 0
                 fout.write(line + "\n")
                 continue
 
-            # Blank line
             if not line.strip():
                 fout.write("\n")
                 continue
 
-            # Token line
             parts = line.split("\t")
             if len(parts) < 2:
                 parts = line.split()
@@ -283,13 +263,9 @@ def write_typed_bio(
 
             token, label = parts[0], parts[1].strip()
 
-            # Get error type for this token
             if sentence_idx in cogroo_results:
                 types = cogroo_results[sentence_idx]
-                if current_token_idx < len(types):
-                    error_type = types[current_token_idx]
-                else:
-                    error_type = "-"
+                error_type = types[current_token_idx] if current_token_idx < len(types) else "-"
             else:
                 error_type = "-"
 
@@ -320,12 +296,12 @@ def print_summary(output_path: str | Path) -> None:
 
     total = sum(type_counts.values())
     print(f"\n=== Error type distribution ({output_path}) ===")
-    print(f"{'Type':<30} {'Count':>8} {'%':>8}")
-    print("-" * 50)
+    print(f"{'Type':<70} {'Count':>8} {'%':>8}")
+    print("-" * 90)
     for etype, count in sorted(type_counts.items(), key=lambda x: -x[1]):
         pct = 100 * count / total if total else 0
-        print(f"{etype:<30} {count:>8} {pct:>7.2f}%")
-    print(f"{'TOTAL':<30} {total:>8}")
+        print(f"{etype:<70} {count:>8} {pct:>7.2f}%")
+    print(f"{'TOTAL':<70} {total:>8}")
 
 
 # ------------------------------------------------------------------ #
@@ -336,30 +312,18 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Annotate BIO TSV files with CoGrOO error types"
     )
-    parser.add_argument(
-        "--input", required=True,
-        help="Input BIO TSV file (e.g. data/test_bio.tsv)"
-    )
-    parser.add_argument(
-        "--output", required=True,
-        help="Output BIO TSV file with error type column"
-    )
-    parser.add_argument(
-        "--overlap", type=float, default=0.5,
-        help="Minimum overlap ratio to match CoGrOO span to gold span (default: 0.5)"
-    )
-    parser.add_argument(
-        "--progress", type=int, default=100,
-        help="Print progress every N sentences (default: 100)"
-    )
+    parser.add_argument("--input",    required=True, help="Input BIO TSV file")
+    parser.add_argument("--output",   required=True, help="Output BIO TSV file with error type column")
+    parser.add_argument("--overlap",  type=float, default=0.5,
+                        help="Minimum overlap ratio to match CoGrOO span to gold span (default: 0.5)")
+    parser.add_argument("--progress", type=int, default=100,
+                        help="Print progress every N sentences (default: 100)")
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
-
     checker = CoGrOOChecker()
-
     write_typed_bio(
         input_path=args.input,
         output_path=args.output,
@@ -367,5 +331,4 @@ if __name__ == "__main__":
         overlap_threshold=args.overlap,
         progress_every=args.progress,
     )
-
     print_summary(args.output)
